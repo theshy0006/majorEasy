@@ -1,0 +1,20 @@
+/* 
+  infoPlist.strings
+  majorEasy
+
+  Created by wangyang on 2020/9/27.
+  
+*/
+
+
+home = "首页";
+post = "发货";
+order = "订单";
+my = "我的";
+forget = "忘记密码";
+register = "用户注册";
+service = "用户服务协议";
+accredit = "用户授权协议";
+privacy = "隐私政策";
+
+
