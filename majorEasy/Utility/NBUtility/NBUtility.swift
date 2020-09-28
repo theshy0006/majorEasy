@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import Photos
 
-let CUSTOMER_SERVICE_TEL = "4008812356"
+let CUSTOMER_SERVICE_TEL = "051082030388"
 
 class NBUtility: NSObject {
     //MARK: - 打电话

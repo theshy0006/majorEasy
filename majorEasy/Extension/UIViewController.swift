@@ -21,6 +21,12 @@ extension UIViewController {
         let leftBarItem = UIBarButtonItem(image: UIImage(named:normalImage)?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(popBack))
         self.navigationItem.leftBarButtonItem = leftBarItem
     }
+    // 设置导航栏左侧文字按钮
+    func setNavBarLeftBtn(normalText:String, selector:Selector) {
+        let leftBarItem = UIBarButtonItem(title: normalText, style: .plain, target: self, action: #selector(popBack))
+        
+        self.navigationItem.leftBarButtonItem = leftBarItem
+    }
     
     //设置导航栏右侧图片按钮
     func setNavBarRightBtn(normalImage:String, selector:Selector) {
@@ -33,6 +39,12 @@ extension UIViewController {
                                      action: nil)
         spacer.width = 10
         self.navigationItem.rightBarButtonItems = [rightBarBtn, spacer]
+    }
+    
+    // 设置导航栏右侧侧文字按钮
+    func setNavBarRightBtn(normalText:String, selector:Selector) {
+        let rightBarItem = UIBarButtonItem(title: normalText, style: .plain, target: self, action: #selector(gotoForward))
+        self.navigationItem.rightBarButtonItem = rightBarItem
     }
 
     //默认返回按钮

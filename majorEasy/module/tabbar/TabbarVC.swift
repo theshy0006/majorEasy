@@ -16,13 +16,13 @@ class TabbarVC: UITabBarController {
         self.tabBar.tintColor = tabbarFontSelectColor
         
         self.addClildVC(HomeVC(), title: "home".localized,
-                        imgName: "tab-home", selImgName: "tab-home-current")
+                        imgName: "首页-n", selImgName: "首页-p")
         self.addClildVC(PostVC(), title: "post".localized,
-                        imgName: "tab-chat", selImgName: "tab-chat-current")
-        self.addClildVC(OrderVC(), title: "shortMovie".localized,
-                        imgName: "tab-movie", selImgName: "tab-movie-current")
+                        imgName: "发货-n", selImgName: "发货-p")
+        self.addClildVC(OrderVC(), title: "order".localized,
+                        imgName: "订单-n", selImgName: "订单-p")
         self.addClildVC(MyVC(), title: "my".localized,
-                        imgName: "tab-mine", selImgName: "tab-mine-current")
+                        imgName: "我的-n", selImgName: "我的-p")
     }
     
     func addClildVC(_ clildVC: UIViewController, title: String, imgName: String, selImgName: String) {

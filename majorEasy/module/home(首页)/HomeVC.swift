@@ -20,8 +20,14 @@ class HomeVC: BaseVC {
     }
     
     override func setUpView() {
-        self.navigationItem.title = "home".localized
-        createEmptyResultUI()
+        self.navigationItem.title = "homeTitle".localized
+        self.setNavBarLeftBtn(normalText: "我是车主", selector: #selector(popBack))
+        self.setNavBarRightBtn(normalImage: "客服", selector: #selector(gotoForward))
+    }
+    
+    //点击导航栏右侧按钮事件
+    @objc override func gotoForward(){
+        NBUtility.showTelephone(self)
     }
 
 }

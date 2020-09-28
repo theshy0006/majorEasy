@@ -86,7 +86,7 @@ public func FillImageNamed(_ name:String)-> UIImage {
 /// 状态栏选中字体颜色
 public let tabbarFontNormalColor = RGBHex(0x8a8a8a)
 /// 状态栏选中字体颜色
-public let tabbarFontSelectColor = RGBHex(0xF52857)
+public let tabbarFontSelectColor = RGBHex(0x7792BB)
 
 /// 导航栏阴影色
 public let shadowImageColor = RGBHex(0xDDDDDD)

@@ -17,11 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        
-        setUpLoginVC()
-        
         //初始化第三方库
         self.launchPartner(application:application, launchOptions: launchOptions)
+        //加载用户缓存数据
+        DataCenterManager.default.load()
+        
+        if (DataCenterManager.default.isLogin) {
+            self.setUpTabBar()
+        } else {
+            self.setUpLoginVC()
+        }
+        
+        
         window?.makeKeyAndVisible()
         LanchManager.launchAnimation()
         return true

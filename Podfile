@@ -12,12 +12,12 @@ target 'majorEasy' do
   pod 'IQKeyboardManagerSwift'
   pod 'HandyJSON'
   pod 'Alamofire'
-  pod 'AlamofireImage'
   pod 'Then'
   pod 'GTMRefresh'
   pod 'BaiduMapKit'
   pod 'BMKLocationKit'
   pod 'LLSegmentBar'
   pod 'BGFMDB', '~> 2.0.9'
+  pod 'SBCycleScrollView'
 	
 end
