@@ -32,7 +32,11 @@ class DataCenterManager: NSObject {
                 self.isLogin = true
             }
         }
-        
+    }
+    func clear() {
+        self.userInfo = UserInfo()
+        self.isLogin = true
+        self.save()
     }
 
 }

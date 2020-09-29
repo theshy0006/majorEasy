@@ -11,8 +11,8 @@
 #import "MBProgressHUD.h"
 #import "LLSegmentBarVC.h"
 #import "BaiduMapManager.h"
-#import "BGFMDB.h"
 #import "PrintBeautifulLog.h"
+#import "BGFMDB.h"
 #import "NBTookit.h"
 #import "NBAreaModel.h"
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>

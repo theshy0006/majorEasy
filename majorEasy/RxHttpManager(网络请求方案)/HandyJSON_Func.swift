@@ -88,3 +88,17 @@ extension ResetPasswordModel {
     }
 }
 
+// 重置登录密码
+extension HomeImagesModel {
+    
+    func getHomeImages() -> Observable<HomeImagesModel> {
+        return RxHttpManager.fetchData(with: URL_GetHomeImages,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: HomeImagesModel.self).map({ (response: HomeImagesModel) -> HomeImagesModel in
+            return response
+        })
+    }
+}
+

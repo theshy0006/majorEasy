@@ -46,7 +46,7 @@ class RxHttpManager {
      */
     fileprivate static func request<T: HandyJSON>(observer: AnyObserver<T>, url: String, method: HTTPMethod, parameters: Parameters?, headers: HTTPHeaders?, returnType: T.Type) {
         print("接口地址:\(url)")
-        print("接口参数:\(parameters)")
+        print("接口参数:\(String(describing: parameters))")
         AF.request(url, method: method, parameters: parameters, encoding: URLEncoding.default, headers: headers).responseJSON { response in
             switch response.result {
             case .success:
@@ -104,12 +104,20 @@ extension RxHttpManager {
                     print("成功报文:\(jsonDic)")
                     observer.onNext(responseModel)
                     observer.onCompleted()
+                } else if (code >= 100 && code < 110) {
+                    print("token失效:\(jsonDic)")
+                    let err = APIError()
+                    err.status = String(code)
+                    err.message = jsonDic["message"] as? String ?? ""
+                    failHandle(observer: observer, error: err)
+                    DataCenterManager.default.clear()
+                    kAppdelegate.setUpLoginVC()
                 } else {
                     print("失败报文:\(jsonDic)")
                     let err = APIError()
                     err.status = String(code)
                     err.message = jsonDic["message"] as? String ?? ""
-                   failHandle(observer: observer, error: err)
+                    failHandle(observer: observer, error: err)
                }
             }
         }

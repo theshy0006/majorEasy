@@ -18,6 +18,7 @@
 		8D1B4560252086E400251D56 /* NBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B455F252086E400251D56 /* NBModel.swift */; };
 		8D1B45632520989100251D56 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B45622520989100251D56 /* LoginViewModel.swift */; };
 		8D5213982521A6CC00B69BC6 /* ForgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */; };
+		8D5D60112522DED900217722 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D60102522DED900217722 /* HomeVC.xib */; };
 		8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */; };
 		8DA5B0A52520558F00D517F9 /* NBEdgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5B0A42520558F00D517F9 /* NBEdgeView.swift */; };
 		8DC1E0BD2520176B003C1F94 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0982520176A003C1F94 /* UIView.swift */; };
@@ -30,7 +31,6 @@
 		8DC1E0C42520176B003C1F94 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E09F2520176A003C1F94 /* UIViewController.swift */; };
 		8DC1E0C52520176B003C1F94 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0A02520176A003C1F94 /* Double.swift */; };
 		8DC1E0C62520176B003C1F94 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0A12520176A003C1F94 /* UIAlertController.swift */; };
-		8DC1E0C72520176B003C1F94 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0A42520176A003C1F94 /* HomeVC.swift */; };
 		8DC1E0C82520176B003C1F94 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0A62520176A003C1F94 /* NavigationVC.swift */; };
 		8DC1E0C92520176B003C1F94 /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0A82520176A003C1F94 /* MyVC.swift */; };
 		8DC1E0CA2520176B003C1F94 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0AA2520176A003C1F94 /* PostVC.swift */; };
@@ -82,6 +82,8 @@
 		8DC1E1AB25203E5D003C1F94 /* NBPlistCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E19625203E5D003C1F94 /* NBPlistCache.swift */; };
 		8DC1E1AC25203E5D003C1F94 /* NBFileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E19725203E5D003C1F94 /* NBFileCache.swift */; };
 		8DC1E1AD25203E5D003C1F94 /* NBCacheBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E19825203E5D003C1F94 /* NBCacheBehavior.swift */; };
+		8DF892AC2521D42E00666024 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF892AA2521D42E00666024 /* HomeVC.swift */; };
+		8DF892B12521D96100666024 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF892B02521D96100666024 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,7 @@
 		8D1B455F252086E400251D56 /* NBModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBModel.swift; sourceTree = "<group>"; };
 		8D1B45622520989100251D56 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewModel.swift; sourceTree = "<group>"; };
+		8D5D60102522DED900217722 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		8DA5B0A42520558F00D517F9 /* NBEdgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBEdgeView.swift; sourceTree = "<group>"; };
 		8DC1E07A252016D7003C1F94 /* majorEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = majorEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,7 +113,6 @@
 		8DC1E09F2520176A003C1F94 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		8DC1E0A02520176A003C1F94 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		8DC1E0A12520176A003C1F94 /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
-		8DC1E0A42520176A003C1F94 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		8DC1E0A62520176A003C1F94 /* NavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 		8DC1E0A82520176A003C1F94 /* MyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
 		8DC1E0AA2520176A003C1F94 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
@@ -168,6 +170,8 @@
 		8DC1E19725203E5D003C1F94 /* NBFileCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBFileCache.swift; sourceTree = "<group>"; };
 		8DC1E19825203E5D003C1F94 /* NBCacheBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBCacheBehavior.swift; sourceTree = "<group>"; };
 		8DC1E1B825205182003C1F94 /* major-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "major-Bridging-Header.h"; sourceTree = "<group>"; };
+		8DF892AA2521D42E00666024 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		8DF892B02521D96100666024 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B66A43EFEAC6DD8E5118DBE3 /* Pods_majorEasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_majorEasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC41740919130D79AB2910EF /* Pods-majorEasy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majorEasy.release.xcconfig"; path = "Target Support Files/Pods-majorEasy/Pods-majorEasy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -314,7 +318,9 @@
 		8DC1E0A32520176A003C1F94 /* home(首页) */ = {
 			isa = PBXGroup;
 			children = (
-				8DC1E0A42520176A003C1F94 /* HomeVC.swift */,
+				8DF892AA2521D42E00666024 /* HomeVC.swift */,
+				8D5D60102522DED900217722 /* HomeVC.xib */,
+				8DF892B02521D96100666024 /* HomeViewModel.swift */,
 			);
 			path = "home(首页)";
 			sourceTree = "<group>";
@@ -684,6 +690,7 @@
 				8DC1E1062520202A003C1F94 /* LoginVC.xib in Resources */,
 				8D1B454D2520599800251D56 /* ForgetVC.xib in Resources */,
 				8D1B45532520627300251D56 /* RegisterVC.xib in Resources */,
+				8D5D60112522DED900217722 /* HomeVC.xib in Resources */,
 				8DC1E16D25203DDB003C1F94 /* wechat.png in Resources */,
 				8DC1E0E725201942003C1F94 /* infoPlist.strings in Resources */,
 			);
@@ -762,6 +769,7 @@
 				8DC1E0CE2520176B003C1F94 /* BaseWebViewController.swift in Sources */,
 				8DC1E0BF2520176B003C1F94 /* Formatter.swift in Sources */,
 				8DC1E0D52520176B003C1F94 /* AppDelegate_tools.swift in Sources */,
+				8DF892AC2521D42E00666024 /* HomeVC.swift in Sources */,
 				8DC1E1A125203E5D003C1F94 /* HandyJSON.swift in Sources */,
 				8D1B45632520989100251D56 /* LoginViewModel.swift in Sources */,
 				8DC1E0CD2520176B003C1F94 /* BaseVC.swift in Sources */,
@@ -805,11 +813,11 @@
 				8DC1E1AB25203E5D003C1F94 /* NBPlistCache.swift in Sources */,
 				8DC1E0C22520176B003C1F94 /* UIButton.swift in Sources */,
 				8DC1E0C42520176B003C1F94 /* UIViewController.swift in Sources */,
+				8DF892B12521D96100666024 /* HomeViewModel.swift in Sources */,
 				8DC1E0C52520176B003C1F94 /* Double.swift in Sources */,
 				8DC1E16925203DDB003C1F94 /* NBTypeView.swift in Sources */,
 				8DC1E1A725203E5D003C1F94 /* NBUtility.swift in Sources */,
 				8DC1E1A225203E5D003C1F94 /* ServiceConfig.swift in Sources */,
-				8DC1E0C72520176B003C1F94 /* HomeVC.swift in Sources */,
 				8DC1E16F25203DDB003C1F94 /* NBCovorEnum.swift in Sources */,
 				8DC1E1AD25203E5D003C1F94 /* NBCacheBehavior.swift in Sources */,
 				8DC1E0D42520176B003C1F94 /* AppDelegate.swift in Sources */,

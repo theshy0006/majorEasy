@@ -42,7 +42,8 @@ let URL_Register = BaseURL + "App-user/userRegist"
 let URL_Login = BaseURL + "App-user/userlogin"
 //重置登录密码
 let URL_ResetPassword = BaseURL + "App-user/resetPassword"
-
+//获取首页轮播图
+let URL_GetHomeImages = BaseURL + "App-qiniucloud/getHomeImages"
 
 
 //获取开单模块订单列表

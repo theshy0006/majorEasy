@@ -56,7 +56,7 @@ class LoginModel: HandyJSON {
     required init() {}
 }
 
-// 登录接口返回对象
+// 用户信息对象
 class UserInfo: HandyJSON {
     var token: String?
     var idReview: Int?
@@ -66,6 +66,28 @@ class UserInfo: HandyJSON {
     var vipLevel: Int?
     required init() {}
 }
+
+class HomeImagesModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: HomeImages = HomeImages()
+    required init() {}
+}
+
+class HomeImages: HandyJSON {
+    var carouselimages: [String] = []
+    var functionImgs: [HomeItem] = [HomeItem]()
+    required init() {}
+}
+
+class HomeItem: HandyJSON {
+    var name: String?
+    var url: String?
+    required init() {}
+}
+
+
+
 
 
 // 司机信息

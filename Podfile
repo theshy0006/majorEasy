@@ -18,6 +18,6 @@ target 'majorEasy' do
   pod 'BMKLocationKit'
   pod 'LLSegmentBar'
   pod 'BGFMDB', '~> 2.0.9'
-  pod 'SBCycleScrollView'
-	
+  pod 'ZCycleView'
+  pod 'SDWebImage'
 end
