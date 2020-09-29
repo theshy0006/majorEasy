@@ -32,7 +32,6 @@
 		8DC1E0C52520176B003C1F94 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0A02520176A003C1F94 /* Double.swift */; };
 		8DC1E0C62520176B003C1F94 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0A12520176A003C1F94 /* UIAlertController.swift */; };
 		8DC1E0C82520176B003C1F94 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0A62520176A003C1F94 /* NavigationVC.swift */; };
-		8DC1E0C92520176B003C1F94 /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0A82520176A003C1F94 /* MyVC.swift */; };
 		8DC1E0CA2520176B003C1F94 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0AA2520176A003C1F94 /* PostVC.swift */; };
 		8DC1E0CB2520176B003C1F94 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0AC2520176A003C1F94 /* TabbarVC.swift */; };
 		8DC1E0CC2520176B003C1F94 /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0AE2520176A003C1F94 /* OrderVC.swift */; };
@@ -84,6 +83,8 @@
 		8DC1E1AD25203E5D003C1F94 /* NBCacheBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E19825203E5D003C1F94 /* NBCacheBehavior.swift */; };
 		8DF892AC2521D42E00666024 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF892AA2521D42E00666024 /* HomeVC.swift */; };
 		8DF892B12521D96100666024 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF892B02521D96100666024 /* HomeViewModel.swift */; };
+		8DFC45DC2522FFE8009D9081 /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC45DA2522FFE8009D9081 /* MyVC.swift */; };
+		8DFC45DD2522FFE8009D9081 /* MyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFC45DB2522FFE8009D9081 /* MyVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,7 +115,6 @@
 		8DC1E0A02520176A003C1F94 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		8DC1E0A12520176A003C1F94 /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		8DC1E0A62520176A003C1F94 /* NavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
-		8DC1E0A82520176A003C1F94 /* MyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
 		8DC1E0AA2520176A003C1F94 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		8DC1E0AC2520176A003C1F94 /* TabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 		8DC1E0AE2520176A003C1F94 /* OrderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
@@ -172,6 +172,8 @@
 		8DC1E1B825205182003C1F94 /* major-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "major-Bridging-Header.h"; sourceTree = "<group>"; };
 		8DF892AA2521D42E00666024 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		8DF892B02521D96100666024 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8DFC45DA2522FFE8009D9081 /* MyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
+		8DFC45DB2522FFE8009D9081 /* MyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyVC.xib; sourceTree = "<group>"; };
 		B66A43EFEAC6DD8E5118DBE3 /* Pods_majorEasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_majorEasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC41740919130D79AB2910EF /* Pods-majorEasy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majorEasy.release.xcconfig"; path = "Target Support Files/Pods-majorEasy/Pods-majorEasy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -336,7 +338,8 @@
 		8DC1E0A72520176A003C1F94 /* my(我的) */ = {
 			isa = PBXGroup;
 			children = (
-				8DC1E0A82520176A003C1F94 /* MyVC.swift */,
+				8DFC45DA2522FFE8009D9081 /* MyVC.swift */,
+				8DFC45DB2522FFE8009D9081 /* MyVC.xib */,
 			);
 			path = "my(我的)";
 			sourceTree = "<group>";
@@ -689,6 +692,7 @@
 				8DC1E0D22520176B003C1F94 /* Assets.xcassets in Resources */,
 				8DC1E1062520202A003C1F94 /* LoginVC.xib in Resources */,
 				8D1B454D2520599800251D56 /* ForgetVC.xib in Resources */,
+				8DFC45DD2522FFE8009D9081 /* MyVC.xib in Resources */,
 				8D1B45532520627300251D56 /* RegisterVC.xib in Resources */,
 				8D5D60112522DED900217722 /* HomeVC.xib in Resources */,
 				8DC1E16D25203DDB003C1F94 /* wechat.png in Resources */,
@@ -778,6 +782,7 @@
 				8DC1E19925203E5D003C1F94 /* LoadingHUD.swift in Sources */,
 				8DC1E16125203DDB003C1F94 /* NBTextFiled.swift in Sources */,
 				8DC1E1A925203E5D003C1F94 /* NBDefaultCache.swift in Sources */,
+				8DFC45DC2522FFE8009D9081 /* MyVC.swift in Sources */,
 				8DC1E1A325203E5D003C1F94 /* RxHttpManager.swift in Sources */,
 				8DC1E1A525203E5D003C1F94 /* PrintBeautifulLog.m in Sources */,
 				8DC1E0BD2520176B003C1F94 /* UIView.swift in Sources */,
@@ -789,7 +794,6 @@
 				8DC1E1A425203E5D003C1F94 /* HandyJSON_Func.swift in Sources */,
 				8DC1E1AA25203E5D003C1F94 /* NBCacheManager.swift in Sources */,
 				8D1B455C252086A400251D56 /* SimpleWebView.swift in Sources */,
-				8DC1E0C92520176B003C1F94 /* MyVC.swift in Sources */,
 				8DC1E1A825203E5D003C1F94 /* NBHUDManager.swift in Sources */,
 				8DC1E0D02520176B003C1F94 /* constant.swift in Sources */,
 				8DC1E16E25203DDB003C1F94 /* NBAlertView.swift in Sources */,
