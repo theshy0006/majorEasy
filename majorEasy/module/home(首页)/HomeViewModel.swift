@@ -9,11 +9,10 @@ import Foundation
 import HandyJSON
 import RxSwift
 
-class HomeViewModel: NSObject {
+class HomeViewModel: NBViewModel {
     //轮播图
     var imageModel = HomeImagesModel()
     var images:[String] = []
-    let disposeBag = DisposeBag()
     
     //获取短信验证码（）
     func getHomeImages(

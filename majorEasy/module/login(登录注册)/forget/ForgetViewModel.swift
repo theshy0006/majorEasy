@@ -6,17 +6,13 @@
 //
 
 import Foundation
-import HandyJSON
-import RxSwift
 
-class ForgetViewModel: NSObject {
+class ForgetViewModel: NBViewModel {
     //注册
     var resetModel = ResetPasswordModel()
     
     //验证码
     var dataModel = ResetCode()
-    
-    let disposeBag = DisposeBag()
     
     //获取短信验证码（）
     func getSmsCode(mobile: String,

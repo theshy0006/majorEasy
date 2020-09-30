@@ -8,13 +8,10 @@
 import Foundation
 import HandyJSON
 import RxSwift
-class LoginViewModel: NSObject {
+class LoginViewModel: NBViewModel {
     
     //登录
     var loginModel = LoginModel()
-    
-    
-    let disposeBag = DisposeBag()
 
     //登录接口
     func loginIn(mobile: String,

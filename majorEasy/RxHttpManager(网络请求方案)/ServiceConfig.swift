@@ -12,7 +12,7 @@ let BaseURL = ServiceConfigure.baseURL
 
 struct ServiceConfigure {
     
-    static let apiEnvironment: YY_ApiEnvironment = .test
+    static let apiEnvironment: YY_ApiEnvironment = .product
     //
     static var baseURL: String  {
         return apiEnvironment.base()

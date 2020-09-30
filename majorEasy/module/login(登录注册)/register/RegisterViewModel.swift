@@ -6,17 +6,15 @@
 //
 
 import Foundation
-import HandyJSON
-import RxSwift
 
-class RegisterViewModel: NSObject {
+class RegisterViewModel: NBViewModel {
     //注册
     var registerModel = RegisterModel()
     
     //验证码
     var dataModel = RegisterCode()
     
-    let disposeBag = DisposeBag()
+    
     
     //获取短信验证码（）
     func getSmsCode(mobile: String,

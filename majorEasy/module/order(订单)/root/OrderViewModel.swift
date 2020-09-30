@@ -7,6 +7,6 @@
 
 import UIKit
 
-class OrderViewModel: NSObject {
+class OrderViewModel: NBViewModel {
     let items = ["全部","待确认","运输中","已完成","待评价","已结束","已取消"]
 }

@@ -159,19 +159,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrF-si-jHs">
-                                <rect key="frame" x="235" y="189" width="75" height="29"/>
-                                <color key="backgroundColor" red="0.46666666670000001" green="0.57254901960000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="145" y="189" width="75" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="Gkc-xV-pts"/>
                                     <constraint firstAttribute="width" constant="75" id="pc7-Ln-hOc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="确认收货">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.46666666670000001" green="0.57254901960000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcJ-TD-hXM">
-                                <rect key="frame" x="145" y="189" width="75" height="29"/>
+                                <rect key="frame" x="55" y="189" width="75" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="A2V-hW-RXr"/>
@@ -179,7 +179,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="取消订单">
-                                    <color key="titleColor" red="0.46666666670000001" green="0.57254901960000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8h-yJ-laO">
@@ -233,11 +233,24 @@
                                     <constraint firstAttribute="width" constant="24" id="w1n-Iu-jkF"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HW-aK-k42">
+                                <rect key="frame" x="235" y="189" width="75" height="29"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.57254901960000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="dNa-1i-cxq"/>
+                                    <constraint firstAttribute="height" constant="29" id="snP-nt-kFK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="签订合同">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="KcJ-TD-hXM" firstAttribute="top" secondItem="Xhy-Wy-POu" secondAttribute="bottom" constant="14" id="2Ik-Nn-OXl"/>
                             <constraint firstAttribute="trailing" secondItem="jYE-VD-NGA" secondAttribute="trailing" constant="12" id="3Nw-68-KBB"/>
+                            <constraint firstItem="3HW-aK-k42" firstAttribute="top" secondItem="jYE-VD-NGA" secondAttribute="bottom" constant="14" id="4Oi-ny-Pkf"/>
                             <constraint firstItem="gBY-ko-VMM" firstAttribute="leading" secondItem="0hE-ZF-Thf" secondAttribute="trailing" constant="6" id="4ih-tR-H1s"/>
                             <constraint firstItem="mLY-RD-i42" firstAttribute="top" secondItem="GL2-QZ-PmC" secondAttribute="bottom" constant="7" id="7N4-OP-iVG"/>
                             <constraint firstItem="S8h-yJ-laO" firstAttribute="top" secondItem="9Ve-aP-vaj" secondAttribute="bottom" constant="7" id="8f0-UY-FQW"/>
@@ -272,11 +285,11 @@
                             <constraint firstItem="jrF-si-jHs" firstAttribute="leading" secondItem="KcJ-TD-hXM" secondAttribute="trailing" constant="15" id="g51-eB-kuQ"/>
                             <constraint firstItem="jrF-si-jHs" firstAttribute="top" secondItem="jYE-VD-NGA" secondAttribute="bottom" constant="14" id="gEM-dr-LNV"/>
                             <constraint firstItem="Xmn-oU-jr2" firstAttribute="top" secondItem="YH0-4w-WpP" secondAttribute="bottom" constant="21" id="gMU-cN-qia"/>
+                            <constraint firstAttribute="trailing" secondItem="3HW-aK-k42" secondAttribute="trailing" constant="12" id="hTe-SS-ShH"/>
                             <constraint firstItem="Xhy-Wy-POu" firstAttribute="top" secondItem="h0i-m0-YCZ" secondAttribute="bottom" constant="12" id="iNk-hZ-dha"/>
                             <constraint firstAttribute="trailing" secondItem="VSh-Rh-XNV" secondAttribute="trailing" constant="55" id="jZj-8B-0bs"/>
                             <constraint firstItem="jYE-VD-NGA" firstAttribute="leading" secondItem="Xhy-Wy-POu" secondAttribute="trailing" constant="5" id="lyh-ym-zVv"/>
                             <constraint firstItem="Rrm-aA-N4F" firstAttribute="top" secondItem="ebG-vd-CL0" secondAttribute="bottom" constant="19" id="nE2-CZ-2eX"/>
-                            <constraint firstAttribute="trailing" secondItem="jrF-si-jHs" secondAttribute="trailing" constant="12" id="npH-hr-8St"/>
                             <constraint firstItem="zXc-dw-m7e" firstAttribute="leading" secondItem="aRs-GI-Xi2" secondAttribute="trailing" constant="5" id="qoV-Dr-q4V"/>
                             <constraint firstItem="GL2-QZ-PmC" firstAttribute="centerX" secondItem="mLY-RD-i42" secondAttribute="centerX" id="trq-l7-Po7"/>
                             <constraint firstItem="mLY-RD-i42" firstAttribute="top" secondItem="yLd-yl-lzC" secondAttribute="top" constant="50" id="urp-C0-f1G"/>
@@ -285,6 +298,7 @@
                             <constraint firstItem="mLY-RD-i42" firstAttribute="trailing" secondItem="rnf-LJ-zHC" secondAttribute="trailing" constant="77" id="wh5-2H-S7o"/>
                             <constraint firstItem="YH0-4w-WpP" firstAttribute="top" secondItem="yLd-yl-lzC" secondAttribute="top" constant="17" id="xLc-vj-GAZ"/>
                             <constraint firstItem="VSh-Rh-XNV" firstAttribute="top" secondItem="yLd-yl-lzC" secondAttribute="top" constant="102" id="xUk-uB-3c5"/>
+                            <constraint firstItem="3HW-aK-k42" firstAttribute="leading" secondItem="jrF-si-jHs" secondAttribute="trailing" constant="15" id="zb3-nP-d2b"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -298,6 +312,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="agreementButton" destination="3HW-aK-k42" id="0oR-in-TSW"/>
                 <outlet property="assureLabel" destination="Xhy-Wy-POu" id="r0L-Ot-d1P"/>
                 <outlet property="cancelButton" destination="KcJ-TD-hXM" id="RAP-3c-LB3"/>
                 <outlet property="earnestLabel" destination="jYE-VD-NGA" id="zhq-6n-l3q"/>

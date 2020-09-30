@@ -1,15 +1,13 @@
 //
-//  AllOrderViewModel.swift
+//  WaitOrderViewModel.swift
 //  majorEasy
 //
 //  Created by wangyang on 2020/9/30.
 //
 
 import UIKit
-import HandyJSON
-import RxSwift
 
-class AllOrderViewModel: NBViewModel {
+class WaitOrderViewModel: NBViewModel {
     var orderModel = OrderModel()
 
     var pageNum = 1
@@ -19,7 +17,7 @@ class AllOrderViewModel: NBViewModel {
     func getAllOrderList(
                   success: (()->())?,
                   failure: ((APIError)->())?) {
-        orderModel.getMyAppOrders(pageNum: pageNum, pageSize: 10, state: -1).subscribe(onNext: { [weak self] model in
+        orderModel.getMyAppOrders(pageNum: pageNum, pageSize: 10, state: 1).subscribe(onNext: { [weak self] model in
             if let suc = success {
                 guard let weakSelf = self else {return}
                 if (!weakSelf.loadMore) {

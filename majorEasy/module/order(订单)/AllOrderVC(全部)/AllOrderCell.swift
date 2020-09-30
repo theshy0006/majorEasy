@@ -10,7 +10,7 @@ import UIKit
 class AllOrderCell: UITableViewCell {
 
     @IBOutlet weak var okButton: UIButton!
-    
+    @IBOutlet weak var agreementButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     
     @IBOutlet weak var fromLabel: UILabel!
@@ -32,14 +32,16 @@ class AllOrderCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
+        agreementButton.layer.cornerRadius = 5
         okButton.layer.cornerRadius = 5
         cancelButton.layer.cornerRadius = 5
         sortLabel.layer.cornerRadius = 3
         weightLabel.layer.cornerRadius = 3
         headImageView.layer.cornerRadius = 22
-        cancelButton.layer.borderColor = RGBHex(0x7792BB).cgColor
+        cancelButton.layer.borderColor = RGBHex(0xDDDDDD).cgColor
         cancelButton.layer.borderWidth = 1
+        okButton.layer.borderColor = RGBHex(0x7792BB).cgColor
+        okButton.layer.borderWidth = 1
         
     }
     

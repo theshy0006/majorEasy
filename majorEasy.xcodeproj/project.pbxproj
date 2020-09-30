@@ -32,6 +32,12 @@
 		8D5213982521A6CC00B69BC6 /* ForgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */; };
 		8D5D60112522DED900217722 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D60102522DED900217722 /* HomeVC.xib */; };
 		8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */; };
+		8D9208F12524CD5000D33D69 /* TransferOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208F02524CD5000D33D69 /* TransferOrderViewModel.swift */; };
+		8D9208F42524CD6700D33D69 /* CancelOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208F32524CD6700D33D69 /* CancelOrderViewModel.swift */; };
+		8D9208F72524CD8200D33D69 /* GradeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208F62524CD8200D33D69 /* GradeOrderViewModel.swift */; };
+		8D9208FA2524CDCE00D33D69 /* WaitOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208F92524CDCE00D33D69 /* WaitOrderViewModel.swift */; };
+		8D9208FD2524CDE000D33D69 /* FinishOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208FC2524CDE000D33D69 /* FinishOrderViewModel.swift */; };
+		8D9209002524CE4900D33D69 /* NBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208FF2524CE4900D33D69 /* NBViewModel.swift */; };
 		8DA5B0A52520558F00D517F9 /* NBEdgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5B0A42520558F00D517F9 /* NBEdgeView.swift */; };
 		8DC1E0BD2520176B003C1F94 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0982520176A003C1F94 /* UIView.swift */; };
 		8DC1E0BE2520176B003C1F94 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0992520176A003C1F94 /* UITableView.swift */; };
@@ -127,6 +133,12 @@
 		8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewModel.swift; sourceTree = "<group>"; };
 		8D5D60102522DED900217722 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		8D9208F02524CD5000D33D69 /* TransferOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferOrderViewModel.swift; sourceTree = "<group>"; };
+		8D9208F32524CD6700D33D69 /* CancelOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelOrderViewModel.swift; sourceTree = "<group>"; };
+		8D9208F62524CD8200D33D69 /* GradeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeOrderViewModel.swift; sourceTree = "<group>"; };
+		8D9208F92524CDCE00D33D69 /* WaitOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitOrderViewModel.swift; sourceTree = "<group>"; };
+		8D9208FC2524CDE000D33D69 /* FinishOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishOrderViewModel.swift; sourceTree = "<group>"; };
+		8D9208FF2524CE4900D33D69 /* NBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBViewModel.swift; sourceTree = "<group>"; };
 		8DA5B0A42520558F00D517F9 /* NBEdgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBEdgeView.swift; sourceTree = "<group>"; };
 		8DC1E07A252016D7003C1F94 /* majorEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = majorEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC1E08B252016D8003C1F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -255,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1B455F252086E400251D56 /* NBModel.swift */,
+				8D9208FF2524CE4900D33D69 /* NBViewModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -263,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				8D28456F252412B20051384F /* FinishOrderVC.swift */,
+				8D9208FC2524CDE000D33D69 /* FinishOrderViewModel.swift */,
 			);
 			path = "FinishOrderVC(已完成订单)";
 			sourceTree = "<group>";
@@ -271,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				8D284575252413330051384F /* WaitOrderVC.swift */,
+				8D9208F92524CDCE00D33D69 /* WaitOrderViewModel.swift */,
 			);
 			path = "WaitOrderVC(待确认)";
 			sourceTree = "<group>";
@@ -290,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				8D28457F252422B30051384F /* TransferOrderVC.swift */,
+				8D9208F02524CD5000D33D69 /* TransferOrderViewModel.swift */,
 			);
 			path = "TransferOrderVC(传输中)";
 			sourceTree = "<group>";
@@ -298,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				8D284583252422CA0051384F /* GradeOrderVC.swift */,
+				8D9208F62524CD8200D33D69 /* GradeOrderViewModel.swift */,
 			);
 			path = "GradeOrderVC(待评价)";
 			sourceTree = "<group>";
@@ -306,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				8D284586252422DD0051384F /* CancelOrderVC.swift */,
+				8D9208F32524CD6700D33D69 /* CancelOrderViewModel.swift */,
 			);
 			path = "CancelOrderVC(已取消)";
 			sourceTree = "<group>";
@@ -885,6 +903,7 @@
 				8DC1E19B25203E5D003C1F94 /* BaiduMapManager.m in Sources */,
 				8DC1E1052520202A003C1F94 /* LoginVC.swift in Sources */,
 				8D284587252422DD0051384F /* CancelOrderVC.swift in Sources */,
+				8D9208FD2524CDE000D33D69 /* FinishOrderViewModel.swift in Sources */,
 				8DC1E0CE2520176B003C1F94 /* BaseWebViewController.swift in Sources */,
 				8DC1E0BF2520176B003C1F94 /* Formatter.swift in Sources */,
 				8DC1E0D52520176B003C1F94 /* AppDelegate_tools.swift in Sources */,
@@ -895,8 +914,10 @@
 				8DC1E0CD2520176B003C1F94 /* BaseVC.swift in Sources */,
 				8DC1E16325203DDB003C1F94 /* NBCountDown.swift in Sources */,
 				8DC1E1AC25203E5D003C1F94 /* NBFileCache.swift in Sources */,
+				8D9208FA2524CDCE00D33D69 /* WaitOrderViewModel.swift in Sources */,
 				8DC1E19925203E5D003C1F94 /* LoadingHUD.swift in Sources */,
 				8DC1E16125203DDB003C1F94 /* NBTextFiled.swift in Sources */,
+				8D9209002524CE4900D33D69 /* NBViewModel.swift in Sources */,
 				8D3A15F825244FAC00B9D9F8 /* AllOrderCell.swift in Sources */,
 				8D3AED762523270400A8F273 /* OrderViewModel.swift in Sources */,
 				8DC1E1A925203E5D003C1F94 /* NBDefaultCache.swift in Sources */,
@@ -931,6 +952,7 @@
 				8DC1E16425203DDB003C1F94 /* NBSegmentView.swift in Sources */,
 				8DC1E0C82520176B003C1F94 /* NavigationVC.swift in Sources */,
 				8D1B454C2520599800251D56 /* ForgetVC.swift in Sources */,
+				8D9208F42524CD6700D33D69 /* CancelOrderViewModel.swift in Sources */,
 				8DC1E16725203DDB003C1F94 /* NBMultiSheet.swift in Sources */,
 				8D5213982521A6CC00B69BC6 /* ForgetViewModel.swift in Sources */,
 				8DC1E19E25203E5D003C1F94 /* NBTookit.m in Sources */,
@@ -947,7 +969,9 @@
 				8DC1E1A225203E5D003C1F94 /* ServiceConfig.swift in Sources */,
 				8DC1E16F25203DDB003C1F94 /* NBCovorEnum.swift in Sources */,
 				8DC1E1AD25203E5D003C1F94 /* NBCacheBehavior.swift in Sources */,
+				8D9208F12524CD5000D33D69 /* TransferOrderViewModel.swift in Sources */,
 				8D28458A2524255D0051384F /* AllOrderViewModel.swift in Sources */,
+				8D9208F72524CD8200D33D69 /* GradeOrderViewModel.swift in Sources */,
 				8DC1E0D42520176B003C1F94 /* AppDelegate.swift in Sources */,
 				8DC1E16625203DDB003C1F94 /* NBActionSheetViewCell.swift in Sources */,
 				8DC1E17025203DDB003C1F94 /* NBCovor.swift in Sources */,
