@@ -23,14 +23,14 @@ class LoginVC: BaseVC {
     lazy var phoneField = NBBottomWarningTextFieldView(placeholderString: "请输入手机号码", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .numberPad
         $0.maxLength = 11
-        $0.text = ""
+        $0.text = "19951514218"
         $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
 
     lazy var passwordField = NBBottomWarningTextFieldView(placeholderString: "请输入登录密码", textColor: color_normal, font: nil, isSecureTextEntry: "true", redString: nil, redFont: nil).then {
-        $0.text = ""
+        $0.text = "123456"
         $0.textField.keyboardType = .default
         $0.maxLength = 12
         $0.backgroundColor = .white

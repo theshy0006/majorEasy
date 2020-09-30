@@ -18,7 +18,7 @@ typealias FailureCallBack = ((_  error:[String: Any])->())?
 public func ConstructHeaders(_ header: Dictionary<String, String>?)-> HTTPHeaders {
     
     var headers: HTTPHeaders = [
-        "Authorization": DataCenterManager.default.userInfo.token ?? "",
+        "djwyToken": DataCenterManager.default.userInfo.token ?? "",
         "Content-Type":"application/x-www-form-urlencoded;charset=UTF-8"
     ]
     guard let tempHeader = header else{return headers}

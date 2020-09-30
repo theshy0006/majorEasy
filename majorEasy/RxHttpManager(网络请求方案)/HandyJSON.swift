@@ -67,6 +67,7 @@ class UserInfo: HandyJSON {
     required init() {}
 }
 
+//首页轮播图对象
 class HomeImagesModel: HandyJSON {
     var status: Int = 0
     var message: String?
@@ -86,7 +87,90 @@ class HomeItem: HandyJSON {
     required init() {}
 }
 
+//我的订单对象
+class OrderModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: [OrderItem] = [OrderItem]()
+    required init() {}
+}
 
+//订单对象
+class OrderItem: HandyJSON {
+    var appointment: String?
+    var arrivalData: String?
+    var arrivalTime: String?
+    var carrierLicenseNum: String?
+    var carrierName: String?
+    var carrierPhoneNum: String?
+    var consignorCfmFinTime: String?
+    var consignorHeadPortraitKey: String?
+    var consignorHeadPortraitUrl: String?
+    var consignorId: Int = 0
+    var consignorName: String?
+    var consignorPhone: String?
+    var consignorSign:Bool = false
+    var consignorSignTime: String?
+    var creatTime: String?
+    var deliveryData: String?
+    var deliveryTime: String?
+    var distance: Int = 0
+    var earnestMoney: Float = 0.0
+    var goodsDiameter: Float = 0.0
+    var goodsHeight: Float = 0.0
+    var goodsLength: Float = 0.0
+    var goodsName: String?
+    var goodsRemarks: String?
+    var goodsType: String?
+    var goodsVolume_lower: Float = 0.0
+    var goodsVolume_upper: Float = 0.0
+    var goodsWeight_lower: Float = 0.0
+    var goodsWeight_upper: Float = 0.0
+    var goodsWide: Float = 0.0
+    var ifpay:Bool = false
+    var insuranceType: String?
+    var latestPayDays: Int = 0
+    var loadMode: String?
+    var loadPerson: String?
+    var loadPhoneNum: String?
+    var loadPlace: String?
+    var loadPlaceCode: String?
+    var loadPlaceDetail: String?
+    var loadSpareNum: String?
+    var offerNum: String?
+    var orderNum: String?
+    var orderReceipt: String?
+    var orderReceiptPic: String?
+    var paymentCash: Int = 0
+    var paymentOilCard: Int = 0
+    var paymentOnline: Int = 0
+    var paymentWay: String?
+    var securityBond: Float = 0.0
+    var state: Int = 0
+    var status: String?
+    var subOrderUserId: Int = 0
+    var supplyNum: String?
+    var totalFreightPrice: Float = 0.0
+    var unloadPerson: String?
+    var unloadPhoneNum: String?
+    var unloadPlace: String?
+    var unloadPlaceCode: String?
+    var unloadPlaceDetail: String?
+    var unloadSpareNum: String?
+    var useMode: String?
+    var userRole: Int = 0
+    var vehicleLength: String?
+    var vehicleOwnerHeadPortraitKey: String?
+    var vehicleOwnerHeadPortraitUrl: String?
+    var vehicleOwnerId: Int = 0
+    var vehicleOwnerName: String?
+    var vehicleOwnerPhone: String?
+    var vehicleOwnerSign:Bool = false
+    var vehicleOwnerSignTime: String?
+    var vehicleType: String?
+    var vehicleTypeId: Int = 0
+    required init() {}
+}
 
 
 

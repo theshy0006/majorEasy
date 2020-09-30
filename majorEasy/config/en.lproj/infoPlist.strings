@@ -17,4 +17,5 @@ service = "用户服务协议";
 accredit = "用户授权协议";
 privacy = "隐私政策";
 homeTitle = "大件无忧";
+myOrder = "我的订单";
 

@@ -15,6 +15,7 @@
 #import "BGFMDB.h"
 #import "NBTookit.h"
 #import "NBAreaModel.h"
+#import "XXPageTabView.h"
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
 #import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>

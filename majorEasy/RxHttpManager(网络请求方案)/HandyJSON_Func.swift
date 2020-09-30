@@ -88,7 +88,7 @@ extension ResetPasswordModel {
     }
 }
 
-// 重置登录密码
+// 获取首页轮播图
 extension HomeImagesModel {
     
     func getHomeImages() -> Observable<HomeImagesModel> {
@@ -97,6 +97,23 @@ extension HomeImagesModel {
                                        parameters: nil,
                                        headers: ConstructHeaders(nil),
                                        returnType: HomeImagesModel.self).map({ (response: HomeImagesModel) -> HomeImagesModel in
+            return response
+        })
+    }
+}
+
+// 获取首页轮播图
+extension OrderModel {
+    
+    func getMyAppOrders(pageNum: Int, pageSize: Int, state: Int) -> Observable<OrderModel> {
+        return RxHttpManager.fetchData(with: URL_GetMyAppOrders,
+                                       method: .post,
+                                       parameters: [
+                                       "pageNum":pageNum,
+                                       "pageSize":pageSize,
+                                       "state":state],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: OrderModel.self).map({ (response: OrderModel) -> OrderModel in
             return response
         })
     }

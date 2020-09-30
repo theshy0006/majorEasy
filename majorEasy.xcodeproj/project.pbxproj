@@ -17,6 +17,18 @@
 		8D1B455C252086A400251D56 /* SimpleWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B455B252086A400251D56 /* SimpleWebView.swift */; };
 		8D1B4560252086E400251D56 /* NBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B455F252086E400251D56 /* NBModel.swift */; };
 		8D1B45632520989100251D56 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B45622520989100251D56 /* LoginViewModel.swift */; };
+		8D284570252412B20051384F /* FinishOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28456F252412B20051384F /* FinishOrderVC.swift */; };
+		8D284576252413330051384F /* WaitOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D284575252413330051384F /* WaitOrderVC.swift */; };
+		8D28457A252413440051384F /* AllOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D284579252413440051384F /* AllOrderVC.swift */; };
+		8D284580252422B30051384F /* TransferOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28457F252422B30051384F /* TransferOrderVC.swift */; };
+		8D284584252422CA0051384F /* GradeOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D284583252422CA0051384F /* GradeOrderVC.swift */; };
+		8D284587252422DD0051384F /* CancelOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D284586252422DD0051384F /* CancelOrderVC.swift */; };
+		8D28458A2524255D0051384F /* AllOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2845892524255D0051384F /* AllOrderViewModel.swift */; };
+		8D3A15F825244FAC00B9D9F8 /* AllOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A15F625244FAC00B9D9F8 /* AllOrderCell.swift */; };
+		8D3A15F925244FAC00B9D9F8 /* AllOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A15F725244FAC00B9D9F8 /* AllOrderCell.xib */; };
+		8D3AED762523270400A8F273 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3AED752523270400A8F273 /* OrderViewModel.swift */; };
+		8D3AED9025232D9C00A8F273 /* XXPageTabItemLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3AED8C25232D9C00A8F273 /* XXPageTabItemLable.m */; };
+		8D3AED9125232D9C00A8F273 /* XXPageTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3AED8D25232D9C00A8F273 /* XXPageTabView.m */; };
 		8D5213982521A6CC00B69BC6 /* ForgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */; };
 		8D5D60112522DED900217722 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D60102522DED900217722 /* HomeVC.xib */; };
 		8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */; };
@@ -98,6 +110,20 @@
 		8D1B455B252086A400251D56 /* SimpleWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleWebView.swift; sourceTree = "<group>"; };
 		8D1B455F252086E400251D56 /* NBModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBModel.swift; sourceTree = "<group>"; };
 		8D1B45622520989100251D56 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8D28456F252412B20051384F /* FinishOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishOrderVC.swift; sourceTree = "<group>"; };
+		8D284575252413330051384F /* WaitOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitOrderVC.swift; sourceTree = "<group>"; };
+		8D284579252413440051384F /* AllOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOrderVC.swift; sourceTree = "<group>"; };
+		8D28457F252422B30051384F /* TransferOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferOrderVC.swift; sourceTree = "<group>"; };
+		8D284583252422CA0051384F /* GradeOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeOrderVC.swift; sourceTree = "<group>"; };
+		8D284586252422DD0051384F /* CancelOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelOrderVC.swift; sourceTree = "<group>"; };
+		8D2845892524255D0051384F /* AllOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOrderViewModel.swift; sourceTree = "<group>"; };
+		8D3A15F625244FAC00B9D9F8 /* AllOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOrderCell.swift; sourceTree = "<group>"; };
+		8D3A15F725244FAC00B9D9F8 /* AllOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllOrderCell.xib; sourceTree = "<group>"; };
+		8D3AED752523270400A8F273 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		8D3AED8C25232D9C00A8F273 /* XXPageTabItemLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXPageTabItemLable.m; sourceTree = "<group>"; };
+		8D3AED8D25232D9C00A8F273 /* XXPageTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXPageTabView.m; sourceTree = "<group>"; };
+		8D3AED8E25232D9C00A8F273 /* XXPageTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXPageTabView.h; sourceTree = "<group>"; };
+		8D3AED8F25232D9C00A8F273 /* XXPageTabItemLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXPageTabItemLable.h; sourceTree = "<group>"; };
 		8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewModel.swift; sourceTree = "<group>"; };
 		8D5D60102522DED900217722 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -233,6 +259,85 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		8D28456E2524127C0051384F /* FinishOrderVC(已完成订单) */ = {
+			isa = PBXGroup;
+			children = (
+				8D28456F252412B20051384F /* FinishOrderVC.swift */,
+			);
+			path = "FinishOrderVC(已完成订单)";
+			sourceTree = "<group>";
+		};
+		8D284573252413040051384F /* WaitOrderVC(待确认) */ = {
+			isa = PBXGroup;
+			children = (
+				8D284575252413330051384F /* WaitOrderVC.swift */,
+			);
+			path = "WaitOrderVC(待确认)";
+			sourceTree = "<group>";
+		};
+		8D284574252413180051384F /* AllOrderVC(全部) */ = {
+			isa = PBXGroup;
+			children = (
+				8D284579252413440051384F /* AllOrderVC.swift */,
+				8D2845892524255D0051384F /* AllOrderViewModel.swift */,
+				8D3A15F625244FAC00B9D9F8 /* AllOrderCell.swift */,
+				8D3A15F725244FAC00B9D9F8 /* AllOrderCell.xib */,
+			);
+			path = "AllOrderVC(全部)";
+			sourceTree = "<group>";
+		};
+		8D28457C25241A7B0051384F /* TransferOrderVC(传输中) */ = {
+			isa = PBXGroup;
+			children = (
+				8D28457F252422B30051384F /* TransferOrderVC.swift */,
+			);
+			path = "TransferOrderVC(传输中)";
+			sourceTree = "<group>";
+		};
+		8D28457D25241AB60051384F /* GradeOrderVC(待评价) */ = {
+			isa = PBXGroup;
+			children = (
+				8D284583252422CA0051384F /* GradeOrderVC.swift */,
+			);
+			path = "GradeOrderVC(待评价)";
+			sourceTree = "<group>";
+		};
+		8D28457E252422850051384F /* CancelOrderVC(已取消) */ = {
+			isa = PBXGroup;
+			children = (
+				8D284586252422DD0051384F /* CancelOrderVC.swift */,
+			);
+			path = "CancelOrderVC(已取消)";
+			sourceTree = "<group>";
+		};
+		8D3AED722523254800A8F273 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				8DC1E0AE2520176A003C1F94 /* OrderVC.swift */,
+				8D3AED752523270400A8F273 /* OrderViewModel.swift */,
+			);
+			path = root;
+			sourceTree = "<group>";
+		};
+		8D3AED8A25232D8F00A8F273 /* oc */ = {
+			isa = PBXGroup;
+			children = (
+				8D3AED8B25232D9C00A8F273 /* XXPageTab */,
+			);
+			path = oc;
+			sourceTree = "<group>";
+		};
+		8D3AED8B25232D9C00A8F273 /* XXPageTab */ = {
+			isa = PBXGroup;
+			children = (
+				8D3AED8C25232D9C00A8F273 /* XXPageTabItemLable.m */,
+				8D3AED8D25232D9C00A8F273 /* XXPageTabView.m */,
+				8D3AED8E25232D9C00A8F273 /* XXPageTabView.h */,
+				8D3AED8F25232D9C00A8F273 /* XXPageTabItemLable.h */,
+			);
+			path = XXPageTab;
+			sourceTree = "<group>";
+		};
 		8D5A09CB252053D000DE4258 /* forget */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +378,7 @@
 		8DC1E07C252016D7003C1F94 /* majorEasy */ = {
 			isa = PBXGroup;
 			children = (
+				8D3AED8A25232D8F00A8F273 /* oc */,
 				8D1B455E252086D300251D56 /* model */,
 				8DC1E14725203DDB003C1F94 /* View */,
 				8DC1E17225203E5D003C1F94 /* Utility */,
@@ -363,7 +469,13 @@
 		8DC1E0AD2520176A003C1F94 /* order(订单) */ = {
 			isa = PBXGroup;
 			children = (
-				8DC1E0AE2520176A003C1F94 /* OrderVC.swift */,
+				8D28457E252422850051384F /* CancelOrderVC(已取消) */,
+				8D28457D25241AB60051384F /* GradeOrderVC(待评价) */,
+				8D28457C25241A7B0051384F /* TransferOrderVC(传输中) */,
+				8D284574252413180051384F /* AllOrderVC(全部) */,
+				8D284573252413040051384F /* WaitOrderVC(待确认) */,
+				8D28456E2524127C0051384F /* FinishOrderVC(已完成订单) */,
+				8D3AED722523254800A8F273 /* root */,
 			);
 			path = "order(订单)";
 			sourceTree = "<group>";
@@ -690,6 +802,7 @@
 			files = (
 				8DC1E0D32520176B003C1F94 /* LaunchScreen.storyboard in Resources */,
 				8DC1E0D22520176B003C1F94 /* Assets.xcassets in Resources */,
+				8D3A15F925244FAC00B9D9F8 /* AllOrderCell.xib in Resources */,
 				8DC1E1062520202A003C1F94 /* LoginVC.xib in Resources */,
 				8D1B454D2520599800251D56 /* ForgetVC.xib in Resources */,
 				8DFC45DD2522FFE8009D9081 /* MyVC.xib in Resources */,
@@ -768,12 +881,15 @@
 			files = (
 				8DC1E16A25203DDB003C1F94 /* NBCitySelectView.swift in Sources */,
 				8D1B45522520627300251D56 /* RegisterVC.swift in Sources */,
+				8D3AED9125232D9C00A8F273 /* XXPageTabView.m in Sources */,
 				8DC1E19B25203E5D003C1F94 /* BaiduMapManager.m in Sources */,
 				8DC1E1052520202A003C1F94 /* LoginVC.swift in Sources */,
+				8D284587252422DD0051384F /* CancelOrderVC.swift in Sources */,
 				8DC1E0CE2520176B003C1F94 /* BaseWebViewController.swift in Sources */,
 				8DC1E0BF2520176B003C1F94 /* Formatter.swift in Sources */,
 				8DC1E0D52520176B003C1F94 /* AppDelegate_tools.swift in Sources */,
 				8DF892AC2521D42E00666024 /* HomeVC.swift in Sources */,
+				8D284584252422CA0051384F /* GradeOrderVC.swift in Sources */,
 				8DC1E1A125203E5D003C1F94 /* HandyJSON.swift in Sources */,
 				8D1B45632520989100251D56 /* LoginViewModel.swift in Sources */,
 				8DC1E0CD2520176B003C1F94 /* BaseVC.swift in Sources */,
@@ -781,14 +897,19 @@
 				8DC1E1AC25203E5D003C1F94 /* NBFileCache.swift in Sources */,
 				8DC1E19925203E5D003C1F94 /* LoadingHUD.swift in Sources */,
 				8DC1E16125203DDB003C1F94 /* NBTextFiled.swift in Sources */,
+				8D3A15F825244FAC00B9D9F8 /* AllOrderCell.swift in Sources */,
+				8D3AED762523270400A8F273 /* OrderViewModel.swift in Sources */,
 				8DC1E1A925203E5D003C1F94 /* NBDefaultCache.swift in Sources */,
 				8DFC45DC2522FFE8009D9081 /* MyVC.swift in Sources */,
 				8DC1E1A325203E5D003C1F94 /* RxHttpManager.swift in Sources */,
 				8DC1E1A525203E5D003C1F94 /* PrintBeautifulLog.m in Sources */,
+				8D284580252422B30051384F /* TransferOrderVC.swift in Sources */,
 				8DC1E0BD2520176B003C1F94 /* UIView.swift in Sources */,
+				8D284576252413330051384F /* WaitOrderVC.swift in Sources */,
 				8DC1E16525203DDB003C1F94 /* NBActionSheetItem.swift in Sources */,
 				8DC1E16C25203DDB003C1F94 /* WechatRefreshHeader.swift in Sources */,
 				8DC1E0CC2520176B003C1F94 /* OrderVC.swift in Sources */,
+				8D3AED9025232D9C00A8F273 /* XXPageTabItemLable.m in Sources */,
 				8DC1E19D25203E5D003C1F94 /* NBAreaModel.m in Sources */,
 				8DC1E0C02520176B003C1F94 /* String.swift in Sources */,
 				8DC1E1A425203E5D003C1F94 /* HandyJSON_Func.swift in Sources */,
@@ -799,6 +920,8 @@
 				8DC1E16E25203DDB003C1F94 /* NBAlertView.swift in Sources */,
 				8DC1E0C12520176B003C1F94 /* UIResponder.swift in Sources */,
 				8DC1E0C62520176B003C1F94 /* UIAlertController.swift in Sources */,
+				8D28457A252413440051384F /* AllOrderVC.swift in Sources */,
+				8D284570252412B20051384F /* FinishOrderVC.swift in Sources */,
 				8DC1E0BE2520176B003C1F94 /* UITableView.swift in Sources */,
 				8D1B455825206A7C00251D56 /* HttpManager.swift in Sources */,
 				8DC1E16B25203DDB003C1F94 /* WechatRefreshHeaderTestVC.swift in Sources */,
@@ -824,6 +947,7 @@
 				8DC1E1A225203E5D003C1F94 /* ServiceConfig.swift in Sources */,
 				8DC1E16F25203DDB003C1F94 /* NBCovorEnum.swift in Sources */,
 				8DC1E1AD25203E5D003C1F94 /* NBCacheBehavior.swift in Sources */,
+				8D28458A2524255D0051384F /* AllOrderViewModel.swift in Sources */,
 				8DC1E0D42520176B003C1F94 /* AppDelegate.swift in Sources */,
 				8DC1E16625203DDB003C1F94 /* NBActionSheetViewCell.swift in Sources */,
 				8DC1E17025203DDB003C1F94 /* NBCovor.swift in Sources */,
