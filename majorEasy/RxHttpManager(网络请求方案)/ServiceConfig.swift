@@ -12,7 +12,7 @@ let BaseURL = ServiceConfigure.baseURL
 
 struct ServiceConfigure {
     
-    static let apiEnvironment: YY_ApiEnvironment = .product
+    static let apiEnvironment: YY_ApiEnvironment = .test
     //
     static var baseURL: String  {
         return apiEnvironment.base()
@@ -46,6 +46,14 @@ let URL_ResetPassword = BaseURL + "App-user/resetPassword"
 let URL_GetHomeImages = BaseURL + "App-qiniucloud/getHomeImages"
 //获取订单列表
 let URL_GetMyAppOrders = BaseURL + "App-order/getMyAppOrders"
+//获取用户信息
+let URL_GetUserInfo = BaseURL + "App-userAccount/userCenter"
+
+
+
+
+
+
 
 
 

@@ -119,3 +119,18 @@ extension OrderModel {
     }
 }
 
+// 获取首页轮播图
+extension MyModel {
+    
+    func getUserInfo() -> Observable<MyModel> {
+        return RxHttpManager.fetchData(with: URL_GetUserInfo,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: MyModel.self).map({ (response: MyModel) -> MyModel in
+            return response
+        })
+    }
+}
+
+

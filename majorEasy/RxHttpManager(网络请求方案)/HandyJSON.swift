@@ -56,7 +56,7 @@ class LoginModel: HandyJSON {
     required init() {}
 }
 
-// 用户信息对象
+// 登录后返回的部分用户信息
 class UserInfo: HandyJSON {
     var token: String?
     var idReview: Int?
@@ -66,6 +66,38 @@ class UserInfo: HandyJSON {
     var vipLevel: Int?
     required init() {}
 }
+
+// 单独的用户信息接口
+class MyModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: MyInfo = MyInfo()
+    required init() {}
+}
+
+// 单独的用户信息接口
+class MyInfo: HandyJSON {
+    var id: Int = 0
+    var phoneNumber: String?
+    var userName: String?
+    var userRealName: String?
+    var emailAddress: String?
+    var headPortraitKey: String?
+    var headPortraitUrl: String?
+    var integral:Float = 0.00
+    var idReview: Int = 0
+    var accountNum: String?
+    var balance:Float = 0.00
+    var rechargeReward:Float = 0.00
+    required init() {}
+}
+
+
+
+
+
+
+
 
 //首页轮播图对象
 class HomeImagesModel: HandyJSON {
@@ -171,6 +203,9 @@ class OrderItem: HandyJSON {
     var vehicleTypeId: Int = 0
     required init() {}
 }
+
+
+
 
 
 

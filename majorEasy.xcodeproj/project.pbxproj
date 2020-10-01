@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		35AB3080FC659EFB94DBFC2D /* Pods_majorEasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66A43EFEAC6DD8E5118DBE3 /* Pods_majorEasy.framework */; };
+		8D0187D42525F4F80074B5BA /* MyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0187D32525F4F80074B5BA /* MyViewModel.swift */; };
+		8D0187D725260E050074B5BA /* PostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0187D625260E050074B5BA /* PostVC.xib */; };
 		8D1B45472520595900251D56 /* NBOneEdgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B45462520595900251D56 /* NBOneEdgeView.swift */; };
 		8D1B454C2520599800251D56 /* ForgetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B454A2520599800251D56 /* ForgetVC.swift */; };
 		8D1B454D2520599800251D56 /* ForgetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B454B2520599800251D56 /* ForgetVC.xib */; };
@@ -107,6 +109,8 @@
 
 /* Begin PBXFileReference section */
 		613B819825CC96EC6A585851 /* Pods-majorEasy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majorEasy.debug.xcconfig"; path = "Target Support Files/Pods-majorEasy/Pods-majorEasy.debug.xcconfig"; sourceTree = "<group>"; };
+		8D0187D32525F4F80074B5BA /* MyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModel.swift; sourceTree = "<group>"; };
+		8D0187D625260E050074B5BA /* PostVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostVC.xib; sourceTree = "<group>"; };
 		8D1B45462520595900251D56 /* NBOneEdgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBOneEdgeView.swift; sourceTree = "<group>"; };
 		8D1B454A2520599800251D56 /* ForgetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetVC.swift; sourceTree = "<group>"; };
 		8D1B454B2520599800251D56 /* ForgetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetVC.xib; sourceTree = "<group>"; };
@@ -464,6 +468,7 @@
 			children = (
 				8DFC45DA2522FFE8009D9081 /* MyVC.swift */,
 				8DFC45DB2522FFE8009D9081 /* MyVC.xib */,
+				8D0187D32525F4F80074B5BA /* MyViewModel.swift */,
 			);
 			path = "my(我的)";
 			sourceTree = "<group>";
@@ -472,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC1E0AA2520176A003C1F94 /* PostVC.swift */,
+				8D0187D625260E050074B5BA /* PostVC.xib */,
 			);
 			path = "post(发货)";
 			sourceTree = "<group>";
@@ -821,6 +827,7 @@
 				8DC1E0D32520176B003C1F94 /* LaunchScreen.storyboard in Resources */,
 				8DC1E0D22520176B003C1F94 /* Assets.xcassets in Resources */,
 				8D3A15F925244FAC00B9D9F8 /* AllOrderCell.xib in Resources */,
+				8D0187D725260E050074B5BA /* PostVC.xib in Resources */,
 				8DC1E1062520202A003C1F94 /* LoginVC.xib in Resources */,
 				8D1B454D2520599800251D56 /* ForgetVC.xib in Resources */,
 				8DFC45DD2522FFE8009D9081 /* MyVC.xib in Resources */,
@@ -947,6 +954,7 @@
 				8D1B455825206A7C00251D56 /* HttpManager.swift in Sources */,
 				8DC1E16B25203DDB003C1F94 /* WechatRefreshHeaderTestVC.swift in Sources */,
 				8DC1E16225203DDB003C1F94 /* NBBottomWarningTextFieldView.swift in Sources */,
+				8D0187D42525F4F80074B5BA /* MyViewModel.swift in Sources */,
 				8DC1E19F25203E5D003C1F94 /* DataCenterManager.swift in Sources */,
 				8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */,
 				8DC1E16425203DDB003C1F94 /* NBSegmentView.swift in Sources */,

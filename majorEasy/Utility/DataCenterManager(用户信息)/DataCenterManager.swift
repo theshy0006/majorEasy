@@ -14,6 +14,7 @@ class DataCenterManager: NSObject {
     static let `default` = DataCenterManager()
     /// 用户名
     var userInfo: UserInfo = UserInfo()
+    var myInfo: MyInfo = MyInfo()
     /// 是否登录
     var isLogin: Bool = false
     // 用户信息本地化存储
@@ -35,7 +36,8 @@ class DataCenterManager: NSObject {
     }
     func clear() {
         self.userInfo = UserInfo()
-        self.isLogin = true
+        self.myInfo = MyInfo()
+        self.isLogin = false
         self.save()
     }
 
