@@ -133,4 +133,42 @@ extension MyModel {
     }
 }
 
+// 添加熟车
+extension AddMyFamiliarVehicleModel {
+    func addMyFamiliarVehicle(vehicle: String) -> Observable<AddMyFamiliarVehicleModel> {
+        return RxHttpManager.fetchData(with: URL_AddMyFamiliarVehicle + vehicle ,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: AddMyFamiliarVehicleModel.self).map({ (response: AddMyFamiliarVehicleModel) -> AddMyFamiliarVehicleModel in
+            return response
+        })
+    }
+}
+
+// 获取消费记录
+extension AccountRecordModel {
+    func getAccountRecord() -> Observable<AccountRecordModel> {
+        return RxHttpManager.fetchData(with: URL_GetAccountRecord,
+                                       method: .post,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: AccountRecordModel.self).map({ (response: AccountRecordModel) -> AccountRecordModel in
+            return response
+        })
+    }
+}
+// 获取专线列表
+extension DedicatedLinesModel {
+    func getDedicatedLines() -> Observable<DedicatedLinesModel> {
+        return RxHttpManager.fetchData(with: URL_GetDedicatedLines,
+                                       method: .post,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: DedicatedLinesModel.self).map({ (response: DedicatedLinesModel) -> DedicatedLinesModel in
+            return response
+        })
+    }
+}
+
 

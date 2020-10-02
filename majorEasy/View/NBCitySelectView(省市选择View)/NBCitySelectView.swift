@@ -1,6 +1,6 @@
 //
 //  NBCitySelectView.swift
-//  yunyou
+//  majorEasy
 //
 //  Created by wangyang on 2020/4/15.
 //  Copyright © 2020 com.boc. All rights reserved.
@@ -77,10 +77,10 @@ class NBCitySelectView: UIView {
     }
     
     lazy var titleLabel = UILabel().then {
-        $0.backgroundColor = RGBHex(0x676767)
-        $0.text = "  可选择服务范围"
-        $0.textColor = UIColor.white
-        $0.font = PingFangRegular(12)
+        $0.backgroundColor = RGBHex(0xFFFFFF)
+        $0.text = "  选择地址"
+        $0.textColor = color_title
+        $0.font = PingFangRegular(16)
     }
     
     private func setupData() {
@@ -109,7 +109,7 @@ class NBCitySelectView: UIView {
         //
         titleLabel.snp.makeConstraints { (make) -> Void in
             make.left.right.top.equalToSuperview()
-            make.height.equalTo(28.scaleX)
+            make.height.equalTo(44.scaleX)
         }
         
         provinceTableView.snp.makeConstraints { (make) -> Void in

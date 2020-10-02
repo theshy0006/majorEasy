@@ -11,7 +11,6 @@ import UIKit
 let BaseURL = ServiceConfigure.baseURL
 
 struct ServiceConfigure {
-    
     static let apiEnvironment: YY_ApiEnvironment = .test
     //
     static var baseURL: String  {
@@ -20,7 +19,6 @@ struct ServiceConfigure {
 }
 
 enum YY_ApiEnvironment: String  {
-    
     /********外部环境**********/
     case mock = "https://mock.yonyoucloud.com/mock/3368/"
     case test = "http://djwy.nat300.top/"
@@ -48,34 +46,38 @@ let URL_GetHomeImages = BaseURL + "App-qiniucloud/getHomeImages"
 let URL_GetMyAppOrders = BaseURL + "App-order/getMyAppOrders"
 //获取用户信息
 let URL_GetUserInfo = BaseURL + "App-userAccount/userCenter"
+//添加熟车
+let URL_AddMyFamiliarVehicle = BaseURL + "App-userAccount/addMyFamiliarVehicle"
+// 获取消费记录
+let URL_GetAccountRecord = BaseURL + "App-userAccount/getAccountRecord"
+// 获取专线列表
+let URL_GetDedicatedLines = BaseURL + "App-delicatedLine/getDedicatedLines"
+// 获取我的专线
+let URL_GetMyDedicatedLines = BaseURL + "App-delicatedLine/getMyDedicatedLines"
+// 获取我的熟车
+let URL_GetMyFamiliarVehicles = BaseURL + "App-vehicle/getMyFamiliarVehicles"
+// 获取车源
+let URL_GetAllvehicles = BaseURL + "App-vehicle/getAllvehicles"
+// 获取车主交易记录
+let URL_GetVehicleOwnerOrderRecords = BaseURL + "App-order/getVehicleOwnerOrderRecords"
+// 获取常跑路线
+let URL_GetMyRegularRoutes = BaseURL + "App-vehicle/getMyRegularRoutes"
+// 添加常跑路线
+let URL_AddRegularRoute = BaseURL + "App-vehicle/addRegularRoute"
+// 获取我的车牌
+let URL_GetMyLicenseNubmers = BaseURL + "App-vehicle/getMyLicenseNubmers"
+// 查询承运人
+let URL_SerachCarrier = BaseURL + "App-user/serachCarrier"
+// 获取板车品牌列表
+let URL_GetFlatbedCompanys = BaseURL + "App-vehicle/getFlatbedCompanys"
 
 
-
-
-
-
-
-
-
-//获取开单模块订单列表
-let URL_MyOrderList = BaseURL + "queryMyOrderList"
-//添加联系人
-let URL_InsertTopContacts = BaseURL + "insertTopContacts"
-//获取常用联系人列表
-let URL_QueryTopContacts = BaseURL + "queryTopContacts"
-//更新联系人
-let URL_UpdateTopContacts = BaseURL + "updateTopContacts"
-//删除常用联系人
-let URL_DeleteTopContacts = BaseURL + "deleteTopContacts"
-
-//获取货物类型列表
-let URL_QueryGoodsType = BaseURL + "queryGoodsType"
-//查询货物名称
-let URL_QueryGoods = BaseURL + "queryGoods"
 
 // 服务协议
 let servicePath = BaseURL + "App-user/user_agreement"
 // 隐私协议
 let privacePath = BaseURL + "App-user/privacy_agreement"
-// 授权协议“
+// 授权协议
 let accreditPath = BaseURL + "App-user/authorize_agreement"
+
+
