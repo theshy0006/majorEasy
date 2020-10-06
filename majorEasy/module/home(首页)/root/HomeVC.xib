@@ -172,6 +172,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="655-gX-psx">
                                                     <rect key="frame" x="0.0" y="0.0" width="98.5" height="80"/>
                                                     <state key="normal" image="专线查询"/>
+                                                    <connections>
+                                                        <action selector="specialBtnPressed:" destination="-1" eventType="touchUpInside" id="RGD-Ga-RHf"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

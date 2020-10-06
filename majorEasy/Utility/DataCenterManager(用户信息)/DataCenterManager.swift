@@ -20,7 +20,11 @@ class DataCenterManager: NSObject {
     // 用户信息本地化存储
     func save() {
         let result = NBCacheManager.getShared().set(key: "UserInfo", type: .file, data: self.userInfo.toJSONString()?.data(using: String.Encoding.utf8))
-        print(result)
+            print(result)
+    }
+    
+    func saveLoginName() {
+        let _ = NBCacheManager.getShared().set(key: "phone", type: .userDefault, data: self.userInfo.phoneNumber)
     }
     // 加载缓存用户信息
     func load() {

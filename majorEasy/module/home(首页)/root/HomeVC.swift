@@ -49,6 +49,12 @@ class HomeVC: BaseVC {
     @objc override func gotoForward(){
         NBUtility.showTelephone(self)
     }
+    
+    //专线查询
+    @IBAction func specialBtnPressed(_ sender: UIButton) {
+        self.navigationController?.pushViewController(SpecialLineVC(), animated: true)
+    }
+    
 
 }
 

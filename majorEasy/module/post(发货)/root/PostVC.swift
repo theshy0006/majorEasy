@@ -14,6 +14,19 @@ class PostVC: BaseVC {
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var offenButton: UIButton!
     @IBOutlet weak var agreeButton: UIButton!
+    
+    @IBOutlet weak var upButton: UIButton!
+    @IBOutlet weak var toButton: UIButton!
+    
+    @IBOutlet weak var goodsButton: UIButton!
+    @IBOutlet weak var lengthButton: UIButton!
+    @IBOutlet weak var specificationButton: UIButton!
+    @IBOutlet weak var priceButton: UIButton!
+    @IBOutlet weak var typeButton: UIButton!
+    @IBOutlet weak var timeButton: UIButton!
+    
+    var inputModel = MakeInputModel()
+    
 
     lazy var fromField = NBBottomWarningTextFieldView(placeholderString: "城市/区域", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .default
@@ -116,6 +129,15 @@ class PostVC: BaseVC {
         centerView.addSubview(typeField)
         centerView.addSubview(timeField)
         
+        topView.bringSubviewToFront(upButton)
+        topView.bringSubviewToFront(toButton)
+
+        centerView.bringSubviewToFront(goodsButton)
+        centerView.bringSubviewToFront(lengthButton)
+        centerView.bringSubviewToFront(specificationButton)
+        centerView.bringSubviewToFront(priceButton)
+        centerView.bringSubviewToFront(typeButton)
+        centerView.bringSubviewToFront(timeButton)
         
         fromField.snp.makeConstraints { (make) -> Void in
             make.top.equalToSuperview()
@@ -184,6 +206,79 @@ class PostVC: BaseVC {
     @IBAction func agreeButtonPressed(_ sender: UIButton) {
     }
     
+    @IBAction func fromButtonPressed(_ sender: UIButton) {
+        let chooseVC = ChooseAreaVC(itemTitle:"装货地址选择")
+        chooseVC.myColsure = { [weak self] (cityName, cityId) in
+            self?.inputModel.senderCity = cityName
+            self?.inputModel.senderCityId = cityId
+            self?.fromField.text = cityName
+        }
+        
+        chooseVC.modalPresentationStyle = .overCurrentContext
+        self.present(chooseVC, animated: true)
+    }
+    
+    @IBAction func toButtonPressed(_ sender: UIButton) {
+        let chooseVC = ChooseAreaVC(itemTitle:"卸货地址选择")
+        chooseVC.myColsure = { [weak self] (cityName, cityId) in
+            self?.inputModel.receiverCity = cityName
+            self?.inputModel.receiverCityId = cityId
+            self?.toField.text = cityName
+        }
+        chooseVC.modalPresentationStyle = .fullScreen
+        self.present(chooseVC, animated: true)
+    }
+    
+    @IBAction func goodsButtonPressed(_ sender: UIButton) {
+        let vc = GoodsTypeVC()
+        vc.myColsure = { [weak self] (name, packType, minHeight, maxHeight, minVolume, maxVolume) in
+            let title = name + "，" + packType + "，" + minHeight + "-" + maxHeight + "吨" + "，"  + minVolume + "-" + maxVolume
+            + "方"
+            self?.goodsField.text = title
+        }
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
+    @IBAction func lengthsButtonPressed(_ sender: UIButton) {
+        let vc = CarTypeVC()
+        vc.myColsure = { [weak self] (length1, length2, length3, type1, type2, type3) in
+            var title = ""
+            if(length1.count != 0) {
+                title = title + length1 + "，"
+            }
+            if(length2.count != 0) {
+                title = title + length2 + "，"
+            }
+            if(length3.count != 0) {
+                title = title + length3 + "，"
+            }
+            title = title + "/"
+            if(type1.count != 0) {
+                title = title + type1 + "，"
+            }
+            if(type2.count != 0) {
+                title = title + type2 + "，"
+            }
+            if(type3.count != 0) {
+                title = title + type3 + "，"
+            }
+            title = title + "/"
+            title = title.replacingOccurrences(of: "，/", with: " / ")
+            title = title.substr(to: title.count - 1)
+            self?.lengthField.text = title
+        }
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func specificationButtonPressed(_ sender: UIButton) {
+    }
+    @IBAction func priceButtonPressed(_ sender: UIButton) {
+    }
+    @IBAction func typeButtonPressed(_ sender: UIButton) {
+    }
+    @IBAction func timeButtonPressed(_ sender: UIButton) {
+    }
 }
 
 extension PostVC: NBBottomWarningTextFieldDelegate {

@@ -78,9 +78,9 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="某某" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfe-jm-KI6">
-                                    <rect key="frame" x="84" y="51" width="75" height="20"/>
+                                    <rect key="frame" x="84" y="51" width="35" height="20"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="2QX-1o-GYZ"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="2QX-1o-GYZ"/>
                                         <constraint firstAttribute="height" constant="20" id="N03-uz-3hW"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -104,7 +104,7 @@
                                     <state key="normal" image="设置"/>
                                 </button>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 未审核 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHk-Qb-E2s">
-                                    <rect key="frame" x="183" y="65" width="47" height="20"/>
+                                    <rect key="frame" x="143" y="51" width="47" height="20"/>
                                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="IBF-Fz-Yd8"/>
@@ -116,9 +116,9 @@
                                 </label>
                             </subviews>
                             <constraints>
+                                <constraint firstItem="a0b-wx-5Jg" firstAttribute="centerY" secondItem="iHk-Qb-E2s" secondAttribute="centerY" id="2m0-JQ-w5f"/>
                                 <constraint firstAttribute="height" constant="162" id="3rv-VJ-S8M"/>
                                 <constraint firstItem="pfe-jm-KI6" firstAttribute="leading" secondItem="kVe-er-qJy" secondAttribute="trailing" constant="9" id="LDS-LE-TPz"/>
-                                <constraint firstItem="iHk-Qb-E2s" firstAttribute="top" secondItem="EVN-aw-iWG" secondAttribute="top" constant="65" id="LwA-OZ-Xgm"/>
                                 <constraint firstItem="MMY-sV-3dK" firstAttribute="leading" secondItem="a0b-wx-5Jg" secondAttribute="trailing" constant="23" id="M6K-s1-Pfd"/>
                                 <constraint firstItem="P6d-Pe-tEV" firstAttribute="leading" secondItem="kVe-er-qJy" secondAttribute="trailing" constant="9" id="Mpd-EP-hXS"/>
                                 <constraint firstItem="kVe-er-qJy" firstAttribute="leading" secondItem="EVN-aw-iWG" secondAttribute="leading" constant="15" id="MuN-Rk-2Vd"/>

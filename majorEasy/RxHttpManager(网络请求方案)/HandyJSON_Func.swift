@@ -160,10 +160,15 @@ extension AccountRecordModel {
 }
 // 获取专线列表
 extension DedicatedLinesModel {
-    func getDedicatedLines() -> Observable<DedicatedLinesModel> {
+    func getDedicatedLines(loadPlaceCode: String, unloadPlaceCode: String, pageNum: Int, pageSize: Int, location: String) -> Observable<DedicatedLinesModel> {
         return RxHttpManager.fetchData(with: URL_GetDedicatedLines,
                                        method: .post,
-                                       parameters: nil,
+                                       parameters: [
+                                        "loadPlaceCode":"",
+                                        "unloadPlaceCode":"",
+                                        "pageNum":pageNum,
+                                        "pageSize":pageSize,
+                                        "location":location],
                                        headers: ConstructHeaders(nil),
                                        returnType: DedicatedLinesModel.self).map({ (response: DedicatedLinesModel) -> DedicatedLinesModel in
             return response

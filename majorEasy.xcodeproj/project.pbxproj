@@ -32,8 +32,21 @@
 		8D3AED9025232D9C00A8F273 /* XXPageTabItemLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3AED8C25232D9C00A8F273 /* XXPageTabItemLable.m */; };
 		8D3AED9125232D9C00A8F273 /* XXPageTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3AED8D25232D9C00A8F273 /* XXPageTabView.m */; };
 		8D5213982521A6CC00B69BC6 /* ForgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */; };
+		8D57ECEA252BFB11007F4A87 /* SpecialLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57ECE9252BFB11007F4A87 /* SpecialLineViewModel.swift */; };
+		8D57ECEE252C008A007F4A87 /* SpecialLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57ECEC252C008A007F4A87 /* SpecialLineCell.swift */; };
+		8D57ECEF252C008A007F4A87 /* SpecialLineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D57ECED252C008A007F4A87 /* SpecialLineCell.xib */; };
+		8D5870FC25280102001C3614 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D5870FB25280102001C3614 /* city.json */; };
+		8D58710325280625001C3614 /* GoodsTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D58710025280625001C3614 /* GoodsTypeViewModel.swift */; };
+		8D58710425280625001C3614 /* GoodsTypeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D58710125280625001C3614 /* GoodsTypeVC.xib */; };
+		8D58710525280625001C3614 /* GoodsTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D58710225280625001C3614 /* GoodsTypeVC.swift */; };
+		8D58710C2528063C001C3614 /* CarTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5871092528063C001C3614 /* CarTypeViewModel.swift */; };
+		8D58710D2528063C001C3614 /* CarTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D58710A2528063C001C3614 /* CarTypeVC.swift */; };
+		8D58710E2528063C001C3614 /* CarTypeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D58710B2528063C001C3614 /* CarTypeVC.xib */; };
+		8D58F0C5252779000039ECE4 /* ChooseAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D58F0C4252779000039ECE4 /* ChooseAreaVC.swift */; };
 		8D5D60112522DED900217722 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D60102522DED900217722 /* HomeVC.xib */; };
 		8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */; };
+		8D8D501D252B55020097792A /* SpecialLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D501B252B55020097792A /* SpecialLineVC.swift */; };
+		8D8D501E252B55020097792A /* SpecialLineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8D501C252B55020097792A /* SpecialLineVC.xib */; };
 		8D9208F12524CD5000D33D69 /* TransferOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208F02524CD5000D33D69 /* TransferOrderViewModel.swift */; };
 		8D9208F42524CD6700D33D69 /* CancelOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208F32524CD6700D33D69 /* CancelOrderViewModel.swift */; };
 		8D9208F72524CD8200D33D69 /* GradeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208F62524CD8200D33D69 /* GradeOrderViewModel.swift */; };
@@ -135,8 +148,21 @@
 		8D3AED8E25232D9C00A8F273 /* XXPageTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXPageTabView.h; sourceTree = "<group>"; };
 		8D3AED8F25232D9C00A8F273 /* XXPageTabItemLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXPageTabItemLable.h; sourceTree = "<group>"; };
 		8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewModel.swift; sourceTree = "<group>"; };
+		8D57ECE9252BFB11007F4A87 /* SpecialLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineViewModel.swift; sourceTree = "<group>"; };
+		8D57ECEC252C008A007F4A87 /* SpecialLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineCell.swift; sourceTree = "<group>"; };
+		8D57ECED252C008A007F4A87 /* SpecialLineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialLineCell.xib; sourceTree = "<group>"; };
+		8D5870FB25280102001C3614 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		8D58710025280625001C3614 /* GoodsTypeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsTypeViewModel.swift; sourceTree = "<group>"; };
+		8D58710125280625001C3614 /* GoodsTypeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodsTypeVC.xib; sourceTree = "<group>"; };
+		8D58710225280625001C3614 /* GoodsTypeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsTypeVC.swift; sourceTree = "<group>"; };
+		8D5871092528063C001C3614 /* CarTypeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTypeViewModel.swift; sourceTree = "<group>"; };
+		8D58710A2528063C001C3614 /* CarTypeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTypeVC.swift; sourceTree = "<group>"; };
+		8D58710B2528063C001C3614 /* CarTypeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarTypeVC.xib; sourceTree = "<group>"; };
+		8D58F0C4252779000039ECE4 /* ChooseAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAreaVC.swift; sourceTree = "<group>"; };
 		8D5D60102522DED900217722 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		8D8D501B252B55020097792A /* SpecialLineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineVC.swift; sourceTree = "<group>"; };
+		8D8D501C252B55020097792A /* SpecialLineVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialLineVC.xib; sourceTree = "<group>"; };
 		8D9208F02524CD5000D33D69 /* TransferOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferOrderViewModel.swift; sourceTree = "<group>"; };
 		8D9208F32524CD6700D33D69 /* CancelOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelOrderViewModel.swift; sourceTree = "<group>"; };
 		8D9208F62524CD8200D33D69 /* GradeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeOrderViewModel.swift; sourceTree = "<group>"; };
@@ -360,6 +386,59 @@
 			path = XXPageTab;
 			sourceTree = "<group>";
 		};
+		8D5870FE25280625001C3614 /* GoodsTypeVC(货物信息) */ = {
+			isa = PBXGroup;
+			children = (
+				8D5870FF25280625001C3614 /* ViewModel */,
+				8D58710125280625001C3614 /* GoodsTypeVC.xib */,
+				8D58710225280625001C3614 /* GoodsTypeVC.swift */,
+			);
+			path = "GoodsTypeVC(货物信息)";
+			sourceTree = "<group>";
+		};
+		8D5870FF25280625001C3614 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D58710025280625001C3614 /* GoodsTypeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8D5871072528063C001C3614 /* CarTypeVC(车长车型) */ = {
+			isa = PBXGroup;
+			children = (
+				8D5871082528063C001C3614 /* ViewModel */,
+				8D58710A2528063C001C3614 /* CarTypeVC.swift */,
+				8D58710B2528063C001C3614 /* CarTypeVC.xib */,
+			);
+			path = "CarTypeVC(车长车型)";
+			sourceTree = "<group>";
+		};
+		8D5871082528063C001C3614 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D5871092528063C001C3614 /* CarTypeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8D58F0C2252778CA0039ECE4 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				8DC1E0AA2520176A003C1F94 /* PostVC.swift */,
+				8D0187D625260E050074B5BA /* PostVC.xib */,
+			);
+			path = root;
+			sourceTree = "<group>";
+		};
+		8D58F0C3252778D50039ECE4 /* ChooseAreaVC(选择区域) */ = {
+			isa = PBXGroup;
+			children = (
+				8D58F0C4252779000039ECE4 /* ChooseAreaVC.swift */,
+			);
+			path = "ChooseAreaVC(选择区域)";
+			sourceTree = "<group>";
+		};
 		8D5A09CB252053D000DE4258 /* forget */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +456,28 @@
 				8D1B45462520595900251D56 /* NBOneEdgeView.swift */,
 			);
 			path = NBEdgeView;
+			sourceTree = "<group>";
+		};
+		8D8D5018252B54A90097792A /* root */ = {
+			isa = PBXGroup;
+			children = (
+				8DF892AA2521D42E00666024 /* HomeVC.swift */,
+				8D5D60102522DED900217722 /* HomeVC.xib */,
+				8DF892B02521D96100666024 /* HomeViewModel.swift */,
+			);
+			path = root;
+			sourceTree = "<group>";
+		};
+		8D8D5019252B54B30097792A /* SpecialLineVC(专线查询) */ = {
+			isa = PBXGroup;
+			children = (
+				8D8D501B252B55020097792A /* SpecialLineVC.swift */,
+				8D8D501C252B55020097792A /* SpecialLineVC.xib */,
+				8D57ECE9252BFB11007F4A87 /* SpecialLineViewModel.swift */,
+				8D57ECEC252C008A007F4A87 /* SpecialLineCell.swift */,
+				8D57ECED252C008A007F4A87 /* SpecialLineCell.xib */,
+			);
+			path = "SpecialLineVC(专线查询)";
 			sourceTree = "<group>";
 		};
 		8DC1E071252016D7003C1F94 = {
@@ -448,9 +549,8 @@
 		8DC1E0A32520176A003C1F94 /* home(首页) */ = {
 			isa = PBXGroup;
 			children = (
-				8DF892AA2521D42E00666024 /* HomeVC.swift */,
-				8D5D60102522DED900217722 /* HomeVC.xib */,
-				8DF892B02521D96100666024 /* HomeViewModel.swift */,
+				8D8D5019252B54B30097792A /* SpecialLineVC(专线查询) */,
+				8D8D5018252B54A90097792A /* root */,
 			);
 			path = "home(首页)";
 			sourceTree = "<group>";
@@ -476,8 +576,10 @@
 		8DC1E0A92520176A003C1F94 /* post(发货) */ = {
 			isa = PBXGroup;
 			children = (
-				8DC1E0AA2520176A003C1F94 /* PostVC.swift */,
-				8D0187D625260E050074B5BA /* PostVC.xib */,
+				8D5871072528063C001C3614 /* CarTypeVC(车长车型) */,
+				8D5870FE25280625001C3614 /* GoodsTypeVC(货物信息) */,
+				8D58F0C3252778D50039ECE4 /* ChooseAreaVC(选择区域) */,
+				8D58F0C2252778CA0039ECE4 /* root */,
 			);
 			path = "post(发货)";
 			sourceTree = "<group>";
@@ -516,6 +618,7 @@
 		8DC1E0B42520176B003C1F94 /* config */ = {
 			isa = PBXGroup;
 			children = (
+				8D5870FB25280102001C3614 /* city.json */,
 				8DC1E14325203B09003C1F94 /* LayoutProtocol.swift */,
 				8DC1E0B52520176B003C1F94 /* constant.swift */,
 				8DC1E0BB2520176B003C1F94 /* AppDelegate.swift */,
@@ -827,12 +930,17 @@
 				8DC1E0D32520176B003C1F94 /* LaunchScreen.storyboard in Resources */,
 				8DC1E0D22520176B003C1F94 /* Assets.xcassets in Resources */,
 				8D3A15F925244FAC00B9D9F8 /* AllOrderCell.xib in Resources */,
+				8D8D501E252B55020097792A /* SpecialLineVC.xib in Resources */,
+				8D58710E2528063C001C3614 /* CarTypeVC.xib in Resources */,
+				8D58710425280625001C3614 /* GoodsTypeVC.xib in Resources */,
 				8D0187D725260E050074B5BA /* PostVC.xib in Resources */,
 				8DC1E1062520202A003C1F94 /* LoginVC.xib in Resources */,
 				8D1B454D2520599800251D56 /* ForgetVC.xib in Resources */,
+				8D5870FC25280102001C3614 /* city.json in Resources */,
 				8DFC45DD2522FFE8009D9081 /* MyVC.xib in Resources */,
 				8D1B45532520627300251D56 /* RegisterVC.xib in Resources */,
 				8D5D60112522DED900217722 /* HomeVC.xib in Resources */,
+				8D57ECEF252C008A007F4A87 /* SpecialLineCell.xib in Resources */,
 				8DC1E16D25203DDB003C1F94 /* wechat.png in Resources */,
 				8DC1E0E725201942003C1F94 /* infoPlist.strings in Resources */,
 			);
@@ -907,6 +1015,7 @@
 				8DC1E16A25203DDB003C1F94 /* NBCitySelectView.swift in Sources */,
 				8D1B45522520627300251D56 /* RegisterVC.swift in Sources */,
 				8D3AED9125232D9C00A8F273 /* XXPageTabView.m in Sources */,
+				8D57ECEE252C008A007F4A87 /* SpecialLineCell.swift in Sources */,
 				8DC1E19B25203E5D003C1F94 /* BaiduMapManager.m in Sources */,
 				8DC1E1052520202A003C1F94 /* LoginVC.swift in Sources */,
 				8D284587252422DD0051384F /* CancelOrderVC.swift in Sources */,
@@ -915,6 +1024,8 @@
 				8DC1E0BF2520176B003C1F94 /* Formatter.swift in Sources */,
 				8DC1E0D52520176B003C1F94 /* AppDelegate_tools.swift in Sources */,
 				8DF892AC2521D42E00666024 /* HomeVC.swift in Sources */,
+				8D58F0C5252779000039ECE4 /* ChooseAreaVC.swift in Sources */,
+				8D58710D2528063C001C3614 /* CarTypeVC.swift in Sources */,
 				8D284584252422CA0051384F /* GradeOrderVC.swift in Sources */,
 				8DC1E1A125203E5D003C1F94 /* HandyJSON.swift in Sources */,
 				8D1B45632520989100251D56 /* LoginViewModel.swift in Sources */,
@@ -948,6 +1059,7 @@
 				8DC1E16E25203DDB003C1F94 /* NBAlertView.swift in Sources */,
 				8DC1E0C12520176B003C1F94 /* UIResponder.swift in Sources */,
 				8DC1E0C62520176B003C1F94 /* UIAlertController.swift in Sources */,
+				8D58710325280625001C3614 /* GoodsTypeViewModel.swift in Sources */,
 				8D28457A252413440051384F /* AllOrderVC.swift in Sources */,
 				8D284570252412B20051384F /* FinishOrderVC.swift in Sources */,
 				8DC1E0BE2520176B003C1F94 /* UITableView.swift in Sources */,
@@ -969,6 +1081,8 @@
 				8DC1E0CA2520176B003C1F94 /* PostVC.swift in Sources */,
 				8DC1E1AB25203E5D003C1F94 /* NBPlistCache.swift in Sources */,
 				8DC1E0C22520176B003C1F94 /* UIButton.swift in Sources */,
+				8D8D501D252B55020097792A /* SpecialLineVC.swift in Sources */,
+				8D58710C2528063C001C3614 /* CarTypeViewModel.swift in Sources */,
 				8DC1E0C42520176B003C1F94 /* UIViewController.swift in Sources */,
 				8DF892B12521D96100666024 /* HomeViewModel.swift in Sources */,
 				8DC1E0C52520176B003C1F94 /* Double.swift in Sources */,
@@ -983,8 +1097,10 @@
 				8DC1E0D42520176B003C1F94 /* AppDelegate.swift in Sources */,
 				8DC1E16625203DDB003C1F94 /* NBActionSheetViewCell.swift in Sources */,
 				8DC1E17025203DDB003C1F94 /* NBCovor.swift in Sources */,
+				8D57ECEA252BFB11007F4A87 /* SpecialLineViewModel.swift in Sources */,
 				8DC1E0C32520176B003C1F94 /* UIImage.swift in Sources */,
 				8DC1E19C25203E5D003C1F94 /* LanuhManager.swift in Sources */,
+				8D58710525280625001C3614 /* GoodsTypeVC.swift in Sources */,
 				8DC1E0CB2520176B003C1F94 /* TabbarVC.swift in Sources */,
 				8D1B45472520595900251D56 /* NBOneEdgeView.swift in Sources */,
 				8DC1E16825203DDB003C1F94 /* NBActionSheet.swift in Sources */,

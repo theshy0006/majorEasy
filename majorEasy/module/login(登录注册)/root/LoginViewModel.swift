@@ -22,6 +22,7 @@ class LoginViewModel: NBViewModel {
             if let suc = success {
                 DataCenterManager.default.userInfo = model.value
                 DataCenterManager.default.isLogin = true
+                DataCenterManager.default.saveLoginName()
                 DataCenterManager.default.save()
                 suc(model)
             }

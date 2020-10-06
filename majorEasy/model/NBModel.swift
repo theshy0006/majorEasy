@@ -60,3 +60,41 @@ class UserInfoModel : NBModel {
     var userId: String = ""
     
 }
+
+class MakeInputModel: NBModel {
+    // 货主姓名
+    var owenerName = ""
+    // 货主联系方式
+    var owenerPhone = ""
+    
+    
+    // 装货市区
+    var senderCity = ""
+    // 装货市区ID
+    var senderCityId = ""
+    // 装货地址
+    var bsenderAddress = ""
+    // 发货人姓名
+    var senderName = ""
+    // 发货人电话
+    var senderPhone = ""
+    
+    
+    // 卸货市区
+    var receiverCity = ""
+    // 卸货市区ID
+    var receiverCityId = ""
+    // 卸货地址
+    var receiverAddress = ""
+    // 卸货人姓名
+    var receiverName = ""
+    // 卸货人电话
+    var receiverPhone = ""
+
+    
+    //货物信息
+    var goodsInfo = ""
+    //车型车长
+    var typeInfo = ""
+}
+

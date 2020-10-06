@@ -165,7 +165,7 @@ extension NBCitySelectView: UITableViewDelegate, UITableViewDataSource {
         cell.selectedBackgroundView = UIView()
         cell.selectedBackgroundView?.backgroundColor = .white
         cell.textLabel?.textColor = RGBHex(0x333333)
-        cell.textLabel?.highlightedTextColor = RGBHex(0xFFA60C)
+        cell.textLabel?.highlightedTextColor = RGBHex(0x7792BB)
         return cell
     }
     
