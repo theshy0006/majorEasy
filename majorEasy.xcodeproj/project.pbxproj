@@ -40,6 +40,11 @@
 		8D434222252FF15E007EE9F1 /* OftenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D434220252FF15E007EE9F1 /* OftenCell.swift */; };
 		8D434223252FF15E007EE9F1 /* OftenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D434221252FF15E007EE9F1 /* OftenCell.xib */; };
 		8D434226252FF5C3007EE9F1 /* OftenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D434225252FF5C3007EE9F1 /* OftenViewModel.swift */; };
+		8D43422925304FB4007EE9F1 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43422825304FB4007EE9F1 /* HistoryViewModel.swift */; };
+		8D43422D25305296007EE9F1 /* SendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43422B25305296007EE9F1 /* SendingCell.swift */; };
+		8D43422E25305296007EE9F1 /* SendingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43422C25305296007EE9F1 /* SendingCell.xib */; };
+		8D43423125305DA2007EE9F1 /* SendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43423025305DA2007EE9F1 /* SendingViewModel.swift */; };
+		8D4342342530601B007EE9F1 /* SendingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4342332530601B007EE9F1 /* SendingVC.xib */; };
 		8D5213982521A6CC00B69BC6 /* ForgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */; };
 		8D57ECEA252BFB11007F4A87 /* SpecialLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57ECE9252BFB11007F4A87 /* SpecialLineViewModel.swift */; };
 		8D57ECEE252C008A007F4A87 /* SpecialLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57ECEC252C008A007F4A87 /* SpecialLineCell.swift */; };
@@ -167,6 +172,11 @@
 		8D434220252FF15E007EE9F1 /* OftenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OftenCell.swift; sourceTree = "<group>"; };
 		8D434221252FF15E007EE9F1 /* OftenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OftenCell.xib; sourceTree = "<group>"; };
 		8D434225252FF5C3007EE9F1 /* OftenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OftenViewModel.swift; sourceTree = "<group>"; };
+		8D43422825304FB4007EE9F1 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		8D43422B25305296007EE9F1 /* SendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingCell.swift; sourceTree = "<group>"; };
+		8D43422C25305296007EE9F1 /* SendingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendingCell.xib; sourceTree = "<group>"; };
+		8D43423025305DA2007EE9F1 /* SendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingViewModel.swift; sourceTree = "<group>"; };
+		8D4342332530601B007EE9F1 /* SendingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendingVC.xib; sourceTree = "<group>"; };
 		8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewModel.swift; sourceTree = "<group>"; };
 		8D57ECE9252BFB11007F4A87 /* SpecialLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineViewModel.swift; sourceTree = "<group>"; };
 		8D57ECEC252C008A007F4A87 /* SpecialLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineCell.swift; sourceTree = "<group>"; };
@@ -422,6 +432,10 @@
 			isa = PBXGroup;
 			children = (
 				8D43420F252FEB7A007EE9F1 /* SendingVC.swift */,
+				8D4342332530601B007EE9F1 /* SendingVC.xib */,
+				8D43422B25305296007EE9F1 /* SendingCell.swift */,
+				8D43422C25305296007EE9F1 /* SendingCell.xib */,
+				8D43423025305DA2007EE9F1 /* SendingViewModel.swift */,
 			);
 			path = "SendingVC(发货中)";
 			sourceTree = "<group>";
@@ -430,6 +444,7 @@
 			isa = PBXGroup;
 			children = (
 				8D434214252FEBBD007EE9F1 /* HistoryVC.swift */,
+				8D43422825304FB4007EE9F1 /* HistoryViewModel.swift */,
 			);
 			path = "HistoryVC(历史货源)";
 			sourceTree = "<group>";
@@ -1010,6 +1025,7 @@
 			files = (
 				8DC1E0D32520176B003C1F94 /* LaunchScreen.storyboard in Resources */,
 				8DC1E0D22520176B003C1F94 /* Assets.xcassets in Resources */,
+				8D43422E25305296007EE9F1 /* SendingCell.xib in Resources */,
 				8D28697B252CB86E00B8C72D /* SpeciaLineDetailVC.xib in Resources */,
 				8D3A15F925244FAC00B9D9F8 /* AllOrderCell.xib in Resources */,
 				8D8D501E252B55020097792A /* SpecialLineVC.xib in Resources */,
@@ -1022,6 +1038,7 @@
 				8D5870FC25280102001C3614 /* city.json in Resources */,
 				8DFC45DD2522FFE8009D9081 /* MyVC.xib in Resources */,
 				8D1B45532520627300251D56 /* RegisterVC.xib in Resources */,
+				8D4342342530601B007EE9F1 /* SendingVC.xib in Resources */,
 				8D5D60112522DED900217722 /* HomeVC.xib in Resources */,
 				8D57ECEF252C008A007F4A87 /* SpecialLineCell.xib in Resources */,
 				8DC1E16D25203DDB003C1F94 /* wechat.png in Resources */,
@@ -1146,9 +1163,11 @@
 				8DC1E0D02520176B003C1F94 /* constant.swift in Sources */,
 				8D434210252FEB7A007EE9F1 /* SendingVC.swift in Sources */,
 				8DC1E16E25203DDB003C1F94 /* NBAlertView.swift in Sources */,
+				8D43422D25305296007EE9F1 /* SendingCell.swift in Sources */,
 				8DC1E0C12520176B003C1F94 /* UIResponder.swift in Sources */,
 				8DC1E0C62520176B003C1F94 /* UIAlertController.swift in Sources */,
 				8D58710325280625001C3614 /* GoodsTypeViewModel.swift in Sources */,
+				8D43423125305DA2007EE9F1 /* SendingViewModel.swift in Sources */,
 				8D28457A252413440051384F /* AllOrderVC.swift in Sources */,
 				8D284570252412B20051384F /* FinishOrderVC.swift in Sources */,
 				8D434215252FEBBD007EE9F1 /* HistoryVC.swift in Sources */,
@@ -1158,6 +1177,7 @@
 				8DC1E16225203DDB003C1F94 /* NBBottomWarningTextFieldView.swift in Sources */,
 				8D0187D42525F4F80074B5BA /* MyViewModel.swift in Sources */,
 				8DC1E19F25203E5D003C1F94 /* DataCenterManager.swift in Sources */,
+				8D43422925304FB4007EE9F1 /* HistoryViewModel.swift in Sources */,
 				8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */,
 				8DC1E16425203DDB003C1F94 /* NBSegmentView.swift in Sources */,
 				8DC1E0C82520176B003C1F94 /* NavigationVC.swift in Sources */,

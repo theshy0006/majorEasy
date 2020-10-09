@@ -1,5 +1,5 @@
 //
-//  OftenViewModel.swift
+//  HistoryViewModel.swift
 //  majorEasy
 //
 //  Created by wangyang on 2020/10/9.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OftenViewModel: NBViewModel {
+class HistoryViewModel: NBViewModel {
     var orderModel = MySuppliesModel()
     var deleteModel = DeleteModel()
     var pageNum = 1
@@ -17,7 +17,7 @@ class OftenViewModel: NBViewModel {
     func getMySuppliesModel(
                   success: (()->())?,
                   failure: ((APIError)->())?) {
-        orderModel.getMySuppliesModel(pageNum: pageNum, pageSize: 10, sortType: "3", appSupplyStatus: "").subscribe(onNext: { [weak self] model in
+        orderModel.getMySuppliesModel(pageNum: pageNum, pageSize: 10, sortType: "1", appSupplyStatus: "").subscribe(onNext: { [weak self] model in
             if let suc = success {
                 guard let weakSelf = self else {return}
                 if (!weakSelf.loadMore) {

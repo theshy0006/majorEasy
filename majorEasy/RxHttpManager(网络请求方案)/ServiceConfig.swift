@@ -75,6 +75,8 @@ let URL_SerachCarrier = BaseURL + "App-user/serachCarrier"
 let URL_GetFlatbedCompanys = BaseURL + "App-vehicle/getFlatbedCompanys"
 // 获取我的货源列表：常发，历史，发货中公用此接口
 let URL_getMySupplies = BaseURL + "App-supply/getMySupplies"
+// 删除货源
+let URL_deletMysupply = BaseURL + "App-supply/deletMysupply/"
 
 
 // 服务协议

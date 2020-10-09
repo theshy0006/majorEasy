@@ -210,4 +210,15 @@ extension MySuppliesModel {
     }
 }
 
-
+// 删除货源
+extension DeleteModel {
+    func deleteMySupplies(supplyNum: String) -> Observable<DeleteModel> {
+        return RxHttpManager.fetchData(with: URL_deletMysupply + supplyNum,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: DeleteModel.self).map({ (response: DeleteModel) -> DeleteModel in
+            return response
+        })
+    }
+}

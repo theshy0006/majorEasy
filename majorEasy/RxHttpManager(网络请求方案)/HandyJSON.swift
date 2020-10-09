@@ -434,3 +434,11 @@ class MySuppliesInfo: HandyJSON {
     var vehicleTypeId: String?
     required init() {}
 }
+
+// 删除货源
+class DeleteModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: String?
+    required init() {}
+}

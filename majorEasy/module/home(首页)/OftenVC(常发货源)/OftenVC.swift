@@ -80,6 +80,32 @@ class OftenVC: BaseVC {
     
     func deleteData(suppliesInfo: MySuppliesInfo) {
         
+        let alertController = UIAlertController(title: nil, message: "确定要删除该条信息吗？", preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "取消", style: .default, handler:nil)
+        let okAction = UIAlertAction(title: "确认", style: .default, handler: {
+            [weak self] (ac) in
+            self?.viewModel.deleteMySupplies(supplyNum:suppliesInfo.supplyNum ?? "",
+                                            success: { [weak self] in
+                NBLoadManager.hidLoading()
+                NBHUDManager.toast("删除成功")
+                self?.updateUI()
+            }) { (error) in
+                NBLoadManager.hidLoading()
+                NBHUDManager.toast(error.message)
+            }
+        })
+        alertController.addAction(cancelAction)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
 }
