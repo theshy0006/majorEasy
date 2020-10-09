@@ -33,14 +33,14 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBt-uh-3tY">
                             <rect key="frame" x="0.0" y="0.0" width="206.5" height="40"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <state key="normal" title="   发货地" image="定位">
+                            <state key="normal" title="   发货地" image="location">
                                 <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njh-L1-hAJ">
                             <rect key="frame" x="207.5" y="0.0" width="206.5" height="40"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <state key="normal" title="   目的地" image="定位">
+                            <state key="normal" title="   目的地" image="location">
                                 <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                         </button>
@@ -73,7 +73,7 @@
         </view>
     </objects>
     <resources>
-        <image name="定位" width="24" height="24"/>
+        <image name="location" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

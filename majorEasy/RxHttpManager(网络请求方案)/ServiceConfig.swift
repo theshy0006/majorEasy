@@ -52,6 +52,9 @@ let URL_AddMyFamiliarVehicle = BaseURL + "App-userAccount/addMyFamiliarVehicle"
 let URL_GetAccountRecord = BaseURL + "App-userAccount/getAccountRecord"
 // 获取专线列表
 let URL_GetDedicatedLines = BaseURL + "App-delicatedLine/getDedicatedLines"
+// 获取专线详情
+let URL_GetDedicatedLineDetail = BaseURL + "App-delicatedLine/GetDedicatedLineDetail/"
+
 // 获取我的专线
 let URL_GetMyDedicatedLines = BaseURL + "App-delicatedLine/getMyDedicatedLines"
 // 获取我的熟车
@@ -70,7 +73,8 @@ let URL_GetMyLicenseNubmers = BaseURL + "App-vehicle/getMyLicenseNubmers"
 let URL_SerachCarrier = BaseURL + "App-user/serachCarrier"
 // 获取板车品牌列表
 let URL_GetFlatbedCompanys = BaseURL + "App-vehicle/getFlatbedCompanys"
-
+// 获取我的货源列表：常发，历史，发货中公用此接口
+let URL_getMySupplies = BaseURL + "App-supply/getMySupplies"
 
 
 // 服务协议

@@ -26,7 +26,11 @@ class PostVC: BaseVC {
     @IBOutlet weak var timeButton: UIButton!
     
     var inputModel = MakeInputModel()
-    
+    var suppliesInfo = MySuppliesInfo()
+    convenience init(suppliesInfo: MySuppliesInfo) {
+        self.init()
+        self.suppliesInfo = suppliesInfo
+    }
 
     lazy var fromField = NBBottomWarningTextFieldView(placeholderString: "城市/区域", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .default

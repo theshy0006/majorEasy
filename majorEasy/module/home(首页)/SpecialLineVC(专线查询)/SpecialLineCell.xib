@@ -122,6 +122,34 @@
                             <constraint firstAttribute="height" constant="10" id="C8N-uq-svL"/>
                         </constraints>
                     </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="WKD-1D-I7H">
+                        <rect key="frame" x="129" y="44" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="d2t-8W-nZN"/>
+                            <constraint firstAttribute="height" constant="20" id="dYL-2G-epz"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money" translatesAutoresizingMaskIntoConstraints="NO" id="ACh-YL-vxs">
+                        <rect key="frame" x="129" y="64" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="BBo-tT-gwF"/>
+                            <constraint firstAttribute="width" constant="20" id="QjV-da-egj"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2c2-V5-i4a">
+                        <rect key="frame" x="129" y="84" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Lin-YC-6IH"/>
+                            <constraint firstAttribute="width" constant="20" id="mJh-1s-AQ5"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9x2-kW-pUY">
+                        <rect key="frame" x="129" y="104" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="H2i-9x-Ljj"/>
+                            <constraint firstAttribute="width" constant="20" id="awY-9J-Q6N"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="3R4-nG-lhF" firstAttribute="leading" secondItem="Mek-eI-Rrl" secondAttribute="trailing" constant="51" id="2dc-pG-VgQ"/>
@@ -136,23 +164,31 @@
                     <constraint firstItem="GzP-Pq-UL0" firstAttribute="leading" secondItem="EEm-gM-pgI" secondAttribute="trailing" constant="10" id="M0t-7z-kbw"/>
                     <constraint firstItem="j8y-g0-zxa" firstAttribute="top" secondItem="c0h-NE-84w" secondAttribute="bottom" constant="7" id="NIC-dx-Jf9"/>
                     <constraint firstItem="j8y-g0-zxa" firstAttribute="leading" secondItem="LXZ-RH-L03" secondAttribute="trailing" constant="5" id="PMK-Li-ptQ"/>
+                    <constraint firstItem="2c2-V5-i4a" firstAttribute="leading" secondItem="Mek-eI-Rrl" secondAttribute="trailing" constant="17" id="SBm-yc-4hs"/>
                     <constraint firstItem="LXZ-RH-L03" firstAttribute="top" secondItem="c0h-NE-84w" secondAttribute="bottom" constant="7" id="TuR-xf-RUq"/>
                     <constraint firstItem="TFa-hw-hFY" firstAttribute="top" secondItem="c0h-NE-84w" secondAttribute="bottom" constant="7" id="Ywb-y2-sxD"/>
                     <constraint firstItem="LXZ-RH-L03" firstAttribute="leading" secondItem="TFa-hw-hFY" secondAttribute="trailing" constant="10" id="Z9p-Y9-bTL"/>
                     <constraint firstItem="bkT-RD-IqM" firstAttribute="leading" secondItem="Mek-eI-Rrl" secondAttribute="trailing" constant="51" id="Zfm-Es-BJz"/>
                     <constraint firstItem="EEm-gM-pgI" firstAttribute="leading" secondItem="Mek-eI-Rrl" secondAttribute="trailing" constant="51" id="evr-7l-Xmm"/>
+                    <constraint firstItem="WKD-1D-I7H" firstAttribute="top" secondItem="LXZ-RH-L03" secondAttribute="bottom" constant="7" id="fw1-gw-mIq"/>
                     <constraint firstItem="c0h-NE-84w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gW6-gA-UPo"/>
                     <constraint firstItem="bkT-RD-IqM" firstAttribute="top" secondItem="3R4-nG-lhF" secondAttribute="bottom" constant="5" id="jyS-Ql-Jrt"/>
+                    <constraint firstItem="ACh-YL-vxs" firstAttribute="leading" secondItem="Mek-eI-Rrl" secondAttribute="trailing" constant="17" id="k9G-fc-IFb"/>
                     <constraint firstItem="TFa-hw-hFY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="kD2-5b-Dig"/>
                     <constraint firstItem="og5-QA-QYl" firstAttribute="leading" secondItem="Mek-eI-Rrl" secondAttribute="trailing" constant="51" id="lmH-cb-28m"/>
                     <constraint firstAttribute="trailing" secondItem="og5-QA-QYl" secondAttribute="trailing" id="pSz-4L-Mlt"/>
+                    <constraint firstItem="WKD-1D-I7H" firstAttribute="leading" secondItem="Mek-eI-Rrl" secondAttribute="trailing" constant="17" id="qcX-eE-KzJ"/>
                     <constraint firstAttribute="bottom" secondItem="Mek-eI-Rrl" secondAttribute="bottom" constant="10" id="qln-Ej-eY1"/>
+                    <constraint firstItem="2c2-V5-i4a" firstAttribute="top" secondItem="ACh-YL-vxs" secondAttribute="bottom" id="s7P-e8-ZTC"/>
+                    <constraint firstItem="9x2-kW-pUY" firstAttribute="top" secondItem="2c2-V5-i4a" secondAttribute="bottom" id="su8-RN-JF9"/>
                     <constraint firstAttribute="trailing" secondItem="5t1-c3-Pek" secondAttribute="trailing" id="tV3-Mr-C8T"/>
                     <constraint firstAttribute="trailing" secondItem="c0h-NE-84w" secondAttribute="trailing" id="uPe-Dg-RqN"/>
+                    <constraint firstItem="9x2-kW-pUY" firstAttribute="leading" secondItem="Mek-eI-Rrl" secondAttribute="trailing" constant="17" id="vOJ-Zr-ikg"/>
                     <constraint firstAttribute="trailing" secondItem="j8y-g0-zxa" secondAttribute="trailing" constant="12" id="w8Y-ko-hIH"/>
                     <constraint firstAttribute="trailing" secondItem="3R4-nG-lhF" secondAttribute="trailing" id="yO6-Fk-ubl"/>
                     <constraint firstItem="EEm-gM-pgI" firstAttribute="top" secondItem="bkT-RD-IqM" secondAttribute="bottom" constant="5" id="ygv-y2-RCM"/>
                     <constraint firstItem="c0h-NE-84w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zQE-IR-1H9"/>
+                    <constraint firstItem="ACh-YL-vxs" firstAttribute="top" secondItem="WKD-1D-I7H" secondAttribute="bottom" id="zZP-Qd-kSM"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -172,6 +208,8 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="location" width="20" height="20"/>
+        <image name="money" width="20" height="20"/>
         <image name="phoneicon" width="22.5" height="22.5"/>
     </resources>
 </document>

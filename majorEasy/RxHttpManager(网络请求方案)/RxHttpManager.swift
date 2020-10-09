@@ -110,9 +110,10 @@ extension RxHttpManager {
                     err.status = String(code)
                     err.message = jsonDic["message"] as? String ?? ""
                     failHandle(observer: observer, error: err)
-                    NBHUDManager.toast(err.message)
+                    
                     DataCenterManager.default.clear()
                     kAppdelegate.setUpLoginVC()
+                    NBHUDManager.toast(err.message)
                 } else {
                     print("失败报文:\(jsonDic)")
                     let err = APIError()

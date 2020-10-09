@@ -353,6 +353,35 @@ extension NBUtility {
        
     }
     
+    //  Converted to Swift 5.2 by Swiftify v5.2.30411 - https://swiftify.com/
+    class func formatUTCTime(_ string: String) -> String? {
+
+        let dateForm = DateFormatter()
+        dateForm.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        dateForm.timeZone = TimeZone(secondsFromGMT: 0)
+        guard let date = dateForm.date(from: string) else {return nil}
+        let normalTime = DateFormatter()
+        normalTime.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let str = normalTime.string(from: date)
+        var timeInterval: TimeInterval = 0
+        timeInterval = Date().timeIntervalSince(date)
+        if (timeInterval < 0) {
+            return (str as NSString?)?.substring(to: 16)
+        } else if timeInterval < 60 {
+            return String(format: "%.0f秒前", timeInterval)
+        } else if timeInterval < 3600 {
+            return String(format: "%.0f分钟前", timeInterval / 60)
+        } else if timeInterval < 3600 * 24 {
+            return String(format: "%.0f小时前", timeInterval / 3600)
+        } else if timeInterval < 3600 * 24 * 36 {
+            return String(format: "%.0f天前", timeInterval / 3600 / 24)
+        }
+        else {
+            return (str as NSString?)?.substring(to: 16)
+        }
+       
+    }
+    
     class func formatLineName(_ string: String) -> String {
         if( string.contains("上海上海") ) {
             return string.replacingOccurrences(of: "上海上海", with: "上海")

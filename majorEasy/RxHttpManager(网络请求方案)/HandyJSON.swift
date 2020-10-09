@@ -324,3 +324,113 @@ class MyDedicatedLinesItem: HandyJSON {
     required init() {}
 }
 
+// 专线详情
+class DedicatedLineDetailModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: DedicatedLineDetailInfo = DedicatedLineDetailInfo()
+    required init() {}
+}
+
+// 专线详情
+class DedicatedLineDetailInfo: HandyJSON {
+    var dedicatedLineNum: String?
+    var loadPlace: String?
+    var loadPlaceCode: String?
+    var unloadPlace: String?
+    var unloadPlaceCode: String?
+    var transportDays: Int = 0
+    var bubbleUnitPrice: Float = 0
+    var heavyUnitPrice: Float = 0
+    var contactUser: String?
+    var contactMobile: String?
+    var contactTelephone: String?
+    var companyName: String?
+    var companyAddress: String?
+    var companyWebAddress: String?
+    var wxAccount: String?
+    var businessCardKey: String?
+    var advertKey: String?
+    var introduce: String?
+    var addTime: String?
+    var addUser: String?
+    var dedicatedLineBranches: [String]?
+    var logoPic: String?
+    var advertPics: [String]?
+    required init() {}
+}
+
+// 我的货源列表
+class MySuppliesModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: [MySuppliesInfo] = [MySuppliesInfo]()
+    required init() {}
+}
+
+// 我的货源项
+class MySuppliesInfo: HandyJSON {
+    var arrivalData: String?
+    var arrivalTime: String?
+    var companyName: String?
+    var contactNum: String?
+    var deliverTimeMsg: String?
+    var deliveryData: String?
+    var deliveryTime: String?
+    var distance: Float = 0
+    var enabled: Bool = false
+    var goodsDiameter: Float = 0
+    var goodsHeight: Float = 0
+    var goodsLength: Float = 0
+    var goodsName: String?
+    var goodsRemarks: String?
+    var goodsType: String?
+    var goodsVolume: String?
+    var goodsVolume_lower: Float = 0
+    var goodsVolume_upper: Float = 0
+    var goodsWeight: String?
+    var goodsWeight_lower: Float = 0
+    var goodsWeight_upper: Float = 0
+    var goodsWide: Float = 0
+    var haveContacted: Int = 0
+    var headPortraitKey: String?
+    var headPortraitUrl: String?
+    var id: Int = 0
+    var loadMode: String?
+    var loadModeId: Int = 0
+    var loadPlace: String?
+    var loadPlaceCity: String?
+    var loadPlaceCode: String?
+    var loadPlaceDetail: String?
+    var loadPlaceDistance: Int = 0
+    var loadPlaceLocation: String?
+    var loadPlaceShow: String?
+    var mySupplyMsg: String?
+    var packType: String?
+    var phoneNumber: String?
+    var purposePrice: Float = 0
+    var referencePrice: Float = 0
+    var releaseFrequency: Int = 0
+    var releaseNum: Int = 0
+    var releaseTime: String?
+    var remarks: String?
+    var state: Int = 0
+    var supplyNum: String?
+    var supplyViews: Int = 0
+    var timeAgo: String?
+    var transactionNum: Int = 0
+    var unloadPlace: String?
+    var unloadPlaceCity: String?
+    var unloadPlaceCode: String?
+    var unloadPlaceDetail: String?
+    var unloadPlaceShow: String?
+    var useMode: String?
+    var userName: String?
+    var userRealName: String?
+    var userid: Int = 0
+    var vehicleHeight: String?
+    var vehicleLength: String?
+    var vehicleType: String?
+    var vehicleTypeId: String?
+    required init() {}
+}

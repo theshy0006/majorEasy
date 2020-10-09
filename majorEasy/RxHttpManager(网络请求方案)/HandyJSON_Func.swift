@@ -176,4 +176,38 @@ extension DedicatedLinesModel {
     }
 }
 
+// 获取专线详情
+extension DedicatedLineDetailModel {
+    func getDedicatedLineDetail(lineId: String) -> Observable<DedicatedLineDetailModel> {
+        return RxHttpManager.fetchData(with: URL_GetDedicatedLineDetail + lineId,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: DedicatedLineDetailModel.self).map({ (response: DedicatedLineDetailModel) -> DedicatedLineDetailModel in
+            return response
+        })
+    }
+}
+
+//获取我的货源列表
+
+extension MySuppliesModel {
+    //sortType:发货中与历史货源传1，常发传3
+    //app
+    func getMySuppliesModel(pageNum: Int, pageSize: Int, sortType: String, appSupplyStatus: String) -> Observable<MySuppliesModel> {
+        return RxHttpManager.fetchData(with: URL_getMySupplies,
+                                       method: .post,
+                                       parameters: [
+                                        "appSupplyStatus":appSupplyStatus,
+                                        "sortType":sortType,
+                                        "pageNum":pageNum,
+                                        "pageSize":pageSize,
+                                        "location":""],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: MySuppliesModel.self).map({ (response: MySuppliesModel) -> MySuppliesModel in
+            return response
+        })
+    }
+}
+
 

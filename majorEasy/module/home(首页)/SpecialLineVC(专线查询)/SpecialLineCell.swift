@@ -30,7 +30,7 @@ class SpecialLineCell: UITableViewCell {
     @IBOutlet weak var timesLabel: UILabel!
     
     @IBOutlet weak var phoneBtn: UIButton!
-    
+
     @IBAction func callPhone(_ sender: UIButton) {
         
         if let telUrl = URL(string: "tel://\(item.contactMobile ?? "")") {

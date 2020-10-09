@@ -10,7 +10,6 @@ import ZCycleView
 import SDWebImage
 
 class HomeVC: BaseVC {
-    var numberOfPages = 0
     let viewModel = HomeViewModel()
     @IBOutlet weak var bannerView: UIView!
     var cycleView:ZCycleView!
@@ -53,6 +52,11 @@ class HomeVC: BaseVC {
     //专线查询
     @IBAction func specialBtnPressed(_ sender: UIButton) {
         self.navigationController?.pushViewController(SpecialLineVC(), animated: true)
+    }
+    
+    
+    @IBAction func shuntBtnPressed(_ sender: UIButton) {
+        self.navigationController?.pushViewController(ShuntVC(), animated: true)
     }
     
 

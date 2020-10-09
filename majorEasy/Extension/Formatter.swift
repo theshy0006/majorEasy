@@ -10,7 +10,7 @@ import Foundation
 
 /* 用法演示
 let dateString = Formatter.iso8601.string(from: Date())   // "2018-01-23T03:06:46.232Z"
-
+   
 
 if let date = Formatter.iso8601.date(from: dateString)  {
     print(date)   // "2018-01-23 03:06:46 +0000\n"

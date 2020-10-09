@@ -1,17 +1,15 @@
 //
-//  SpecialLineVC.swift
+//  OftenVC.swift
 //  majorEasy
 //
-//  Created by wangyang on 2020/10/5.
+//  Created by wangyang on 2020/10/9.
 //
 
 import UIKit
 
-class SpecialLineVC: BaseVC {
+class OftenVC: BaseVC {
 
-    @IBOutlet weak var topView: UIView!
-    
-    let viewModel = SpecialLineViewModel()
+    let viewModel = OftenViewModel()
     
     lazy var tableView = UITableView(frame: self.view.frame, style: .plain).then {
         $0.delegate = self
@@ -19,19 +17,18 @@ class SpecialLineVC: BaseVC {
         $0.separatorStyle = .none
         $0.backgroundColor = color_BgColor
         $0.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        let nib = UINib(nibName: "SpecialLineCell", bundle: nil)
-        $0.register(nib, forCellReuseIdentifier: "SpecialLineCell")
+        $0.estimatedRowHeight = 128.5
+        $0.rowHeight = UITableView.automaticDimension
+        let nib = UINib(nibName: "OftenCell", bundle: nil)
+        $0.register(nib, forCellReuseIdentifier: "OftenCell")
     }
     
     override func setUpView() {
-        self.view.backgroundColor = RGBHex(0xF6F6F6)
-        self.navigationItem.title = "专线查询"
-        self.setNavBarRightBtn(normalImage: "blackAdd", selector: #selector(gotoForward))
         self.tableView.gtm_addRefreshHeaderView(refreshHeader: WechatRefreshHeader()) {
             [weak self] in
             self?.viewModel.pageNum = 1
             self?.viewModel.loadMore = false
-            self?.getDedicatedLines()
+            self?.getOrderList()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1){
                 self?.tableView.endRefreshing(isSuccess: true)
             }
@@ -40,20 +37,19 @@ class SpecialLineVC: BaseVC {
         self.tableView.gtm_addLoadMoreFooterView {
             [weak self] in
             self?.viewModel.loadMore = true
-            self?.getDedicatedLines()
+            self?.getOrderList()
         }
         
         
         self.view.addSubview(self.tableView)
         self.tableView.snp.makeConstraints { (make) in
-            make.top.equalTo(self.topView.snp.bottom)
-            make.left.right.bottom.equalToSuperview()
+            make.edges.equalToSuperview()
         }
     }
     
     override func setUpData() {
         //初始化数据
-        getDedicatedLines()
+        getOrderList()
     }
     
     func updateUI() {
@@ -65,9 +61,9 @@ class SpecialLineVC: BaseVC {
         }
     }
 
-    func getDedicatedLines() {
+    func getOrderList() {
         NBLoadManager.showLoading()
-        self.viewModel.getDedicatedLines(location: "118.774888,31.801064", success: { [weak self] in
+        self.viewModel.getMySuppliesModel(success: { [weak self] in
             NBLoadManager.hidLoading()
             if( self?.viewModel.pageNum == -1 ) {
                 self?.tableView.endLoadMore(isNoMoreData:true)
@@ -82,31 +78,32 @@ class SpecialLineVC: BaseVC {
         }
     }
     
-    override func gotoForward() {
-        print("哈哈")
+    func deleteData(suppliesInfo: MySuppliesInfo) {
+        
     }
 
 }
 
 //tableView代理实现
-extension SpecialLineVC : UITableViewDelegate, UITableViewDataSource {
+extension OftenVC : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.viewModel.dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:SpecialLineCell = tableView.dequeueReusableCell(withIdentifier: "SpecialLineCell") as! SpecialLineCell
+        let cell:OftenCell = tableView.dequeueReusableCell(withIdentifier: "OftenCell") as! OftenCell
         cell.selectionStyle = .none
         cell.setCellWithModel(self.viewModel.dataSource[indexPath.row])
+        
+        cell.againColsure = { [weak self] model in
+            self?.navigationController?.pushViewController(PostVC(suppliesInfo:model), animated: true)
+        }
+        
+        cell.deleteColsure = { [weak self] model in
+            self?.deleteData(suppliesInfo:model)
+        }
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 157
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(SpeciaLineDetailVC(lineId: self.viewModel.dataSource[indexPath.row].dedicatedLineNum ?? ""), animated: true)
-    }
 }
