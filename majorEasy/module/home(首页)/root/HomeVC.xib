@@ -349,6 +349,15 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlV-kp-XHZ">
+                                            <rect key="frame" x="0.0" y="36" width="414" height="120"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="120" id="IYE-lH-QsH"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="shareBtnPressed:" destination="-1" eventType="touchUpInside" id="uxe-Pb-rr9"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
@@ -357,13 +366,16 @@
                                         <constraint firstAttribute="height" constant="156" id="RIs-E0-XbT"/>
                                         <constraint firstItem="U9C-hf-WQ4" firstAttribute="top" secondItem="scz-Za-1vs" secondAttribute="bottom" constant="10" id="SxI-21-nt8"/>
                                         <constraint firstItem="U9C-hf-WQ4" firstAttribute="leading" secondItem="ZVL-Hx-WQY" secondAttribute="leading" constant="20" id="XDZ-7u-gZe"/>
+                                        <constraint firstAttribute="bottom" secondItem="GlV-kp-XHZ" secondAttribute="bottom" id="YE3-9h-F1t"/>
+                                        <constraint firstItem="GlV-kp-XHZ" firstAttribute="leading" secondItem="ZVL-Hx-WQY" secondAttribute="leading" id="do2-I2-quC"/>
                                         <constraint firstItem="z6A-lC-q6Y" firstAttribute="top" secondItem="ZVL-Hx-WQY" secondAttribute="top" id="eY7-s3-cOp"/>
+                                        <constraint firstAttribute="trailing" secondItem="GlV-kp-XHZ" secondAttribute="trailing" id="hqR-dn-4BD"/>
                                         <constraint firstAttribute="bottom" secondItem="z6A-lC-q6Y" secondAttribute="bottom" id="kjO-lE-M8D"/>
                                         <constraint firstItem="scz-Za-1vs" firstAttribute="leading" secondItem="ZVL-Hx-WQY" secondAttribute="leading" constant="20" id="mxa-cq-XXW"/>
                                         <constraint firstItem="scz-Za-1vs" firstAttribute="top" secondItem="ZVL-Hx-WQY" secondAttribute="top" constant="49" id="xZ1-EF-sGo"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmR-ag-TcF">
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmR-ag-TcF">
                                     <rect key="frame" x="10" y="383" width="394" height="65"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOT-S6-sUc">

@@ -7,7 +7,7 @@
 
 import UIKit
 import IQKeyboardManagerSwift
-
+import 
 // MARK: - 启动第三方库
 extension AppDelegate {
     func launchPartner(application: UIApplication, launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
@@ -20,6 +20,9 @@ extension AppDelegate {
         setUpBaiduMap()
         // 加载本地城市数据库
         setUpCityDB()
+        // 加载微信分享
+        setUpWX()
+        
     }
     
     func setupIQKeyboardManager() {
@@ -32,6 +35,10 @@ extension AppDelegate {
     
     func setUpBaiduMap() {
         BaiduMapManager.shared().setUpData()
+    }
+    
+    func setUpWX() {
+        WXApi.registerApp("xd930ea5d5a258f4f", withDescription: "天码营微信Demo")
     }
     
     func setUpCityDB() {

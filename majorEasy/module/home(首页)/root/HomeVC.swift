@@ -63,6 +63,12 @@ class HomeVC: BaseVC {
         self.navigationController?.pushViewController(CarManagerVC(), animated: true)
     }
     
+    @IBAction func shareBtnPressed(_ sender: UIButton) {
+        NBShareView.showTips { index in
+            print(index)
+        }
+    }
+    
 
 }
 

@@ -102,13 +102,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzP-Pq-UL0">
-                        <rect key="frame" x="215" y="123" width="87.5" height="20"/>
+                        <rect key="frame" x="215" y="123" width="81" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="VuC-6l-tSh"/>
                             <constraint firstAttribute="height" constant="20" id="dO8-a7-raF"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <state key="normal" title=" 拨打电话 " image="phoneicon">
+                        <state key="normal" title=" 拨打号码" image="联系方式-1">
                             <color key="titleColor" red="0.46666666670000001" green="0.57254901960000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                         <connections>
@@ -136,14 +136,14 @@
                             <constraint firstAttribute="width" constant="20" id="QjV-da-egj"/>
                         </constraints>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2c2-V5-i4a">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="编组 12" translatesAutoresizingMaskIntoConstraints="NO" id="2c2-V5-i4a">
                         <rect key="frame" x="129" y="84" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="Lin-YC-6IH"/>
                             <constraint firstAttribute="width" constant="20" id="mJh-1s-AQ5"/>
                         </constraints>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9x2-kW-pUY">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="时间-1" translatesAutoresizingMaskIntoConstraints="NO" id="9x2-kW-pUY">
                         <rect key="frame" x="129" y="104" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="H2i-9x-Ljj"/>
@@ -210,6 +210,8 @@
     <resources>
         <image name="location" width="20" height="20"/>
         <image name="money" width="20" height="20"/>
-        <image name="phoneicon" width="22.5" height="22.5"/>
+        <image name="时间-1" width="20" height="20"/>
+        <image name="编组 12" width="20" height="20"/>
+        <image name="联系方式-1" width="20" height="20"/>
     </resources>
 </document>

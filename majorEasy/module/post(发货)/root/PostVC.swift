@@ -112,6 +112,10 @@ class PostVC: BaseVC {
         $0.redLabel.isHidden = false
     }
     
+    //选择城市控件
+    lazy var chooseAreaView = NBCitySelectView(frame: CGRect(x: 0, y: kScreenH/4, width: kScreenW, height: 3*kScreenH/4 - SafeAreaBottomHeight - TabBarHeight)).then {
+        $0.backgroundColor = .white
+    }
     
     override func setUpData() {
         
@@ -211,29 +215,25 @@ class PostVC: BaseVC {
     }
     
     @IBAction func fromButtonPressed(_ sender: UIButton) {
-        let chooseVC = ChooseAreaVC(itemTitle:"装货地址选择")
-        chooseVC.myColsure = { [weak self] (cityName, cityId) in
-            self?.inputModel.senderCity = cityName
-            self?.inputModel.senderCityId = cityId
-            self?.fromField.text = cityName
+        self.view.endEditing(true)
+        self.chooseAreaView.show()
+        chooseAreaView.myColsure = { [weak self] (cityName, cityId) in
+            print(cityName)
+            print(cityId)
         }
-        
-        chooseVC.modalPresentationStyle = .overCurrentContext
-        self.present(chooseVC, animated: true)
     }
     
     @IBAction func toButtonPressed(_ sender: UIButton) {
-        let chooseVC = ChooseAreaVC(itemTitle:"卸货地址选择")
-        chooseVC.myColsure = { [weak self] (cityName, cityId) in
-            self?.inputModel.receiverCity = cityName
-            self?.inputModel.receiverCityId = cityId
-            self?.toField.text = cityName
+        self.view.endEditing(true)
+        self.chooseAreaView.show()
+        chooseAreaView.myColsure = { [weak self] (cityName, cityId) in
+            print(cityName)
+            print(cityId)
         }
-        chooseVC.modalPresentationStyle = .fullScreen
-        self.present(chooseVC, animated: true)
     }
     
     @IBAction func goodsButtonPressed(_ sender: UIButton) {
+        self.view.endEditing(true)
         let vc = GoodsTypeVC()
         vc.myColsure = { [weak self] (name, packType, minHeight, maxHeight, minVolume, maxVolume) in
             let title = name + "，" + packType + "，" + minHeight + "-" + maxHeight + "吨" + "，"  + minVolume + "-" + maxVolume

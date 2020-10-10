@@ -14,6 +14,7 @@ class NBCitySelectView: UIView {
 
     var myColsure: ((_ cityName: String, _ cityID: String) -> ())?
     
+    var cover:NBCovor?
     
     // 省份
     var provinceArr:Array = [String]()
@@ -101,6 +102,17 @@ class NBCitySelectView: UIView {
         
         print(self.provinceArr)
         
+    }
+    
+    func show() {
+        let bgView = UIView()
+        bgView.backgroundColor = UIColor.white
+        bgView.addSubview(self)
+        let height = kScreenH / 2.0;
+        self.frame = CGRect.init(x: 0, y: 0, width: ScreenWidth, height: height)
+        bgView.frame = CGRect.init(x: 0, y: 0, width: ScreenWidth, height: height+SafeAreaBottomHeight)
+        
+        cover = NBCovor.init(contentView: bgView)
     }
     
     //MARK: - 设置约束
@@ -193,7 +205,9 @@ extension NBCitySelectView: UITableViewDelegate, UITableViewDataSource {
                 
                 guard let colsure = self.myColsure else {return}
                 colsure("全国", "")
-                
+                guard let cover = self.cover else {return}
+                cover.hideCover({
+                })
                 self.cityArr.removeAll()
                 self.districtArr.removeAll()
                 self.cityTableView.reloadData()
@@ -209,7 +223,9 @@ extension NBCitySelectView: UITableViewDelegate, UITableViewDataSource {
                 
                 guard let colsure = self.myColsure else {return}
                 colsure(cityStr, cityIdStr)
-                
+                guard let cover = self.cover else {return}
+                cover.hideCover({
+                })
                 return
             } else {
                 guard let districtArray = NBDistrictModel.bg_find(District_TableName, where: "where \(bg_sqlKey("cityId")) = \(String(self.cityIdStr)) order by \(bg_sqlKey("districtId"))"), let arr = districtArray as? [NBDistrictModel] else {return}
@@ -249,6 +265,11 @@ extension NBCitySelectView: UITableViewDelegate, UITableViewDataSource {
             
             guard let colsure = self.myColsure else {return}
             colsure(cityStr, cityIdStr)
+            guard let cover = self.cover else {return}
+            cover.hideCover({
+            })
         }
+        
+        
     }
 }

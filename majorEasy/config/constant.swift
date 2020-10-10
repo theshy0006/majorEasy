@@ -117,3 +117,7 @@ public let color_main_yellow = RGBHex(0xFFBB28)
 public let font_iconFont = "iconfont"
 
 public let corner_radius = 6.0
+
+// MARK: -- 微信
+public let WX_APP_ID = "wx026f2e77e7065c4e"
+public let WX_App_Secret = "706be9517f6eb4a94870becf8d53dc4f"

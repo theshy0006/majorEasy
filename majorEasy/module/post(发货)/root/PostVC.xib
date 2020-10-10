@@ -324,7 +324,6 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="lOc-XJ-5hZ"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
                                             <connections>
                                                 <action selector="goodsButtonPressed:" destination="-1" eventType="touchUpInside" id="pca-O1-fhJ"/>
                                             </connections>
@@ -334,7 +333,6 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="u1J-F1-vBX"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
                                             <connections>
                                                 <action selector="lengthsButtonPressed:" destination="-1" eventType="touchUpInside" id="7HS-uv-daj"/>
                                             </connections>
@@ -344,7 +342,6 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="Ogd-NE-rFk"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
                                             <connections>
                                                 <action selector="specificationButtonPressed:" destination="-1" eventType="touchUpInside" id="CNE-3y-JZg"/>
                                             </connections>
@@ -354,7 +351,6 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="Kym-pJ-Z4l"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
                                             <connections>
                                                 <action selector="priceButtonPressed:" destination="-1" eventType="touchUpInside" id="X3N-o8-aVF"/>
                                             </connections>
@@ -364,7 +360,6 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="9gr-ep-aAT"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
                                             <connections>
                                                 <action selector="typeButtonPressed:" destination="-1" eventType="touchUpInside" id="giw-Ue-AyU"/>
                                             </connections>
@@ -374,7 +369,6 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="xGe-WY-KNb"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
                                             <connections>
                                                 <action selector="timeButtonPressed:" destination="-1" eventType="touchUpInside" id="El8-Yc-Za9"/>
                                             </connections>
@@ -384,7 +378,6 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="zpe-8H-TbI"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

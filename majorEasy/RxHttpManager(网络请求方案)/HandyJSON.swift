@@ -92,13 +92,6 @@ class MyInfo: HandyJSON {
     required init() {}
 }
 
-
-
-
-
-
-
-
 //首页轮播图对象
 class HomeImagesModel: HandyJSON {
     var status: Int = 0

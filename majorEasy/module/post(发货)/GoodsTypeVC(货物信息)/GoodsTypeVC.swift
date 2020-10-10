@@ -53,8 +53,6 @@ class GoodsTypeVC: BaseVC {
         return view
     }()
     
-    @IBAction func chooseGoodsName(_ sender: UIButton) {
-    }
     
     func resetTypeView(packType: String) {
         let typeArray = packType.components(separatedBy: "、")
@@ -88,6 +86,10 @@ class GoodsTypeVC: BaseVC {
         }
     }
     
+    @IBAction func backBtnPressed(_ sender: Any) {
+        
+        self.popBack()
+    }
     
 }
 
