@@ -207,6 +207,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-2O-ss9">
                                                     <rect key="frame" x="0.0" y="0.0" width="98.5" height="80"/>
                                                     <state key="normal" image="熟车管理"/>
+                                                    <connections>
+                                                        <action selector="carManagerPressed:" destination="-1" eventType="touchUpInside" id="TgZ-YN-QYS"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

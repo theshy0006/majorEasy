@@ -54,9 +54,13 @@ class HomeVC: BaseVC {
         self.navigationController?.pushViewController(SpecialLineVC(), animated: true)
     }
     
-    
+    //发货调车
     @IBAction func shuntBtnPressed(_ sender: UIButton) {
         self.navigationController?.pushViewController(ShuntVC(), animated: true)
+    }
+    //手机管车
+    @IBAction func carManagerPressed(_ sender: UIButton) {
+        self.navigationController?.pushViewController(CarManagerVC(), animated: true)
     }
     
 
