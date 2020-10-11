@@ -23,5 +23,7 @@
 #import <BaiduMapAPI_Search/BMKSearchComponent.h>
 #import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
 #import <BMKLocationkit/BMKLocationComponent.h>
-
+#import "WXApi.h"
+#import "WXApiManager.h"
+#import "ShareManager.h"
 #endif /* major_Bridging_Header_h */

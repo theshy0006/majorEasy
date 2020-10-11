@@ -222,3 +222,22 @@ extension DeleteModel {
         })
     }
 }
+
+// 获取车源列表
+extension CarModel {
+    //sortCode:1 代表默认排序 :2 距离排序
+    func getAllvehicles(pageNum: Int, pageSize: Int, sortCode: Int) -> Observable<CarModel> {
+        return RxHttpManager.fetchData(with: URL_GetAllvehicles,
+                                       method: .post,
+                                       parameters: [
+                                        "sortCode":sortCode,
+                                        "pageNum":pageNum,
+                                        "pageSize":pageSize,
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: CarModel.self).map({ (response: CarModel) -> CarModel in
+            return response
+        })
+    }
+}
+

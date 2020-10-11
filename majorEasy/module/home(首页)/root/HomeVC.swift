@@ -66,6 +66,13 @@ class HomeVC: BaseVC {
     @IBAction func shareBtnPressed(_ sender: UIButton) {
         NBShareView.showTips { index in
             print(index)
+            
+            if( index == 0 ) {
+                // 朋友圈
+                ShareManager.shareInstance().shareWeChatFriend("测试的呀", andContent: "加油加油加油", image: "", linkWith: "https://www.baidu.com", shareType: .WECHATZONE, style: .cargo)
+            } else {
+                // 微信好友
+            }
         }
     }
     

@@ -8,28 +8,27 @@
 import UIKit
 
 class CarSourceViewModel: NBViewModel {
-    var orderModel = MySuppliesModel()
-    var deleteModel = DeleteModel()
+    var carModel = CarModel()
     var pageNum = 1
     var loadMore = false
-    var dataSource:[MySuppliesInfo] = []
+    var dataSource:[CarInfo] = []
     //获取短信验证码（）
-    func getMySuppliesModel(
+    func getAllvehicles(
                   success: (()->())?,
                   failure: ((APIError)->())?) {
-        orderModel.getMySuppliesModel(pageNum: pageNum, pageSize: 10, sortType: "1", appSupplyStatus: "").subscribe(onNext: { [weak self] model in
+        carModel.getAllvehicles(pageNum: pageNum, pageSize: 10, sortCode: 1).subscribe(onNext: { [weak self] model in
             if let suc = success {
                 guard let weakSelf = self else {return}
                 if (!weakSelf.loadMore) {
                     weakSelf.dataSource.removeAll()
                 }
                 
-                if( model.value.count < 10 ) {
+                if( model.value.list.count < 10 ) {
                     weakSelf.pageNum = -1
                 } else {
                     weakSelf.pageNum = weakSelf.pageNum + 1
                 }
-                weakSelf.dataSource = weakSelf.dataSource + model.value
+                weakSelf.dataSource = weakSelf.dataSource + model.value.list
                 suc()
             }
         }, onError: { (error) in
@@ -37,26 +36,5 @@ class CarSourceViewModel: NBViewModel {
                 fail(err)
             }
         }).disposed(by: disposeBag)
-    }
-    //删除货源
-    func deleteMySupplies(supplyNum: String,
-                          success: (()->())?,
-                          failure: ((APIError)->())?) {
-        deleteModel.deleteMySupplies(supplyNum: supplyNum).subscribe(onNext: {[weak self] model in
-            if let suc = success {
-                for idx in 0..<(self?.dataSource.count)! {
-                    if( self?.dataSource[idx].supplyNum == supplyNum ) {
-                        self?.dataSource.remove(at: idx)
-                        break
-                    }
-                }
-                suc()
-            }
-        }, onError: { (error) in
-            if let fail = failure, let err = error as? APIError {
-                fail(err)
-            }
-        }).disposed(by: disposeBag)
-        
     }
 }

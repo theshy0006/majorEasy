@@ -435,3 +435,63 @@ class DeleteModel: HandyJSON {
     var value: String?
     required init() {}
 }
+
+//车源列表
+class CarModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: CarItemModel = CarItemModel()
+    required init() {}
+}
+
+class CarItemModel: HandyJSON {
+    var list: [CarInfo] = [CarInfo]()
+    required init() {}
+}
+
+
+//车源列表对应的车源项
+class CarInfo: HandyJSON {
+    var bankCardNum: String?
+    var cooperationTimes: Int = 0
+    var driverLicense: String?
+    var headPortraitKey: String?
+    var headPortraitUrl: String?
+    var idReview: Int = 0
+    var idcardNum: String?
+    var ifFamilarVehicle: Bool = false
+    var licenseNum: String?
+    var locationAddress: String?
+    var locationDistance: Float = 0
+    var locationLat: String?
+    var locationLon: String?
+    var locationMsg: String?
+    var locationTime: String?
+    var locationUpdateTime: String?
+    var ownerName: String?
+    var ownerPhoneNum: String?
+    var plateColor: String?
+    var plateType: String?
+    var proxyBankCardNum: String?
+    var proxyName: String?
+    var qualificationNum: String?
+    var registUserId: Int = 0
+    var registUserName: String?
+    var registUserPhone: String?
+    var registerTime: String?
+    var regularRoutes: [String]?
+    var regularRoutesMsg: String?
+    var stagnationCity: String?
+    var stagnationCityCode: String?
+    var transportationPermits: String?
+    var userEvaluateRate: String?
+    var vehicleHeight: Float = 0
+    var vehicleLength: Float = 0
+    var vehicleLoad: Float = 0
+    var vehicleNum: String?
+    var vehicleReview: Int = 0
+    var vehicleSort: String?
+    var vehicleType: String?
+    var vehicleTypeId: Int = 0
+    required init() {}
+}

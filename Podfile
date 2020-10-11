@@ -20,5 +20,5 @@ target 'majorEasy' do
   pod 'BGFMDB', '~> 2.0.9'
   pod 'ZCycleView'
   pod 'SDWebImage'
-  pod 'WechatOpenSDK'
+  pod 'WechatOpenSDK','<= 1.8.5'
 end

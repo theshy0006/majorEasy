@@ -191,5 +191,19 @@ extension UIImage {
         
         return scaledImage!
     }
+    
+    func compressImageOnlength(maxLength: Int) -> Data? {
+            let maxL = maxLength * 1024
+            var compress:CGFloat = 0.9
+            let maxCompress:CGFloat = 0.1
+            var imageData = self.jpegData(compressionQuality: compress)
+            while (imageData?.count)! > maxL && compress > maxCompress {
+                compress -= 0.1
+                imageData = self.jpegData(compressionQuality: compress)
+            }
+            return imageData
+        }
+
+    
 }
 

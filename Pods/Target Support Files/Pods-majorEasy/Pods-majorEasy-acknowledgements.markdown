@@ -326,7 +326,7 @@ SOFTWARE.
 
 ## WechatOpenSDK
 
-Copyright 2020 tencent.com. All rights reserved.
+Copyright 2019 tencent.com. All rights reserved.
 
 
 ## ZCycleView

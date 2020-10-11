@@ -45,8 +45,8 @@ class SendingCell: UITableViewCell {
         contentLabel.text = "整车：" + (model.mySupplyMsg ?? "")
         typeLabel.text = "规格：" + "长\(model.goodsLength)/" + "宽\(model.goodsWide)/"
             + "高\(model.goodsHeight)/" + "直径\(model.goodsDiameter)米"
-        readNumLabel.text = "\(model.releaseNum)"
-        contactNumLabel.text = "\(model.contactNum ?? "")"
+        readNumLabel.text = "\(model.supplyViews)"
+        contactNumLabel.text = "\(model.haveContacted)"
     }
     
     @IBAction func editAgain(_ sender: UIButton) {

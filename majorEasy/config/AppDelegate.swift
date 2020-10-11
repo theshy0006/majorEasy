@@ -33,9 +33,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         LanchManager.launchAnimation()
         return true
     }
-
-
-
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if( url.host == "oauth") {
+            //微信登录
+        } else if( url.host == "pay" ) {
+            //微信支付
+        } else if( url.host == "platformId=wechat") {
+            return WXApi.handleOpen(url, delegate: WXApiManager.shared())
+        } else {
+            return true
+        }
+        return true
+        
+    }
 }
 
 extension AppDelegate {

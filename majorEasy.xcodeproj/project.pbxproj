@@ -10,6 +10,8 @@
 		35AB3080FC659EFB94DBFC2D /* Pods_majorEasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66A43EFEAC6DD8E5118DBE3 /* Pods_majorEasy.framework */; };
 		8D0187D42525F4F80074B5BA /* MyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0187D32525F4F80074B5BA /* MyViewModel.swift */; };
 		8D0187D725260E050074B5BA /* PostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0187D625260E050074B5BA /* PostVC.xib */; };
+		8D17427425319C9000083988 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D17427325319C9000083988 /* WXApiManager.m */; };
+		8D17427925319E9700083988 /* ShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D17427825319E9700083988 /* ShareManager.m */; };
 		8D1B45472520595900251D56 /* NBOneEdgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B45462520595900251D56 /* NBOneEdgeView.swift */; };
 		8D1B454C2520599800251D56 /* ForgetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B454A2520599800251D56 /* ForgetVC.swift */; };
 		8D1B454D2520599800251D56 /* ForgetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B454B2520599800251D56 /* ForgetVC.xib */; };
@@ -150,6 +152,10 @@
 		613B819825CC96EC6A585851 /* Pods-majorEasy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-majorEasy.debug.xcconfig"; path = "Target Support Files/Pods-majorEasy/Pods-majorEasy.debug.xcconfig"; sourceTree = "<group>"; };
 		8D0187D32525F4F80074B5BA /* MyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModel.swift; sourceTree = "<group>"; };
 		8D0187D625260E050074B5BA /* PostVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostVC.xib; sourceTree = "<group>"; };
+		8D17427225319C9000083988 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		8D17427325319C9000083988 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
+		8D17427725319E9700083988 /* ShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareManager.h; sourceTree = "<group>"; };
+		8D17427825319E9700083988 /* ShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareManager.m; sourceTree = "<group>"; };
 		8D1B45462520595900251D56 /* NBOneEdgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBOneEdgeView.swift; sourceTree = "<group>"; };
 		8D1B454A2520599800251D56 /* ForgetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetVC.swift; sourceTree = "<group>"; };
 		8D1B454B2520599800251D56 /* ForgetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetVC.xib; sourceTree = "<group>"; };
@@ -318,6 +324,24 @@
 				DC41740919130D79AB2910EF /* Pods-majorEasy.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D17427125319C9000083988 /* WXApiManager(微信SDK封装) */ = {
+			isa = PBXGroup;
+			children = (
+				8D17427225319C9000083988 /* WXApiManager.h */,
+				8D17427325319C9000083988 /* WXApiManager.m */,
+			);
+			path = "WXApiManager(微信SDK封装)";
+			sourceTree = "<group>";
+		};
+		8D17427625319E9700083988 /* ShareManager(分享封装) */ = {
+			isa = PBXGroup;
+			children = (
+				8D17427725319E9700083988 /* ShareManager.h */,
+				8D17427825319E9700083988 /* ShareManager.m */,
+			);
+			path = "ShareManager(分享封装)";
 			sourceTree = "<group>";
 		};
 		8D1B4545252058D600251D56 /* register */ = {
@@ -653,7 +677,7 @@
 			isa = PBXGroup;
 			children = (
 				8DFA16A72530A3C000292987 /* KnownVC(熟车) */,
-				8DFA16A62530A3B100292987 /* NearVC(附件) */,
+				8DFA16A62530A3B100292987 /* NearVC(附近车源) */,
 				8DFA16A52530A38000292987 /* CarSourceVC(车源) */,
 				8DFA16A02530A31D00292987 /* CarManagerVC(手机管车) */,
 				8D43421B252FED13007EE9F1 /* QuoteVC(已有报价) */,
@@ -768,7 +792,6 @@
 			isa = PBXGroup;
 			children = (
 				9F657FBD253180D9006BAB16 /* NBShare(分享控件) */,
-				9F657F8C25314CB2006BAB16 /* GoodsTypeView */,
 				8DFA16B22530A74600292987 /* NBSelectView(下拉选择控件) */,
 				8D1B455A252086A400251D56 /* SimpleWebView(不需要交互的WebView) */,
 				8D5A09EA2520551000DE4258 /* NBEdgeView */,
@@ -867,6 +890,8 @@
 		8DC1E17225203E5D003C1F94 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				8D17427625319E9700083988 /* ShareManager(分享封装) */,
+				8D17427125319C9000083988 /* WXApiManager(微信SDK封装) */,
 				8DC1E17325203E5D003C1F94 /* NBLoadManager(等待加载框) */,
 				8DC1E17625203E5D003C1F94 /* BaiduMapManager */,
 				8DC1E17925203E5D003C1F94 /* LanchManager(启动动画) */,
@@ -1001,12 +1026,12 @@
 			path = "CarSourceVC(车源)";
 			sourceTree = "<group>";
 		};
-		8DFA16A62530A3B100292987 /* NearVC(附件) */ = {
+		8DFA16A62530A3B100292987 /* NearVC(附近车源) */ = {
 			isa = PBXGroup;
 			children = (
 				8DFA16AC2530A41800292987 /* NearVC.swift */,
 			);
-			path = "NearVC(附件)";
+			path = "NearVC(附近车源)";
 			sourceTree = "<group>";
 		};
 		8DFA16A72530A3C000292987 /* KnownVC(熟车) */ = {
@@ -1024,13 +1049,6 @@
 				8DFA16B32530A88600292987 /* NBSelectView.m */,
 			);
 			path = "NBSelectView(下拉选择控件)";
-			sourceTree = "<group>";
-		};
-		9F657F8C25314CB2006BAB16 /* GoodsTypeView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GoodsTypeView;
 			sourceTree = "<group>";
 		};
 		9F657FBD253180D9006BAB16 /* NBShare(分享控件) */ = {
@@ -1061,8 +1079,8 @@
 				8DC1E076252016D7003C1F94 /* Sources */,
 				8DC1E077252016D7003C1F94 /* Frameworks */,
 				8DC1E078252016D7003C1F94 /* Resources */,
-				02A147E520424D3A1BF7C2DE /* [CP] Embed Pods Frameworks */,
-				EB7A4CB2CFB06E359F9A4A9B /* [CP] Copy Pods Resources */,
+				2F95EBEB86EE0B9FF4D4AE17 /* [CP] Embed Pods Frameworks */,
+				ADC8272C46C830F9DC56D45B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1138,7 +1156,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02A147E520424D3A1BF7C2DE /* [CP] Embed Pods Frameworks */ = {
+		2F95EBEB86EE0B9FF4D4AE17 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1177,7 +1195,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB7A4CB2CFB06E359F9A4A9B /* [CP] Copy Pods Resources */ = {
+		ADC8272C46C830F9DC56D45B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1230,6 +1248,7 @@
 				8DC1E16125203DDB003C1F94 /* NBTextFiled.swift in Sources */,
 				8D9209002524CE4900D33D69 /* NBViewModel.swift in Sources */,
 				8D3A15F825244FAC00B9D9F8 /* AllOrderCell.swift in Sources */,
+				8D17427425319C9000083988 /* WXApiManager.m in Sources */,
 				8D3AED762523270400A8F273 /* OrderViewModel.swift in Sources */,
 				8DC1E1A925203E5D003C1F94 /* NBDefaultCache.swift in Sources */,
 				8DFC45DC2522FFE8009D9081 /* MyVC.swift in Sources */,
@@ -1258,6 +1277,7 @@
 				8DC1E16E25203DDB003C1F94 /* NBAlertView.swift in Sources */,
 				8D43422D25305296007EE9F1 /* SendingCell.swift in Sources */,
 				8DC1E0C12520176B003C1F94 /* UIResponder.swift in Sources */,
+				8D17427925319E9700083988 /* ShareManager.m in Sources */,
 				8DC1E0C62520176B003C1F94 /* UIAlertController.swift in Sources */,
 				8D58710325280625001C3614 /* GoodsTypeViewModel.swift in Sources */,
 				8D43423125305DA2007EE9F1 /* SendingViewModel.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import UIKit
 import IQKeyboardManagerSwift
-import 
+ 
 // MARK: - 启动第三方库
 extension AppDelegate {
     func launchPartner(application: UIApplication, launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
@@ -38,7 +38,7 @@ extension AppDelegate {
     }
     
     func setUpWX() {
-        WXApi.registerApp("xd930ea5d5a258f4f", withDescription: "天码营微信Demo")
+        WXApi.registerApp(WX_APP_ID)
     }
     
     func setUpCityDB() {
