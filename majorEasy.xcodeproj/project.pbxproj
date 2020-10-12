@@ -47,6 +47,8 @@
 		8D43422E25305296007EE9F1 /* SendingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D43422C25305296007EE9F1 /* SendingCell.xib */; };
 		8D43423125305DA2007EE9F1 /* SendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43423025305DA2007EE9F1 /* SendingViewModel.swift */; };
 		8D4342342530601B007EE9F1 /* SendingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4342332530601B007EE9F1 /* SendingVC.xib */; };
+		8D44204C2534317C00755D91 /* NearViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44204B2534317C00755D91 /* NearViewModel.swift */; };
+		8D44204F2534537F00755D91 /* KnownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44204E2534537F00755D91 /* KnownViewModel.swift */; };
 		8D5213982521A6CC00B69BC6 /* ForgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */; };
 		8D57ECEA252BFB11007F4A87 /* SpecialLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57ECE9252BFB11007F4A87 /* SpecialLineViewModel.swift */; };
 		8D57ECEE252C008A007F4A87 /* SpecialLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57ECEC252C008A007F4A87 /* SpecialLineCell.swift */; };
@@ -193,6 +195,8 @@
 		8D43422C25305296007EE9F1 /* SendingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendingCell.xib; sourceTree = "<group>"; };
 		8D43423025305DA2007EE9F1 /* SendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingViewModel.swift; sourceTree = "<group>"; };
 		8D4342332530601B007EE9F1 /* SendingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendingVC.xib; sourceTree = "<group>"; };
+		8D44204B2534317C00755D91 /* NearViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearViewModel.swift; sourceTree = "<group>"; };
+		8D44204E2534537F00755D91 /* KnownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownViewModel.swift; sourceTree = "<group>"; };
 		8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewModel.swift; sourceTree = "<group>"; };
 		8D57ECE9252BFB11007F4A87 /* SpecialLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineViewModel.swift; sourceTree = "<group>"; };
 		8D57ECEC252C008A007F4A87 /* SpecialLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineCell.swift; sourceTree = "<group>"; };
@@ -1030,6 +1034,7 @@
 			isa = PBXGroup;
 			children = (
 				8DFA16AC2530A41800292987 /* NearVC.swift */,
+				8D44204B2534317C00755D91 /* NearViewModel.swift */,
 			);
 			path = "NearVC(附近车源)";
 			sourceTree = "<group>";
@@ -1038,6 +1043,7 @@
 			isa = PBXGroup;
 			children = (
 				8DFA16A82530A40500292987 /* KnownVC.swift */,
+				8D44204E2534537F00755D91 /* KnownViewModel.swift */,
 			);
 			path = "KnownVC(熟车)";
 			sourceTree = "<group>";
@@ -1235,6 +1241,7 @@
 				8D58710D2528063C001C3614 /* CarTypeVC.swift in Sources */,
 				8D43421D252FED31007EE9F1 /* QuoteVC.swift in Sources */,
 				8D284584252422CA0051384F /* GradeOrderVC.swift in Sources */,
+				8D44204F2534537F00755D91 /* KnownViewModel.swift in Sources */,
 				8DC1E1A125203E5D003C1F94 /* HandyJSON.swift in Sources */,
 				8D1B45632520989100251D56 /* LoginViewModel.swift in Sources */,
 				8D434222252FF15E007EE9F1 /* OftenCell.swift in Sources */,
@@ -1293,6 +1300,7 @@
 				8DC1E19F25203E5D003C1F94 /* DataCenterManager.swift in Sources */,
 				8D43422925304FB4007EE9F1 /* HistoryViewModel.swift in Sources */,
 				8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */,
+				8D44204C2534317C00755D91 /* NearViewModel.swift in Sources */,
 				8DFA16B02530A42A00292987 /* CarSourceVC.swift in Sources */,
 				8DC1E16425203DDB003C1F94 /* NBSegmentView.swift in Sources */,
 				8DC1E0C82520176B003C1F94 /* NavigationVC.swift in Sources */,

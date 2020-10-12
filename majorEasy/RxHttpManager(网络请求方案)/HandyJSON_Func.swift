@@ -226,11 +226,39 @@ extension DeleteModel {
 // 获取车源列表
 extension CarModel {
     //sortCode:1 代表默认排序 :2 距离排序
+
     func getAllvehicles(pageNum: Int, pageSize: Int, sortCode: Int) -> Observable<CarModel> {
+        
+        
+        var latitude = 0.0
+        var long = 0.0
+        if let location = BaiduMapManager.shared().userLocation.location {
+            latitude = location.coordinate.latitude
+            long = location.coordinate.longitude
+        }
+        
+        
+        
         return RxHttpManager.fetchData(with: URL_GetAllvehicles,
                                        method: .post,
                                        parameters: [
+                                        "pointLat":latitude,
+                                        "pointLon":long,
                                         "sortCode":sortCode,
+                                        "pageNum":pageNum,
+                                        "pageSize":pageSize,
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: CarModel.self).map({ (response: CarModel) -> CarModel in
+            return response
+        })
+    }
+    
+    func getMyFamiliarVehicles(pageNum: Int, pageSize: Int, departurePlaceCode: String) -> Observable<CarModel> {
+        return RxHttpManager.fetchData(with: URL_GetMyFamiliarVehicles,
+                                       method: .post,
+                                       parameters: [
+                                        "departurePlaceCode":departurePlaceCode,
                                         "pageNum":pageNum,
                                         "pageSize":pageSize,
                                        ],

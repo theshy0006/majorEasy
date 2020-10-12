@@ -27,6 +27,17 @@ class HomeVC: BaseVC {
             weakSelf.initBanner()
             NBHUDManager.toast(error.message)
         }
+        
+        BaiduMapManager.shared().startUpdatingLocation()
+        
+        // 定位成功后的回调
+        BaiduMapManager.shared().locationSuccess = {
+            let lat = "\(BaiduMapManager.shared().userLocation.location.coordinate.latitude)"
+            let lng = "\(BaiduMapManager.shared().userLocation.location.coordinate.longitude)"
+            
+            print(lat)
+            print(lng)
+        }
     }
     
     override func setUpView() {
