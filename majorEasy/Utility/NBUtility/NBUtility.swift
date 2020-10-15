@@ -14,7 +14,7 @@ let CUSTOMER_SERVICE_TEL = "051082030388"
 
 class NBUtility: NSObject {
     //MARK: - 打电话
-    public class func showTelephone(_ viewController: UIViewController, _ phone: String = CUSTOMER_SERVICE_TEL) {
+    public class func showTelephone(_ phone: String = CUSTOMER_SERVICE_TEL) {
         if let telUrl = URL(string: "tel://\(phone)") {
             UIApplication.shared.open(telUrl, options: [:], completionHandler: nil)
         }

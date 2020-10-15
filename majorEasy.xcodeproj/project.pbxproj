@@ -72,6 +72,13 @@
 		8D9208FD2524CDE000D33D69 /* FinishOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208FC2524CDE000D33D69 /* FinishOrderViewModel.swift */; };
 		8D9209002524CE4900D33D69 /* NBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208FF2524CE4900D33D69 /* NBViewModel.swift */; };
 		8DA5B0A52520558F00D517F9 /* NBEdgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5B0A42520558F00D517F9 /* NBEdgeView.swift */; };
+		8DBD62B62534A130006F59F9 /* SearchGoodsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD62B52534A130006F59F9 /* SearchGoodsVC.swift */; };
+		8DBD62BB2534A262006F59F9 /* TodayGoodsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD62BA2534A262006F59F9 /* TodayGoodsVC.swift */; };
+		8DBD62BF2534A278006F59F9 /* OftenLinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD62BE2534A278006F59F9 /* OftenLinesVC.swift */; };
+		8DBD62C32534A414006F59F9 /* NBSelectPlusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD62C22534A414006F59F9 /* NBSelectPlusView.m */; };
+		8DBD62C62534A720006F59F9 /* TodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD62C52534A720006F59F9 /* TodayViewModel.swift */; };
+		8DBD62CA2534AEE8006F59F9 /* AllGoodsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD62C82534AEE8006F59F9 /* AllGoodsCell.swift */; };
+		8DBD62CB2534AEE8006F59F9 /* AllGoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DBD62C92534AEE8006F59F9 /* AllGoodsCell.xib */; };
 		8DC1E0BD2520176B003C1F94 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0982520176A003C1F94 /* UIView.swift */; };
 		8DC1E0BE2520176B003C1F94 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E0992520176A003C1F94 /* UITableView.swift */; };
 		8DC1E0BF2520176B003C1F94 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E09A2520176A003C1F94 /* Formatter.swift */; };
@@ -220,6 +227,14 @@
 		8D9208FC2524CDE000D33D69 /* FinishOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishOrderViewModel.swift; sourceTree = "<group>"; };
 		8D9208FF2524CE4900D33D69 /* NBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBViewModel.swift; sourceTree = "<group>"; };
 		8DA5B0A42520558F00D517F9 /* NBEdgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBEdgeView.swift; sourceTree = "<group>"; };
+		8DBD62B52534A130006F59F9 /* SearchGoodsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGoodsVC.swift; sourceTree = "<group>"; };
+		8DBD62BA2534A262006F59F9 /* TodayGoodsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayGoodsVC.swift; sourceTree = "<group>"; };
+		8DBD62BE2534A278006F59F9 /* OftenLinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OftenLinesVC.swift; sourceTree = "<group>"; };
+		8DBD62C12534A414006F59F9 /* NBSelectPlusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBSelectPlusView.h; sourceTree = "<group>"; };
+		8DBD62C22534A414006F59F9 /* NBSelectPlusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBSelectPlusView.m; sourceTree = "<group>"; };
+		8DBD62C52534A720006F59F9 /* TodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewModel.swift; sourceTree = "<group>"; };
+		8DBD62C82534AEE8006F59F9 /* AllGoodsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGoodsCell.swift; sourceTree = "<group>"; };
+		8DBD62C92534AEE8006F59F9 /* AllGoodsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllGoodsCell.xib; sourceTree = "<group>"; };
 		8DC1E07A252016D7003C1F94 /* majorEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = majorEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC1E08B252016D8003C1F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC1E0982520176A003C1F94 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -611,6 +626,33 @@
 			path = "SpecialLineVC(专线查询)";
 			sourceTree = "<group>";
 		};
+		8DBD62B42534A0FD006F59F9 /* SearchGoodsVC(我要找货) */ = {
+			isa = PBXGroup;
+			children = (
+				8DBD62B52534A130006F59F9 /* SearchGoodsVC.swift */,
+			);
+			path = "SearchGoodsVC(我要找货)";
+			sourceTree = "<group>";
+		};
+		8DBD62B82534A224006F59F9 /* TodayGoodsVC(今日货源) */ = {
+			isa = PBXGroup;
+			children = (
+				8DBD62BA2534A262006F59F9 /* TodayGoodsVC.swift */,
+				8DBD62C52534A720006F59F9 /* TodayViewModel.swift */,
+				8DBD62C82534AEE8006F59F9 /* AllGoodsCell.swift */,
+				8DBD62C92534AEE8006F59F9 /* AllGoodsCell.xib */,
+			);
+			path = "TodayGoodsVC(今日货源)";
+			sourceTree = "<group>";
+		};
+		8DBD62B92534A239006F59F9 /* OftenLinesVC(常跑路线) */ = {
+			isa = PBXGroup;
+			children = (
+				8DBD62BE2534A278006F59F9 /* OftenLinesVC.swift */,
+			);
+			path = "OftenLinesVC(常跑路线)";
+			sourceTree = "<group>";
+		};
 		8DC1E071252016D7003C1F94 = {
 			isa = PBXGroup;
 			children = (
@@ -680,6 +722,9 @@
 		8DC1E0A32520176A003C1F94 /* home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				8DBD62B92534A239006F59F9 /* OftenLinesVC(常跑路线) */,
+				8DBD62B82534A224006F59F9 /* TodayGoodsVC(今日货源) */,
+				8DBD62B42534A0FD006F59F9 /* SearchGoodsVC(我要找货) */,
 				8DFA16A72530A3C000292987 /* KnownVC(熟车) */,
 				8DFA16A62530A3B100292987 /* NearVC(附近车源) */,
 				8DFA16A52530A38000292987 /* CarSourceVC(车源) */,
@@ -1053,6 +1098,8 @@
 			children = (
 				8DFA16B42530A88600292987 /* NBSelectView.h */,
 				8DFA16B32530A88600292987 /* NBSelectView.m */,
+				8DBD62C12534A414006F59F9 /* NBSelectPlusView.h */,
+				8DBD62C22534A414006F59F9 /* NBSelectPlusView.m */,
 			);
 			path = "NBSelectView(下拉选择控件)";
 			sourceTree = "<group>";
@@ -1147,6 +1194,7 @@
 				8DFA16BA2530B29F00292987 /* SourceCell.xib in Resources */,
 				8DC1E1062520202A003C1F94 /* LoginVC.xib in Resources */,
 				8D1B454D2520599800251D56 /* ForgetVC.xib in Resources */,
+				8DBD62CB2534AEE8006F59F9 /* AllGoodsCell.xib in Resources */,
 				8D434223252FF15E007EE9F1 /* OftenCell.xib in Resources */,
 				8D5870FC25280102001C3614 /* city.json in Resources */,
 				8DFC45DD2522FFE8009D9081 /* MyVC.xib in Resources */,
@@ -1226,6 +1274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC1E16A25203DDB003C1F94 /* NBCitySelectView.swift in Sources */,
+				8DBD62BF2534A278006F59F9 /* OftenLinesVC.swift in Sources */,
 				8D1B45522520627300251D56 /* RegisterVC.swift in Sources */,
 				8D3AED9125232D9C00A8F273 /* XXPageTabView.m in Sources */,
 				8D57ECEE252C008A007F4A87 /* SpecialLineCell.swift in Sources */,
@@ -1264,6 +1313,7 @@
 				8DC1E1A525203E5D003C1F94 /* PrintBeautifulLog.m in Sources */,
 				8D284580252422B30051384F /* TransferOrderVC.swift in Sources */,
 				8DC1E0BD2520176B003C1F94 /* UIView.swift in Sources */,
+				8DBD62C62534A720006F59F9 /* TodayViewModel.swift in Sources */,
 				8D284576252413330051384F /* WaitOrderVC.swift in Sources */,
 				8DC1E16525203DDB003C1F94 /* NBActionSheetItem.swift in Sources */,
 				8DC1E16C25203DDB003C1F94 /* WechatRefreshHeader.swift in Sources */,
@@ -1280,8 +1330,10 @@
 				9F657FC0253180D9006BAB16 /* NBShareView.swift in Sources */,
 				8DFA16B52530A88600292987 /* NBSelectView.m in Sources */,
 				8DC1E0D02520176B003C1F94 /* constant.swift in Sources */,
+				8DBD62C32534A414006F59F9 /* NBSelectPlusView.m in Sources */,
 				8D434210252FEB7A007EE9F1 /* SendingVC.swift in Sources */,
 				8DC1E16E25203DDB003C1F94 /* NBAlertView.swift in Sources */,
+				8DBD62B62534A130006F59F9 /* SearchGoodsVC.swift in Sources */,
 				8D43422D25305296007EE9F1 /* SendingCell.swift in Sources */,
 				8DC1E0C12520176B003C1F94 /* UIResponder.swift in Sources */,
 				8D17427925319E9700083988 /* ShareManager.m in Sources */,
@@ -1299,6 +1351,7 @@
 				8D0187D42525F4F80074B5BA /* MyViewModel.swift in Sources */,
 				8DC1E19F25203E5D003C1F94 /* DataCenterManager.swift in Sources */,
 				8D43422925304FB4007EE9F1 /* HistoryViewModel.swift in Sources */,
+				8DBD62BB2534A262006F59F9 /* TodayGoodsVC.swift in Sources */,
 				8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */,
 				8D44204C2534317C00755D91 /* NearViewModel.swift in Sources */,
 				8DFA16B02530A42A00292987 /* CarSourceVC.swift in Sources */,
@@ -1323,6 +1376,7 @@
 				8DC1E1A725203E5D003C1F94 /* NBUtility.swift in Sources */,
 				8DC1E1A225203E5D003C1F94 /* ServiceConfig.swift in Sources */,
 				8DC1E16F25203DDB003C1F94 /* NBCovorEnum.swift in Sources */,
+				8DBD62CA2534AEE8006F59F9 /* AllGoodsCell.swift in Sources */,
 				8DC1E1AD25203E5D003C1F94 /* NBCacheBehavior.swift in Sources */,
 				8D9208F12524CD5000D33D69 /* TransferOrderViewModel.swift in Sources */,
 				8D28458A2524255D0051384F /* AllOrderViewModel.swift in Sources */,

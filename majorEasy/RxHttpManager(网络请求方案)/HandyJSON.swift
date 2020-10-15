@@ -361,6 +361,19 @@ class MySuppliesModel: HandyJSON {
     required init() {}
 }
 
+//所有货源列表
+class AllSuppliesModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: AllSuppliesItemModel = AllSuppliesItemModel()
+    required init() {}
+}
+
+class AllSuppliesItemModel: HandyJSON {
+    var list: [MySuppliesInfo] = [MySuppliesInfo]()
+    required init() {}
+}
+
 // 我的货源项
 class MySuppliesInfo: HandyJSON {
     var arrivalData: String?

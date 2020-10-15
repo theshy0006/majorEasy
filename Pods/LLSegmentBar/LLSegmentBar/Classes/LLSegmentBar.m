@@ -87,6 +87,7 @@
         btn.titleLabel.font = self.config.itemF;
         [btn setTitle:item forState:UIControlStateNormal];
         [self.contentView addSubview:btn];
+        
         [self.itemBtns addObject:btn];
     }
     

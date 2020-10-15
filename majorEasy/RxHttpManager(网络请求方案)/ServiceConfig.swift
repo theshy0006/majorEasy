@@ -11,7 +11,7 @@ import UIKit
 let BaseURL = ServiceConfigure.baseURL
 
 struct ServiceConfigure {
-    static let apiEnvironment: YY_ApiEnvironment = .test
+    static let apiEnvironment: YY_ApiEnvironment = .product
     //
     static var baseURL: String  {
         return apiEnvironment.base()
@@ -77,6 +77,9 @@ let URL_GetFlatbedCompanys = BaseURL + "App-vehicle/getFlatbedCompanys"
 let URL_getMySupplies = BaseURL + "App-supply/getMySupplies"
 // 删除货源
 let URL_deletMysupply = BaseURL + "App-supply/deletMysupply/"
+// 所有货源
+let URL_GetSuppliesByParam = BaseURL + "App-supplies/getSuppliesByParam"
+
 
 
 // 服务协议

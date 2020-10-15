@@ -223,6 +223,42 @@ extension DeleteModel {
     }
 }
 
+// 获取所有货源
+extension AllSuppliesModel {
+    func getSuppliesByParam(pageNum: Int, pageSize: Int, sortType: Int) -> Observable<AllSuppliesModel> {
+        
+        
+        var latitude = 0.0
+        var long = 0.0
+        if let location = BaiduMapManager.shared().userLocation.location {
+            latitude = location.coordinate.latitude
+            long = location.coordinate.longitude
+        }
+        var location = ""
+        if( latitude < 1.0 || long < 1.0 ) {
+            
+        } else {
+            location = "\(latitude)" + "," + "\(long)"
+        }
+        
+        
+        return RxHttpManager.fetchData(with: URL_GetSuppliesByParam,
+                                       method: .post,
+                                       parameters: [
+                                        "location":location,
+                                        "sortType":sortType,
+                                        "pageNum":pageNum,
+                                        "pageSize":pageSize,
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: AllSuppliesModel.self).map({ (response: AllSuppliesModel) -> AllSuppliesModel in
+            return response
+        })
+    }}
+
+
+
+
 // 获取车源列表
 extension CarModel {
     //sortCode:1 代表默认排序 :2 距离排序

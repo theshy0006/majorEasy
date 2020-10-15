@@ -84,6 +84,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhW-Gx-N9M">
                                                     <rect key="frame" x="0.0" y="0.0" width="98.5" height="80"/>
                                                     <state key="normal" image="我要找货"/>
+                                                    <connections>
+                                                        <action selector="searchBtnPressed:" destination="-1" eventType="touchUpInside" id="ErA-bS-gTe"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

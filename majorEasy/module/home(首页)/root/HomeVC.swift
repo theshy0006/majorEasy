@@ -57,7 +57,7 @@ class HomeVC: BaseVC {
     
     //点击导航栏右侧按钮事件
     @objc override func gotoForward(){
-        NBUtility.showTelephone(self)
+        NBUtility.showTelephone()
     }
     
     //专线查询
@@ -73,6 +73,12 @@ class HomeVC: BaseVC {
     @IBAction func carManagerPressed(_ sender: UIButton) {
         self.navigationController?.pushViewController(CarManagerVC(), animated: true)
     }
+    
+    //我要找货
+    @IBAction func searchBtnPressed(_ sender: UIButton) {
+        self.navigationController?.pushViewController(SearchGoodsVC(), animated: true)
+    }
+    
     
     @IBAction func shareBtnPressed(_ sender: UIButton) {
         NBShareView.showTips { index in
