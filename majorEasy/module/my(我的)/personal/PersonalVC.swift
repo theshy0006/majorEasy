@@ -30,6 +30,7 @@ class PersonalVC: BaseVC {
         self.title = "个人资料"
         if let url = DataCenterManager.default.myInfo.headPortraitUrl {
             let url = URL(string: url)
+            
             self.headImageView.sd_setImage(with: url, placeholderImage: ImageNamed("编组"))
         } else {
             self.headImageView.image = ImageNamed("编组")
@@ -55,12 +56,8 @@ class PersonalVC: BaseVC {
             }
 
         }
-        
-        
     }
-    
-    
-    
+
     func upload(_ image: UIImage) {
         NBLoadManager.showLoading()
         //提交

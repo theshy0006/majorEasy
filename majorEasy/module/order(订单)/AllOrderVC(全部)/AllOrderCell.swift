@@ -46,7 +46,7 @@ class AllOrderCell: UITableViewCell {
     }
     
     func setCellWithModel(_ model: OrderItem) {
-        let url = URL(string: model.consignorHeadPortraitUrl ?? "")
+        let url = URL(string: model.vehicleOwnerHeadPortraitUrl ?? "")
         headImageView.sd_setImage(with: url, placeholderImage: ImageNamed("placeholder"))
         
         if (model.userRole == 1) {
