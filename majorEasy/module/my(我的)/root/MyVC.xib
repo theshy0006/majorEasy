@@ -102,6 +102,9 @@
                                         <constraint firstAttribute="height" constant="24" id="FGb-ZN-GHE"/>
                                     </constraints>
                                     <state key="normal" image="设置"/>
+                                    <connections>
+                                        <action selector="gotoSetting:" destination="-1" eventType="touchUpInside" id="We0-SE-vaG"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 未审核 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHk-Qb-E2s">
                                     <rect key="frame" x="143" y="51" width="47" height="20"/>

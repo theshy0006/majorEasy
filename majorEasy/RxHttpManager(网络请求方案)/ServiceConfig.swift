@@ -11,7 +11,7 @@ import UIKit
 let BaseURL = ServiceConfigure.baseURL
 
 struct ServiceConfigure {
-    static let apiEnvironment: YY_ApiEnvironment = .product
+    static let apiEnvironment: YY_ApiEnvironment = .test
     //
     static var baseURL: String  {
         return apiEnvironment.base()
@@ -79,7 +79,10 @@ let URL_getMySupplies = BaseURL + "App-supply/getMySupplies"
 let URL_deletMysupply = BaseURL + "App-supply/deletMysupply/"
 // 所有货源
 let URL_GetSuppliesByParam = BaseURL + "App-supplies/getSuppliesByParam"
-
+// 头像上传
+let URL_Uploadheadportrait = BaseURL + "App-qiniuAccountcloud/uploadheadportrait"
+// 更新用户信息
+let URL_SaveUserInfo = BaseURL + "App-userAccount/saveUserInfo"
 
 
 // 服务协议

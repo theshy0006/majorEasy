@@ -32,6 +32,12 @@ class MyVC: BaseVC {
     
     let viewModel = MyViewModel()
     
+    @IBAction func gotoSetting(_ sender: UIButton) {
+        self.navigationController?.pushViewController(SettingVC(), animated: true)
+    }
+    
+    
+    
     override func setUpData() {
         
     }
@@ -84,7 +90,7 @@ class MyVC: BaseVC {
     }
     
     @IBAction func headPressed(_ sender: UIButton) {
-        
+        self.navigationController?.pushViewController(PersonalVC(), animated: true)
     }
     
     @IBAction func logout(_ sender: UIButton) {
@@ -104,3 +110,5 @@ class MyVC: BaseVC {
     
 
 }
+
+

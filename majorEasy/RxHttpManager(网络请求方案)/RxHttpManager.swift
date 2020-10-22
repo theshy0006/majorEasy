@@ -35,6 +35,13 @@ class RxHttpManager {
         })
     }
     
+    static public func fetchFormData<T: HandyJSON>(with url: String, method: HTTPMethod = .post, image: UIImage, headers: HTTPHeaders?, returnType: T.Type) -> Observable<T> {
+        return Observable<T>.create({ (observer: AnyObserver<T>) -> Disposable in
+            self.upload(observer: observer, url: url, method: method, image: image, headers: headers, returnType: returnType)
+            return Disposables.create()
+        })
+    }
+
     /*
      * 网络请求方法
      * - Parameters:
@@ -62,6 +69,32 @@ class RxHttpManager {
                 }
                 self.failHandle(observer: observer, error: err)
                 break
+            }
+        }
+    }
+    
+    fileprivate static func upload<T: HandyJSON>(observer: AnyObserver<T>, url: String, method: HTTPMethod, image: UIImage, headers: HTTPHeaders?, returnType: T.Type) {
+        print("接口地址:\(url)")
+        if let imageData = image.jpegData(compressionQuality: 0.5) {
+            AF.upload(multipartFormData: { multipartFormData in
+                multipartFormData.append(imageData, withName: "file", fileName:"head_photo.jpg", mimeType: "image/png")
+            }, to: URL_Uploadheadportrait, method: .post,
+            headers: ConstructUploadHeaders(nil)).responseJSON { response in
+                switch response.result {
+                case .success:
+                    self.successHandle(observer: observer, result: response.result, retrunType: returnType)
+                    break
+                case .failure(let error):
+                    let err = APIError()
+                    err.status = "\(String(describing: error.responseCode))"
+                    if (error.localizedDescription.contains(find: "offline")) {
+                        err.message = "网络链接失败，请检查网络"
+                    } else {
+                        err.message = error.localizedDescription
+                    }
+                    self.failHandle(observer: observer, error: err)
+                    break
+                }
             }
         }
     }

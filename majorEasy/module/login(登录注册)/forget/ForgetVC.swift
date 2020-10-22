@@ -15,6 +15,8 @@ class ForgetVC: BaseVC {
     @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var commitButton: UIButton!
     
+    var tpyeName = ""
+    
     let viewModel = ForgetViewModel()
     
     lazy var phoneField = NBBottomWarningTextFieldView(placeholderString: "请输入手机号码", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
@@ -52,10 +54,7 @@ class ForgetVC: BaseVC {
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
-    
-    
-    
-    
+
     override func setUpData() {
         self.sendButton.rx.tap.subscribe(onNext: { [weak self] _ in
             guard let weakself = self else {
@@ -66,7 +65,13 @@ class ForgetVC: BaseVC {
     }
     
     override func setUpView() {
-        self.navigationItem.title = "forget".localized
+        
+        if (tpyeName.count != 0) {
+            self.navigationItem.title = tpyeName
+        } else {
+            self.navigationItem.title = "forget".localized
+        }
+        
         self.commitButton.addShadow(RGBHex(0xe2e2e2))
         self.phoneView.addSubview(self.phoneField)
         self.codeView.addSubview(self.codeField)

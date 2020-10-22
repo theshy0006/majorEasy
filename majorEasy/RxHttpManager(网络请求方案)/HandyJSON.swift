@@ -508,3 +508,28 @@ class CarInfo: HandyJSON {
     var vehicleTypeId: Int = 0
     required init() {}
 }
+
+
+// 图片上传对象对象
+class UploadImageModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: UploadImageItem = UploadImageItem()
+    required init() {}
+}
+
+class UploadImageItem: HandyJSON {
+    var imgkey: String?
+    var imgurl: String?
+    
+    required init() {}
+}
+
+class SaveUserInfo: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: String?
+    
+    required init() {}
+}

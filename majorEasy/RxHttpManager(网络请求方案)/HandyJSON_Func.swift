@@ -256,16 +256,29 @@ extension AllSuppliesModel {
         })
     }}
 
-
+extension SaveUserInfo {
+    func save(headPortraitKey: String, userName: String, emailAddress: String) -> Observable<SaveUserInfo> {
+        
+        return RxHttpManager.fetchData(with: URL_SaveUserInfo,
+                                       method: .post,
+                                       parameters: [
+                                        "headPortraitKey":headPortraitKey,
+                                        "userName":userName,
+                                        "emailAddress":emailAddress
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: SaveUserInfo.self).map({ (response: SaveUserInfo) -> SaveUserInfo in
+            return response
+        })
+    }
+    
+}
 
 
 // 获取车源列表
 extension CarModel {
     //sortCode:1 代表默认排序 :2 距离排序
-
     func getAllvehicles(pageNum: Int, pageSize: Int, sortCode: Int) -> Observable<CarModel> {
-        
-        
         var latitude = 0.0
         var long = 0.0
         if let location = BaiduMapManager.shared().userLocation.location {
@@ -300,6 +313,18 @@ extension CarModel {
                                        ],
                                        headers: ConstructHeaders(nil),
                                        returnType: CarModel.self).map({ (response: CarModel) -> CarModel in
+            return response
+        })
+    }
+}
+
+extension UploadImageModel {
+    func uploadImage(image: UIImage) -> Observable<UploadImageModel> {
+        return RxHttpManager.fetchFormData(with: URL_Uploadheadportrait,
+                                       method: .post,
+                                       image: image,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: UploadImageModel.self).map({ (response: UploadImageModel) -> UploadImageModel in
             return response
         })
     }

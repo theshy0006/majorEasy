@@ -34,7 +34,6 @@ class HomeVC: BaseVC {
         BaiduMapManager.shared().locationSuccess = {
             let lat = "\(BaiduMapManager.shared().userLocation.location.coordinate.latitude)"
             let lng = "\(BaiduMapManager.shared().userLocation.location.coordinate.longitude)"
-            
             print(lat)
             print(lng)
         }
@@ -44,7 +43,6 @@ class HomeVC: BaseVC {
         self.navigationItem.title = "homeTitle".localized
         self.setNavBarLeftBtn(normalText: "我是车主", selector: #selector(popBack))
         self.setNavBarRightBtn(normalImage: "客服", selector: #selector(gotoForward))
- 
     }
     
     func initBanner() {
@@ -92,8 +90,6 @@ class HomeVC: BaseVC {
             }
         }
     }
-    
-
 }
 
 extension HomeVC: ZCycleViewProtocol{

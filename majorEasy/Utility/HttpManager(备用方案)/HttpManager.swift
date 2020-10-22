@@ -19,7 +19,9 @@ public func ConstructHeaders(_ header: Dictionary<String, String>?)-> HTTPHeader
     
     var headers: HTTPHeaders = [
         "djwyToken": DataCenterManager.default.userInfo.token ?? "",
-        "Content-Type":"application/x-www-form-urlencoded;charset=UTF-8"
+        "Content-Type":"application/x-www-form-urlencoded;charset=UTF-8;"
+        
+        
     ]
     guard let tempHeader = header else{return headers}
     for (key, value) in tempHeader {
@@ -29,6 +31,25 @@ public func ConstructHeaders(_ header: Dictionary<String, String>?)-> HTTPHeader
     print("报文头名称:[\(headers)]")
     return headers
 }
+
+// 构建公共报文头
+public func ConstructUploadHeaders(_ header: Dictionary<String, String>?)-> HTTPHeaders {
+    
+    var headers: HTTPHeaders = [
+        "djwyToken": DataCenterManager.default.userInfo.token ?? "",
+        "Content-Type":"multipart/form-data; charset=utf-8",
+    ]
+    guard let tempHeader = header else{
+        return headers
+    }
+    for (key, value) in tempHeader {
+        headers.add(name: key, value: value)
+    }
+
+    print("报文头名称:[\(headers)]")
+    return headers
+}
+
 
 // 构建公共错误信息
 public func ConstructErrorMessage(_ error: NSError) -> [String: Any]{
@@ -135,5 +156,8 @@ class HttpManager: NSObject {
                 }
             }
     }
+
 }
+
+
 
