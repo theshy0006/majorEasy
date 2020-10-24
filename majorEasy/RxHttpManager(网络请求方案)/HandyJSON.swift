@@ -533,3 +533,13 @@ class SaveUserInfo: HandyJSON {
     
     required init() {}
 }
+
+// 重置登录密码返回对象
+class SubUserReviewModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: String?
+
+    required init() {}
+}

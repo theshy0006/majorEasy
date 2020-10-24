@@ -330,3 +330,20 @@ extension UploadImageModel {
     }
 }
 
+extension SubUserReviewModel {
+    func subUserReview(userRealName: String, idCardNumber: String, idCardFrontImgKey: String, idCardReverseImgKey: String) -> Observable<SubUserReviewModel> {
+        return RxHttpManager.fetchData(with: URL_SubUserReview,
+                                       method: .post,
+                                       parameters: [
+                                        "userRealName":userRealName,
+                                        "idCardNumber":idCardNumber,
+                                        "idCardFrontImgKey":idCardFrontImgKey,
+                                        "idCardReverseImgKey":idCardReverseImgKey
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: SubUserReviewModel.self).map({ (response: SubUserReviewModel) -> SubUserReviewModel in
+            return response
+        })
+    }
+}
+

@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -333,13 +333,23 @@
                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kN-Ii-B1J">
+                                    <rect key="frame" x="0.0" y="0.0" width="128.5" height="100"/>
+                                    <connections>
+                                        <action selector="gotoGoodsOwenr:" destination="-1" eventType="touchUpInside" id="eEE-w4-Ms1"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
+                                <constraint firstAttribute="trailing" secondItem="4kN-Ii-B1J" secondAttribute="trailing" id="BjS-by-gXF"/>
                                 <constraint firstItem="54Y-J9-11M" firstAttribute="centerX" secondItem="lCT-hA-fyS" secondAttribute="centerX" id="EqP-7w-TrO"/>
+                                <constraint firstAttribute="bottom" secondItem="4kN-Ii-B1J" secondAttribute="bottom" id="I8V-SD-mQI"/>
+                                <constraint firstItem="4kN-Ii-B1J" firstAttribute="top" secondItem="lCT-hA-fyS" secondAttribute="top" id="Lyh-n8-sFv"/>
                                 <constraint firstAttribute="height" constant="100" id="NF9-5R-4xT"/>
                                 <constraint firstAttribute="trailing" secondItem="wss-Ds-R4e" secondAttribute="trailing" id="b2H-6w-Rvs"/>
                                 <constraint firstItem="wss-Ds-R4e" firstAttribute="top" secondItem="54Y-J9-11M" secondAttribute="bottom" constant="9" id="gMi-RS-Ot3"/>
+                                <constraint firstItem="4kN-Ii-B1J" firstAttribute="leading" secondItem="lCT-hA-fyS" secondAttribute="leading" id="olF-ND-ls0"/>
                                 <constraint firstItem="54Y-J9-11M" firstAttribute="top" secondItem="lCT-hA-fyS" secondAttribute="top" constant="31" id="ost-O8-4cO"/>
                                 <constraint firstItem="wss-Ds-R4e" firstAttribute="leading" secondItem="lCT-hA-fyS" secondAttribute="leading" id="vpm-jl-zYl"/>
                             </constraints>

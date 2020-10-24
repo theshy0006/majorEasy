@@ -83,6 +83,8 @@ let URL_GetSuppliesByParam = BaseURL + "App-supplies/getSuppliesByParam"
 let URL_Uploadheadportrait = BaseURL + "App-qiniuAccountcloud/uploadheadportrait"
 // 更新用户信息
 let URL_SaveUserInfo = BaseURL + "App-userAccount/saveUserInfo"
+//提交审核接口
+let URL_SubUserReview = BaseURL + "App-userAccount/subUserReview"
 
 
 // 服务协议

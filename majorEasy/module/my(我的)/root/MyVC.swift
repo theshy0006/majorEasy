@@ -72,8 +72,10 @@ class MyVC: BaseVC {
         self.statusLabel.isHidden = false
         if (DataCenterManager.default.myInfo.idReview == 1) {
             self.statusLabel.text = "  已审核  "
-        } else {
+        } else if (DataCenterManager.default.myInfo.idReview == 0) {
             self.statusLabel.text = "  未审核  "
+        } else {
+            self.statusLabel.text = "  审核中  "
         }
         self.balanceLabel.text = String(format:"%.2f",DataCenterManager.default.myInfo.balance)
         self.integralLabel.text = String(format:"%.2f",DataCenterManager.default.myInfo.integral)
@@ -92,6 +94,17 @@ class MyVC: BaseVC {
     @IBAction func headPressed(_ sender: UIButton) {
         self.navigationController?.pushViewController(PersonalVC(), animated: true)
     }
+    
+    @IBAction func gotoGoodsOwenr(_ sender: UIButton) {
+        if (DataCenterManager.default.myInfo.idReview == 0) {
+            self.navigationController?.pushViewController(GoodsOwenrVC(), animated: true)
+        } else if (DataCenterManager.default.myInfo.idReview == 1) {
+            NBHUDManager.toast("已审核")
+        } else {
+            NBHUDManager.toast("审核中")
+        }
+    }
+    
     
     @IBAction func logout(_ sender: UIButton) {
         let alertController = UIAlertController(title: nil, message: "确定退出登录？", preferredStyle: .alert)

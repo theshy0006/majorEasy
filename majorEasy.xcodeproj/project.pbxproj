@@ -65,6 +65,9 @@
 		8D5D60112522DED900217722 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D60102522DED900217722 /* HomeVC.xib */; };
 		8D5D8C7A25410FC600F702F4 /* HttpRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5D8C7925410FC600F702F4 /* HttpRequestService.swift */; };
 		8D5D8CA325412F6800F702F4 /* PersonalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5D8CA225412F6800F702F4 /* PersonalViewModel.swift */; };
+		8D5EDEDF2544702100CA2F8F /* GoodsOwenrVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EDEDD2544702100CA2F8F /* GoodsOwenrVC.swift */; };
+		8D5EDEE02544702100CA2F8F /* GoodsOwenrVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5EDEDE2544702100CA2F8F /* GoodsOwenrVC.xib */; };
+		8D5EDEE4254483E300CA2F8F /* GoodsOwenrViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EDEE3254483E300CA2F8F /* GoodsOwenrViewModel.swift */; };
 		8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */; };
 		8D8D501D252B55020097792A /* SpecialLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D501B252B55020097792A /* SpecialLineVC.swift */; };
 		8D8D501E252B55020097792A /* SpecialLineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8D501C252B55020097792A /* SpecialLineVC.xib */; };
@@ -225,6 +228,9 @@
 		8D5D60102522DED900217722 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		8D5D8C7925410FC600F702F4 /* HttpRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestService.swift; sourceTree = "<group>"; };
 		8D5D8CA225412F6800F702F4 /* PersonalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewModel.swift; sourceTree = "<group>"; };
+		8D5EDEDD2544702100CA2F8F /* GoodsOwenrVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsOwenrVC.swift; sourceTree = "<group>"; };
+		8D5EDEDE2544702100CA2F8F /* GoodsOwenrVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodsOwenrVC.xib; sourceTree = "<group>"; };
+		8D5EDEE3254483E300CA2F8F /* GoodsOwenrViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsOwenrViewModel.swift; sourceTree = "<group>"; };
 		8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		8D8D501B252B55020097792A /* SpecialLineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineVC.swift; sourceTree = "<group>"; };
 		8D8D501C252B55020097792A /* SpecialLineVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialLineVC.xib; sourceTree = "<group>"; };
@@ -640,6 +646,16 @@
 			path = HttpRequestService;
 			sourceTree = "<group>";
 		};
+		8D5EDEDC25446FCF00CA2F8F /* GoodsOwenrVC(货主身份认证) */ = {
+			isa = PBXGroup;
+			children = (
+				8D5EDEDD2544702100CA2F8F /* GoodsOwenrVC.swift */,
+				8D5EDEDE2544702100CA2F8F /* GoodsOwenrVC.xib */,
+				8D5EDEE3254483E300CA2F8F /* GoodsOwenrViewModel.swift */,
+			);
+			path = "GoodsOwenrVC(货主身份认证)";
+			sourceTree = "<group>";
+		};
 		8D8D5018252B54A90097792A /* root */ = {
 			isa = PBXGroup;
 			children = (
@@ -788,6 +804,7 @@
 		8DC1E0A72520176A003C1F94 /* my(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				8D5EDEDC25446FCF00CA2F8F /* GoodsOwenrVC(货主身份认证) */,
 				8DD5A2BE25406B9E001C2CA3 /* personal */,
 				8D4CEAE92540299600D5578F /* set */,
 				8D4CEAE82540298100D5578F /* root */,
@@ -1246,6 +1263,7 @@
 				8D434223252FF15E007EE9F1 /* OftenCell.xib in Resources */,
 				8D5870FC25280102001C3614 /* city.json in Resources */,
 				8DFC45DD2522FFE8009D9081 /* MyVC.xib in Resources */,
+				8D5EDEE02544702100CA2F8F /* GoodsOwenrVC.xib in Resources */,
 				8D1B45532520627300251D56 /* RegisterVC.xib in Resources */,
 				8D4342342530601B007EE9F1 /* SendingVC.xib in Resources */,
 				8D5D60112522DED900217722 /* HomeVC.xib in Resources */,
@@ -1432,6 +1450,7 @@
 				8DC1E1AD25203E5D003C1F94 /* NBCacheBehavior.swift in Sources */,
 				8D9208F12524CD5000D33D69 /* TransferOrderViewModel.swift in Sources */,
 				8D28458A2524255D0051384F /* AllOrderViewModel.swift in Sources */,
+				8D5EDEDF2544702100CA2F8F /* GoodsOwenrVC.swift in Sources */,
 				8D9208F72524CD8200D33D69 /* GradeOrderViewModel.swift in Sources */,
 				8DC1E0D42520176B003C1F94 /* AppDelegate.swift in Sources */,
 				8DC1E16625203DDB003C1F94 /* NBActionSheetViewCell.swift in Sources */,
@@ -1442,6 +1461,7 @@
 				8DC1E19C25203E5D003C1F94 /* LanuhManager.swift in Sources */,
 				8D58710525280625001C3614 /* GoodsTypeVC.swift in Sources */,
 				8DC1E0CB2520176B003C1F94 /* TabbarVC.swift in Sources */,
+				8D5EDEE4254483E300CA2F8F /* GoodsOwenrViewModel.swift in Sources */,
 				8DD66564252D89EB00A23B38 /* LineDetailViewModel.swift in Sources */,
 				9F657FC1253180D9006BAB16 /* NBShareButton.swift in Sources */,
 				8D1B45472520595900251D56 /* NBOneEdgeView.swift in Sources */,
