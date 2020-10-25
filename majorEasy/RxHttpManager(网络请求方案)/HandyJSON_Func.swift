@@ -347,3 +347,60 @@ extension SubUserReviewModel {
     }
 }
 
+extension IntegralModel {
+    func getIntegral(pageNum: Int, pageSize: Int, rank: Int) -> Observable<IntegralModel> {
+        return RxHttpManager.fetchData(with: URL_GetIntegralRankList,
+                                       method: .post,
+                                       parameters: [
+                                       "pageNum":pageNum,
+                                       "pageSize":pageSize,
+                                       "rank":rank],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: IntegralModel.self).map({ (response: IntegralModel) -> IntegralModel in
+            return response
+        })
+    }
+}
+
+extension RechargeModel {
+    func getRecharge(pageNum: Int, pageSize: Int, rank: Int) -> Observable<RechargeModel> {
+        return RxHttpManager.fetchData(with: URL_GetRechargeRankList,
+                                       method: .post,
+                                       parameters: [
+                                       "pageNum":pageNum,
+                                       "pageSize":pageSize,
+                                       "rank":rank],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: RechargeModel.self).map({ (response: RechargeModel) -> RechargeModel in
+            return response
+        })
+    }
+}
+
+extension InviteModel {
+    func getInvite(pageNum: Int, pageSize: Int, rank: Int) -> Observable<InviteModel> {
+        return RxHttpManager.fetchData(with: URL_GetInviteRankList,
+                                       method: .post,
+                                       parameters: [
+                                       "pageNum":pageNum,
+                                       "pageSize":pageSize,
+                                       "rank":rank],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: InviteModel.self).map({ (response: InviteModel) -> InviteModel in
+            return response
+        })
+    }
+}
+
+extension ShareModel {
+    func getShareUrl() -> Observable<ShareModel> {
+        return RxHttpManager.fetchData(with: URL_GetMyShareUrl,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: ShareModel.self).map({ (response: ShareModel) -> ShareModel in
+            return response
+        })
+    }
+}
+

@@ -22,7 +22,7 @@ class GoodsOwenrVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "货主身份认证"
         // Do any additional setup after loading the view.
     }
     

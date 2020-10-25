@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,17 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_login" translatesAutoresizingMaskIntoConstraints="NO" id="Qb1-bp-5Cl">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reglogo" translatesAutoresizingMaskIntoConstraints="NO" id="EFn-iQ-cqa">
+                                <rect key="frame" x="47" y="228" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="56C-DN-rbQ"/>
+                                    <constraint firstAttribute="width" constant="320" id="dih-62-bRe"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Qb1-bp-5Cl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="XB1-Tr-1je"/>
-                            <constraint firstItem="Qb1-bp-5Cl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bc2-8f-MZw"/>
-                            <constraint firstAttribute="bottom" secondItem="Qb1-bp-5Cl" secondAttribute="bottom" id="gJ0-KI-B66"/>
-                            <constraint firstItem="Qb1-bp-5Cl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yRo-0F-e95"/>
+                            <constraint firstItem="EFn-iQ-cqa" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-60" id="wjX-cc-igX"/>
+                            <constraint firstItem="EFn-iQ-cqa" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wtf-bM-fjh"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,7 +39,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg_login" width="562.5" height="1218"/>
+        <image name="reglogo" width="650" height="650"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

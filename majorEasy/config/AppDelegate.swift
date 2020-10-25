@@ -53,7 +53,7 @@ extension AppDelegate {
     //MARK: -- 显示Tabbar
     func setUpTabBar() {
         let tabbar = TabbarVC()
-        tabbar.selectedIndex = 1
+        tabbar.selectedIndex = 0
         self.window?.rootViewController = tabbar
         
     }

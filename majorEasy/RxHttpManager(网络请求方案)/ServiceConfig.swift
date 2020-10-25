@@ -83,9 +83,18 @@ let URL_GetSuppliesByParam = BaseURL + "App-supplies/getSuppliesByParam"
 let URL_Uploadheadportrait = BaseURL + "App-qiniuAccountcloud/uploadheadportrait"
 // 更新用户信息
 let URL_SaveUserInfo = BaseURL + "App-userAccount/saveUserInfo"
-//提交审核接口
+// 提交审核接口
 let URL_SubUserReview = BaseURL + "App-userAccount/subUserReview"
+// 奖励榜单
+let URL_GetIntegralRankList = BaseURL + "App-userAccount/getIntegralRankList"
+// 充值榜单
+let URL_GetRechargeRankList = BaseURL + "App-userAccount/getRechargeRankList"
+// 邀请榜单
+let URL_GetInviteRankList = BaseURL + "App-userAccount/getInviteRankList"
+// 获取分享链接
+let URL_GetMyShareUrl = BaseURL + "App-userAccount/getMyShareUrl"
 
+//分享货源就直接 http://supplydetail.js56918.com/?supplyNum=货源编号
 
 // 服务协议
 let servicePath = BaseURL + "App-user/user_agreement"

@@ -17,6 +17,8 @@ class DataCenterManager: NSObject {
     var myInfo: MyInfo = MyInfo()
     /// 是否登录
     var isLogin: Bool = false
+    var shareUrl: String = ""
+    
     // 用户信息本地化存储
     func save() {
         let result = NBCacheManager.getShared().set(key: "UserInfo", type: .file, data: self.userInfo.toJSONString()?.data(using: String.Encoding.utf8))
@@ -42,7 +44,9 @@ class DataCenterManager: NSObject {
         self.userInfo = UserInfo()
         self.myInfo = MyInfo()
         self.isLogin = false
+        self.shareUrl = ""
         self.save()
+        
     }
 
 }

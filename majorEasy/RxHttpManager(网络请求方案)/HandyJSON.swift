@@ -61,6 +61,7 @@ class UserInfo: HandyJSON {
     var token: String?
     var idReview: Int?
     var userRole: Int?
+    var userRoleName: String?
     var userRealName: String?
     var phoneNumber: String?
     var vipLevel: Int?
@@ -543,3 +544,61 @@ class SubUserReviewModel: HandyJSON {
 
     required init() {}
 }
+
+// 奖励对象
+class IntegralModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: [TopTenItem] = [TopTenItem]()
+
+    required init() {}
+}
+
+// 充值对象
+class RechargeModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: [TopTenItem] = [TopTenItem]()
+
+    required init() {}
+}
+
+// 邀请对象
+class InviteModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: [TopTenItem] = [TopTenItem]()
+
+    required init() {}
+}
+
+// 邀请对象
+class TopTenItem: HandyJSON {
+    
+    var headPortraitKey: String?
+    var headPortraitUrl: String?
+    var id: Int = 0
+    var inviteNums: Int = 0
+    var phoneNumber: String?
+    var sumIntegral: Int = 0
+    var sumRecharge: Int = 0
+    var userName: String?
+    var userRealName: String?
+
+    required init() {}
+}
+
+// 获取分享链接
+class ShareModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: String?
+
+    required init() {}
+}
+
+

@@ -35,9 +35,7 @@ class MyVC: BaseVC {
     @IBAction func gotoSetting(_ sender: UIButton) {
         self.navigationController?.pushViewController(SettingVC(), animated: true)
     }
-    
-    
-    
+
     override func setUpData() {
         
     }
@@ -105,7 +103,32 @@ class MyVC: BaseVC {
         }
     }
     
+    @IBAction func gotoInvite(_ sender: UIButton) {
+        self.navigationController?.pushViewController(TopTenTV.init(type: 0), animated: true)
+    }
     
+    @IBAction func gotoAward(_ sender: UIButton) {
+        self.navigationController?.pushViewController(TopTenTV.init(type: 1), animated: true)
+    }
+    
+    @IBAction func gotoRecharge(_ sender: UIButton) {
+        self.navigationController?.pushViewController(TopTenTV.init(type: 2), animated: true)
+    }
+    
+    @IBAction func gotoShare(_ sender: UIButton) {
+        NBShareView.showTips { index in
+            print(index)
+            
+            if( index == 0 ) {
+                // 朋友圈
+                ShareManager.shareInstance().shareWeChatFriend("大件无忧，询价调车更迅速", andContent: "邀请朋友下载大件无忧可以获取跨省大件免费办理办证! 注册奖励100元!邀请好友奖励50元!邀请每个用户都会 成为你2级会员，他们邀请朋友注册也可以获取30元奖励 想要永久免费办理跨省大件运输证，请粉享您的朋友圈", image: "", linkWith: DataCenterManager.default.shareUrl, shareType: .WECHATZONE, style: .cargo)
+            } else {
+                // 微信好友
+                ShareManager.shareInstance().shareWeChatFriend("大件无忧，询价调车更迅速", andContent: "邀请朋友下载大件无忧可以获取跨省大件免费办理办证! 注册奖励100元!邀请好友奖励50元!邀请每个用户都会 成为你2级会员，他们邀请朋友注册也可以获取30元奖励 想要永久免费办理跨省大件运输证，请粉享您的朋友圈", image: "", linkWith: DataCenterManager.default.shareUrl, shareType: .WECHAT, style: .cargo)
+            }
+        }
+    }
+
     @IBAction func logout(_ sender: UIButton) {
         let alertController = UIAlertController(title: nil, message: "确定退出登录？", preferredStyle: .alert)
         

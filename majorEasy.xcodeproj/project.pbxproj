@@ -69,6 +69,11 @@
 		8D5EDEE02544702100CA2F8F /* GoodsOwenrVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5EDEDE2544702100CA2F8F /* GoodsOwenrVC.xib */; };
 		8D5EDEE4254483E300CA2F8F /* GoodsOwenrViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EDEE3254483E300CA2F8F /* GoodsOwenrViewModel.swift */; };
 		8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */; };
+		8D767076254511D000E1FC29 /* TopTenTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D767075254511D000E1FC29 /* TopTenTV.swift */; };
+		8D7670792545133E00E1FC29 /* TopTenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7670782545133E00E1FC29 /* TopTenViewModel.swift */; };
+		8D76707C254514B900E1FC29 /* SubTopTenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76707B254514B900E1FC29 /* SubTopTenVC.swift */; };
+		8D767080254515B300E1FC29 /* TopTenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76707E254515B300E1FC29 /* TopTenCell.swift */; };
+		8D767081254515B300E1FC29 /* TopTenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D76707F254515B300E1FC29 /* TopTenCell.xib */; };
 		8D8D501D252B55020097792A /* SpecialLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D501B252B55020097792A /* SpecialLineVC.swift */; };
 		8D8D501E252B55020097792A /* SpecialLineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8D501C252B55020097792A /* SpecialLineVC.xib */; };
 		8D9208F12524CD5000D33D69 /* TransferOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208F02524CD5000D33D69 /* TransferOrderViewModel.swift */; };
@@ -232,6 +237,11 @@
 		8D5EDEDE2544702100CA2F8F /* GoodsOwenrVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodsOwenrVC.xib; sourceTree = "<group>"; };
 		8D5EDEE3254483E300CA2F8F /* GoodsOwenrViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsOwenrViewModel.swift; sourceTree = "<group>"; };
 		8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		8D767075254511D000E1FC29 /* TopTenTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTenTV.swift; sourceTree = "<group>"; };
+		8D7670782545133E00E1FC29 /* TopTenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTenViewModel.swift; sourceTree = "<group>"; };
+		8D76707B254514B900E1FC29 /* SubTopTenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTopTenVC.swift; sourceTree = "<group>"; };
+		8D76707E254515B300E1FC29 /* TopTenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTenCell.swift; sourceTree = "<group>"; };
+		8D76707F254515B300E1FC29 /* TopTenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopTenCell.xib; sourceTree = "<group>"; };
 		8D8D501B252B55020097792A /* SpecialLineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineVC.swift; sourceTree = "<group>"; };
 		8D8D501C252B55020097792A /* SpecialLineVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialLineVC.xib; sourceTree = "<group>"; };
 		8D9208F02524CD5000D33D69 /* TransferOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferOrderViewModel.swift; sourceTree = "<group>"; };
@@ -656,6 +666,18 @@
 			path = "GoodsOwenrVC(货主身份认证)";
 			sourceTree = "<group>";
 		};
+		8D5EDEE6254491E700CA2F8F /* TopTenVC(榜单列表) */ = {
+			isa = PBXGroup;
+			children = (
+				8D767075254511D000E1FC29 /* TopTenTV.swift */,
+				8D7670782545133E00E1FC29 /* TopTenViewModel.swift */,
+				8D76707B254514B900E1FC29 /* SubTopTenVC.swift */,
+				8D76707E254515B300E1FC29 /* TopTenCell.swift */,
+				8D76707F254515B300E1FC29 /* TopTenCell.xib */,
+			);
+			path = "TopTenVC(榜单列表)";
+			sourceTree = "<group>";
+		};
 		8D8D5018252B54A90097792A /* root */ = {
 			isa = PBXGroup;
 			children = (
@@ -804,6 +826,7 @@
 		8DC1E0A72520176A003C1F94 /* my(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				8D5EDEE6254491E700CA2F8F /* TopTenVC(榜单列表) */,
 				8D5EDEDC25446FCF00CA2F8F /* GoodsOwenrVC(货主身份认证) */,
 				8DD5A2BE25406B9E001C2CA3 /* personal */,
 				8D4CEAE92540299600D5578F /* set */,
@@ -1266,6 +1289,7 @@
 				8D5EDEE02544702100CA2F8F /* GoodsOwenrVC.xib in Resources */,
 				8D1B45532520627300251D56 /* RegisterVC.xib in Resources */,
 				8D4342342530601B007EE9F1 /* SendingVC.xib in Resources */,
+				8D767081254515B300E1FC29 /* TopTenCell.xib in Resources */,
 				8D5D60112522DED900217722 /* HomeVC.xib in Resources */,
 				8D57ECEF252C008A007F4A87 /* SpecialLineCell.xib in Resources */,
 				8DC1E16D25203DDB003C1F94 /* wechat.png in Resources */,
@@ -1352,10 +1376,12 @@
 				8DC1E0CE2520176B003C1F94 /* BaseWebViewController.swift in Sources */,
 				8DC1E0BF2520176B003C1F94 /* Formatter.swift in Sources */,
 				8DC1E0D52520176B003C1F94 /* AppDelegate_tools.swift in Sources */,
+				8D76707C254514B900E1FC29 /* SubTopTenVC.swift in Sources */,
 				8DF892AC2521D42E00666024 /* HomeVC.swift in Sources */,
 				8D58F0C5252779000039ECE4 /* ChooseAreaVC.swift in Sources */,
 				8D58710D2528063C001C3614 /* CarTypeVC.swift in Sources */,
 				8D43421D252FED31007EE9F1 /* QuoteVC.swift in Sources */,
+				8D7670792545133E00E1FC29 /* TopTenViewModel.swift in Sources */,
 				8D284584252422CA0051384F /* GradeOrderVC.swift in Sources */,
 				8D44204F2534537F00755D91 /* KnownViewModel.swift in Sources */,
 				8DC1E1A125203E5D003C1F94 /* HandyJSON.swift in Sources */,
@@ -1376,6 +1402,7 @@
 				8DC1E1A925203E5D003C1F94 /* NBDefaultCache.swift in Sources */,
 				8DFC45DC2522FFE8009D9081 /* MyVC.swift in Sources */,
 				8DC1E1A325203E5D003C1F94 /* RxHttpManager.swift in Sources */,
+				8D767076254511D000E1FC29 /* TopTenTV.swift in Sources */,
 				8D434219252FEBEC007EE9F1 /* OftenVC.swift in Sources */,
 				8DD5A2C125406BB7001C2CA3 /* PersonalVC.swift in Sources */,
 				8DC1E1A525203E5D003C1F94 /* PrintBeautifulLog.m in Sources */,
@@ -1461,6 +1488,7 @@
 				8DC1E19C25203E5D003C1F94 /* LanuhManager.swift in Sources */,
 				8D58710525280625001C3614 /* GoodsTypeVC.swift in Sources */,
 				8DC1E0CB2520176B003C1F94 /* TabbarVC.swift in Sources */,
+				8D767080254515B300E1FC29 /* TopTenCell.swift in Sources */,
 				8D5EDEE4254483E300CA2F8F /* GoodsOwenrViewModel.swift in Sources */,
 				8DD66564252D89EB00A23B38 /* LineDetailViewModel.swift in Sources */,
 				9F657FC1253180D9006BAB16 /* NBShareButton.swift in Sources */,

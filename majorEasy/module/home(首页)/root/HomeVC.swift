@@ -28,6 +28,12 @@ class HomeVC: BaseVC {
             NBHUDManager.toast(error.message)
         }
         
+        viewModel.getShareUrl( success: {
+            
+        }) { (error) in
+            NBHUDManager.toast(error.message)
+        }
+
         BaiduMapManager.shared().startUpdatingLocation()
         
         // 定位成功后的回调
@@ -41,7 +47,13 @@ class HomeVC: BaseVC {
     
     override func setUpView() {
         self.navigationItem.title = "homeTitle".localized
-        self.setNavBarLeftBtn(normalText: "我是车主", selector: #selector(popBack))
+        
+        if let userRoleName = DataCenterManager.default.userInfo.userRoleName {
+            self.setNavBarLeftBtn(normalText: "我是" + userRoleName, selector: #selector(popBack))
+        }
+        
+        
+       
         self.setNavBarRightBtn(normalImage: "客服", selector: #selector(gotoForward))
     }
     
@@ -84,9 +96,10 @@ class HomeVC: BaseVC {
             
             if( index == 0 ) {
                 // 朋友圈
-                ShareManager.shareInstance().shareWeChatFriend("测试的呀", andContent: "加油加油加油", image: "", linkWith: "https://www.baidu.com", shareType: .WECHATZONE, style: .cargo)
+                ShareManager.shareInstance().shareWeChatFriend("大件无忧，询价调车更迅速", andContent: "邀请朋友下载大件无忧可以获取跨省大件免费办理办证! 注册奖励100元!邀请好友奖励50元!邀请每个用户都会 成为你2级会员，他们邀请朋友注册也可以获取30元奖励 想要永久免费办理跨省大件运输证，请粉享您的朋友圈", image: "", linkWith: DataCenterManager.default.shareUrl, shareType: .WECHATZONE, style: .cargo)
             } else {
                 // 微信好友
+                ShareManager.shareInstance().shareWeChatFriend("大件无忧，询价调车更迅速", andContent: "邀请朋友下载大件无忧可以获取跨省大件免费办理办证! 注册奖励100元!邀请好友奖励50元!邀请每个用户都会 成为你2级会员，他们邀请朋友注册也可以获取30元奖励 想要永久免费办理跨省大件运输证，请粉享您的朋友圈", image: "", linkWith: DataCenterManager.default.shareUrl, shareType: .WECHAT, style: .cargo)
             }
         }
     }
