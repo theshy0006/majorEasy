@@ -88,6 +88,24 @@ class SendingVC: BaseVC {
         }
     }
     
+    func shareData(suppliesInfo: MySuppliesInfo) {
+        NBShareView.showTips { index in
+            print(index)
+            
+            let content = (suppliesInfo.loadPlaceCity ?? "") + (suppliesInfo.loadPlaceCity ?? "") + (suppliesInfo.mySupplyMsg ?? "")
+            
+            let url = "http://supplydetail.js56918.com/?supplyNum=" + (suppliesInfo.supplyNum ?? "")
+            
+            if( index == 0 ) {
+                // 朋友圈
+                ShareManager.shareInstance().shareWeChatFriend("大件无忧，询价调车更迅速", andContent: content, image: "", linkWith: url, shareType: .WECHATZONE, style: .cargo)
+            } else {
+                // 微信好友
+                ShareManager.shareInstance().shareWeChatFriend("大件无忧，询价调车更迅速", andContent: content, image: "", linkWith: url, shareType: .WECHAT, style: .cargo)
+            }
+        }
+    }
+    
     func deleteData(suppliesInfo: MySuppliesInfo) {
         
         let alertController = UIAlertController(title: nil, message: "确定要删除该条信息吗？", preferredStyle: .alert)
@@ -136,7 +154,7 @@ extension SendingVC : UITableViewDelegate, UITableViewDataSource {
         }
         
         cell.shareColsure = { [weak self] model in
-            
+            self?.shareData(suppliesInfo:model)
         }
         // 指定司机
         cell.assignColsure = { [weak self] model in

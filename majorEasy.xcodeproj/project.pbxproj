@@ -62,6 +62,21 @@
 		8D58710D2528063C001C3614 /* CarTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D58710A2528063C001C3614 /* CarTypeVC.swift */; };
 		8D58710E2528063C001C3614 /* CarTypeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D58710B2528063C001C3614 /* CarTypeVC.xib */; };
 		8D58F0C5252779000039ECE4 /* ChooseAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D58F0C4252779000039ECE4 /* ChooseAreaVC.swift */; };
+		8D5A8C2C2548473F00407760 /* GoodStandardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A8C2A2548473E00407760 /* GoodStandardVC.swift */; };
+		8D5A8C2D2548473F00407760 /* GoodStandardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A8C2B2548473E00407760 /* GoodStandardVC.xib */; };
+		8D5A8C322548668000407760 /* MyBillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A8C312548668000407760 /* MyBillVC.swift */; };
+		8D5A8C3A25486A3D00407760 /* WithDrawVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A8C3925486A3D00407760 /* WithDrawVC.swift */; };
+		8D5A8C3D25486A5200407760 /* RechargeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A8C3C25486A5200407760 /* RechargeVC.swift */; };
+		8D5A8C4025486A6D00407760 /* BillListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A8C3F25486A6D00407760 /* BillListVC.swift */; };
+		8D5A8C432548722400407760 /* BillListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A8C422548722400407760 /* BillListViewModel.swift */; };
+		8D5A8C472548732800407760 /* BillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A8C452548732800407760 /* BillCell.swift */; };
+		8D5A8C482548732800407760 /* BillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A8C462548732800407760 /* BillCell.xib */; };
+		8D5A8C4C25487D2600407760 /* RechargeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A8C4A25487D2600407760 /* RechargeCell.swift */; };
+		8D5A8C4D25487D2600407760 /* RechargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A8C4B25487D2600407760 /* RechargeCell.xib */; };
+		8D5A8C5025487FA100407760 /* RechargeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A8C4F25487FA100407760 /* RechargeViewModel.swift */; };
+		8D5A8C532548858F00407760 /* WithDrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A8C522548858F00407760 /* WithDrawViewModel.swift */; };
+		8D5A8C572548861000407760 /* WithDrawCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A8C552548861000407760 /* WithDrawCell.swift */; };
+		8D5A8C582548861000407760 /* WithDrawCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A8C562548861000407760 /* WithDrawCell.xib */; };
 		8D5D60112522DED900217722 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D60102522DED900217722 /* HomeVC.xib */; };
 		8D5D8C7A25410FC600F702F4 /* HttpRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5D8C7925410FC600F702F4 /* HttpRequestService.swift */; };
 		8D5D8CA325412F6800F702F4 /* PersonalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5D8CA225412F6800F702F4 /* PersonalViewModel.swift */; };
@@ -230,6 +245,21 @@
 		8D58710A2528063C001C3614 /* CarTypeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTypeVC.swift; sourceTree = "<group>"; };
 		8D58710B2528063C001C3614 /* CarTypeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarTypeVC.xib; sourceTree = "<group>"; };
 		8D58F0C4252779000039ECE4 /* ChooseAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAreaVC.swift; sourceTree = "<group>"; };
+		8D5A8C2A2548473E00407760 /* GoodStandardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodStandardVC.swift; sourceTree = "<group>"; };
+		8D5A8C2B2548473E00407760 /* GoodStandardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodStandardVC.xib; sourceTree = "<group>"; };
+		8D5A8C312548668000407760 /* MyBillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBillVC.swift; sourceTree = "<group>"; };
+		8D5A8C3925486A3D00407760 /* WithDrawVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithDrawVC.swift; sourceTree = "<group>"; };
+		8D5A8C3C25486A5200407760 /* RechargeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeVC.swift; sourceTree = "<group>"; };
+		8D5A8C3F25486A6D00407760 /* BillListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListVC.swift; sourceTree = "<group>"; };
+		8D5A8C422548722400407760 /* BillListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListViewModel.swift; sourceTree = "<group>"; };
+		8D5A8C452548732800407760 /* BillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCell.swift; sourceTree = "<group>"; };
+		8D5A8C462548732800407760 /* BillCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillCell.xib; sourceTree = "<group>"; };
+		8D5A8C4A25487D2600407760 /* RechargeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeCell.swift; sourceTree = "<group>"; };
+		8D5A8C4B25487D2600407760 /* RechargeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RechargeCell.xib; sourceTree = "<group>"; };
+		8D5A8C4F25487FA100407760 /* RechargeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeViewModel.swift; sourceTree = "<group>"; };
+		8D5A8C522548858F00407760 /* WithDrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithDrawViewModel.swift; sourceTree = "<group>"; };
+		8D5A8C552548861000407760 /* WithDrawCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithDrawCell.swift; sourceTree = "<group>"; };
+		8D5A8C562548861000407760 /* WithDrawCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WithDrawCell.xib; sourceTree = "<group>"; };
 		8D5D60102522DED900217722 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		8D5D8C7925410FC600F702F4 /* HttpRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestService.swift; sourceTree = "<group>"; };
 		8D5D8CA225412F6800F702F4 /* PersonalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewModel.swift; sourceTree = "<group>"; };
@@ -648,6 +678,56 @@
 			path = NBEdgeView;
 			sourceTree = "<group>";
 		};
+		8D5A8C292548465100407760 /* GoodStandardVC(货物规格) */ = {
+			isa = PBXGroup;
+			children = (
+				8D5A8C2A2548473E00407760 /* GoodStandardVC.swift */,
+				8D5A8C2B2548473E00407760 /* GoodStandardVC.xib */,
+			);
+			path = "GoodStandardVC(货物规格)";
+			sourceTree = "<group>";
+		};
+		8D5A8C302548665F00407760 /* bill(账单详情) */ = {
+			isa = PBXGroup;
+			children = (
+				8D5A8C312548668000407760 /* MyBillVC.swift */,
+			);
+			path = "bill(账单详情)";
+			sourceTree = "<group>";
+		};
+		8D5A8C35254869D300407760 /* billList(账单列表) */ = {
+			isa = PBXGroup;
+			children = (
+				8D5A8C3F25486A6D00407760 /* BillListVC.swift */,
+				8D5A8C422548722400407760 /* BillListViewModel.swift */,
+				8D5A8C452548732800407760 /* BillCell.swift */,
+				8D5A8C462548732800407760 /* BillCell.xib */,
+			);
+			path = "billList(账单列表)";
+			sourceTree = "<group>";
+		};
+		8D5A8C37254869FE00407760 /* recharge(充值列表) */ = {
+			isa = PBXGroup;
+			children = (
+				8D5A8C3C25486A5200407760 /* RechargeVC.swift */,
+				8D5A8C4A25487D2600407760 /* RechargeCell.swift */,
+				8D5A8C4B25487D2600407760 /* RechargeCell.xib */,
+				8D5A8C4F25487FA100407760 /* RechargeViewModel.swift */,
+			);
+			path = "recharge(充值列表)";
+			sourceTree = "<group>";
+		};
+		8D5A8C3825486A1100407760 /* withdraw(提现) */ = {
+			isa = PBXGroup;
+			children = (
+				8D5A8C3925486A3D00407760 /* WithDrawVC.swift */,
+				8D5A8C522548858F00407760 /* WithDrawViewModel.swift */,
+				8D5A8C552548861000407760 /* WithDrawCell.swift */,
+				8D5A8C562548861000407760 /* WithDrawCell.xib */,
+			);
+			path = "withdraw(提现)";
+			sourceTree = "<group>";
+		};
 		8D5D8C7825410F9F00F702F4 /* HttpRequestService */ = {
 			isa = PBXGroup;
 			children = (
@@ -826,6 +906,10 @@
 		8DC1E0A72520176A003C1F94 /* my(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				8D5A8C3825486A1100407760 /* withdraw(提现) */,
+				8D5A8C37254869FE00407760 /* recharge(充值列表) */,
+				8D5A8C35254869D300407760 /* billList(账单列表) */,
+				8D5A8C302548665F00407760 /* bill(账单详情) */,
 				8D5EDEE6254491E700CA2F8F /* TopTenVC(榜单列表) */,
 				8D5EDEDC25446FCF00CA2F8F /* GoodsOwenrVC(货主身份认证) */,
 				8DD5A2BE25406B9E001C2CA3 /* personal */,
@@ -838,6 +922,7 @@
 		8DC1E0A92520176A003C1F94 /* post(发货) */ = {
 			isa = PBXGroup;
 			children = (
+				8D5A8C292548465100407760 /* GoodStandardVC(货物规格) */,
 				8D5871072528063C001C3614 /* CarTypeVC(车长车型) */,
 				8D5870FE25280625001C3614 /* GoodsTypeVC(货物信息) */,
 				8D58F0C3252778D50039ECE4 /* ChooseAreaVC(选择区域) */,
@@ -1277,17 +1362,21 @@
 				8D3A15F925244FAC00B9D9F8 /* AllOrderCell.xib in Resources */,
 				8D8D501E252B55020097792A /* SpecialLineVC.xib in Resources */,
 				8D58710E2528063C001C3614 /* CarTypeVC.xib in Resources */,
+				8D5A8C2D2548473F00407760 /* GoodStandardVC.xib in Resources */,
 				8D58710425280625001C3614 /* GoodsTypeVC.xib in Resources */,
+				8D5A8C582548861000407760 /* WithDrawCell.xib in Resources */,
 				8D0187D725260E050074B5BA /* PostVC.xib in Resources */,
 				8DFA16BA2530B29F00292987 /* SourceCell.xib in Resources */,
 				8DC1E1062520202A003C1F94 /* LoginVC.xib in Resources */,
 				8D1B454D2520599800251D56 /* ForgetVC.xib in Resources */,
+				8D5A8C4D25487D2600407760 /* RechargeCell.xib in Resources */,
 				8DBD62CB2534AEE8006F59F9 /* AllGoodsCell.xib in Resources */,
 				8D434223252FF15E007EE9F1 /* OftenCell.xib in Resources */,
 				8D5870FC25280102001C3614 /* city.json in Resources */,
 				8DFC45DD2522FFE8009D9081 /* MyVC.xib in Resources */,
 				8D5EDEE02544702100CA2F8F /* GoodsOwenrVC.xib in Resources */,
 				8D1B45532520627300251D56 /* RegisterVC.xib in Resources */,
+				8D5A8C482548732800407760 /* BillCell.xib in Resources */,
 				8D4342342530601B007EE9F1 /* SendingVC.xib in Resources */,
 				8D767081254515B300E1FC29 /* TopTenCell.xib in Resources */,
 				8D5D60112522DED900217722 /* HomeVC.xib in Resources */,
@@ -1394,6 +1483,7 @@
 				8DC1E1AC25203E5D003C1F94 /* NBFileCache.swift in Sources */,
 				8D9208FA2524CDCE00D33D69 /* WaitOrderViewModel.swift in Sources */,
 				8DC1E19925203E5D003C1F94 /* LoadingHUD.swift in Sources */,
+				8D5A8C532548858F00407760 /* WithDrawViewModel.swift in Sources */,
 				8DC1E16125203DDB003C1F94 /* NBTextFiled.swift in Sources */,
 				8D9209002524CE4900D33D69 /* NBViewModel.swift in Sources */,
 				8D3A15F825244FAC00B9D9F8 /* AllOrderCell.swift in Sources */,
@@ -1411,6 +1501,7 @@
 				8DBD62C62534A720006F59F9 /* TodayViewModel.swift in Sources */,
 				8D284576252413330051384F /* WaitOrderVC.swift in Sources */,
 				8DC1E16525203DDB003C1F94 /* NBActionSheetItem.swift in Sources */,
+				8D5A8C472548732800407760 /* BillCell.swift in Sources */,
 				8DC1E16C25203DDB003C1F94 /* WechatRefreshHeader.swift in Sources */,
 				8DC1E0CC2520176B003C1F94 /* OrderVC.swift in Sources */,
 				8D3AED9025232D9C00A8F273 /* XXPageTabItemLable.m in Sources */,
@@ -1440,15 +1531,21 @@
 				8D434215252FEBBD007EE9F1 /* HistoryVC.swift in Sources */,
 				8DC1E0BE2520176B003C1F94 /* UITableView.swift in Sources */,
 				8DFA16AD2530A41800292987 /* NearVC.swift in Sources */,
+				8D5A8C4C25487D2600407760 /* RechargeCell.swift in Sources */,
+				8D5A8C5025487FA100407760 /* RechargeViewModel.swift in Sources */,
 				8D1B455825206A7C00251D56 /* HttpManager.swift in Sources */,
 				8DC1E16B25203DDB003C1F94 /* WechatRefreshHeaderTestVC.swift in Sources */,
 				8DC1E16225203DDB003C1F94 /* NBBottomWarningTextFieldView.swift in Sources */,
 				8D5D8C7A25410FC600F702F4 /* HttpRequestService.swift in Sources */,
 				8D0187D42525F4F80074B5BA /* MyViewModel.swift in Sources */,
+				8D5A8C3A25486A3D00407760 /* WithDrawVC.swift in Sources */,
+				8D5A8C2C2548473F00407760 /* GoodStandardVC.swift in Sources */,
 				8DC1E19F25203E5D003C1F94 /* DataCenterManager.swift in Sources */,
 				8D43422925304FB4007EE9F1 /* HistoryViewModel.swift in Sources */,
 				8DBD62BB2534A262006F59F9 /* TodayGoodsVC.swift in Sources */,
 				8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */,
+				8D5A8C432548722400407760 /* BillListViewModel.swift in Sources */,
+				8D5A8C572548861000407760 /* WithDrawCell.swift in Sources */,
 				8D44204C2534317C00755D91 /* NearViewModel.swift in Sources */,
 				8DFA16B02530A42A00292987 /* CarSourceVC.swift in Sources */,
 				8DC1E16425203DDB003C1F94 /* NBSegmentView.swift in Sources */,
@@ -1459,6 +1556,7 @@
 				8D5D8CA325412F6800F702F4 /* PersonalViewModel.swift in Sources */,
 				8D5213982521A6CC00B69BC6 /* ForgetViewModel.swift in Sources */,
 				8DC1E19E25203E5D003C1F94 /* NBTookit.m in Sources */,
+				8D5A8C3D25486A5200407760 /* RechargeVC.swift in Sources */,
 				8D1B4560252086E400251D56 /* NBModel.swift in Sources */,
 				8DC1E19A25203E5D003C1F94 /* NBLoadManager.swift in Sources */,
 				8DC1E0CA2520176B003C1F94 /* PostVC.swift in Sources */,
@@ -1487,6 +1585,7 @@
 				8DC1E0C32520176B003C1F94 /* UIImage.swift in Sources */,
 				8DC1E19C25203E5D003C1F94 /* LanuhManager.swift in Sources */,
 				8D58710525280625001C3614 /* GoodsTypeVC.swift in Sources */,
+				8D5A8C322548668000407760 /* MyBillVC.swift in Sources */,
 				8DC1E0CB2520176B003C1F94 /* TabbarVC.swift in Sources */,
 				8D767080254515B300E1FC29 /* TopTenCell.swift in Sources */,
 				8D5EDEE4254483E300CA2F8F /* GoodsOwenrViewModel.swift in Sources */,
@@ -1498,6 +1597,7 @@
 				8DC1E16825203DDB003C1F94 /* NBActionSheet.swift in Sources */,
 				8DC1E14425203B09003C1F94 /* LayoutProtocol.swift in Sources */,
 				8DA5B0A52520558F00D517F9 /* NBEdgeView.swift in Sources */,
+				8D5A8C4025486A6D00407760 /* BillListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

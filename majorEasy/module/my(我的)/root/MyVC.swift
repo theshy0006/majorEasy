@@ -143,8 +143,9 @@ class MyVC: BaseVC {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    
-
+    @IBAction func gotoBill(_ sender: UIButton) {
+        self.navigationController?.pushViewController(MyBillVC(), animated: true)
+    }
 }
 
 

@@ -69,6 +69,11 @@ class GoodsTypeVC: BaseVC {
             return
         }
         
+        if (goods_name.count == 0) {
+            NBHUDManager.toast("请填写货物名称")
+            return
+        }
+        
         if self.viewModel.packStr.count == 0 {
             NBHUDManager.toast("请选择包装方式")
             return

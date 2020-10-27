@@ -601,4 +601,96 @@ class ShareModel: HandyJSON {
     required init() {}
 }
 
+class BillModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: [BillItem] = [BillItem]()
+
+    required init() {}
+}
+
+class BillItem: HandyJSON {
+    
+    var amount: Float = 0.0
+    var creatTime: String?
+    var operation: String?
+    var orderNum: String?
+    var phoneNumber: String?
+    var placeInfo: String?
+    var recordTime: String?
+    var type: Int = 0
+    var userId: String?
+    var userInfo: String?
+    var userName: String?
+
+    required init() {}
+}
+
+class RechargeListModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: RechargeListObj = RechargeListObj()
+    required init() {}
+}
+
+class RechargeListObj: HandyJSON {
+    var list: [RechargeListItem] = [RechargeListItem]()
+    required init() {}
+}
+
+class RechargeListItem: HandyJSON {
+    var accountNum: String?
+    var amount: Float = 0.0
+    var ifPay:Bool = false
+    var phoneNumber: String?
+    var rechargeNum: String?
+    var rechargeReward: Int = 0
+    var rechargeStatus: String?
+    var rechargeTime: String?
+    var rechargeType: Int = 0
+    var rechargeTypeName: String?
+    var userId: Int = 0
+    var userRealName: String?
+    
+    required init() {}
+}
+
+class WithDrawModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: WithDrawObj = WithDrawObj()
+    required init() {}
+}
+
+class WithDrawObj: HandyJSON {
+    var list: [WithDrawItem] = [WithDrawItem]()
+    required init() {}
+}
+
+class WithDrawItem: HandyJSON {
+    var accountNum: String?
+    var amount: Float = 0.0
+    var bankCardId: Int = 0
+    var bankName: String?
+    var cardNumber: String?
+    var cardType: String?
+    var id: Int = 0
+    var phoneNumber: String?
+    var state: Int = 0
+    var stateName: String?
+    var userId: Int = 0
+    var userRealName: String?
+    var withdrawalTime: String?
+    var withdrawalType: Int = 0
+    var withdrawalTypeName: String?
+    
+    required init() {}
+}
+
+
+
+
 

@@ -50,10 +50,9 @@ class HomeVC: BaseVC {
         
         if let userRoleName = DataCenterManager.default.userInfo.userRoleName {
             self.setNavBarLeftBtn(normalText: "我是" + userRoleName, selector: #selector(popBack))
+        } else {
+            self.setNavBarLeftBtn(normalText: "我是管理员", selector: #selector(popBack))
         }
-        
-        
-       
         self.setNavBarRightBtn(normalImage: "客服", selector: #selector(gotoForward))
     }
     

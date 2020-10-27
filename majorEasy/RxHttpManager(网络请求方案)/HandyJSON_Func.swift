@@ -404,3 +404,45 @@ extension ShareModel {
     }
 }
 
+extension BillModel {
+    func getBill(pageNum: Int, pageSize: Int) -> Observable<BillModel> {
+        return RxHttpManager.fetchData(with: URL_GetRecords,
+                                       method: .post,
+                                       parameters: [
+                                       "pageNum":pageNum,
+                                       "pageSize":pageSize],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: BillModel.self).map({ (response: BillModel) -> BillModel in
+            return response
+        })
+    }
+}
+
+extension RechargeListModel {
+    func getRecharge(pageNum: Int, pageSize: Int) -> Observable<RechargeListModel> {
+        return RxHttpManager.fetchData(with: URL_GetRechargeRecord,
+                                       method: .post,
+                                       parameters: [
+                                       "pageNum":pageNum,
+                                       "pageSize":pageSize],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: RechargeListModel.self).map({ (response: RechargeListModel) -> RechargeListModel in
+            return response
+        })
+    }
+}
+
+extension WithDrawModel {
+    func getWithDraw(pageNum: Int, pageSize: Int) -> Observable<WithDrawModel> {
+        return RxHttpManager.fetchData(with: URL_GetWithdrawalRecord,
+                                       method: .post,
+                                       parameters: [
+                                       "pageNum":pageNum,
+                                       "pageSize":pageSize],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: WithDrawModel.self).map({ (response: WithDrawModel) -> WithDrawModel in
+            return response
+        })
+    }
+}
+

@@ -158,7 +158,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="28" id="rBX-PK-reJ"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                     <color key="textColor" red="0.46666666670000001" green="0.57254901960000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -200,7 +200,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="28" id="TVt-bj-S4n"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                     <color key="textColor" red="0.46666666670000001" green="0.57254901960000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -239,7 +239,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="28" id="wha-TB-1IA"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                     <color key="textColor" red="0.46666666670000001" green="0.57254901960000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -598,13 +598,23 @@
                                         <constraint firstAttribute="width" constant="28" id="X3z-kd-UvB"/>
                                     </constraints>
                                 </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TME-Ci-Pgw">
+                                    <rect key="frame" x="0.0" y="0.0" width="129" height="100"/>
+                                    <connections>
+                                        <action selector="gotoBill:" destination="-1" eventType="touchUpInside" id="EcH-qC-6EX"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
+                                <constraint firstItem="TME-Ci-Pgw" firstAttribute="top" secondItem="Hzp-yC-20M" secondAttribute="top" id="6E0-wL-EG3"/>
                                 <constraint firstItem="jNV-vh-qjK" firstAttribute="top" secondItem="sR4-tp-Q5p" secondAttribute="bottom" constant="9" id="L0U-C8-9NW"/>
+                                <constraint firstAttribute="bottom" secondItem="TME-Ci-Pgw" secondAttribute="bottom" id="ML8-Ol-Nbw"/>
                                 <constraint firstItem="sR4-tp-Q5p" firstAttribute="top" secondItem="Hzp-yC-20M" secondAttribute="top" constant="31" id="NDb-vJ-6cR"/>
                                 <constraint firstAttribute="height" constant="100" id="Ucc-gj-LK4"/>
+                                <constraint firstItem="TME-Ci-Pgw" firstAttribute="leading" secondItem="Hzp-yC-20M" secondAttribute="leading" id="WVN-PV-Djw"/>
                                 <constraint firstItem="sR4-tp-Q5p" firstAttribute="centerX" secondItem="Hzp-yC-20M" secondAttribute="centerX" id="alj-ua-amd"/>
+                                <constraint firstAttribute="trailing" secondItem="TME-Ci-Pgw" secondAttribute="trailing" constant="-0.5" id="ic1-b9-gAb"/>
                                 <constraint firstItem="jNV-vh-qjK" firstAttribute="leading" secondItem="Hzp-yC-20M" secondAttribute="leading" id="tba-M6-Wjf"/>
                                 <constraint firstAttribute="trailing" secondItem="jNV-vh-qjK" secondAttribute="trailing" id="vXt-P0-5tc"/>
                             </constraints>
@@ -742,7 +752,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UUR-gu-rBC" secondAttribute="trailing" constant="12" id="x1l-Yc-NxM"/>
                 <constraint firstItem="UUR-gu-rBC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="xmL-2y-tSX"/>
             </constraints>
-            <point key="canvasLocation" x="-1488.4057971014495" y="-12.053571428571429"/>
+            <point key="canvasLocation" x="-1778" y="-15"/>
         </view>
     </objects>
     <resources>

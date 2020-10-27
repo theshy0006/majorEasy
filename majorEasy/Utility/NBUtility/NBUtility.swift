@@ -358,7 +358,7 @@ extension NBUtility {
 
         let dateForm = DateFormatter()
         dateForm.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-        dateForm.timeZone = TimeZone(secondsFromGMT: 0)
+        dateForm.timeZone = TimeZone.current
         guard let date = dateForm.date(from: string) else {return nil}
         let normalTime = DateFormatter()
         normalTime.dateFormat = "yyyy-MM-dd HH:mm:ss"

@@ -93,8 +93,12 @@ let URL_GetRechargeRankList = BaseURL + "App-userAccount/getRechargeRankList"
 let URL_GetInviteRankList = BaseURL + "App-userAccount/getInviteRankList"
 // 获取分享链接
 let URL_GetMyShareUrl = BaseURL + "App-userAccount/getMyShareUrl"
-
-//分享货源就直接 http://supplydetail.js56918.com/?supplyNum=货源编号
+//账单列表
+let URL_GetRecords = BaseURL + "App-userAccount/getRecords"
+//充值列表
+let URL_GetRechargeRecord = BaseURL + "App-userAccount/getRechargeRecord"
+//提现列表
+let URL_GetWithdrawalRecord = BaseURL + "App-userAccount/getWithdrawalRecord"
 
 // 服务协议
 let servicePath = BaseURL + "App-user/user_agreement"

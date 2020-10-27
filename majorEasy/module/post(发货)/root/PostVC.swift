@@ -25,6 +25,14 @@ class PostVC: BaseVC {
     @IBOutlet weak var typeButton: UIButton!
     @IBOutlet weak var timeButton: UIButton!
     
+    var fromCity = ""
+    var fromCityDetail = ""
+    var fromCityId = ""
+    
+    var toCity = ""
+    var toCityDetail = ""
+    var toCityId = ""
+    
     var inputModel = MakeInputModel()
     var suppliesInfo = MySuppliesInfo()
     convenience init(suppliesInfo: MySuppliesInfo) {
@@ -143,7 +151,6 @@ class PostVC: BaseVC {
         centerView.bringSubviewToFront(goodsButton)
         centerView.bringSubviewToFront(lengthButton)
         centerView.bringSubviewToFront(specificationButton)
-        centerView.bringSubviewToFront(priceButton)
         centerView.bringSubviewToFront(typeButton)
         centerView.bringSubviewToFront(timeButton)
         
@@ -220,6 +227,9 @@ class PostVC: BaseVC {
         chooseAreaView.myColsure = { [weak self] (cityName, cityId) in
             print(cityName)
             print(cityId)
+            self?.fromCity = cityName;
+            self?.fromCityId = cityId;
+            self?.fromField.text = cityName;
         }
     }
     
@@ -229,6 +239,9 @@ class PostVC: BaseVC {
         chooseAreaView.myColsure = { [weak self] (cityName, cityId) in
             print(cityName)
             print(cityId)
+            self?.toCity = cityName;
+            self?.toCityId = cityId;
+            self?.toField.text = cityName;
         }
     }
     
@@ -236,49 +249,32 @@ class PostVC: BaseVC {
         self.view.endEditing(true)
         let vc = GoodsTypeVC()
         vc.myColsure = { [weak self] (name, packType, minHeight, maxHeight, minVolume, maxVolume) in
-            let title = name + "，" + packType + "，" + minHeight + "-" + maxHeight + "吨" + "，"  + minVolume + "-" + maxVolume
+            let title = name + "/" + packType + "/" + minHeight + "~" + maxHeight + "吨" + "/"  + minVolume + "~" + maxVolume
             + "方"
             self?.goodsField.text = title
         }
-        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }
     @IBAction func lengthsButtonPressed(_ sender: UIButton) {
         let vc = CarTypeVC()
-        vc.myColsure = { [weak self] (length1, length2, length3, type1, type2, type3) in
+        vc.myColsure = { [weak self] (type, cartype, length, height) in
             var title = ""
-            if(length1.count != 0) {
-                title = title + length1 + "，"
-            }
-            if(length2.count != 0) {
-                title = title + length2 + "，"
-            }
-            if(length3.count != 0) {
-                title = title + length3 + "，"
-            }
-            title = title + "/"
-            if(type1.count != 0) {
-                title = title + type1 + "，"
-            }
-            if(type2.count != 0) {
-                title = title + type2 + "，"
-            }
-            if(type3.count != 0) {
-                title = title + type3 + "，"
-            }
-            title = title + "/"
-            title = title.replacingOccurrences(of: "，/", with: " / ")
-            title = title.substr(to: title.count - 1)
+            title = type + "/" + cartype + "/" + length + "/" + height
             self?.lengthField.text = title
         }
-        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func specificationButtonPressed(_ sender: UIButton) {
+        let vc = GoodStandardVC()
+        vc.myColsure = { [weak self] (length, width, height, diameter, remark) in
+            var title = ""
+            title = "长\(length)宽\(width)高\(height)直径\(diameter)"
+            self?.specificationField.text = title
+        }
+        self.present(vc, animated: true, completion: nil)
     }
-    @IBAction func priceButtonPressed(_ sender: UIButton) {
-    }
+
     @IBAction func typeButtonPressed(_ sender: UIButton) {
     }
     @IBAction func timeButtonPressed(_ sender: UIButton) {

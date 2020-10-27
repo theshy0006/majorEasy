@@ -10,20 +10,18 @@ import UIKit
 
 class CarTypeViewModel: NSObject {
 
-    var selectLength = ["", "", ""]
-    var length1 = ""
-    var length2 = ""
-    var length3 = ""
-    var selectType = ["", "", ""]
-    var type1 = ""
-    var type2 = ""
-    var type3 = ""
+    var length = ""
+    var height = ""
+    var carType = ""
+    var type = ""
     
-    var lengthArr:Array = ["1.8","2.7","3.8","4.2","5.0","6.2","6.8","7.7",
-                                "8.2","8.7","9.6","11.7","12.5","13.0","13.7","15.0",
-                                "16.0","17.5"]
-    var typeArr:Array = ["平板","高栏","箱式","集装箱",
-                         "自卸","冷藏","保温","高低板",
-                         "面包车","棉被车","爬梯车","飞翼车"]
+    var heightArr:Array = ["不限","1.6","1.25","1.1","0.95","0.8","0.7","0.6","0.5",
+                                "0.4"]
+    var lengthArr:Array = ["不限","23","22","18","17.5","13.7","13","9.6","6.8",
+                                "4.2"]
+    var carArr:Array = ["平板车","高栏车","抽拉板","三线六桥",
+                         "四线八桥","框架车","爬梯车","轴线车",
+                         "冷藏","高低板","集装箱车","厢式挂车"]
+    var typeArr:Array = ["整车","零担"]
 
 }

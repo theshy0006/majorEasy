@@ -94,8 +94,8 @@ class NBTypeView: UIView {
                 resetButtonStatus()
                 button.isSelected = true
             }
-            button.backgroundColor = color_main_yellow;
-            button.layer.borderColor = color_main_yellow.cgColor
+            button.backgroundColor = tabbarFontSelectColor;
+            button.layer.borderColor = tabbarFontSelectColor.cgColor
             self.selectArr.append(button.titleLabel?.text ?? "")
         } else {
                 button.backgroundColor = .white
