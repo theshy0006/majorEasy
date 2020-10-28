@@ -27,4 +27,13 @@
 #import "WXApi.h"
 #import "WXApiManager.h"
 #import "ShareManager.h"
+#import "CGXDatePickerView.h"
+#import "CGXPickerUIBaseView.h"
+#import "CGXPickerView.h"
+#import "CGXPickerViewManager.h"
+#import "CGXAddressModel.h"
+#import "CGXAddressPcikerView.h"
+#import "CGXStringPickerView.h"
+#import "NSDate+CGXPicker.h"
+#import "OCUtility.h"
 #endif /* major_Bridging_Header_h */

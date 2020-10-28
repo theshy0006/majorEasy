@@ -25,9 +25,9 @@ class TopTenCell: UITableViewCell {
         if let url = model.headPortraitUrl {
             let url = URL(string: url)
             
-            self.headImageVie.sd_setImage(with: url, placeholderImage: ImageNamed("编组"))
+            self.headImageVie.sd_setImage(with: url, placeholderImage: ImageNamed("defaultHeader"))
         } else {
-            self.headImageVie.image = ImageNamed("编组")
+            self.headImageVie.image = ImageNamed("defaultHeader")
         }
         
         self.nameLabel.text = model.userRealName

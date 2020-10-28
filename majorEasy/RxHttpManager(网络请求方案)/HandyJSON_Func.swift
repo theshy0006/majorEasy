@@ -446,3 +446,46 @@ extension WithDrawModel {
     }
 }
 
+extension SendGoodsModel {
+    func send(model: MySuppliesInfo, deliveryDataApp: String, arrivalDataApp: String) -> Observable<SendGoodsModel> {
+        return RxHttpManager.fetchData(with: URL_SendGoods,
+                                       method: .post,
+                                       parameters: [
+                                        "loadPlace":model.loadPlace ?? "",
+                                        "loadPlaceCode":model.loadPlaceCode ?? "",
+                                        "loadPlaceDetail":model.loadPlaceDetail ?? "",
+                                        "unloadPlace":model.unloadPlace ?? "",
+                                        "unloadPlaceCode":model.unloadPlaceCode ?? "",
+                                        "unloadPlaceDetail":model.unloadPlaceDetail ?? "",
+                                        "useMode":model.useMode ?? "",
+                                        "vehicleType":model.vehicleType ?? "",
+                                        "vehicleLength":model.vehicleLength ?? "",
+                                        "vehicleHeight":model.vehicleHeight ?? "",
+                                        "goodsName":model.goodsName ?? "",
+                                        "goodsType":model.goodsType ?? "",
+                                        "goodsWeight_lower":model.goodsWeight_lower,
+                                        "goodsWeight_upper":model.goodsWeight_upper,
+                                        "goodsVolume_lower":model.goodsVolume_lower,
+                                        "goodsVolume_upper":model.goodsVolume_upper,
+                                        "goodsLength":model.goodsLength,
+                                        "goodsWide":model.goodsWide,
+                                        "goodsHeight":model.goodsHeight,
+                                        "goodsDiameter":model.goodsDiameter,
+                                        "goodsRemarks":model.goodsRemarks ?? "",
+                                        "packType":model.packType ?? "",
+                                        "loadMode":model.loadMode ?? "",
+                                        "purposePrice":model.purposePrice,
+                                        "contactNum":model.contactNum ?? "",
+                                        "deliveryDataApp":deliveryDataApp,
+                                        "deliveryTime":model.deliveryTime ?? "",
+                                        "arrivalDataApp":arrivalDataApp,
+                                        "arrivalTime":model.arrivalTime ?? "",
+                                        "remarks":model.remarks ?? "",
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: SendGoodsModel.self).map({ (response: SendGoodsModel) -> SendGoodsModel in
+            return response
+        })
+    }
+}
+

@@ -21,19 +21,14 @@ class BillCell: UITableViewCell {
     
     func setCellWithModel(_ model: BillItem) {
         typeLabel.text = model.operation
-        if (model.operation == "定金转入") {
-            nameLabel.text = "汇款人:" + (model.userName ?? "")
-        } else if (model.operation == "定金退还" || model.operation == "定金支付") {
-            nameLabel.text = "支付对象:" + (model.userName ?? "")
-        } else {
-            nameLabel.text = model.userName
-        }
         addressLabel.text = model.placeInfo
         
         if( model.type == 2 ) {
             priceLabel.text = "+" + String(format: "%.2f", model.amount)
+            nameLabel.text = "汇款人:" + (model.userName ?? "")
         } else {
             priceLabel.text = "-" + String(format: "%.2f", model.amount)
+            nameLabel.text = "支付对象:" + (model.userName ?? "")
         }
         
         timeLabel.text = model.creatTime

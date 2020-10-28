@@ -83,9 +83,9 @@ class MyVC: BaseVC {
         
         if let url = DataCenterManager.default.myInfo.headPortraitUrl {
             let url = URL(string: url)
-            self.headImageView.sd_setImage(with: url, placeholderImage: ImageNamed("编组"))
+            self.headImageView.sd_setImage(with: url, placeholderImage: ImageNamed("defaultHeader"))
         } else {
-            self.headImageView.image = ImageNamed("编组")
+            self.headImageView.image = ImageNamed("defaultHeader")
         }
     }
     

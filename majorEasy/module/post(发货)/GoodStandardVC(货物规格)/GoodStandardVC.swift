@@ -50,6 +50,8 @@ class GoodStandardVC: BaseVC {
         }
         
         colsure((self.lengthField.text ?? ""),(self.widthField.text ??   ""),(self.heightField.text ?? ""),(self.diameterField.text ?? ""), (self.remarkTextView.text ?? ""))
+        
+        self.popBack()
     }
     
     

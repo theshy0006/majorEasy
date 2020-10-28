@@ -403,7 +403,7 @@ class MySuppliesInfo: HandyJSON {
     var headPortraitKey: String?
     var headPortraitUrl: String?
     var id: Int = 0
-    var loadMode: String?
+    var loadMode: Int = 0
     var loadModeId: Int = 0
     var loadPlace: String?
     var loadPlaceCity: String?
@@ -600,7 +600,7 @@ class ShareModel: HandyJSON {
 
     required init() {}
 }
-
+// 账单列表
 class BillModel: HandyJSON {
     
     var status: Int = 0
@@ -626,7 +626,7 @@ class BillItem: HandyJSON {
 
     required init() {}
 }
-
+// 充值列表
 class RechargeListModel: HandyJSON {
     
     var status: Int = 0
@@ -656,7 +656,7 @@ class RechargeListItem: HandyJSON {
     
     required init() {}
 }
-
+// 提现选项
 class WithDrawModel: HandyJSON {
     
     var status: Int = 0
@@ -690,7 +690,15 @@ class WithDrawItem: HandyJSON {
     required init() {}
 }
 
+// 发货
+class SendGoodsModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: String?
 
+    required init() {}
+}
 
 
 

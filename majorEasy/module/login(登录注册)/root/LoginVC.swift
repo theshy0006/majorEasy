@@ -49,6 +49,7 @@ class LoginVC: BaseVC {
     
     override func setUpView() {
         self.loginBtn.addShadow(RGBHex(0xe2e2e2))
+        self.agreeButton.isSelected = true
         self.agreeButton.setImage(ImageNamed("uncheck"), for: .normal)
         self.agreeButton.setImage(ImageNamed("check"), for: .selected)
         self.view.addSubview(self.phoneField)

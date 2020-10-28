@@ -84,6 +84,17 @@
 		8D5EDEE02544702100CA2F8F /* GoodsOwenrVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5EDEDE2544702100CA2F8F /* GoodsOwenrVC.xib */; };
 		8D5EDEE4254483E300CA2F8F /* GoodsOwenrViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EDEE3254483E300CA2F8F /* GoodsOwenrViewModel.swift */; };
 		8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */; };
+		8D7498832548FDBD007D0C04 /* CGXDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7498732548FDBB007D0C04 /* CGXDatePickerView.m */; };
+		8D7498842548FDBD007D0C04 /* CGXAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7498742548FDBB007D0C04 /* CGXAddressModel.m */; };
+		8D7498852548FDBD007D0C04 /* CGXPickerViewBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D7498752548FDBB007D0C04 /* CGXPickerViewBundle.bundle */; };
+		8D7498862548FDBD007D0C04 /* CGXStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7498762548FDBB007D0C04 /* CGXStringPickerView.m */; };
+		8D7498872548FDBD007D0C04 /* CGXPickerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7498782548FDBB007D0C04 /* CGXPickerViewManager.m */; };
+		8D7498882548FDBD007D0C04 /* CGXPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D74987A2548FDBB007D0C04 /* CGXPickerView.m */; };
+		8D7498892548FDBD007D0C04 /* NSDate+CGXPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D74987D2548FDBC007D0C04 /* NSDate+CGXPicker.m */; };
+		8D74988A2548FDBD007D0C04 /* CGXAddressPcikerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D74987E2548FDBC007D0C04 /* CGXAddressPcikerView.m */; };
+		8D74988B2548FDBD007D0C04 /* CGXPickerUIBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7498812548FDBD007D0C04 /* CGXPickerUIBaseView.m */; };
+		8D7498A52548FFC0007D0C04 /* OCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7498A42548FFC0007D0C04 /* OCUtility.m */; };
+		8D7498A925490C9D007D0C04 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7498A825490C9D007D0C04 /* PostViewModel.swift */; };
 		8D767076254511D000E1FC29 /* TopTenTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D767075254511D000E1FC29 /* TopTenTV.swift */; };
 		8D7670792545133E00E1FC29 /* TopTenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7670782545133E00E1FC29 /* TopTenViewModel.swift */; };
 		8D76707C254514B900E1FC29 /* SubTopTenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76707B254514B900E1FC29 /* SubTopTenVC.swift */; };
@@ -267,6 +278,26 @@
 		8D5EDEDE2544702100CA2F8F /* GoodsOwenrVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodsOwenrVC.xib; sourceTree = "<group>"; };
 		8D5EDEE3254483E300CA2F8F /* GoodsOwenrViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsOwenrViewModel.swift; sourceTree = "<group>"; };
 		8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		8D7498722548FDBA007D0C04 /* CGXPickerUIBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGXPickerUIBaseView.h; path = "../../../../../Downloads/chazhuanxian-ios-1/ChaZX/OldCode/Verder/CGXPickerView/CGXPickerUIBaseView.h"; sourceTree = "<group>"; };
+		8D7498732548FDBB007D0C04 /* CGXDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGXDatePickerView.m; path = "../../../../../Downloads/chazhuanxian-ios-1/ChaZX/OldCode/Verder/CGXPickerView/CGXDatePickerView.m"; sourceTree = "<group>"; };
+		8D7498742548FDBB007D0C04 /* CGXAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXAddressModel.m; sourceTree = "<group>"; };
+		8D7498752548FDBB007D0C04 /* CGXPickerViewBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CGXPickerViewBundle.bundle; sourceTree = "<group>"; };
+		8D7498762548FDBB007D0C04 /* CGXStringPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXStringPickerView.m; sourceTree = "<group>"; };
+		8D7498772548FDBB007D0C04 /* CGXAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXAddressModel.h; sourceTree = "<group>"; };
+		8D7498782548FDBB007D0C04 /* CGXPickerViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGXPickerViewManager.m; path = "../../../../../Downloads/chazhuanxian-ios-1/ChaZX/OldCode/Verder/CGXPickerView/CGXPickerViewManager.m"; sourceTree = "<group>"; };
+		8D7498792548FDBB007D0C04 /* NSDate+CGXPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+CGXPicker.h"; path = "../../../../../Downloads/chazhuanxian-ios-1/ChaZX/OldCode/Verder/CGXPickerView/NSDate+CGXPicker.h"; sourceTree = "<group>"; };
+		8D74987A2548FDBB007D0C04 /* CGXPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGXPickerView.m; path = "../../../../../Downloads/chazhuanxian-ios-1/ChaZX/OldCode/Verder/CGXPickerView/CGXPickerView.m"; sourceTree = "<group>"; };
+		8D74987B2548FDBC007D0C04 /* CGXStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXStringPickerView.h; sourceTree = "<group>"; };
+		8D74987C2548FDBC007D0C04 /* CGXPickerViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGXPickerViewManager.h; path = "../../../../../Downloads/chazhuanxian-ios-1/ChaZX/OldCode/Verder/CGXPickerView/CGXPickerViewManager.h"; sourceTree = "<group>"; };
+		8D74987D2548FDBC007D0C04 /* NSDate+CGXPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+CGXPicker.m"; path = "../../../../../Downloads/chazhuanxian-ios-1/ChaZX/OldCode/Verder/CGXPickerView/NSDate+CGXPicker.m"; sourceTree = "<group>"; };
+		8D74987E2548FDBC007D0C04 /* CGXAddressPcikerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXAddressPcikerView.m; sourceTree = "<group>"; };
+		8D74987F2548FDBC007D0C04 /* CGXDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGXDatePickerView.h; path = "../../../../../Downloads/chazhuanxian-ios-1/ChaZX/OldCode/Verder/CGXPickerView/CGXDatePickerView.h"; sourceTree = "<group>"; };
+		8D7498802548FDBC007D0C04 /* CGXAddressPcikerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGXAddressPcikerView.h; sourceTree = "<group>"; };
+		8D7498812548FDBD007D0C04 /* CGXPickerUIBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGXPickerUIBaseView.m; path = "../../../../../Downloads/chazhuanxian-ios-1/ChaZX/OldCode/Verder/CGXPickerView/CGXPickerUIBaseView.m"; sourceTree = "<group>"; };
+		8D7498822548FDBD007D0C04 /* CGXPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGXPickerView.h; path = "../../../../../Downloads/chazhuanxian-ios-1/ChaZX/OldCode/Verder/CGXPickerView/CGXPickerView.h"; sourceTree = "<group>"; };
+		8D7498A32548FFC0007D0C04 /* OCUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCUtility.h; sourceTree = "<group>"; };
+		8D7498A42548FFC0007D0C04 /* OCUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCUtility.m; sourceTree = "<group>"; };
+		8D7498A825490C9D007D0C04 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		8D767075254511D000E1FC29 /* TopTenTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTenTV.swift; sourceTree = "<group>"; };
 		8D7670782545133E00E1FC29 /* TopTenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTenViewModel.swift; sourceTree = "<group>"; };
 		8D76707B254514B900E1FC29 /* SubTopTenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTopTenVC.swift; sourceTree = "<group>"; };
@@ -532,6 +563,7 @@
 		8D3AED8A25232D8F00A8F273 /* oc */ = {
 			isa = PBXGroup;
 			children = (
+				8D7498A22548FF9F007D0C04 /* OCUtility */,
 				8D3AED8B25232D9C00A8F273 /* XXPageTab */,
 			);
 			path = oc;
@@ -647,6 +679,7 @@
 			children = (
 				8DC1E0AA2520176A003C1F94 /* PostVC.swift */,
 				8D0187D625260E050074B5BA /* PostVC.xib */,
+				8D7498A825490C9D007D0C04 /* PostViewModel.swift */,
 			);
 			path = root;
 			sourceTree = "<group>";
@@ -756,6 +789,39 @@
 				8D76707F254515B300E1FC29 /* TopTenCell.xib */,
 			);
 			path = "TopTenVC(榜单列表)";
+			sourceTree = "<group>";
+		};
+		8D74984E2548FBA7007D0C04 /* CGXPickerView(时间选择器) */ = {
+			isa = PBXGroup;
+			children = (
+				8D7498772548FDBB007D0C04 /* CGXAddressModel.h */,
+				8D7498742548FDBB007D0C04 /* CGXAddressModel.m */,
+				8D7498802548FDBC007D0C04 /* CGXAddressPcikerView.h */,
+				8D74987E2548FDBC007D0C04 /* CGXAddressPcikerView.m */,
+				8D74987F2548FDBC007D0C04 /* CGXDatePickerView.h */,
+				8D7498732548FDBB007D0C04 /* CGXDatePickerView.m */,
+				8D7498722548FDBA007D0C04 /* CGXPickerUIBaseView.h */,
+				8D7498812548FDBD007D0C04 /* CGXPickerUIBaseView.m */,
+				8D7498822548FDBD007D0C04 /* CGXPickerView.h */,
+				8D74987A2548FDBB007D0C04 /* CGXPickerView.m */,
+				8D7498752548FDBB007D0C04 /* CGXPickerViewBundle.bundle */,
+				8D74987C2548FDBC007D0C04 /* CGXPickerViewManager.h */,
+				8D7498782548FDBB007D0C04 /* CGXPickerViewManager.m */,
+				8D74987B2548FDBC007D0C04 /* CGXStringPickerView.h */,
+				8D7498762548FDBB007D0C04 /* CGXStringPickerView.m */,
+				8D7498792548FDBB007D0C04 /* NSDate+CGXPicker.h */,
+				8D74987D2548FDBC007D0C04 /* NSDate+CGXPicker.m */,
+			);
+			path = "CGXPickerView(时间选择器)";
+			sourceTree = "<group>";
+		};
+		8D7498A22548FF9F007D0C04 /* OCUtility */ = {
+			isa = PBXGroup;
+			children = (
+				8D7498A32548FFC0007D0C04 /* OCUtility.h */,
+				8D7498A42548FFC0007D0C04 /* OCUtility.m */,
+			);
+			path = OCUtility;
 			sourceTree = "<group>";
 		};
 		8D8D5018252B54A90097792A /* root */ = {
@@ -1001,6 +1067,7 @@
 		8DC1E14725203DDB003C1F94 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D74984E2548FBA7007D0C04 /* CGXPickerView(时间选择器) */,
 				9F657FBD253180D9006BAB16 /* NBShare(分享控件) */,
 				8DFA16B22530A74600292987 /* NBSelectView(下拉选择控件) */,
 				8D1B455A252086A400251D56 /* SimpleWebView(不需要交互的WebView) */,
@@ -1357,6 +1424,7 @@
 				8DC1E0D32520176B003C1F94 /* LaunchScreen.storyboard in Resources */,
 				8DC1E0D22520176B003C1F94 /* Assets.xcassets in Resources */,
 				8DD5A2C225406BB7001C2CA3 /* PersonalVC.xib in Resources */,
+				8D7498852548FDBD007D0C04 /* CGXPickerViewBundle.bundle in Resources */,
 				8D43422E25305296007EE9F1 /* SendingCell.xib in Resources */,
 				8D28697B252CB86E00B8C72D /* SpeciaLineDetailVC.xib in Resources */,
 				8D3A15F925244FAC00B9D9F8 /* AllOrderCell.xib in Resources */,
@@ -1452,6 +1520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D7498A925490C9D007D0C04 /* PostViewModel.swift in Sources */,
 				8DC1E16A25203DDB003C1F94 /* NBCitySelectView.swift in Sources */,
 				8D4CEAF325402AF100D5578F /* SettingVC.swift in Sources */,
 				8DBD62BF2534A278006F59F9 /* OftenLinesVC.swift in Sources */,
@@ -1498,6 +1567,7 @@
 				8DC1E1A525203E5D003C1F94 /* PrintBeautifulLog.m in Sources */,
 				8D284580252422B30051384F /* TransferOrderVC.swift in Sources */,
 				8DC1E0BD2520176B003C1F94 /* UIView.swift in Sources */,
+				8D7498832548FDBD007D0C04 /* CGXDatePickerView.m in Sources */,
 				8DBD62C62534A720006F59F9 /* TodayViewModel.swift in Sources */,
 				8D284576252413330051384F /* WaitOrderVC.swift in Sources */,
 				8DC1E16525203DDB003C1F94 /* NBActionSheetItem.swift in Sources */,
@@ -1518,6 +1588,7 @@
 				8DC1E0D02520176B003C1F94 /* constant.swift in Sources */,
 				8DBD62C32534A414006F59F9 /* NBSelectPlusView.m in Sources */,
 				8D434210252FEB7A007EE9F1 /* SendingVC.swift in Sources */,
+				8D7498882548FDBD007D0C04 /* CGXPickerView.m in Sources */,
 				8DC1E16E25203DDB003C1F94 /* NBAlertView.swift in Sources */,
 				8DBD62B62534A130006F59F9 /* SearchGoodsVC.swift in Sources */,
 				8D43422D25305296007EE9F1 /* SendingCell.swift in Sources */,
@@ -1530,6 +1601,7 @@
 				8D284570252412B20051384F /* FinishOrderVC.swift in Sources */,
 				8D434215252FEBBD007EE9F1 /* HistoryVC.swift in Sources */,
 				8DC1E0BE2520176B003C1F94 /* UITableView.swift in Sources */,
+				8D7498872548FDBD007D0C04 /* CGXPickerViewManager.m in Sources */,
 				8DFA16AD2530A41800292987 /* NearVC.swift in Sources */,
 				8D5A8C4C25487D2600407760 /* RechargeCell.swift in Sources */,
 				8D5A8C5025487FA100407760 /* RechargeViewModel.swift in Sources */,
@@ -1543,13 +1615,16 @@
 				8DC1E19F25203E5D003C1F94 /* DataCenterManager.swift in Sources */,
 				8D43422925304FB4007EE9F1 /* HistoryViewModel.swift in Sources */,
 				8DBD62BB2534A262006F59F9 /* TodayGoodsVC.swift in Sources */,
+				8D7498A52548FFC0007D0C04 /* OCUtility.m in Sources */,
 				8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */,
 				8D5A8C432548722400407760 /* BillListViewModel.swift in Sources */,
 				8D5A8C572548861000407760 /* WithDrawCell.swift in Sources */,
 				8D44204C2534317C00755D91 /* NearViewModel.swift in Sources */,
+				8D74988B2548FDBD007D0C04 /* CGXPickerUIBaseView.m in Sources */,
 				8DFA16B02530A42A00292987 /* CarSourceVC.swift in Sources */,
 				8DC1E16425203DDB003C1F94 /* NBSegmentView.swift in Sources */,
 				8DC1E0C82520176B003C1F94 /* NavigationVC.swift in Sources */,
+				8D7498842548FDBD007D0C04 /* CGXAddressModel.m in Sources */,
 				8D1B454C2520599800251D56 /* ForgetVC.swift in Sources */,
 				8D9208F42524CD6700D33D69 /* CancelOrderViewModel.swift in Sources */,
 				8DC1E16725203DDB003C1F94 /* NBMultiSheet.swift in Sources */,
@@ -1582,6 +1657,7 @@
 				9F657F892531429D006BAB16 /* CarSourceViewModel.swift in Sources */,
 				8DC1E17025203DDB003C1F94 /* NBCovor.swift in Sources */,
 				8D57ECEA252BFB11007F4A87 /* SpecialLineViewModel.swift in Sources */,
+				8D7498862548FDBD007D0C04 /* CGXStringPickerView.m in Sources */,
 				8DC1E0C32520176B003C1F94 /* UIImage.swift in Sources */,
 				8DC1E19C25203E5D003C1F94 /* LanuhManager.swift in Sources */,
 				8D58710525280625001C3614 /* GoodsTypeVC.swift in Sources */,
@@ -1592,7 +1668,9 @@
 				8DD66564252D89EB00A23B38 /* LineDetailViewModel.swift in Sources */,
 				9F657FC1253180D9006BAB16 /* NBShareButton.swift in Sources */,
 				8D1B45472520595900251D56 /* NBOneEdgeView.swift in Sources */,
+				8D74988A2548FDBD007D0C04 /* CGXAddressPcikerView.m in Sources */,
 				8DD66568252DE91A00A23B38 /* ShuntVC.swift in Sources */,
+				8D7498892548FDBD007D0C04 /* NSDate+CGXPicker.m in Sources */,
 				8DFA16B92530B29F00292987 /* SourceCell.swift in Sources */,
 				8DC1E16825203DDB003C1F94 /* NBActionSheet.swift in Sources */,
 				8DC1E14425203B09003C1F94 /* LayoutProtocol.swift in Sources */,

@@ -105,7 +105,7 @@
                         </label>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zTu-X8-TTG">
                             <rect key="frame" x="15" y="118" width="344" height="98"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" red="0.89411764709999997" green="0.92941176469999998" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="98" id="o0e-h2-D26"/>
                             </constraints>
@@ -133,10 +133,12 @@
                         <constraint firstItem="zTu-X8-TTG" firstAttribute="leading" secondItem="J6V-P8-fsQ" secondAttribute="leading" constant="15" id="uCC-Dk-BHK"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHu-oZ-Wy4">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHu-oZ-Wy4">
                     <rect key="frame" x="20" y="375" width="374" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.46666666670000001" green="0.57254901960000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="PHp-sH-mnR"/>
+                    </constraints>
                     <state key="normal" title="确定">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -155,10 +157,13 @@
             <constraints>
                 <constraint firstItem="c6M-1R-K8b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0Ij-gC-fO2"/>
                 <constraint firstItem="c6M-1R-K8b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4da-gc-jKj"/>
+                <constraint firstItem="tHu-oZ-Wy4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="7FZ-bX-D5w"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J6V-P8-fsQ" secondAttribute="trailing" constant="20" id="8gc-z1-ceN"/>
                 <constraint firstItem="c6M-1R-K8b" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Pnb-6d-Fxz"/>
                 <constraint firstItem="J6V-P8-fsQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Vij-84-V4V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tHu-oZ-Wy4" secondAttribute="trailing" constant="20" id="gPY-JT-P6h"/>
                 <constraint firstItem="J6V-P8-fsQ" firstAttribute="top" secondItem="c6M-1R-K8b" secondAttribute="bottom" constant="20" id="nzj-BN-Xhc"/>
+                <constraint firstItem="tHu-oZ-Wy4" firstAttribute="top" secondItem="J6V-P8-fsQ" secondAttribute="bottom" constant="37" id="qtr-yp-C5U"/>
             </constraints>
             <point key="canvasLocation" x="-146.37681159420291" y="57.589285714285708"/>
         </view>

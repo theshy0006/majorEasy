@@ -36,14 +36,30 @@ class AllGoodsCell: UITableViewCell {
         tagLabel.text = model.vehicleType
         weightLabel.text = model.goodsWeight! + "吨"
         timeLabel.text = model.timeAgo
-        let type = model.goodsName! + "/" + model.useMode! + "/" + model.loadMode!
+        
+        var loadType = "一装一卸"
+        if(model.loadMode == 1) {
+            loadType = "一装一卸"
+        } else if(model.loadMode == 2) {
+            loadType = "一装两卸"
+        } else if(model.loadMode == 3) {
+            loadType = "一装多卸"
+        } else if(model.loadMode == 4) {
+            loadType = "两装一卸"
+        } else if(model.loadMode == 5) {
+            loadType = "两装两卸"
+        } else if(model.loadMode == 6) {
+            loadType = "多装多卸"
+        }
+        
+        let type = model.goodsName! + "/" + model.useMode! + "/" + loadType
         typeLabel.text = type
         sizeLabel.text = String(format:"货物尺寸 长%.1f米 ",model.goodsLength) + String(format:"宽%.1f米 ",model.goodsWide) + String(format:"高%.1f米",model.goodsHeight)
         if let url = model.headPortraitUrl {
             let url = URL(string: url)
-            self.headImageView.sd_setImage(with: url, placeholderImage: ImageNamed("编组"))
+            self.headImageView.sd_setImage(with: url, placeholderImage: ImageNamed("defaultHeader"))
         } else {
-            self.headImageView.image = ImageNamed("编组")
+            self.headImageView.image = ImageNamed("defaultHeader")
         }
         nameLabel.text = model.userRealName
         timesLabel.text = "交易 \(model.releaseNum) 次"

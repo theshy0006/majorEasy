@@ -112,7 +112,7 @@ class NBTypeView: UIView {
             if let v = view as? UIButton {
                 v.isSelected = false
                 v.backgroundColor = .white;
-                v.layer.borderColor = color_BgColor.cgColor
+                v.layer.borderColor = RGBHex(0xDDDDDD).cgColor
             }
         }
     }

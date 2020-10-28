@@ -99,6 +99,10 @@ let URL_GetRecords = BaseURL + "App-userAccount/getRecords"
 let URL_GetRechargeRecord = BaseURL + "App-userAccount/getRechargeRecord"
 //提现列表
 let URL_GetWithdrawalRecord = BaseURL + "App-userAccount/getWithdrawalRecord"
+// 发货主交易接口
+let URL_SendGoods = BaseURL + "App-supply/realseSupply"
+
+
 
 // 服务协议
 let servicePath = BaseURL + "App-user/user_agreement"
