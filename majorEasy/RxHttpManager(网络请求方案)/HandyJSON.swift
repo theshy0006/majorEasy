@@ -439,6 +439,8 @@ class MySuppliesInfo: HandyJSON {
     var vehicleLength: String?
     var vehicleType: String?
     var vehicleTypeId: String?
+    var carrierId: Int = 0
+    var carrierPhone: String?
     required init() {}
 }
 
@@ -700,5 +702,51 @@ class SendGoodsModel: HandyJSON {
     required init() {}
 }
 
+// 发货
+class QueryPriceModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: String?
 
+    required init() {}
+}
 
+// 查询指派人
+class SearchCarrierModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: SearchCarrierItem = SearchCarrierItem()
+
+    required init() {}
+}
+
+class SearchCarrierItem: HandyJSON {
+    
+    var carrierId: Int = 0
+    var carrierName: String?
+    var carrierPhone: String?
+
+    required init() {}
+}
+
+// 完成订单
+class FinishOrderModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: String?
+
+    required init() {}
+}
+
+// 取消订单
+class CancleOrderModel: HandyJSON {
+    
+    var status: Int = 0
+    var message: String?
+    var value: String?
+
+    required init() {}
+}

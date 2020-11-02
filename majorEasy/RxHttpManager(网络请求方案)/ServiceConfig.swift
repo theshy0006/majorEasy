@@ -21,7 +21,7 @@ struct ServiceConfigure {
 enum YY_ApiEnvironment: String  {
     /********外部环境**********/
     case mock = "https://mock.yonyoucloud.com/mock/3368/"
-    case test = "http://djwy.nat300.top/"
+    case test = "http://u5nt4m.natappfree.cc/"
     case product = "https://djwy-api.js56918.com/"
     func base() -> String {
         return self.rawValue
@@ -79,6 +79,10 @@ let URL_getMySupplies = BaseURL + "App-supply/getMySupplies"
 let URL_deletMysupply = BaseURL + "App-supply/deletMysupply/"
 // 所有货源
 let URL_GetSuppliesByParam = BaseURL + "App-supplies/getSuppliesByParam"
+// 身份证正面上传
+let URL_UploadIdCardFront = BaseURL + "App-qiniuAccountcloud/uploadIdCardFront"
+// 身份证反面上传
+let URL_UploadIdCardReverse = BaseURL + "App-qiniuAccountcloud/uploadIdCardReverse"
 // 头像上传
 let URL_Uploadheadportrait = BaseURL + "App-qiniuAccountcloud/uploadheadportrait"
 // 更新用户信息
@@ -101,6 +105,17 @@ let URL_GetRechargeRecord = BaseURL + "App-userAccount/getRechargeRecord"
 let URL_GetWithdrawalRecord = BaseURL + "App-userAccount/getWithdrawalRecord"
 // 发货主交易接口
 let URL_SendGoods = BaseURL + "App-supply/realseSupply"
+//获取推荐报价
+let URL_GetReferencePrice = BaseURL + "App-supply/getReferencePrice"
+//获取货物类型
+let URL_GetAllGoodsType = BaseURL + "App-supplies/getAllGoodsType"
+//查询指派人
+let URL_SearchCarrier = BaseURL + "App-user/serachCarrier/"
+
+//完成订单
+let URL_FinishOrder = BaseURL + "App-order/finishOrder/"
+//取消订单
+let URL_CancleOrder = BaseURL + "App-order/cancleOrder/"
 
 
 

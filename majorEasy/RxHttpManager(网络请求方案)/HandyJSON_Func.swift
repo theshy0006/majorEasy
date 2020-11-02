@@ -328,6 +328,26 @@ extension UploadImageModel {
             return response
         })
     }
+    
+    func uploadFrontImage(image: UIImage) -> Observable<UploadImageModel> {
+        return RxHttpManager.fetchFormData(with: URL_UploadIdCardFront,
+                                       method: .post,
+                                       image: image,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: UploadImageModel.self).map({ (response: UploadImageModel) -> UploadImageModel in
+            return response
+        })
+    }
+    
+    func uploadBackImage(image: UIImage) -> Observable<UploadImageModel> {
+        return RxHttpManager.fetchFormData(with: URL_UploadIdCardReverse,
+                                       method: .post,
+                                       image: image,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: UploadImageModel.self).map({ (response: UploadImageModel) -> UploadImageModel in
+            return response
+        })
+    }
 }
 
 extension SubUserReviewModel {
@@ -473,7 +493,7 @@ extension SendGoodsModel {
                                         "goodsDiameter":model.goodsDiameter,
                                         "goodsRemarks":model.goodsRemarks ?? "",
                                         "packType":model.packType ?? "",
-                                        "loadMode":model.loadMode ?? "",
+                                        "loadMode":model.loadMode ?? 1,
                                         "purposePrice":model.purposePrice,
                                         "contactNum":model.contactNum ?? "",
                                         "deliveryDataApp":deliveryDataApp,
@@ -481,9 +501,80 @@ extension SendGoodsModel {
                                         "arrivalDataApp":arrivalDataApp,
                                         "arrivalTime":model.arrivalTime ?? "",
                                         "remarks":model.remarks ?? "",
+                                        "carrierId":model.carrierId,
+                                        "carrierPhone":model.carrierPhone ?? "",
                                        ],
                                        headers: ConstructHeaders(nil),
                                        returnType: SendGoodsModel.self).map({ (response: SendGoodsModel) -> SendGoodsModel in
+            return response
+        })
+    }
+}
+
+extension QueryPriceModel {
+    func query(model: MySuppliesInfo) -> Observable<QueryPriceModel> {
+        return RxHttpManager.fetchData(with: URL_GetReferencePrice,
+                                       method: .post,
+                                       parameters: [
+                                        "loadPlace":model.loadPlace ?? "",
+                                        "loadPlaceCode":model.loadPlaceCode ?? "",
+                                        "loadPlaceDetail":model.loadPlaceDetail ?? "",
+                                        "unloadPlace":model.unloadPlace ?? "",
+                                        "unloadPlaceCode":model.unloadPlaceCode ?? "",
+                                        "unloadPlaceDetail":model.unloadPlaceDetail ?? "",
+                                        "goodsName":model.goodsName ?? "",
+                                        "goodsType":model.goodsType ?? "",
+                                        "goodsWeight_lower":model.goodsWeight_lower,
+                                        "goodsWeight_upper":model.goodsWeight_upper,
+                                        "goodsVolume_lower":model.goodsVolume_lower,
+                                        "goodsVolume_upper":model.goodsVolume_upper,
+                                        "goodsLength":model.goodsLength,
+                                        "goodsWide":model.goodsWide,
+                                        "goodsHeight":model.goodsHeight,
+                                        "goodsDiameter":model.goodsDiameter,
+                                        "goodsRemarks":model.goodsRemarks ?? "",
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: QueryPriceModel.self).map({ (response: QueryPriceModel) -> QueryPriceModel in
+            return response
+        })
+    }
+}
+
+// 查询指派人
+extension SearchCarrierModel {
+    func searchCarrier(mobile: String) -> Observable<SearchCarrierModel> {
+        return RxHttpManager.fetchData(with: URL_SearchCarrier+mobile,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: SearchCarrierModel.self).map({ (response: SearchCarrierModel) -> SearchCarrierModel in
+            return response
+        })
+    }
+}
+
+extension FinishOrderModel {
+    func finishOrder(orderNum: String) -> Observable<FinishOrderModel> {
+        return RxHttpManager.fetchData(with: URL_FinishOrder+orderNum,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: FinishOrderModel.self).map({ (response: FinishOrderModel) -> FinishOrderModel in
+            return response
+        })
+    }
+}
+
+extension CancleOrderModel {
+    func cancleOrder(orderNum: String) -> Observable<CancleOrderModel> {
+        return RxHttpManager.fetchData(with: URL_CancleOrder,
+                                       method: .post,
+                                       parameters: [
+                                        "orderNum":orderNum
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: CancleOrderModel.self).map({ (response: CancleOrderModel) -> CancleOrderModel in
             return response
         })
     }

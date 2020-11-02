@@ -9,6 +9,64 @@ import UIKit
 
 class PostVC: BaseVC {
 
+    
+    @IBAction func readAgreement(_ sender: UIButton) {
+        let model:ProtocolModel = ProtocolModel()
+        model.title = "service".localized
+        model.contentUrl = servicePath
+        
+        self.navigationController?.pushViewController(SimpleWebView(protocolModel: model), animated: true)
+    }
+    
+    @IBAction func queryPrice(_ sender: UIButton) {
+        
+        if (fromField.text?.count == 0 || toField.text?.count == 0) {
+            NBHUDManager.toast("请选择城市/区域")
+            return
+        }
+        
+        if (goodsField.text?.count == 0) {
+            NBHUDManager.toast("请输入货物信息")
+            return
+        }
+        
+        if (lengthField.text?.count == 0) {
+            NBHUDManager.toast("请输入车型车长")
+            return
+        }
+
+        NBLoadManager.showLoading()
+        viewModel.query( success: { [weak self] model in
+           NBLoadManager.hidLoading()
+           NBHUDManager.toast(model.message ?? "")
+            if(model.value == "0" || model.value == "") {
+                self?.queryButton.setTitle(" 暂无估价", for: .normal)
+            } else {
+                self?.queryButton.setTitle(model.value ?? "" + " 元", for: .normal)
+            }
+            self?.queryButton.isSelected = true
+        }) {[weak self] (error) in
+           NBLoadManager.hidLoading()
+           NBHUDManager.toast(error.message)
+           self?.queryButton.isSelected = false
+        }
+    }
+    
+    func queryCarry(mobile: String) {
+        NBLoadManager.showLoading()
+
+        viewModel.search(mobile:mobile, success: { model in
+           NBLoadManager.hidLoading()
+           NBHUDManager.toast(model.message ?? "")
+           
+        }) { (error) in
+           NBLoadManager.hidLoading()
+           NBHUDManager.toast(error.message)
+        }
+    }
+    
+    @IBOutlet weak var queryButton: UIButton!
+
     let viewModel = PostViewModel()
     
     @IBOutlet weak var topView: UIView!
@@ -27,9 +85,7 @@ class PostVC: BaseVC {
     @IBOutlet weak var typeButton: UIButton!
     @IBOutlet weak var timeButton: UIButton!
     @IBOutlet weak var asignButton: UIButton!
-    
-    
-    
+
     var deliveryDataApp = ""
     var arrivalDataApp = ""
 
@@ -46,12 +102,22 @@ class PostVC: BaseVC {
     convenience init(suppliesInfo: MySuppliesInfo) {
         self.init()
         self.suppliesInfo = suppliesInfo
+        self.viewModel.mySuppliesInfo = suppliesInfo
+        loadSuppliesInfo()
+    }
+    
+    
+    func loadSuppliesInfo() {
+        fromField.text = self.viewModel.mySuppliesInfo.loadPlace
+        fromAddressField.text = self.viewModel.mySuppliesInfo.loadPlaceDetail
+        
+        toField.text = self.viewModel.mySuppliesInfo.unloadPlace
+        toAddressField.text = self.viewModel.mySuppliesInfo.unloadPlaceDetail
     }
 
     lazy var fromField = NBBottomWarningTextFieldView(placeholderString: "城市/区域", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .default
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -59,7 +125,6 @@ class PostVC: BaseVC {
     lazy var fromAddressField = NBBottomWarningTextFieldView(placeholderString: "选填，请输入详细地址", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .default
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -67,7 +132,6 @@ class PostVC: BaseVC {
     lazy var toField = NBBottomWarningTextFieldView(placeholderString: "城市/区域", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .default
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -75,7 +139,6 @@ class PostVC: BaseVC {
     lazy var toAddressField = NBBottomWarningTextFieldView(placeholderString: "选填，请输入详细地址", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .default
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -83,7 +146,6 @@ class PostVC: BaseVC {
     lazy var goodsField = NBBottomWarningTextFieldView(placeholderString: "请输入货物信息", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .default
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -91,7 +153,6 @@ class PostVC: BaseVC {
     lazy var lengthField = NBBottomWarningTextFieldView(placeholderString: "请输入车型车长", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .default
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -99,7 +160,6 @@ class PostVC: BaseVC {
     lazy var specificationField = NBBottomWarningTextFieldView(placeholderString: "选填，请填写货物规格", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .default
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -107,7 +167,6 @@ class PostVC: BaseVC {
     lazy var priceField = NBBottomWarningTextFieldView(placeholderString: "选填", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .decimalPad
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -115,7 +174,6 @@ class PostVC: BaseVC {
     lazy var typeField = NBBottomWarningTextFieldView(placeholderString: "", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .default
         $0.text = "一装一卸"
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -123,7 +181,6 @@ class PostVC: BaseVC {
     lazy var timeField = NBBottomWarningTextFieldView(placeholderString: "请选择时间", textColor: color_normal, font: nil, isSecureTextEntry: nil, redString: "", redFont: nil).then {
         $0.textField.keyboardType = .default
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -162,6 +219,10 @@ class PostVC: BaseVC {
         
         self.offenButton.setImage(ImageNamed("uncheck"), for: .normal)
         self.offenButton.setImage(ImageNamed("check"), for: .selected)
+        
+        self.queryButton.setImage(ImageNamed("uncheck"), for: .normal)
+        self.queryButton.setImage(ImageNamed("check"), for: .selected)
+        
         
         asignButton.layer.borderWidth = 1
         asignButton.layer.borderColor = tabbarFontSelectColor.cgColor
@@ -280,11 +341,16 @@ class PostVC: BaseVC {
                     + "方"
             } else if (minVolume.count == 0 && maxVolume.count == 0){
                 title = name + "/" + packType + "/"  + minHeight + "-" + maxHeight + "吨"
+            } else if (minHeight.count == 0 || maxHeight.count == 0) {
+                title = name + "/" + packType + "/"  + minVolume + maxVolume
+                    + "方"
+            } else if (minVolume.count == 0 || maxVolume.count == 0){
+                title = name + "/" + packType + "/"  + minHeight + maxHeight + "吨"
             } else {
                 title = name + "/" + packType + "/" + minHeight + "-" + maxHeight + "吨" + "/"  + minVolume + "-" + maxVolume
                 + "方"
             }
-            
+
             self?.viewModel.mySuppliesInfo.goodsWeight_lower = Float(minHeight) ?? 0.0
             self?.viewModel.mySuppliesInfo.goodsWeight_upper = Float(maxHeight) ?? 0.0
             self?.viewModel.mySuppliesInfo.goodsVolume_lower = Float(minVolume) ?? 0.0
@@ -399,7 +465,91 @@ extension PostVC: NBBottomWarningTextFieldDelegate {
     }
     
     @IBAction func asignBtnPressed(_ sender: UIButton) {
+
+        let purpose = priceField.text ?? ""
+        self.viewModel.mySuppliesInfo.purposePrice = Float(purpose) ?? 0.0
+        self.viewModel.mySuppliesInfo.loadPlaceDetail = fromAddressField.text
+        self.viewModel.mySuppliesInfo.goodsType = "1"
+        self.viewModel.mySuppliesInfo.unloadPlaceDetail = toAddressField.text
         
+        let view = NBSearchView()
+        view.show(superView: kWindow ?? UIView())
+        view.confirmButton.rx.tap.subscribe(onNext: { [weak self] in
+            view.hide()
+            
+            if let title = view.confirmButton.titleLabel?.text {
+                if(title.count == 11) {
+                    self?.assigned()
+                }
+            }
+        }).disposed(by: disposeBag)
+        
+        view.searchButton.rx.tap.subscribe(onNext: { [weak self] in
+            if let title = view.phoneField.text {
+                if(title.count == 11) {
+                    self?.queryCarry(mobile: title)
+                    
+                    
+                    NBLoadManager.showLoading()
+                    self?.viewModel.search(mobile:title, success: { model in
+                       NBLoadManager.hidLoading()
+                       NBHUDManager.toast(model.message ?? "")
+                        view.confirmButton.setTitle(model.value.carrierPhone, for: .normal)
+                        self?.viewModel.mySuppliesInfo.carrierPhone = model.value.carrierPhone
+                        self?.viewModel.mySuppliesInfo.carrierId = model.value.carrierId
+                        
+                    }) { (error) in
+                       NBLoadManager.hidLoading()
+                       NBHUDManager.toast(error.message)
+                    }
+                    
+                    
+                    
+                }
+            }
+        }).disposed(by: disposeBag)
+        
+    }
+    
+    
+    func assigned() {
+        if (fromField.text?.count == 0 || toField.text?.count == 0) {
+            NBHUDManager.toast("请选择城市/区域")
+            return
+        }
+        
+        if (goodsField.text?.count == 0) {
+            NBHUDManager.toast("请输入货物信息")
+            return
+        }
+        
+        if (lengthField.text?.count == 0) {
+            NBHUDManager.toast("请输入车型车长")
+            return
+        }
+        
+        if (timeField.text?.count == 0) {
+            NBHUDManager.toast("请选择装货时间")
+            return
+        }
+        if (!self.agreeButton.isSelected) {
+            NBHUDManager.toast("阅读并同意货物运输协议")
+            return
+        }
+        let purpose = priceField.text ?? ""
+        self.viewModel.mySuppliesInfo.purposePrice = Float(purpose) ?? 0.0
+        self.viewModel.mySuppliesInfo.loadPlaceDetail = fromAddressField.text
+        self.viewModel.mySuppliesInfo.goodsType = "1"
+        self.viewModel.mySuppliesInfo.unloadPlaceDetail = toAddressField.text
+        NBLoadManager.showLoading()
+        viewModel.send(deliveryDataApp:deliveryDataApp, arrivalDataApp:arrivalDataApp, success: { [weak self] model in
+            NBLoadManager.hidLoading()
+            NBHUDManager.toast(model.message ?? "")
+        }) { [weak self] (error) in
+           NBLoadManager.hidLoading()
+           NBHUDManager.toast(error.message)
+           self?.queryButton.isSelected = false
+        }
     }
     
     @IBAction func sendBtnPressed(_ sender: UIButton) {
@@ -423,20 +573,27 @@ extension PostVC: NBBottomWarningTextFieldDelegate {
             NBHUDManager.toast("请选择装货时间")
             return
         }
-        
+        if (!self.agreeButton.isSelected) {
+            NBHUDManager.toast("阅读并同意货物运输协议")
+            return
+        }
+        let purpose = priceField.text ?? ""
+        self.viewModel.mySuppliesInfo.purposePrice = Float(purpose) ?? 0.0
         self.viewModel.mySuppliesInfo.loadPlaceDetail = fromAddressField.text
+        self.viewModel.mySuppliesInfo.goodsType = "1"
         self.viewModel.mySuppliesInfo.unloadPlaceDetail = toAddressField.text
         
+        self.viewModel.mySuppliesInfo.carrierPhone = ""
+        self.viewModel.mySuppliesInfo.carrierId = 0
+        
         NBLoadManager.showLoading()
-        viewModel.send(deliveryDataApp:deliveryDataApp, arrivalDataApp:arrivalDataApp, success: { model in
-           NBLoadManager.hidLoading()
-           kAppdelegate.setUpTabBar()
-           NBHUDManager.toast(model.message ?? "")
-        }) { (error) in
+        viewModel.send(deliveryDataApp:deliveryDataApp, arrivalDataApp:arrivalDataApp, success: { [weak self] model in
+            NBLoadManager.hidLoading()
+            NBHUDManager.toast(model.message ?? "")
+        }) { [weak self] (error) in
            NBLoadManager.hidLoading()
            NBHUDManager.toast(error.message)
+           self?.queryButton.isSelected = false
         }
-        
     }
-    
 }

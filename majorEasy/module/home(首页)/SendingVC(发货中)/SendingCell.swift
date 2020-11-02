@@ -40,7 +40,13 @@ class SendingCell: UITableViewCell {
     
     func setCellWithModel(_ model: MySuppliesInfo) {
         self.currentModel = model
-        lineNameLabel.text = (model.loadPlaceShow ?? "") + " -> " + (model.unloadPlaceShow ?? "")
+        let str1 = (model.loadPlaceShow ?? "") + " -> " + (model.unloadPlaceShow ?? "")
+        
+        
+        
+        lineNameLabel.text = str1.replacingOccurrences(of: "/", with: "")
+        
+        
         timeLabel.text = model.timeAgo
         contentLabel.text = "整车：" + (model.mySupplyMsg ?? "")
         typeLabel.text = "规格：" + "长\(model.goodsLength)/" + "宽\(model.goodsWide)/"

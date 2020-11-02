@@ -22,7 +22,7 @@ class SendingVC: BaseVC {
         $0.separatorStyle = .none
         $0.backgroundColor = color_BgColor
         $0.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        $0.estimatedRowHeight = 128.5
+        $0.estimatedRowHeight = 155
         $0.rowHeight = UITableView.automaticDimension
         let nib = UINib(nibName: "SendingCell", bundle: nil)
         $0.register(nib, forCellReuseIdentifier: "SendingCell")
@@ -129,7 +129,17 @@ class SendingVC: BaseVC {
     }
     
     @IBAction func inviteBtnPressed(_ sender: Any) {
-        
+        NBShareView.showTips { index in
+            print(index)
+            
+            if( index == 0 ) {
+                // 朋友圈
+                ShareManager.shareInstance().shareWeChatFriend("大件无忧，询价调车更迅速", andContent: "邀请朋友下载大件无忧可以获取跨省大件免费办理办证! 注册奖励100元!邀请好友奖励50元!邀请每个用户都会 成为你2级会员，他们邀请朋友注册也可以获取30元奖励 想要永久免费办理跨省大件运输证，请粉享您的朋友圈", image: "", linkWith: DataCenterManager.default.shareUrl, shareType: .WECHATZONE, style: .cargo)
+            } else {
+                // 微信好友
+                ShareManager.shareInstance().shareWeChatFriend("大件无忧，询价调车更迅速", andContent: "邀请朋友下载大件无忧可以获取跨省大件免费办理办证! 注册奖励100元!邀请好友奖励50元!邀请每个用户都会 成为你2级会员，他们邀请朋友注册也可以获取30元奖励 想要永久免费办理跨省大件运输证，请粉享您的朋友圈", image: "", linkWith: DataCenterManager.default.shareUrl, shareType: .WECHAT, style: .cargo)
+            }
+        }
     }
     
     @IBAction func sendingBtnPressed(_ sender: UIButton) {

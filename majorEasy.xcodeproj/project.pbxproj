@@ -100,6 +100,7 @@
 		8D76707C254514B900E1FC29 /* SubTopTenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76707B254514B900E1FC29 /* SubTopTenVC.swift */; };
 		8D767080254515B300E1FC29 /* TopTenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76707E254515B300E1FC29 /* TopTenCell.swift */; };
 		8D767081254515B300E1FC29 /* TopTenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D76707F254515B300E1FC29 /* TopTenCell.xib */; };
+		8D86265A254AEAC8004F8833 /* NBSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D862659254AEAC8004F8833 /* NBSearchView.swift */; };
 		8D8D501D252B55020097792A /* SpecialLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D501B252B55020097792A /* SpecialLineVC.swift */; };
 		8D8D501E252B55020097792A /* SpecialLineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8D501C252B55020097792A /* SpecialLineVC.xib */; };
 		8D9208F12524CD5000D33D69 /* TransferOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208F02524CD5000D33D69 /* TransferOrderViewModel.swift */; };
@@ -176,6 +177,7 @@
 		8DC1E1AB25203E5D003C1F94 /* NBPlistCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E19625203E5D003C1F94 /* NBPlistCache.swift */; };
 		8DC1E1AC25203E5D003C1F94 /* NBFileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E19725203E5D003C1F94 /* NBFileCache.swift */; };
 		8DC1E1AD25203E5D003C1F94 /* NBCacheBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC1E19825203E5D003C1F94 /* NBCacheBehavior.swift */; };
+		8DCEB9FB254EE6D1008A75C2 /* SVW_PayResultEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEB9FA254EE6D1008A75C2 /* SVW_PayResultEnums.swift */; };
 		8DD5A2C125406BB7001C2CA3 /* PersonalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5A2BF25406BB7001C2CA3 /* PersonalVC.swift */; };
 		8DD5A2C225406BB7001C2CA3 /* PersonalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DD5A2C025406BB7001C2CA3 /* PersonalVC.xib */; };
 		8DD66564252D89EB00A23B38 /* LineDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD66563252D89EB00A23B38 /* LineDetailViewModel.swift */; };
@@ -303,6 +305,7 @@
 		8D76707B254514B900E1FC29 /* SubTopTenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTopTenVC.swift; sourceTree = "<group>"; };
 		8D76707E254515B300E1FC29 /* TopTenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTenCell.swift; sourceTree = "<group>"; };
 		8D76707F254515B300E1FC29 /* TopTenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopTenCell.xib; sourceTree = "<group>"; };
+		8D862659254AEAC8004F8833 /* NBSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBSearchView.swift; sourceTree = "<group>"; };
 		8D8D501B252B55020097792A /* SpecialLineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineVC.swift; sourceTree = "<group>"; };
 		8D8D501C252B55020097792A /* SpecialLineVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialLineVC.xib; sourceTree = "<group>"; };
 		8D9208F02524CD5000D33D69 /* TransferOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferOrderViewModel.swift; sourceTree = "<group>"; };
@@ -388,6 +391,7 @@
 		8DC1E19725203E5D003C1F94 /* NBFileCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBFileCache.swift; sourceTree = "<group>"; };
 		8DC1E19825203E5D003C1F94 /* NBCacheBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBCacheBehavior.swift; sourceTree = "<group>"; };
 		8DC1E1B825205182003C1F94 /* major-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "major-Bridging-Header.h"; sourceTree = "<group>"; };
+		8DCEB9FA254EE6D1008A75C2 /* SVW_PayResultEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVW_PayResultEnums.swift; sourceTree = "<group>"; };
 		8DD5A2BF25406BB7001C2CA3 /* PersonalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalVC.swift; sourceTree = "<group>"; };
 		8DD5A2C025406BB7001C2CA3 /* PersonalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalVC.xib; sourceTree = "<group>"; };
 		8DD66563252D89EB00A23B38 /* LineDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetailViewModel.swift; sourceTree = "<group>"; };
@@ -444,6 +448,7 @@
 		8D17427625319E9700083988 /* ShareManager(分享封装) */ = {
 			isa = PBXGroup;
 			children = (
+				8DCEB9FA254EE6D1008A75C2 /* SVW_PayResultEnums.swift */,
 				8D17427725319E9700083988 /* ShareManager.h */,
 				8D17427825319E9700083988 /* ShareManager.m */,
 			);
@@ -824,6 +829,14 @@
 			path = OCUtility;
 			sourceTree = "<group>";
 		};
+		8D862658254AEAAB004F8833 /* NBSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				8D862659254AEAC8004F8833 /* NBSearchView.swift */,
+			);
+			path = NBSearchView;
+			sourceTree = "<group>";
+		};
 		8D8D5018252B54A90097792A /* root */ = {
 			isa = PBXGroup;
 			children = (
@@ -1067,6 +1080,7 @@
 		8DC1E14725203DDB003C1F94 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D862658254AEAAB004F8833 /* NBSearchView */,
 				8D74984E2548FBA7007D0C04 /* CGXPickerView(时间选择器) */,
 				9F657FBD253180D9006BAB16 /* NBShare(分享控件) */,
 				8DFA16B22530A74600292987 /* NBSelectView(下拉选择控件) */,
@@ -1551,6 +1565,7 @@
 				8DFA16A92530A40500292987 /* KnownVC.swift in Sources */,
 				8DC1E1AC25203E5D003C1F94 /* NBFileCache.swift in Sources */,
 				8D9208FA2524CDCE00D33D69 /* WaitOrderViewModel.swift in Sources */,
+				8DCEB9FB254EE6D1008A75C2 /* SVW_PayResultEnums.swift in Sources */,
 				8DC1E19925203E5D003C1F94 /* LoadingHUD.swift in Sources */,
 				8D5A8C532548858F00407760 /* WithDrawViewModel.swift in Sources */,
 				8DC1E16125203DDB003C1F94 /* NBTextFiled.swift in Sources */,
@@ -1577,6 +1592,7 @@
 				8D3AED9025232D9C00A8F273 /* XXPageTabItemLable.m in Sources */,
 				8DC1E19D25203E5D003C1F94 /* NBAreaModel.m in Sources */,
 				8DC1E0C02520176B003C1F94 /* String.swift in Sources */,
+				8D86265A254AEAC8004F8833 /* NBSearchView.swift in Sources */,
 				8D28697A252CB86E00B8C72D /* SpeciaLineDetailVC.swift in Sources */,
 				8DC1E1A425203E5D003C1F94 /* HandyJSON_Func.swift in Sources */,
 				8DC1E1AA25203E5D003C1F94 /* NBCacheManager.swift in Sources */,
@@ -1737,6 +1753,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1798,6 +1815,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1832,6 +1850,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zxc.chazx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "majorEasy/config/major-Bridging-Header.h";
@@ -1854,6 +1873,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zxc.chazx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "majorEasy/config/major-Bridging-Header.h";

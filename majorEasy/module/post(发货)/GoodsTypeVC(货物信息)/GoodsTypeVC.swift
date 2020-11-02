@@ -29,7 +29,7 @@ class GoodsTypeVC: BaseVC {
         self.navigationItem.title = "货物信息"
         self.upView.addSubview(self.typeView)
         self.typeView.top = 82
-        
+        self.view.backgroundColor = UIColor.white
         self.typeView.myColsure = { [weak self] model in
             if model.count != 0 {
                 self?.viewModel.packStr = model[0]

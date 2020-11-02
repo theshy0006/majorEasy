@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -169,6 +169,9 @@
                                 <state key="normal" title="确认收货">
                                     <color key="titleColor" red="0.46666666670000001" green="0.57254901960000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="okBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kOv-Lk-PC1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcJ-TD-hXM">
                                 <rect key="frame" x="55" y="189" width="75" height="29"/>
@@ -181,6 +184,9 @@
                                 <state key="normal" title="取消订单">
                                     <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancleBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UL1-7M-pda"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8h-yJ-laO">
                                 <rect key="frame" x="264" y="128" width="42" height="12"/>
@@ -245,9 +251,20 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHb-7c-ARd">
+                                <rect key="frame" x="271" y="91" width="46" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="0c2-hk-oOk"/>
+                                    <constraint firstAttribute="height" constant="56" id="AUZ-qB-r8y"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="call:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8Vk-FF-d8J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aHb-7c-ARd" secondAttribute="trailing" constant="5" id="1CJ-YM-ERK"/>
                             <constraint firstItem="KcJ-TD-hXM" firstAttribute="top" secondItem="Xhy-Wy-POu" secondAttribute="bottom" constant="14" id="2Ik-Nn-OXl"/>
                             <constraint firstAttribute="trailing" secondItem="jYE-VD-NGA" secondAttribute="trailing" constant="12" id="3Nw-68-KBB"/>
                             <constraint firstItem="3HW-aK-k42" firstAttribute="top" secondItem="jYE-VD-NGA" secondAttribute="bottom" constant="14" id="4Oi-ny-Pkf"/>
@@ -292,6 +309,7 @@
                             <constraint firstItem="Rrm-aA-N4F" firstAttribute="top" secondItem="ebG-vd-CL0" secondAttribute="bottom" constant="19" id="nE2-CZ-2eX"/>
                             <constraint firstItem="zXc-dw-m7e" firstAttribute="leading" secondItem="aRs-GI-Xi2" secondAttribute="trailing" constant="5" id="qoV-Dr-q4V"/>
                             <constraint firstItem="GL2-QZ-PmC" firstAttribute="centerX" secondItem="mLY-RD-i42" secondAttribute="centerX" id="trq-l7-Po7"/>
+                            <constraint firstItem="aHb-7c-ARd" firstAttribute="top" secondItem="YSb-FP-d7b" secondAttribute="bottom" constant="6" id="u5l-fj-2tH"/>
                             <constraint firstItem="mLY-RD-i42" firstAttribute="top" secondItem="yLd-yl-lzC" secondAttribute="top" constant="50" id="urp-C0-f1G"/>
                             <constraint firstItem="YSb-FP-d7b" firstAttribute="top" secondItem="Rrm-aA-N4F" secondAttribute="bottom" constant="17" id="vUA-8T-hg7"/>
                             <constraint firstItem="h0i-m0-YCZ" firstAttribute="top" secondItem="0hE-ZF-Thf" secondAttribute="bottom" constant="10" id="waq-EP-oLZ"/>
@@ -325,7 +343,7 @@
                 <outlet property="userLabel" destination="qMH-Vx-gpr" id="ui4-cw-Egu"/>
                 <outlet property="weightLabel" destination="zXc-dw-m7e" id="gLe-1c-J8P"/>
             </connections>
-            <point key="canvasLocation" x="-560.86956521739137" y="113.83928571428571"/>
+            <point key="canvasLocation" x="-826.08695652173924" y="92.410714285714278"/>
         </tableViewCell>
     </objects>
     <resources>

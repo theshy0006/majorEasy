@@ -84,17 +84,31 @@ class GoodsOwenrVC: BaseVC {
     func upload(_ image: UIImage) {
         NBLoadManager.showLoading()
         //提交
-        viewModel.uploadHeadImage(image: image, success: {[weak self] model in
-            if (self?.current == 1) {
+        
+        if (self.current == 1) {
+            viewModel.uploadFrontImage(image: image, success: {[weak self] model in
                 self?.frontImageUrl = model.value.imgkey ?? ""
-            } else if  (self?.current == 2) {
-                self?.backImageUrl = model.value.imgkey ?? ""
+                NBLoadManager.hidLoading()
+            }) { (error) in
+                NBLoadManager.hidLoading()
+                NBHUDManager.toast(error.message)
             }
-            NBLoadManager.hidLoading()
-        }) { (error) in
-            NBLoadManager.hidLoading()
-            NBHUDManager.toast(error.message)
+        } else if  (self.current == 2) {
+            //提交
+            viewModel.uploadBackImage(image: image, success: {[weak self] model in
+                self?.backImageUrl = model.value.imgkey ?? ""
+                NBLoadManager.hidLoading()
+            }) { (error) in
+                NBLoadManager.hidLoading()
+                NBHUDManager.toast(error.message)
+            }
         }
+        
+
+        
+        
+        
+        
         
     }
     

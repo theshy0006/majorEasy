@@ -45,14 +45,36 @@ class AllOrderCell: UITableViewCell {
         
     }
     
+    var currentModel = OrderItem()
+    
+    var cancleColsure: ((_ model: OrderItem) -> ())?
+    var finishColsure: ((_ model: OrderItem) -> ())?
+    
+    
+    @IBAction func call(_ sender: Any) {
+        
+        if (currentModel.userRole == 1) {
+            //我是车主，显示发货者信息
+            NBUtility.showTelephone(currentModel.consignorPhone ?? "0510-82030388")
+        } else {
+            //我是货主，显示司机信息
+            NBUtility.showTelephone(currentModel.vehicleOwnerPhone ?? "0510-82030388")
+        } 
+    }
     func setCellWithModel(_ model: OrderItem) {
-        let url = URL(string: model.vehicleOwnerHeadPortraitUrl ?? "")
-        headImageView.sd_setImage(with: url, placeholderImage: ImageNamed("placeholder"))
+        
+        currentModel = model
         
         if (model.userRole == 1) {
+            //我是车主，显示发货者信息
             userLabel.text = model.consignorName
+            let url = URL(string: model.consignorHeadPortraitUrl ?? "")
+            headImageView.sd_setImage(with: url, placeholderImage: ImageNamed("defaultHeader"))
         } else {
+            //我是货主，显示司机信息
             userLabel.text = model.vehicleOwnerName
+            let url = URL(string: model.vehicleOwnerHeadPortraitUrl ?? "")
+            headImageView.sd_setImage(with: url, placeholderImage: ImageNamed("defaultHeader"))
         }
 
         fromLabel.text = model.loadPlace
@@ -81,5 +103,17 @@ class AllOrderCell: UITableViewCell {
         
         
     }
+    
+    @IBAction func cancleBtnPressed(_ sender: Any) {
+        guard let colsure = self.cancleColsure else {return}
+        colsure(self.currentModel)
+    }
+    
+    @IBAction func okBtnPressed(_ sender: Any) {
+        guard let colsure = self.finishColsure else {return}
+        colsure(self.currentModel)
+    }
+    
+    
     
 }

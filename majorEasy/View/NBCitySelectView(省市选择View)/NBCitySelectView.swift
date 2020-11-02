@@ -47,7 +47,6 @@ class NBCitySelectView: UIView {
     }
     
     lazy var provinceTableView = UITableView().then {
-        $0.backgroundColor = .white
         $0.rowHeight = 40.scaleX
         $0.separatorStyle = .none
         $0.dataSource = self
@@ -57,7 +56,6 @@ class NBCitySelectView: UIView {
     }
     
     lazy var cityTableView = UITableView().then {
-        $0.backgroundColor = .white
         $0.rowHeight = 40.scaleX
         $0.separatorStyle = .none
         $0.dataSource = self
@@ -67,7 +65,6 @@ class NBCitySelectView: UIView {
     }
     
     lazy var districtTableView = UITableView().then {
-        $0.backgroundColor = .white
         $0.rowHeight = 40.scaleX
         $0.separatorStyle = .none
         $0.dataSource = self

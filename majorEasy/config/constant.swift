@@ -91,7 +91,7 @@ public let tabbarFontSelectColor = RGBHex(0x7792BB)
 /// 导航栏阴影色
 public let shadowImageColor = RGBHex(0xDDDDDD)
 /// self.view的背景色
-public let color_BgColor = RGBHex(0xFFFFFF)
+public let color_BgColor = RGBHex(0xF5F5F5)
 /// 导航栏背景色
 public let color_navigation = UIColor.white
 /// 标题字体颜色 0x333333

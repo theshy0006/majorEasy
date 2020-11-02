@@ -47,7 +47,7 @@ class HomeVC: BaseVC {
     
     override func setUpView() {
         self.navigationItem.title = "homeTitle".localized
-        
+
         if let userRoleName = DataCenterManager.default.userInfo.userRoleName {
             self.setNavBarLeftBtn(normalText: "我是" + userRoleName, selector: #selector(popBack))
         } else {

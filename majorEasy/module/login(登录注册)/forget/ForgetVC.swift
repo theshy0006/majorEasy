@@ -23,7 +23,6 @@ class ForgetVC: BaseVC {
         $0.textField.keyboardType = .numberPad
         $0.maxLength = 11
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -32,7 +31,6 @@ class ForgetVC: BaseVC {
         $0.textField.keyboardType = .numberPad
         $0.maxLength = 6
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -41,7 +39,6 @@ class ForgetVC: BaseVC {
         $0.textField.keyboardType = .default
         $0.maxLength = 12
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }
@@ -50,7 +47,6 @@ class ForgetVC: BaseVC {
         $0.textField.keyboardType = .default
         $0.maxLength = 12
         $0.text = ""
-        $0.backgroundColor = .white
         $0.textFieldDelegate = self
         $0.redLabel.isHidden = false
     }

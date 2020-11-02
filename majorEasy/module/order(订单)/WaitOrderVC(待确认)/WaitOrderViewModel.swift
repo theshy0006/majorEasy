@@ -9,6 +9,8 @@ import UIKit
 
 class WaitOrderViewModel: NBViewModel {
     var orderModel = OrderModel()
+    var cancleModel = CancleOrderModel()
+    var finishModel = FinishOrderModel()
 
     var pageNum = 1
     var loadMore = false
@@ -37,5 +39,48 @@ class WaitOrderViewModel: NBViewModel {
                 fail(err)
             }
         }).disposed(by: disposeBag)
+    }
+    
+    
+    func cancle(orderNum : String,
+                          success: (()->())?,
+                          failure: ((APIError)->())?) {
+        cancleModel.cancleOrder(orderNum: orderNum).subscribe(onNext: { [weak self] _ in
+            if let suc = success {
+                for idx in 0..<(self?.dataSource.count)! {
+                    if( self?.dataSource[idx].orderNum == orderNum ) {
+                        self?.dataSource.remove(at: idx)
+                        break
+                    }
+                }
+                suc()
+            }
+        }, onError: { (error) in
+            if let fail = failure, let err = error as? APIError {
+                fail(err)
+            }
+        }).disposed(by: disposeBag)
+        
+    }
+    
+    func finish(orderNum : String,
+                          success: (()->())?,
+                          failure: ((APIError)->())?) {
+        finishModel.finishOrder(orderNum: orderNum).subscribe(onNext: { [weak self] _ in
+            if let suc = success {
+                for idx in 0..<(self?.dataSource.count)! {
+                    if( self?.dataSource[idx].orderNum == orderNum ) {
+                        self?.dataSource.remove(at: idx)
+                        break
+                    }
+                }
+                suc()
+            }
+        }, onError: { (error) in
+            if let fail = failure, let err = error as? APIError {
+                fail(err)
+            }
+        }).disposed(by: disposeBag)
+        
     }
 }

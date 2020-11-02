@@ -49,7 +49,7 @@ class GoodStandardVC: BaseVC {
             return;
         }
         
-        colsure((self.lengthField.text ?? ""),(self.widthField.text ??   ""),(self.heightField.text ?? ""),(self.diameterField.text ?? ""), (self.remarkTextView.text ?? ""))
+        colsure((self.lengthField.text ?? "0"),(self.widthField.text ??   "0"),(self.heightField.text ?? "0"),(self.diameterField.text ?? "0"), (self.remarkTextView.text ?? "0"))
         
         self.popBack()
     }

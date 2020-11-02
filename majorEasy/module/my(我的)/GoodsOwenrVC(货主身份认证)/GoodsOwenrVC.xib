@@ -166,34 +166,34 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="82" id="On3-z9-soA"/>
                     </constraints>
-                    <state key="normal" backgroundImage="上传身份证"/>
+                    <state key="normal" image="上传身份证"/>
                     <connections>
                         <action selector="frontButton:" destination="-1" eventType="touchUpInside" id="zS0-ze-fv0"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5a-sr-77W">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5a-sr-77W">
                     <rect key="frame" x="214.5" y="317" width="184.5" height="82"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="82" id="JoO-8N-EQD"/>
                     </constraints>
-                    <state key="normal" backgroundImage="身份证示例"/>
+                    <state key="normal" image="身份证示例"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MA9-vQ-00F">
                     <rect key="frame" x="15" y="414" width="184.5" height="82"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="82" id="2KA-aT-jlg"/>
                     </constraints>
-                    <state key="normal" backgroundImage="上传身份证"/>
+                    <state key="normal" image="上传身份证"/>
                     <connections>
                         <action selector="backButton:" destination="-1" eventType="touchUpInside" id="SPx-GI-t9o"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTN-yN-FKw">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTN-yN-FKw">
                     <rect key="frame" x="214.5" y="414" width="184.5" height="82"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="82" id="nfG-rS-dMt"/>
                     </constraints>
-                    <state key="normal" backgroundImage="身份证示例"/>
+                    <state key="normal" image="fanmian"/>
                 </button>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvG-KH-R4l">
                     <rect key="frame" x="15" y="511" width="384" height="40"/>
@@ -253,6 +253,7 @@
     </objects>
     <resources>
         <image name="1_round_solid" width="88" height="88"/>
+        <image name="fanmian" width="511" height="319"/>
         <image name="right_arrow" width="25" height="25"/>
         <image name="上传身份证" width="170" height="110"/>
         <image name="身份证示例" width="170" height="110"/>

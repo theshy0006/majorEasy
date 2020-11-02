@@ -18,6 +18,7 @@
                 <outlet property="goodsButton" destination="I4e-5h-dV2" id="Eyp-TM-tjJ"/>
                 <outlet property="lengthButton" destination="zA8-IJ-Hej" id="mvG-p8-U7g"/>
                 <outlet property="offenButton" destination="UQt-4D-0Bn" id="Zcx-P1-8uI"/>
+                <outlet property="queryButton" destination="1kW-su-zf3" id="dVl-cy-lBx"/>
                 <outlet property="specificationButton" destination="hY2-KK-UBz" id="KWd-cy-IzH"/>
                 <outlet property="timeButton" destination="Zcs-tD-Bji" id="iO1-2s-XKH"/>
                 <outlet property="toButton" destination="PzL-La-yQd" id="crz-NS-2Jr"/>
@@ -364,11 +365,19 @@
                                                 <action selector="timeButtonPressed:" destination="-1" eventType="touchUpInside" id="El8-Yc-Za9"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wia-dx-UlB">
-                                            <rect key="frame" x="0.0" y="306" width="390" height="50"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kW-su-zf3">
+                                            <rect key="frame" x="89.5" y="315" width="92" height="30"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="50" id="zpe-8H-TbI"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="Yd8-Ol-2Ga"/>
+                                                <constraint firstAttribute="height" constant="30" id="lwU-6r-FAj"/>
                                             </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <state key="normal" title=" ** 元" image="uncheck">
+                                                <color key="titleColor" red="0.46666666670000001" green="0.57254901960000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="queryPrice:" destination="-1" eventType="touchUpInside" id="5uq-mz-aEJ"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -379,15 +388,16 @@
                                         <constraint firstAttribute="trailing" secondItem="0wY-O2-bgH" secondAttribute="trailing" constant="12" id="5Ym-iF-lEl"/>
                                         <constraint firstItem="Mvk-ZX-zlW" firstAttribute="leading" secondItem="S0H-Wo-jTK" secondAttribute="leading" constant="12" id="6Ju-5X-vcj"/>
                                         <constraint firstItem="SZz-08-BEs" firstAttribute="top" secondItem="0wY-O2-bgH" secondAttribute="bottom" constant="18" id="6n6-aU-CSf"/>
+                                        <constraint firstItem="1kW-su-zf3" firstAttribute="leading" secondItem="KHg-ct-BED" secondAttribute="trailing" constant="20" id="8Vr-PU-pGK"/>
                                         <constraint firstItem="Zcs-tD-Bji" firstAttribute="leading" secondItem="S0H-Wo-jTK" secondAttribute="leading" id="9U9-eq-feC"/>
                                         <constraint firstItem="zA8-IJ-Hej" firstAttribute="leading" secondItem="S0H-Wo-jTK" secondAttribute="leading" id="A9J-Fg-ALO"/>
                                         <constraint firstAttribute="trailing" secondItem="0dA-Wq-8y4" secondAttribute="trailing" constant="12" id="AG6-zs-QeZ"/>
                                         <constraint firstItem="D9u-a9-r0w" firstAttribute="top" secondItem="XD3-xU-YYD" secondAttribute="bottom" constant="50" id="B0K-ro-oMm"/>
-                                        <constraint firstItem="wia-dx-UlB" firstAttribute="top" secondItem="Xza-8T-p4v" secondAttribute="bottom" id="BLt-ZT-Xft"/>
                                         <constraint firstItem="YaW-DF-MvH" firstAttribute="leading" secondItem="S0H-Wo-jTK" secondAttribute="leading" constant="12" id="BZM-3p-M5g"/>
                                         <constraint firstItem="0Vd-Vz-te9" firstAttribute="leading" secondItem="S0H-Wo-jTK" secondAttribute="leading" constant="12" id="CW9-CX-eeb"/>
                                         <constraint firstAttribute="trailing" secondItem="D9u-a9-r0w" secondAttribute="trailing" constant="12" id="CmL-Mw-ca9"/>
                                         <constraint firstItem="S23-nQ-cu0" firstAttribute="top" secondItem="0wY-O2-bgH" secondAttribute="bottom" constant="19" id="GHw-L5-eqd"/>
+                                        <constraint firstItem="1kW-su-zf3" firstAttribute="top" secondItem="Xza-8T-p4v" secondAttribute="bottom" constant="9" id="Hae-cp-4eG"/>
                                         <constraint firstItem="VlO-0K-3DM" firstAttribute="top" secondItem="XD3-xU-YYD" secondAttribute="bottom" constant="19" id="Ifh-9m-dAW"/>
                                         <constraint firstItem="zA8-IJ-Hej" firstAttribute="top" secondItem="XD3-xU-YYD" secondAttribute="bottom" id="J4V-AQ-pa0"/>
                                         <constraint firstAttribute="trailing" secondItem="5zj-Lw-87I" secondAttribute="trailing" constant="12" id="JRo-VY-mVq"/>
@@ -419,11 +429,9 @@
                                         <constraint firstAttribute="trailing" secondItem="LtO-MD-s7v" secondAttribute="trailing" constant="12" id="cEp-gZ-pRI"/>
                                         <constraint firstAttribute="trailing" secondItem="hY2-KK-UBz" secondAttribute="trailing" id="cFk-pM-Mc0"/>
                                         <constraint firstItem="0dA-Wq-8y4" firstAttribute="top" secondItem="Xza-8T-p4v" secondAttribute="bottom" constant="19" id="cJj-hM-tgL"/>
-                                        <constraint firstItem="wia-dx-UlB" firstAttribute="leading" secondItem="S0H-Wo-jTK" secondAttribute="leading" id="e7v-Fd-0fY"/>
                                         <constraint firstItem="f0H-MO-5EZ" firstAttribute="top" secondItem="X3n-mo-Rdq" secondAttribute="bottom" id="eRi-fI-Xxm"/>
                                         <constraint firstAttribute="height" constant="354" id="end-4j-J7v"/>
                                         <constraint firstItem="wx1-mQ-1og" firstAttribute="top" secondItem="X3n-mo-Rdq" secondAttribute="bottom" constant="18" id="fCG-uF-3GV"/>
-                                        <constraint firstAttribute="trailing" secondItem="wia-dx-UlB" secondAttribute="trailing" id="fPk-rO-fRx"/>
                                         <constraint firstItem="0Vd-Vz-te9" firstAttribute="top" secondItem="D9u-a9-r0w" secondAttribute="bottom" constant="18" id="fvV-4i-abX"/>
                                         <constraint firstItem="X3n-mo-Rdq" firstAttribute="leading" secondItem="S0H-Wo-jTK" secondAttribute="leading" constant="12" id="gVc-bH-SpL"/>
                                         <constraint firstItem="D9u-a9-r0w" firstAttribute="leading" secondItem="S0H-Wo-jTK" secondAttribute="leading" constant="12" id="gws-fv-QzW"/>
@@ -525,6 +533,9 @@
                                     <state key="normal" title="《货物运输协议》">
                                         <color key="titleColor" red="0.46666666670000001" green="0.57254901960000004" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="readAgreement:" destination="-1" eventType="touchUpInside" id="7x3-N2-KxL"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="等相关协议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hul-T0-0fo">
                                     <rect key="frame" x="234" y="595.5" width="61.5" height="21"/>
@@ -581,7 +592,7 @@
                 <constraint firstAttribute="bottom" secondItem="piL-NG-net" secondAttribute="bottom" id="y0l-LS-uvE"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-1333" y="147"/>
+            <point key="canvasLocation" x="-1730" y="131"/>
         </view>
     </objects>
     <resources>

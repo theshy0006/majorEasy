@@ -9,9 +9,38 @@ import UIKit
 
 class SpecialLineVC: BaseVC {
 
+    @IBOutlet weak var fromButton: UIButton!
+    
+    @IBOutlet weak var toButton: UIButton!
+    
+    @IBAction func fromButtonPressed(_ sender: UIButton) {
+        self.chooseAreaView.show()
+        chooseAreaView.myColsure = { [weak self] (cityName, cityId) in
+            print(cityName)
+            print(cityId)
+            self?.fromButton.setTitle(cityName, for: .normal)
+            self?.viewModel.loadPlaceCode = cityId.substr(from: cityId.count-6, to: nil)
+        }
+        
+    }
+    
+    @IBAction func toButtonPressed(_ sender: Any) {
+        self.chooseAreaView.show()
+        chooseAreaView.myColsure = { [weak self] (cityName, cityId) in
+            print(cityName)
+            print(cityId)
+            self?.toButton.setTitle(cityName, for: .normal)
+            self?.viewModel.unloadPlaceCode = cityId.substr(from: cityId.count-6, to: nil)
+        }
+    }
+    
     @IBOutlet weak var topView: UIView!
     
     let viewModel = SpecialLineViewModel()
+    
+    lazy var chooseAreaView = NBCitySelectView(frame: CGRect(x: 0, y: kScreenH/4, width: kScreenW, height: 3*kScreenH/4 - SafeAreaBottomHeight - TabBarHeight)).then {
+        $0.backgroundColor = .white
+    }
     
     lazy var tableView = UITableView(frame: self.view.frame, style: .plain).then {
         $0.delegate = self
@@ -67,7 +96,12 @@ class SpecialLineVC: BaseVC {
 
     func getDedicatedLines() {
         NBLoadManager.showLoading()
-        self.viewModel.getDedicatedLines(location: "118.774888,31.801064", success: { [weak self] in
+        let lat = "\(BaiduMapManager.shared().userLocation.location.coordinate.latitude)"
+        let lng = "\(BaiduMapManager.shared().userLocation.location.coordinate.longitude)"
+        print(lat)
+        print(lng)
+        let location = lng + "," + lat
+        self.viewModel.getDedicatedLines(location: location, success: { [weak self] in
             NBLoadManager.hidLoading()
             if( self?.viewModel.pageNum == -1 ) {
                 self?.tableView.endLoadMore(isNoMoreData:true)

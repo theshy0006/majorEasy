@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpecialLineVC" customModule="majorEasy" customModuleProvider="target">
             <connections>
+                <outlet property="fromButton" destination="eBt-uh-3tY" id="4gj-VO-vd2"/>
+                <outlet property="toButton" destination="Njh-L1-hAJ" id="Qoo-TE-Uaf"/>
                 <outlet property="topView" destination="bXf-Bv-mKx" id="Swd-7D-b9x"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -36,6 +38,9 @@
                             <state key="normal" title="   发货地" image="location">
                                 <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="fromButtonPressed:" destination="-1" eventType="touchUpInside" id="Nzm-K4-mqA"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njh-L1-hAJ">
                             <rect key="frame" x="207.5" y="0.0" width="206.5" height="40"/>
@@ -43,6 +48,9 @@
                             <state key="normal" title="   目的地" image="location">
                                 <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="toButtonPressed:" destination="-1" eventType="touchUpInside" id="7PQ-Wg-KSa"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

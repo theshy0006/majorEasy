@@ -89,8 +89,46 @@ extension WaitOrderVC : UITableViewDelegate, UITableViewDataSource {
         let cell:AllOrderCell = tableView.dequeueReusableCell(withIdentifier: "AllOrderCell") as! AllOrderCell
         cell.selectionStyle = .none
         cell.setCellWithModel(self.viewModel.dataSource[indexPath.row])
+        
+        cell.cancleColsure = { [weak self] model in
+            self?.cancle(model: model)
+        }
+        
+        cell.finishColsure = { [weak self] model in
+            self?.finish(model: model)
+        }
+        
+        
+        
+        
+        
         return cell
     }
+    
+    func cancle(model:OrderItem) {
+        
+        NBLoadManager.showLoading()
+        self.viewModel.cancle(orderNum: model.orderNum ?? "", success: { [weak self] in
+            NBLoadManager.hidLoading()
+            self?.updateUI()
+        }) { (error) in
+            NBLoadManager.hidLoading()
+            NBHUDManager.toast(error.message)
+        }
+    }
+    
+    func finish(model:OrderItem) {
+        NBLoadManager.showLoading()
+        self.viewModel.finish(orderNum: model.orderNum ?? "", success: { [weak self] in
+            NBLoadManager.hidLoading()
+            self?.updateUI()
+        }) { (error) in
+            NBLoadManager.hidLoading()
+            NBHUDManager.toast(error.message)
+        }
+    }
+    
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 242

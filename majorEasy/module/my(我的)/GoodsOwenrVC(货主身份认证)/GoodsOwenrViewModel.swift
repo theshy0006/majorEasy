@@ -12,10 +12,24 @@ class GoodsOwenrViewModel: NBViewModel {
     var uploadModel = UploadImageModel()
     var subUserModel = SubUserReviewModel()
     
-    func uploadHeadImage(image: UIImage,
+    func uploadFrontImage(image: UIImage,
                   success: ((UploadImageModel)->())?,
                   failure: ((APIError)->())?) {
-        uploadModel.uploadImage(image: image).subscribe(onNext: { model in
+        uploadModel.uploadFrontImage(image: image).subscribe(onNext: { model in
+            if let suc = success {
+                suc(model)
+            }
+        }, onError: { (error) in
+            if let fail = failure, let err = error as? APIError {
+                fail(err)
+            }
+        }).disposed(by: disposeBag)
+    }
+    
+    func uploadBackImage(image: UIImage,
+                  success: ((UploadImageModel)->())?,
+                  failure: ((APIError)->())?) {
+        uploadModel.uploadBackImage(image: image).subscribe(onNext: { model in
             if let suc = success {
                 suc(model)
             }
