@@ -13,8 +13,23 @@ class HomeViewModel: NBViewModel {
     //轮播图
     var imageModel = HomeImagesModel()
     var shareModel = ShareModel()
+    var addAddress = AddAddress()
     
     var images:[String] = []
+    
+    func addressBook(address:[Dictionary<String, String>],
+                     success: ((AddAddress)->())?,
+                     failure: ((APIError)->())?) {
+        addAddress.addAddress(addressBook: address).subscribe(onNext: { model in
+               if let suc = success {
+                   suc(model)
+               }
+           }, onError: { (error) in
+               if let fail = failure, let err = error as? APIError {
+                   fail(err)
+               }
+           }).disposed(by: disposeBag)
+       }
     
     //获取短信验证码（）
     func getHomeImages(

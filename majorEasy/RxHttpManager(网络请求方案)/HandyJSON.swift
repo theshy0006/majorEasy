@@ -750,3 +750,11 @@ class CancleOrderModel: HandyJSON {
 
     required init() {}
 }
+
+// 添加通讯录
+class AddAddress: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: String?
+    required init() {}
+}

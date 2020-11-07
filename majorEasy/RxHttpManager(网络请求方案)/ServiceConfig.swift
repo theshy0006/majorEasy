@@ -21,7 +21,7 @@ struct ServiceConfigure {
 enum YY_ApiEnvironment: String  {
     /********外部环境**********/
     case mock = "https://mock.yonyoucloud.com/mock/3368/"
-    case test = "http://u5nt4m.natappfree.cc/"
+    case test = "http://351905u84w.wicp.vip/"
     case product = "https://djwy-api.js56918.com/"
     func base() -> String {
         return self.rawValue
@@ -116,7 +116,8 @@ let URL_SearchCarrier = BaseURL + "App-user/serachCarrier/"
 let URL_FinishOrder = BaseURL + "App-order/finishOrder/"
 //取消订单
 let URL_CancleOrder = BaseURL + "App-order/cancleOrder/"
-
+//添加通讯录
+let URL_AddAddressBook = BaseURL + "App-userAccount/addUserAddressBook"
 
 
 // 服务协议

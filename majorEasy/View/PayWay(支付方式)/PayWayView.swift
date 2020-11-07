@@ -1,31 +1,20 @@
 //
-//  NBActionSheet.swift
-//  acorn
+//  PayWayView.swift
+//  majorEasy
 //
-//  Created by dede on 2019/3/15.
-//  Copyright © 2019 dede. All rights reserved.
+//  Created by wangyang on 2020/11/7.
 //
-/*
- 用法演示:
- NBActionSheet.showActionSheet(title: "尼玛的", itemInfos: [item1, item2, item3, item4, item5, item6], callBack: { (row, item) -> () in
- print(row)
- print(item)
- })
-*/
-
 import UIKit
 
-let kMaxH =  ScreenWidth
-let kItemH = 100.0 / 750.0 * ScreenWidth
-let kTopH = 90.0 / 750.0 * ScreenWidth
+var currentView: PayWayView?
 
-var currentActionSheet: NBActionSheet?
-
-@objc class NBActionSheet: UIView {
+class PayWayView: UIView {
     
     var cover:NBCovor?
+    
+    var selectedIndexPath: IndexPath?
 
-    static var didSelectRowAt:((_ row: Int, _ item: NBActionSheetItem)->())?
+    static var didSelectRowAt:((_ item: PayWayModel)->())?
     
     lazy var topView: UIView = {
         let view = UIView()
@@ -48,48 +37,65 @@ var currentActionSheet: NBActionSheet?
         table.dataSource = self
         table.delegate = self
         table.showsVerticalScrollIndicator = false
-        table.register(cellWithClass: NBActionSheetViewCell.self)
+        table.register(cellWithClass: UITableViewCell.self)
         return table
     }()
     
     lazy var titleLabel: UILabel = {
         let label = UILabel()
+        label.textAlignment = .center
         label.textColor = RGBHex(0x333333)
         label.font = PingFangRegular(16.0)
         return label
     }()
     
-    var itemInfos: Array<NBActionSheetItem>?
+    lazy var okButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("确认支付", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = tabbarFontSelectColor
+        button.rx.tap.subscribe(onNext: { [weak self] _ in
+            guard let weakself = self else {return}
+            guard let cover = weakself.cover else {return}
+            
+            let row = weakself.selectedIndexPath?.row
+            cover.hideCover({
+                if let didSelectRowAt = PayWayView.didSelectRowAt {
+                    didSelectRowAt(weakself.itemInfos[row ?? 0])
+                }
+            })
+        }).disposed(by: disposeBag)
+        return button
+    }()
+    
+    var itemInfos = [PayWayModel]()
     
     override init(frame: CGRect) {
         super.init(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight))
     }
 
-    convenience init(title: String, itemInfos: Array<NBActionSheetItem>?) {
+    convenience init() {
         self.init(frame: CGRect.zero)
-        
         self.addSubview(self.topView)
         self.topView.addSubview(self.titleLabel)
         self.topView.addSubview(lineView)
+        self.selectedIndexPath = IndexPath(row: 0, section: 0)
+        
         self.addSubview(tableView)
+        self.addSubview(okButton)
         layoutViews()
-        self.titleLabel.text = title
-        self.itemInfos = itemInfos
+        self.titleLabel.text = "选择支付方式"
+        let model0 = PayWayModel(imgName: "ic_pay_ballet", name: "余额支付", detail: "账户余额：\(String(format:"%.2f",DataCenterManager.default.myInfo.balance))元")
+        let model1 = PayWayModel(imgName: "ic_pay_wx", name: "微信支付", detail: "亿万用户的选择，更快更安全")
+        self.itemInfos.append(model0)
+        self.itemInfos.append(model1)
     }
 
     
-    @objc class func showActionSheet(title: String, itemInfos: Array<NBActionSheetItem>?, callBack:  @escaping (_ row: Int, _ item: NBActionSheetItem) -> Void) {
-        currentActionSheet = NBActionSheet.init(title: title, itemInfos: itemInfos)
-        currentActionSheet?.show()
+    class func showPayWay(callBack:  @escaping (_ item: PayWayModel) -> Void) {
+        currentView = PayWayView.init()
+        currentView?.show()
         didSelectRowAt = callBack
-    }
-    
-    func updateActionSheetItemWithIndex(index: Int, item: NBActionSheetItem) {
-        guard let items = self.itemInfos else {return}
-        if items.count > index {
-            self.itemInfos?[index] = item
-            tableView.reloadData()
-        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -120,18 +126,24 @@ var currentActionSheet: NBActionSheet?
         
         //
         tableView.snp.makeConstraints { (make) -> Void in
-            make.right.left.bottom.equalToSuperview()
+            make.right.left.equalToSuperview()
+            make.height.equalTo(kItemH*2)
             make.top.equalTo(topView.snp.bottom)
+        }
+        
+        okButton.snp.makeConstraints { (make) -> Void in
+            make.right.left.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-SafeAreaBottomHeight)
+            make.height.equalTo(kItemH)
         }
 
     }
     
     func show() {
-        guard let items = self.itemInfos else {return}
         let bgView = UIView()
         bgView.backgroundColor = UIColor.white
         bgView.addSubview(self)
-        let relaityH = CGFloat(items.count) * kItemH + kTopH
+        let relaityH = CGFloat(itemInfos.count) * kItemH + kTopH + kItemH
         let height = relaityH > kMaxH ? kMaxH : relaityH;
         
         self.frame = CGRect.init(x: 0, y: 0, width: ScreenWidth, height: height)
@@ -142,31 +154,31 @@ var currentActionSheet: NBActionSheet?
     
 }
 
-extension NBActionSheet: UITableViewDelegate, UITableViewDataSource {
+extension PayWayView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let items = self.itemInfos else {return 0}
-        return items.count
+        return itemInfos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withClass: NBActionSheetViewCell.self)
-        if let items = self.itemInfos {
-            cell.setCellContent(item: items[indexPath.row])
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "")
+        
+        cell.textLabel?.text = itemInfos[indexPath.row].name;
+        cell.detailTextLabel?.text = itemInfos[indexPath.row].detail;
+        cell.imageView?.image = ImageNamed(itemInfos[indexPath.row].imgName);
+
+        if (self.selectedIndexPath == indexPath) {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
         }
+        
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let items = self.itemInfos else {return}
-        let item = items[indexPath.row]
-        if item.enabled {
-            guard let cover = self.cover else {return}
-            cover.hideCover({
-                if let didSelectRowAt = NBActionSheet.didSelectRowAt {
-                    didSelectRowAt(indexPath.row, item)
-                }
-            })
-        }
+        self.selectedIndexPath = indexPath;
+        tableView.reloadData()
     }
 }
+

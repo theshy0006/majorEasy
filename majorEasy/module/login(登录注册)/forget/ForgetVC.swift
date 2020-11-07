@@ -67,6 +67,7 @@ class ForgetVC: BaseVC {
         } else {
             self.navigationItem.title = "forget".localized
         }
+        self.view.backgroundColor = .white
         
         self.commitButton.addShadow(RGBHex(0xe2e2e2))
         self.phoneView.addSubview(self.phoneField)
@@ -95,6 +96,11 @@ class ForgetVC: BaseVC {
             make.left.right.equalToSuperview()
             make.height.equalTo(50)
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.backgroundColor = .white
     }
     
     // 获取验证码

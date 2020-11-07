@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -117,6 +117,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Es3-tC-6lc">
                                                     <rect key="frame" x="0.0" y="0.0" width="98.5" height="80"/>
                                                     <state key="normal" image="优惠加油"/>
+                                                    <connections>
+                                                        <action selector="refuelBtnPressed:" destination="-1" eventType="touchUpInside" id="yZt-DF-TuM"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -149,6 +152,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKI-tn-V8b">
                                                     <rect key="frame" x="0.0" y="0.0" width="98.5" height="80"/>
                                                     <state key="normal" image="大件办证"/>
+                                                    <connections>
+                                                        <action selector="rushHallBtnPressed:" destination="-1" eventType="touchUpInside" id="8mH-4q-TLy"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -242,6 +248,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ije-C5-ufD">
                                                     <rect key="frame" x="0.0" y="0.0" width="98.5" height="80"/>
                                                     <state key="normal" image="车辆临牌"/>
+                                                    <connections>
+                                                        <action selector="gotoPlateNumber:" destination="-1" eventType="touchUpInside" id="rcC-La-fUK"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

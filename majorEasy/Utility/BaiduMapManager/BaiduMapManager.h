@@ -14,7 +14,7 @@
 #import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
 #import <BMKLocationkit/BMKLocationComponent.h>
 
-#define BAIDU_MAP_AK @"KGe1SmqtyYCRvaGk9uOR8bKHh9SadQjw"
+#define BAIDU_MAP_AK @"DMMELBZBFXbxD8CYLfOaOPUu8XaZuB3Y"
 #define NOTNIL(v) (v?v:@"")
 #define ws(object) __weak typeof (object) weakSelf = object
 #define JKUserDefaults [NSUserDefaults standardUserDefaults]

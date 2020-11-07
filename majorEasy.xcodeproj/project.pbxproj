@@ -83,6 +83,8 @@
 		8D5EDEDF2544702100CA2F8F /* GoodsOwenrVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EDEDD2544702100CA2F8F /* GoodsOwenrVC.swift */; };
 		8D5EDEE02544702100CA2F8F /* GoodsOwenrVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5EDEDE2544702100CA2F8F /* GoodsOwenrVC.xib */; };
 		8D5EDEE4254483E300CA2F8F /* GoodsOwenrViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EDEE3254483E300CA2F8F /* GoodsOwenrViewModel.swift */; };
+		8D64D54A2556A71B00C9DCBF /* PayWayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D64D5492556A71B00C9DCBF /* PayWayModel.swift */; };
+		8D64D5522556A9D800C9DCBF /* PayWayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D64D5512556A9D800C9DCBF /* PayWayView.swift */; };
 		8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */; };
 		8D7498832548FDBD007D0C04 /* CGXDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7498732548FDBB007D0C04 /* CGXDatePickerView.m */; };
 		8D7498842548FDBD007D0C04 /* CGXAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7498742548FDBB007D0C04 /* CGXAddressModel.m */; };
@@ -182,6 +184,10 @@
 		8DD5A2C225406BB7001C2CA3 /* PersonalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DD5A2C025406BB7001C2CA3 /* PersonalVC.xib */; };
 		8DD66564252D89EB00A23B38 /* LineDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD66563252D89EB00A23B38 /* LineDetailViewModel.swift */; };
 		8DD66568252DE91A00A23B38 /* ShuntVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD66567252DE91A00A23B38 /* ShuntVC.swift */; };
+		8DDD9387255515290092A142 /* RushHallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD9385255515290092A142 /* RushHallVC.swift */; };
+		8DDD9388255515290092A142 /* RushHallVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DDD9386255515290092A142 /* RushHallVC.xib */; };
+		8DDD9390255536420092A142 /* PlatenumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD938E255536420092A142 /* PlatenumberVC.swift */; };
+		8DDD9391255536420092A142 /* PlatenumberVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DDD938F255536420092A142 /* PlatenumberVC.xib */; };
 		8DF892AC2521D42E00666024 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF892AA2521D42E00666024 /* HomeVC.swift */; };
 		8DF892B12521D96100666024 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF892B02521D96100666024 /* HomeViewModel.swift */; };
 		8DFA16A22530A36200292987 /* CarManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA16A12530A36200292987 /* CarManagerVC.swift */; };
@@ -279,6 +285,8 @@
 		8D5EDEDD2544702100CA2F8F /* GoodsOwenrVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsOwenrVC.swift; sourceTree = "<group>"; };
 		8D5EDEDE2544702100CA2F8F /* GoodsOwenrVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodsOwenrVC.xib; sourceTree = "<group>"; };
 		8D5EDEE3254483E300CA2F8F /* GoodsOwenrViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsOwenrViewModel.swift; sourceTree = "<group>"; };
+		8D64D5492556A71B00C9DCBF /* PayWayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWayModel.swift; sourceTree = "<group>"; };
+		8D64D5512556A9D800C9DCBF /* PayWayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWayView.swift; sourceTree = "<group>"; };
 		8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		8D7498722548FDBA007D0C04 /* CGXPickerUIBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGXPickerUIBaseView.h; path = "../../../../../Downloads/chazhuanxian-ios-1/ChaZX/OldCode/Verder/CGXPickerView/CGXPickerUIBaseView.h"; sourceTree = "<group>"; };
 		8D7498732548FDBB007D0C04 /* CGXDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGXDatePickerView.m; path = "../../../../../Downloads/chazhuanxian-ios-1/ChaZX/OldCode/Verder/CGXPickerView/CGXDatePickerView.m"; sourceTree = "<group>"; };
@@ -396,6 +404,10 @@
 		8DD5A2C025406BB7001C2CA3 /* PersonalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalVC.xib; sourceTree = "<group>"; };
 		8DD66563252D89EB00A23B38 /* LineDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetailViewModel.swift; sourceTree = "<group>"; };
 		8DD66567252DE91A00A23B38 /* ShuntVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuntVC.swift; sourceTree = "<group>"; };
+		8DDD9385255515290092A142 /* RushHallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RushHallVC.swift; sourceTree = "<group>"; };
+		8DDD9386255515290092A142 /* RushHallVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RushHallVC.xib; sourceTree = "<group>"; };
+		8DDD938E255536420092A142 /* PlatenumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatenumberVC.swift; sourceTree = "<group>"; };
+		8DDD938F255536420092A142 /* PlatenumberVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlatenumberVC.xib; sourceTree = "<group>"; };
 		8DF892AA2521D42E00666024 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		8DF892B02521D96100666024 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8DFA16A12530A36200292987 /* CarManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarManagerVC.swift; sourceTree = "<group>"; };
@@ -796,6 +808,22 @@
 			path = "TopTenVC(榜单列表)";
 			sourceTree = "<group>";
 		};
+		8D64D5262556A1C600C9DCBF /* PayWay(支付方式) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "PayWay(支付方式)";
+			sourceTree = "<group>";
+		};
+		8D64D5482556A6C900C9DCBF /* PayWay(支付方式) */ = {
+			isa = PBXGroup;
+			children = (
+				8D64D5492556A71B00C9DCBF /* PayWayModel.swift */,
+				8D64D5512556A9D800C9DCBF /* PayWayView.swift */,
+			);
+			path = "PayWay(支付方式)";
+			sourceTree = "<group>";
+		};
 		8D74984E2548FBA7007D0C04 /* CGXPickerView(时间选择器) */ = {
 			isa = PBXGroup;
 			children = (
@@ -955,6 +983,8 @@
 		8DC1E0A32520176A003C1F94 /* home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				8DDD938C255535E80092A142 /* PlatenumberVC(临牌中心) */,
+				8DDD9384255514E50092A142 /* RushHallVC(办证中心) */,
 				8DBD62B92534A239006F59F9 /* OftenLinesVC(常跑路线) */,
 				8DBD62B82534A224006F59F9 /* TodayGoodsVC(今日货源) */,
 				8DBD62B42534A0FD006F59F9 /* SearchGoodsVC(我要找货) */,
@@ -1080,6 +1110,7 @@
 		8DC1E14725203DDB003C1F94 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D64D5482556A6C900C9DCBF /* PayWay(支付方式) */,
 				8D862658254AEAAB004F8833 /* NBSearchView */,
 				8D74984E2548FBA7007D0C04 /* CGXPickerView(时间选择器) */,
 				9F657FBD253180D9006BAB16 /* NBShare(分享控件) */,
@@ -1181,6 +1212,7 @@
 		8DC1E17225203E5D003C1F94 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				8D64D5262556A1C600C9DCBF /* PayWay(支付方式) */,
 				8D5D8C7825410F9F00F702F4 /* HttpRequestService */,
 				8D17427625319E9700083988 /* ShareManager(分享封装) */,
 				8D17427125319C9000083988 /* WXApiManager(微信SDK封装) */,
@@ -1307,6 +1339,24 @@
 				8DD66567252DE91A00A23B38 /* ShuntVC.swift */,
 			);
 			path = "ShuntVC(发货调车)";
+			sourceTree = "<group>";
+		};
+		8DDD9384255514E50092A142 /* RushHallVC(办证中心) */ = {
+			isa = PBXGroup;
+			children = (
+				8DDD9385255515290092A142 /* RushHallVC.swift */,
+				8DDD9386255515290092A142 /* RushHallVC.xib */,
+			);
+			path = "RushHallVC(办证中心)";
+			sourceTree = "<group>";
+		};
+		8DDD938C255535E80092A142 /* PlatenumberVC(临牌中心) */ = {
+			isa = PBXGroup;
+			children = (
+				8DDD938E255536420092A142 /* PlatenumberVC.swift */,
+				8DDD938F255536420092A142 /* PlatenumberVC.xib */,
+			);
+			path = "PlatenumberVC(临牌中心)";
 			sourceTree = "<group>";
 		};
 		8DFA16A02530A31D00292987 /* CarManagerVC(手机管车) */ = {
@@ -1461,8 +1511,10 @@
 				8D5A8C482548732800407760 /* BillCell.xib in Resources */,
 				8D4342342530601B007EE9F1 /* SendingVC.xib in Resources */,
 				8D767081254515B300E1FC29 /* TopTenCell.xib in Resources */,
+				8DDD9391255536420092A142 /* PlatenumberVC.xib in Resources */,
 				8D5D60112522DED900217722 /* HomeVC.xib in Resources */,
 				8D57ECEF252C008A007F4A87 /* SpecialLineCell.xib in Resources */,
+				8DDD9388255515290092A142 /* RushHallVC.xib in Resources */,
 				8DC1E16D25203DDB003C1F94 /* wechat.png in Resources */,
 				8DC1E0E725201942003C1F94 /* infoPlist.strings in Resources */,
 			);
@@ -1539,7 +1591,9 @@
 				8D4CEAF325402AF100D5578F /* SettingVC.swift in Sources */,
 				8DBD62BF2534A278006F59F9 /* OftenLinesVC.swift in Sources */,
 				8D1B45522520627300251D56 /* RegisterVC.swift in Sources */,
+				8D64D54A2556A71B00C9DCBF /* PayWayModel.swift in Sources */,
 				8D3AED9125232D9C00A8F273 /* XXPageTabView.m in Sources */,
+				8DDD9390255536420092A142 /* PlatenumberVC.swift in Sources */,
 				8D57ECEE252C008A007F4A87 /* SpecialLineCell.swift in Sources */,
 				8DC1E19B25203E5D003C1F94 /* BaiduMapManager.m in Sources */,
 				8DC1E1052520202A003C1F94 /* LoginVC.swift in Sources */,
@@ -1644,12 +1698,14 @@
 				8D1B454C2520599800251D56 /* ForgetVC.swift in Sources */,
 				8D9208F42524CD6700D33D69 /* CancelOrderViewModel.swift in Sources */,
 				8DC1E16725203DDB003C1F94 /* NBMultiSheet.swift in Sources */,
+				8DDD9387255515290092A142 /* RushHallVC.swift in Sources */,
 				8D5D8CA325412F6800F702F4 /* PersonalViewModel.swift in Sources */,
 				8D5213982521A6CC00B69BC6 /* ForgetViewModel.swift in Sources */,
 				8DC1E19E25203E5D003C1F94 /* NBTookit.m in Sources */,
 				8D5A8C3D25486A5200407760 /* RechargeVC.swift in Sources */,
 				8D1B4560252086E400251D56 /* NBModel.swift in Sources */,
 				8DC1E19A25203E5D003C1F94 /* NBLoadManager.swift in Sources */,
+				8D64D5522556A9D800C9DCBF /* PayWayView.swift in Sources */,
 				8DC1E0CA2520176B003C1F94 /* PostVC.swift in Sources */,
 				8DC1E1AB25203E5D003C1F94 /* NBPlistCache.swift in Sources */,
 				8DC1E0C22520176B003C1F94 /* UIButton.swift in Sources */,
@@ -1851,7 +1907,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zxc.chazx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boc.majorEasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "majorEasy/config/major-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1874,7 +1930,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zxc.chazx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boc.majorEasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "majorEasy/config/major-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

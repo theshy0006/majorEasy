@@ -36,4 +36,5 @@
 #import "CGXStringPickerView.h"
 #import "NSDate+CGXPicker.h"
 #import "OCUtility.h"
+
 #endif /* major_Bridging_Header_h */

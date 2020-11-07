@@ -19,9 +19,7 @@ public func ConstructHeaders(_ header: Dictionary<String, String>?)-> HTTPHeader
     
     var headers: HTTPHeaders = [
         "djwyToken": DataCenterManager.default.userInfo.token ?? "",
-        "Content-Type":"application/x-www-form-urlencoded;charset=UTF-8;"
-        
-        
+        "Content-Type":"application/x-www-form-urlencoded;charset=UTF-8;"  
     ]
     guard let tempHeader = header else{return headers}
     for (key, value) in tempHeader {

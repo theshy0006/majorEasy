@@ -35,9 +35,16 @@ class RxHttpManager {
         })
     }
     
+    static public func fetchArray<T: HandyJSON>(with url: String, method: HTTPMethod = .post, parameters: [Dictionary<String, Any>], headers: HTTPHeaders, returnType: T.Type) -> Observable<T> {
+        return Observable<T>.create({ (observer: AnyObserver<T>) -> Disposable in
+            RxHttpManager.requestArray(observer: observer, url: url, method: method, parameters: parameters, headers: headers, returnType: returnType)
+            return Disposables.create()
+        })
+    }
+    
     static public func fetchFormData<T: HandyJSON>(with url: String, method: HTTPMethod = .post, image: UIImage, headers: HTTPHeaders?, returnType: T.Type) -> Observable<T> {
         return Observable<T>.create({ (observer: AnyObserver<T>) -> Disposable in
-            self.upload(observer: observer, url: url, method: method, image: image, headers: headers, returnType: returnType)
+            RxHttpManager.upload(observer: observer, url: url, method: method, image: image, headers: headers, returnType: returnType)
             return Disposables.create()
         })
     }
@@ -72,6 +79,42 @@ class RxHttpManager {
             }
         }
     }
+    
+    fileprivate static func requestArray<T: HandyJSON>(observer: AnyObserver<T>, url: String, method: HTTPMethod, parameters: [Dictionary<String, Any>], headers: HTTPHeaders, returnType: T.Type) {
+        print("接口地址:\(url)")
+        print("接口参数:\(String(describing: parameters))")
+        
+        let headersss: [String: String] = [
+            "djwyToken": DataCenterManager.default.userInfo.token ?? "",
+            "Content-Type":"application/json;charset=UTF-8;"
+        ]
+        
+        if let tempUrl = URL(string: url) {
+            var urlRequest = URLRequest(url: tempUrl)
+            urlRequest.httpMethod = "POST"
+            urlRequest.httpBody = try! JSONSerialization.data(withJSONObject: parameters)
+            urlRequest.allHTTPHeaderFields = headersss
+            
+            AF.request(urlRequest).responseJSON { response in
+                switch response.result {
+                case .success:
+                    self.successHandle(observer: observer, result: response.result, retrunType: returnType)
+                    break
+                case .failure(let error):
+                    let err = APIError()
+                    err.status = "\(String(describing: error.responseCode))"
+                    if (error.localizedDescription.contains(find: "offline")) {
+                        err.message = "网络链接失败，请检查网络"
+                    } else {
+                        err.message = error.localizedDescription
+                    }
+                    self.failHandle(observer: observer, error: err)
+                    break
+                }
+            }
+        }
+    }
+    
     
     fileprivate static func upload<T: HandyJSON>(observer: AnyObserver<T>, url: String, method: HTTPMethod, image: UIImage, headers: HTTPHeaders?, returnType: T.Type) {
         print("接口地址:\(url)")

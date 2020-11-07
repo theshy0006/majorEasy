@@ -580,3 +580,18 @@ extension CancleOrderModel {
     }
 }
 
+
+
+extension AddAddress {
+    func addAddress(addressBook: [Dictionary<String, String>]) -> Observable<AddAddress> {
+        return RxHttpManager.fetchArray(with: URL_AddAddressBook,
+                                       method: .post,
+                                       parameters: addressBook,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: AddAddress.self).map({ (response: AddAddress) -> AddAddress in
+            return response
+        })
+    }
+}
+
+

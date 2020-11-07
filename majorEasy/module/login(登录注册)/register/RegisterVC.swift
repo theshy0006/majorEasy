@@ -60,9 +60,11 @@ class RegisterVC: BaseVC {
             }
             weakself.getSmsCode(mobile: weakself.phoneField.text)
         }).disposed(by: disposeBag)
+        
     }
     
     override func setUpView() {
+        self.view.backgroundColor = .white
         self.registerButton.addShadow(RGBHex(0xe2e2e2))
         self.navigationItem.title = "register".localized
         self.phoneView.addSubview(self.phoneField)
