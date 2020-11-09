@@ -11,6 +11,7 @@ class SendingCell: UITableViewCell {
 
     @IBOutlet weak var lineView: UIView!
     @IBOutlet weak var lineNameLabel: UILabel!
+    @IBOutlet weak var toCityLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
@@ -40,13 +41,8 @@ class SendingCell: UITableViewCell {
     
     func setCellWithModel(_ model: MySuppliesInfo) {
         self.currentModel = model
-        let str1 = (model.loadPlaceShow ?? "") + " -> " + (model.unloadPlaceShow ?? "")
-        
-        
-        
-        lineNameLabel.text = str1.replacingOccurrences(of: "/", with: "")
-        
-        
+        lineNameLabel.text = model.loadPlaceShow?.replacingOccurrences(of: "/", with: "")
+        toCityLabel.text = model.unloadPlaceShow?.replacingOccurrences(of: "/", with: "")
         timeLabel.text = model.timeAgo
         contentLabel.text = "整车：" + (model.mySupplyMsg ?? "")
         typeLabel.text = "规格：" + "长\(model.goodsLength)/" + "宽\(model.goodsWide)/"

@@ -72,6 +72,11 @@ class SpeciaLineDetailVC: BaseVC {
         bannerView.addSubview(cycleView)
     }
     
+    @IBAction func callPhoneBtnPressed(_ sender: UIButton) {
+        NBUtility.showTelephone(phoneLabel.text ?? "")
+    }
+    
+    
 }
 
 extension SpeciaLineDetailVC: ZCycleViewProtocol{

@@ -22,7 +22,9 @@ class RechargeVC: BaseVC {
     }
     
     override func setUpView() {
-        
+        self.viewModel.pageNum = 1
+        self.viewModel.loadMore = false
+        self.getOrderList()
         self.tableView.gtm_addRefreshHeaderView(refreshHeader: WechatRefreshHeader()) {
             [weak self] in
             self?.viewModel.pageNum = 1

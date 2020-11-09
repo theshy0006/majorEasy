@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,14 +26,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzn-Pn-7Mt">
-                    <rect key="frame" x="0.0" y="44" width="414" height="128"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="158"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="128" id="bWP-MT-EZO"/>
+                        <constraint firstAttribute="height" constant="158" id="bWP-MT-EZO"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公司信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ek1-Qb-2MU">
-                    <rect key="frame" x="12" y="182" width="100" height="20"/>
+                    <rect key="frame" x="12" y="212" width="100" height="20"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="I97-z8-hZS"/>
                         <constraint firstAttribute="height" constant="20" id="dbe-FN-xBF"/>
@@ -43,7 +43,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XkZ-NQ-H8T">
-                    <rect key="frame" x="12" y="207" width="390" height="160"/>
+                    <rect key="frame" x="12" y="237" width="390" height="160"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="编组 11" translatesAutoresizingMaskIntoConstraints="NO" id="DnW-2I-zDU">
                             <rect key="frame" x="10" y="10" width="20" height="20"/>
@@ -132,6 +132,9 @@
                                 <constraint firstAttribute="height" constant="50" id="G82-oe-Kbo"/>
                             </constraints>
                             <state key="normal" backgroundImage="大电话"/>
+                            <connections>
+                                <action selector="callPhoneBtnPressed:" destination="-1" eventType="touchUpInside" id="YOV-MK-Ifr"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -167,7 +170,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网点信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6H-xq-zd7">
-                    <rect key="frame" x="12" y="377" width="100" height="20"/>
+                    <rect key="frame" x="12" y="407" width="100" height="20"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="9UR-mr-HUx"/>
                         <constraint firstAttribute="height" constant="20" id="9dl-2u-8YW"/>
@@ -177,7 +180,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFb-fV-Cnb">
-                    <rect key="frame" x="12" y="402" width="390" height="240"/>
+                    <rect key="frame" x="12" y="432" width="390" height="240"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="二维码" translatesAutoresizingMaskIntoConstraints="NO" id="R7z-5K-MfN">
                             <rect key="frame" x="20" y="20" width="120" height="120"/>

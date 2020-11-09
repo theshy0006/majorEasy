@@ -39,7 +39,7 @@
                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="河南" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA0-W1-E3i">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="江苏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA0-W1-E3i">
                     <rect key="frame" x="127" y="64" width="35" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="Lnc-fP-3e3"/>
@@ -87,6 +87,9 @@
                                 <constraint firstAttribute="height" constant="30" id="LFC-Tm-8b7"/>
                             </constraints>
                             <state key="normal" title="立即办证"/>
+                            <connections>
+                                <action selector="buttonOnePressed:" destination="-1" eventType="touchUpInside" id="SrZ-8W-jf4"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,6 +121,9 @@
                                 <constraint firstAttribute="height" constant="30" id="vRQ-h4-ByV"/>
                             </constraints>
                             <state key="normal" title="立即办证"/>
+                            <connections>
+                                <action selector="buttonTwoPressed:" destination="-1" eventType="touchUpInside" id="Xn1-2k-kmI"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -149,6 +155,9 @@
                                 <constraint firstAttribute="height" constant="30" id="yeK-au-Fef"/>
                             </constraints>
                             <state key="normal" title="立即办证"/>
+                            <connections>
+                                <action selector="buttonThreePressed:" destination="-1" eventType="touchUpInside" id="s38-nB-vpp"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -180,6 +189,9 @@
                                 <constraint firstAttribute="height" constant="30" id="SGY-Ax-fL2"/>
                             </constraints>
                             <state key="normal" title="立即办证"/>
+                            <connections>
+                                <action selector="buttonFourPressed:" destination="-1" eventType="touchUpInside" id="gJc-9V-tpJ"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -242,7 +254,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="66U-3z-kid" secondAttribute="trailing" constant="20" id="wVJ-Ha-4r6"/>
                 <constraint firstItem="KXW-PR-VtD" firstAttribute="leading" secondItem="xA8-aM-7oQ" secondAttribute="trailing" constant="20" id="x6E-PH-cSN"/>
             </constraints>
-            <point key="canvasLocation" x="82.608695652173921" y="66.964285714285708"/>
+            <point key="canvasLocation" x="-267" y="75"/>
         </view>
     </objects>
     <resources>

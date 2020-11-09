@@ -111,14 +111,20 @@ let URL_GetReferencePrice = BaseURL + "App-supply/getReferencePrice"
 let URL_GetAllGoodsType = BaseURL + "App-supplies/getAllGoodsType"
 //查询指派人
 let URL_SearchCarrier = BaseURL + "App-user/serachCarrier/"
-
 //完成订单
 let URL_FinishOrder = BaseURL + "App-order/finishOrder/"
 //取消订单
 let URL_CancleOrder = BaseURL + "App-order/cancleOrder/"
 //添加通讯录
 let URL_AddAddressBook = BaseURL + "App-userAccount/addUserAddressBook"
-
+//查询证件类型
+let URL_GetCerts = BaseURL + "App-orders/getCerts/"
+//证件办理
+let URL_SubCertOrder = BaseURL + "App-order/subCertOrder"
+//临牌办理
+let URL_SubTemLicenceOrder = BaseURL + "App-order/subTemLicenceOrder"
+//获取报价列表
+let URL_GetMySuppliesWithOffer = BaseURL + "App-supply/getMySuppliesWithOffer"
 
 // 服务协议
 let servicePath = BaseURL + "App-user/user_agreement"

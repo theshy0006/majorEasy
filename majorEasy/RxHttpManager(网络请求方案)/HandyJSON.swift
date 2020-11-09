@@ -758,3 +758,71 @@ class AddAddress: HandyJSON {
     var value: String?
     required init() {}
 }
+
+
+// 证书类型
+class CertificateModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: [CertificateItem] = [CertificateItem]()
+
+    required init() {}
+}
+
+class CertificateItem: HandyJSON {
+    var certName: String?
+    var cityCode: String?
+    var describe: String?
+    var id: Int = 0
+    var price: Int = 0
+    var provinceCode: String?
+    required init() {}
+}
+
+//证件办理主交易
+class SubCertOrder: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: WeixinPay = WeixinPay()
+    required init() {}
+}
+
+class WeixinPay: HandyJSON {
+    var timestamp: String?
+    var partnerid: String?
+    var package: String?
+    var noncestr: String?
+    var sign: String?
+    var appid: String?
+    var prepayid: String?
+    required init() {}
+}
+
+//临牌办理主交易
+class SubTemLicenceOrder: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: WeixinPay = WeixinPay()
+    required init() {}
+}
+
+// 报价列表对象
+class QuoteModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: [QuoteItem] = [QuoteItem]()
+    required init() {}
+}
+
+// 报价列表数据
+class QuoteItem: HandyJSON {
+    var loadPlaceShow: String?
+    var unloadPlaceShow: String?
+    var phoneNumber: String?
+    var mySupplyMsg: String?
+    var offerMsg: String?
+    var offerTime: String?
+    required init() {}
+}
+
+

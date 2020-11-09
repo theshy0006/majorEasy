@@ -31,7 +31,9 @@ class AllGoodsCell: UITableViewCell {
     func setCellWithModel(_ model: MySuppliesInfo) {
         self.currentModel = model
         
-        lineNameLabel.text = (model.loadPlaceShow ?? "") + " -> " + (model.unloadPlaceShow ?? "")
+        let str1 = (model.loadPlaceShow ?? "") + " -> " + (model.unloadPlaceShow ?? "")
+        lineNameLabel.text = str1.replacingOccurrences(of: "/", with: "")
+        
         lengthLabel.text =  String(format:" %.1f米 ",model.vehicleLength ?? 0)
         tagLabel.text = model.vehicleType
         weightLabel.text = model.goodsWeight! + "吨"

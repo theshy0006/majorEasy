@@ -594,4 +594,66 @@ extension AddAddress {
     }
 }
 
+extension CertificateModel {
+    func queryCertificate(province: String) -> Observable<CertificateModel> {
+        return RxHttpManager.fetchData(with: URL_GetCerts + province,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: CertificateModel.self).map({ (response: CertificateModel) -> CertificateModel in
+            return response
+        })
+    }
+}
+
+extension SubCertOrder {
+    func mainFunc(certId: Int, integral: Int, price: Int, paymentWay: Int) -> Observable<SubCertOrder> {
+        return RxHttpManager.fetchData(with: URL_SubCertOrder,
+                                       method: .post,
+                                       parameters: [
+                                        "certId":certId,
+                                        "integral":integral,
+                                        "price":price,
+                                        "paymentWay":paymentWay
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: SubCertOrder.self).map({ (response: SubCertOrder) -> SubCertOrder in
+            return response
+        })
+    }
+}
+
+extension SubTemLicenceOrder {
+    func mainFunc(temLicenceId: Int, price: Int, paymentWay: Int) -> Observable<SubTemLicenceOrder> {
+        return RxHttpManager.fetchData(with: URL_SubTemLicenceOrder,
+                                       method: .post,
+                                       parameters: [
+                                        "temLicenceId":temLicenceId,
+                                        "price":price,
+                                        "paymentWay":paymentWay
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: SubTemLicenceOrder.self).map({ (response: SubTemLicenceOrder) -> SubTemLicenceOrder in
+            return response
+        })
+    }
+}
+
+extension QuoteModel {
+    func queryQuote(pageNum: Int, pageSize: Int) -> Observable<QuoteModel> {
+        return RxHttpManager.fetchData(with: URL_GetMySuppliesWithOffer,
+                                       method: .post,
+                                       parameters: [
+                                        "pageNum":pageNum,
+                                        "pageSize":pageSize
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: QuoteModel.self).map({ (response: QuoteModel) -> QuoteModel in
+            return response
+        })
+    }
+}
+
+
+
 

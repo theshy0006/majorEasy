@@ -77,8 +77,8 @@ class AllOrderCell: UITableViewCell {
             headImageView.sd_setImage(with: url, placeholderImage: ImageNamed("defaultHeader"))
         }
 
-        fromLabel.text = model.loadPlace
-        toLabel.text = model.unloadPlace
+        fromLabel.text = model.loadPlace?.replacingOccurrences(of: "/", with: "")
+        toLabel.text = model.unloadPlace?.replacingOccurrences(of: "/", with: "")
         if let goodsName = model.goodsName {
             sortLabel.text = " " + goodsName  + " "
         } else {

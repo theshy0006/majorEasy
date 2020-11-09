@@ -9,6 +9,7 @@ import UIKit
 
 class OftenCell: UITableViewCell {
 
+    @IBOutlet weak var toCityLabel: UILabel!
     @IBOutlet weak var lineNameLabel: UILabel!
     
     @IBOutlet weak var timeLabel: UILabel!
@@ -42,7 +43,8 @@ class OftenCell: UITableViewCell {
     
     func setCellWithModel(_ model: MySuppliesInfo) {
         self.currentModel = model
-        lineNameLabel.text = (model.loadPlaceShow ?? "") + " -> " + (model.unloadPlaceShow ?? "")
+        lineNameLabel.text = model.loadPlaceShow?.replacingOccurrences(of: "/", with: "")
+        toCityLabel.text = model.unloadPlaceShow?.replacingOccurrences(of: "/", with: "")
         timeLabel.text = model.timeAgo
         contentLabel.text = model.mySupplyMsg
 

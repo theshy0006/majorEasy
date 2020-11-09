@@ -38,7 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if( url.host == "oauth") {
             //微信登录
         } else if( url.host == "pay" ) {
-        
             //微信支付
             return WXApi.handleOpen(url, delegate: WXApiManager.shared())
         } else if( url.host == "platformId=wechat") {
