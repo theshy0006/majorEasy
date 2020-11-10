@@ -825,4 +825,67 @@ class QuoteItem: HandyJSON {
     required init() {}
 }
 
+// 银行卡对象
+class CardModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: [CardItem] = [CardItem]()
+    required init() {}
+}
 
+class DeleteCardModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: String?
+    required init() {}
+}
+
+// 银行卡对象
+class CardItem: HandyJSON {
+    var id: Int = 0
+    var typeName: String?
+    var bankName: String?
+    var logoKey: String?
+    var cardHolderName: String?
+    var abbreviation: String?
+    var accountNum: String?
+    var cardNumber: String?
+    var color: String?
+    var logoUrl: String?
+    var userId: Int = 0
+    var cardType: Int = 0
+    var bankId: Int = 0
+    var phoneNumber: String?
+    var logoUrlApp: String?
+    
+    required init() {}
+}
+
+// 银行对象
+class BankModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: [BankItem] = [BankItem]()
+    required init() {}
+}
+
+// 银行对象
+class BankItem: HandyJSON {
+    var abbreviation: String?
+    var bankCode: String?
+    var bankName: String?
+    var color: String?
+    var id: Int = 0
+    var logoKey: String?
+    var logoPic: String?
+    
+    required init() {}
+}
+
+// 银行对象
+class BindBankModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: String?
+    required init() {}
+}

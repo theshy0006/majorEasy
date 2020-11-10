@@ -45,9 +45,10 @@ class BaseVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initNavigation()
+        self.view.backgroundColor = color_BgColor
         setUpData()
         setUpView()
-        self.view.backgroundColor = color_BgColor
+        
     }
     
     func setUpView() {

@@ -23,7 +23,7 @@ class NBUtility: NSObject {
     //
     public class func keepoutPhone (phone: String) -> String {
         if phone.count == 11 {
-            let returnValue = phone.substr(from: 0, to: 2) + "****" + phone.substr(from: 7, to: 10)
+            let returnValue = phone.substr(from: 0, to: 3) + "****" + phone.substr(from: 7, to: 11)
             return returnValue
         }else if phone.count > 11 {
             // 无效的手机号 eg:13498989898_8888
@@ -435,5 +435,6 @@ extension NBUtility {
         return dic
         
     }
+    
 }
 

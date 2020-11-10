@@ -79,7 +79,7 @@ class MyVC: BaseVC {
         self.integralLabel.text = String(format:"%.2f",DataCenterManager.default.myInfo.integral)
         self.rechargeReward.text = String(format:"%.2f",DataCenterManager.default.myInfo.rechargeReward)
         self.userLabel.text = DataCenterManager.default.myInfo.userName
-        self.phoneLabel.text = DataCenterManager.default.myInfo.phoneNumber
+        self.phoneLabel.text = NBUtility.keepoutPhone(phone: DataCenterManager.default.myInfo.phoneNumber ?? "") 
         
         if let url = DataCenterManager.default.myInfo.headPortraitUrl {
             let url = URL(string: url)
@@ -113,6 +113,11 @@ class MyVC: BaseVC {
     
     @IBAction func gotoRecharge(_ sender: UIButton) {
         self.navigationController?.pushViewController(TopTenTV.init(type: 2), animated: true)
+    }
+    
+    
+    @IBAction func gotoMyCard(_ sender: Any) {
+        self.navigationController?.pushViewController(MyCardVC(), animated: true)
     }
     
     @IBAction func gotoShare(_ sender: UIButton) {

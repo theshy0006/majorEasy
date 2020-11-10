@@ -125,6 +125,16 @@ let URL_SubCertOrder = BaseURL + "App-order/subCertOrder"
 let URL_SubTemLicenceOrder = BaseURL + "App-order/subTemLicenceOrder"
 //获取报价列表
 let URL_GetMySuppliesWithOffer = BaseURL + "App-supply/getMySuppliesWithOffer"
+//获取我绑定的银行卡
+let URL_GetMyBankCards = BaseURL + "App-userAccount/getMyBankCards"
+//删除银行卡
+let URL_DeleteBankCard = BaseURL + "App-userAccount/deleteBankCard/"
+//获取全部银行卡
+let URL_GetBanks = BaseURL + "App-userAccount/getBanks"
+//绑定银行卡
+let URL_AddBankCard = BaseURL + "App-userAccount/addBankCard"
+
+
 
 // 服务协议
 let servicePath = BaseURL + "App-user/user_agreement"

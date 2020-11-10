@@ -654,6 +654,64 @@ extension QuoteModel {
     }
 }
 
+extension CardModel {
+    func getMyCard() -> Observable<CardModel> {
+        return RxHttpManager.fetchData(with: URL_GetMyBankCards,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: CardModel.self).map({ (response: CardModel) -> CardModel in
+            return response
+        })
+    }
+}
+
+extension DeleteCardModel {
+    func deleteCard(cardNo: String) -> Observable<DeleteCardModel> {
+        return RxHttpManager.fetchData(with: URL_DeleteBankCard + cardNo,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: DeleteCardModel.self).map({ (response: DeleteCardModel) -> DeleteCardModel in
+            return response
+        })
+    }
+}
+
+extension BankModel {
+    func getBank() -> Observable<BankModel> {
+        return RxHttpManager.fetchData(with: URL_GetBanks,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: BankModel.self).map({ (response: BankModel) -> BankModel in
+            return response
+        })
+    }
+}
+
+extension BindBankModel {
+    func bindBank(cardType: Int,
+                  bankId: Int,
+                  cardNumber: String,
+                  cardHolderName: String,
+                  phoneNumber: String) -> Observable<BindBankModel> {
+        return RxHttpManager.fetchData(with: URL_AddBankCard,
+                                       method: .post,
+                                       parameters: [
+                                            "cardType": cardType,
+                                            "bankId": bankId,
+                                            "cardNumber": cardNumber,
+                                            "cardHolderName": cardHolderName,
+                                            "phoneNumber": phoneNumber
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: BindBankModel.self).map({ (response: BindBankModel) -> BindBankModel in
+            return response
+        })
+    }
+}
+
 
 
 

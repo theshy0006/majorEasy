@@ -94,6 +94,9 @@
                                         <constraint firstAttribute="width" constant="24" id="xfr-s0-DZM"/>
                                     </constraints>
                                     <state key="normal" image="编辑资料"/>
+                                    <connections>
+                                        <action selector="headPressed:" destination="-1" eventType="touchUpInside" id="jMC-iW-eq3"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMY-sV-3dK">
                                     <rect key="frame" x="378" y="49" width="24" height="24"/>
@@ -638,15 +641,25 @@
                                         <constraint firstAttribute="height" constant="28" id="o3f-kC-79p"/>
                                     </constraints>
                                 </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knI-wr-2yN">
+                                    <rect key="frame" x="8" y="8" width="121" height="84"/>
+                                    <connections>
+                                        <action selector="gotoMyCard:" destination="-1" eventType="touchUpInside" id="bdW-q3-k3e"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
+                                <constraint firstItem="knI-wr-2yN" firstAttribute="leading" secondItem="gwK-rb-ryO" secondAttribute="leading" constant="8" id="8eX-B6-zF0"/>
+                                <constraint firstItem="knI-wr-2yN" firstAttribute="top" secondItem="gwK-rb-ryO" secondAttribute="top" constant="8" id="Dsd-BH-qB8"/>
                                 <constraint firstItem="Dso-xp-7l7" firstAttribute="top" secondItem="gwK-rb-ryO" secondAttribute="top" constant="31" id="Fzm-1X-2Xd"/>
                                 <constraint firstItem="iJN-tx-ehb" firstAttribute="top" secondItem="Dso-xp-7l7" secondAttribute="bottom" constant="9" id="Hql-PA-Opq"/>
+                                <constraint firstAttribute="trailing" secondItem="knI-wr-2yN" secondAttribute="trailing" id="Ssp-ap-GFx"/>
                                 <constraint firstItem="iJN-tx-ehb" firstAttribute="leading" secondItem="gwK-rb-ryO" secondAttribute="leading" id="mrw-QY-K4T"/>
                                 <constraint firstItem="Dso-xp-7l7" firstAttribute="centerX" secondItem="gwK-rb-ryO" secondAttribute="centerX" id="oAw-c1-ZIk"/>
                                 <constraint firstAttribute="trailing" secondItem="iJN-tx-ehb" secondAttribute="trailing" id="tlE-Ee-iuc"/>
                                 <constraint firstAttribute="height" constant="100" id="w6v-s5-kmb"/>
+                                <constraint firstAttribute="bottom" secondItem="knI-wr-2yN" secondAttribute="bottom" constant="8" id="zdG-1e-7j5"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vR0-Se-UK2">
@@ -752,7 +765,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UUR-gu-rBC" secondAttribute="trailing" constant="12" id="x1l-Yc-NxM"/>
                 <constraint firstItem="UUR-gu-rBC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="xmL-2y-tSX"/>
             </constraints>
-            <point key="canvasLocation" x="-1778" y="-15"/>
+            <point key="canvasLocation" x="-1778.2608695652175" y="-15.401785714285714"/>
         </view>
     </objects>
     <resources>

@@ -54,6 +54,14 @@
 		8D44204F2534537F00755D91 /* KnownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44204E2534537F00755D91 /* KnownViewModel.swift */; };
 		8D4CEAF325402AF100D5578F /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CEAF225402AF100D5578F /* SettingVC.swift */; };
 		8D5213982521A6CC00B69BC6 /* ForgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */; };
+		8D5526D5255A1D4F00C26898 /* MyCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5526D3255A1D4F00C26898 /* MyCardVC.swift */; };
+		8D5526D9255A1D9D00C26898 /* MyCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5526D8255A1D9D00C26898 /* MyCardViewModel.swift */; };
+		8D5526DD255A1E2900C26898 /* MyCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5526DB255A1E2900C26898 /* MyCardCell.swift */; };
+		8D5526DE255A1E2900C26898 /* MyCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5526DC255A1E2900C26898 /* MyCardCell.xib */; };
+		8D5526E1255A240900C26898 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5526E0255A240900C26898 /* UIColor.swift */; };
+		8D5526FA255A374000C26898 /* AddCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5526F8255A374000C26898 /* AddCard.swift */; };
+		8D5526FB255A374000C26898 /* AddCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5526F9255A374000C26898 /* AddCard.xib */; };
+		8D5526FF255A5B5900C26898 /* AddCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5526FE255A5B5900C26898 /* AddCardViewModel.swift */; };
 		8D57ECEA252BFB11007F4A87 /* SpecialLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57ECE9252BFB11007F4A87 /* SpecialLineViewModel.swift */; };
 		8D57ECEE252C008A007F4A87 /* SpecialLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57ECEC252C008A007F4A87 /* SpecialLineCell.swift */; };
 		8D57ECEF252C008A007F4A87 /* SpecialLineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D57ECED252C008A007F4A87 /* SpecialLineCell.xib */; };
@@ -261,6 +269,14 @@
 		8D44204E2534537F00755D91 /* KnownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownViewModel.swift; sourceTree = "<group>"; };
 		8D4CEAF225402AF100D5578F /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		8D5213972521A6CC00B69BC6 /* ForgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewModel.swift; sourceTree = "<group>"; };
+		8D5526D3255A1D4F00C26898 /* MyCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardVC.swift; sourceTree = "<group>"; };
+		8D5526D8255A1D9D00C26898 /* MyCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardViewModel.swift; sourceTree = "<group>"; };
+		8D5526DB255A1E2900C26898 /* MyCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardCell.swift; sourceTree = "<group>"; };
+		8D5526DC255A1E2900C26898 /* MyCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCardCell.xib; sourceTree = "<group>"; };
+		8D5526E0255A240900C26898 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		8D5526F8255A374000C26898 /* AddCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCard.swift; sourceTree = "<group>"; };
+		8D5526F9255A374000C26898 /* AddCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCard.xib; sourceTree = "<group>"; };
+		8D5526FE255A5B5900C26898 /* AddCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewModel.swift; sourceTree = "<group>"; };
 		8D57ECE9252BFB11007F4A87 /* SpecialLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineViewModel.swift; sourceTree = "<group>"; };
 		8D57ECEC252C008A007F4A87 /* SpecialLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineCell.swift; sourceTree = "<group>"; };
 		8D57ECED252C008A007F4A87 /* SpecialLineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialLineCell.xib; sourceTree = "<group>"; };
@@ -668,6 +684,27 @@
 			path = set;
 			sourceTree = "<group>";
 		};
+		8D5526D2255A1D2900C26898 /* MyCard(我的银行卡) */ = {
+			isa = PBXGroup;
+			children = (
+				8D5526D3255A1D4F00C26898 /* MyCardVC.swift */,
+				8D5526D8255A1D9D00C26898 /* MyCardViewModel.swift */,
+				8D5526DB255A1E2900C26898 /* MyCardCell.swift */,
+				8D5526DC255A1E2900C26898 /* MyCardCell.xib */,
+			);
+			path = "MyCard(我的银行卡)";
+			sourceTree = "<group>";
+		};
+		8D5526F7255A371200C26898 /* AddCard(添加银行卡) */ = {
+			isa = PBXGroup;
+			children = (
+				8D5526F8255A374000C26898 /* AddCard.swift */,
+				8D5526F9255A374000C26898 /* AddCard.xib */,
+				8D5526FE255A5B5900C26898 /* AddCardViewModel.swift */,
+			);
+			path = "AddCard(添加银行卡)";
+			sourceTree = "<group>";
+		};
 		8D5870FE25280625001C3614 /* GoodsTypeVC(货物信息) */ = {
 			isa = PBXGroup;
 			children = (
@@ -974,6 +1011,7 @@
 				8DC1E09F2520176A003C1F94 /* UIViewController.swift */,
 				8DC1E0A02520176A003C1F94 /* Double.swift */,
 				8DC1E0A12520176A003C1F94 /* UIAlertController.swift */,
+				8D5526E0255A240900C26898 /* UIColor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1028,6 +1066,8 @@
 		8DC1E0A72520176A003C1F94 /* my(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				8D5526F7255A371200C26898 /* AddCard(添加银行卡) */,
+				8D5526D2255A1D2900C26898 /* MyCard(我的银行卡) */,
 				8D5A8C3825486A1100407760 /* withdraw(提现) */,
 				8D5A8C37254869FE00407760 /* recharge(充值列表) */,
 				8D5A8C35254869D300407760 /* billList(账单列表) */,
@@ -1510,6 +1550,7 @@
 				8D0CEAFC2558CA5A00FE603C /* QuoteCell.xib in Resources */,
 				8D8D501E252B55020097792A /* SpecialLineVC.xib in Resources */,
 				8D58710E2528063C001C3614 /* CarTypeVC.xib in Resources */,
+				8D5526FB255A374000C26898 /* AddCard.xib in Resources */,
 				8D5A8C2D2548473F00407760 /* GoodStandardVC.xib in Resources */,
 				8D58710425280625001C3614 /* GoodsTypeVC.xib in Resources */,
 				8D5A8C582548861000407760 /* WithDrawCell.xib in Resources */,
@@ -1522,6 +1563,7 @@
 				8D434223252FF15E007EE9F1 /* OftenCell.xib in Resources */,
 				8D5870FC25280102001C3614 /* city.json in Resources */,
 				8DFC45DD2522FFE8009D9081 /* MyVC.xib in Resources */,
+				8D5526DE255A1E2900C26898 /* MyCardCell.xib in Resources */,
 				8D5EDEE02544702100CA2F8F /* GoodsOwenrVC.xib in Resources */,
 				8D1B45532520627300251D56 /* RegisterVC.xib in Resources */,
 				8D5A8C482548732800407760 /* BillCell.xib in Resources */,
@@ -1675,8 +1717,10 @@
 				8DFA16B52530A88600292987 /* NBSelectView.m in Sources */,
 				8DC1E0D02520176B003C1F94 /* constant.swift in Sources */,
 				8DBD62C32534A414006F59F9 /* NBSelectPlusView.m in Sources */,
+				8D5526FA255A374000C26898 /* AddCard.swift in Sources */,
 				8D434210252FEB7A007EE9F1 /* SendingVC.swift in Sources */,
 				8D7498882548FDBD007D0C04 /* CGXPickerView.m in Sources */,
+				8D5526DD255A1E2900C26898 /* MyCardCell.swift in Sources */,
 				8DC1E16E25203DDB003C1F94 /* NBAlertView.swift in Sources */,
 				8DBD62B62534A130006F59F9 /* SearchGoodsVC.swift in Sources */,
 				8D43422D25305296007EE9F1 /* SendingCell.swift in Sources */,
@@ -1686,6 +1730,7 @@
 				8D58710325280625001C3614 /* GoodsTypeViewModel.swift in Sources */,
 				8D43423125305DA2007EE9F1 /* SendingViewModel.swift in Sources */,
 				8D28457A252413440051384F /* AllOrderVC.swift in Sources */,
+				8D5526D9255A1D9D00C26898 /* MyCardViewModel.swift in Sources */,
 				8D284570252412B20051384F /* FinishOrderVC.swift in Sources */,
 				8D434215252FEBBD007EE9F1 /* HistoryVC.swift in Sources */,
 				8DC1E0BE2520176B003C1F94 /* UITableView.swift in Sources */,
@@ -1719,6 +1764,7 @@
 				8D9208F42524CD6700D33D69 /* CancelOrderViewModel.swift in Sources */,
 				8DC1E16725203DDB003C1F94 /* NBMultiSheet.swift in Sources */,
 				8DDD9387255515290092A142 /* RushHallVC.swift in Sources */,
+				8D5526FF255A5B5900C26898 /* AddCardViewModel.swift in Sources */,
 				8D5D8CA325412F6800F702F4 /* PersonalViewModel.swift in Sources */,
 				8D5213982521A6CC00B69BC6 /* ForgetViewModel.swift in Sources */,
 				8DC1E19E25203E5D003C1F94 /* NBTookit.m in Sources */,
@@ -1732,6 +1778,7 @@
 				8D8D501D252B55020097792A /* SpecialLineVC.swift in Sources */,
 				8D58710C2528063C001C3614 /* CarTypeViewModel.swift in Sources */,
 				8DC1E0C42520176B003C1F94 /* UIViewController.swift in Sources */,
+				8D5526D5255A1D4F00C26898 /* MyCardVC.swift in Sources */,
 				8DF892B12521D96100666024 /* HomeViewModel.swift in Sources */,
 				8DC1E0C52520176B003C1F94 /* Double.swift in Sources */,
 				8DC1E16925203DDB003C1F94 /* NBTypeView.swift in Sources */,
@@ -1758,6 +1805,7 @@
 				8D767080254515B300E1FC29 /* TopTenCell.swift in Sources */,
 				8D5EDEE4254483E300CA2F8F /* GoodsOwenrViewModel.swift in Sources */,
 				8DD66564252D89EB00A23B38 /* LineDetailViewModel.swift in Sources */,
+				8D5526E1255A240900C26898 /* UIColor.swift in Sources */,
 				9F657FC1253180D9006BAB16 /* NBShareButton.swift in Sources */,
 				8D1B45472520595900251D56 /* NBOneEdgeView.swift in Sources */,
 				8D74988A2548FDBD007D0C04 /* CGXAddressPcikerView.m in Sources */,
