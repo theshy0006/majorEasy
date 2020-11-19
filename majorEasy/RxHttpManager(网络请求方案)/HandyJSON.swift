@@ -889,3 +889,162 @@ class BindBankModel: HandyJSON {
     var value: String?
     required init() {}
 }
+
+// 银行对象
+class FlatbedHomePagePics: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: [String] = [String]()
+    required init() {}
+}
+
+// 板车公司列表
+class FlatbedCompanysModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: [FlatbedCompanysItem] = [FlatbedCompanysItem]()
+    required init() {}
+}
+
+class FlatbedCompanysItem: HandyJSON {
+    var companyLogoUrl: String?
+    var companyName: String?
+    var id: Int = 0
+   
+    required init() {}
+}
+
+// 二手车
+class UsedVehicles: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: [UsedVehiclesItem] = [UsedVehiclesItem]()
+    required init() {}
+}
+
+class UsedVehiclesItem: HandyJSON {
+    var headBrandName: String?
+    var head_horsepower: Float = 0
+    var driveFormName: String?
+    var flatbedBrandName: String?
+    var flatbedTypeName: String?
+    var flatbed_brand: Int = 0
+    var flatbed_length: Float = 0
+    var flatbed_registrationDate: String?
+    var flatbed_type: Int = 0
+    var flatbed_weightBearing: Int = 0
+    var location: String?
+    var locationDetial: String?
+    var phoneNumber: String?
+    var pictureUrl: [String]?
+    var releaseTime: String?
+    var releaseUser: Int = 0
+    var remarks: String?
+    var sellSeparately: Bool = false
+    var standardName: String?
+    var type: Int = 0
+    var usedVehicleNum: String?
+    var userRealName: String?
+    var wishPrice: Float = 0
+    required init() {}
+}
+
+// 求职列表
+class DriverModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: DrivierTemp = DrivierTemp()
+    required init() {}
+}
+
+class DrivierTemp: HandyJSON {
+    var list: [DriverItem] = [DriverItem]()
+    required init() {}
+}
+
+class DriverItem: HandyJSON {
+    var age: Int = 0
+    var driveAge: Int = 0
+    var id: Int = 0
+    var job: String?
+    var name: String?
+    var phoneNumber: String?
+    var releaseTime: String?
+    var releaseUser: Int = 0
+    var releaseUserName: String?
+    var releaseUserPhone: String?
+    var remarks: String?
+    var salary: String?
+    var title: String?
+    var workArea: String?
+    var workAreaCode: String?
+    required init() {}
+}
+
+// 招聘列表
+class RecruitListModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: RecruitListItemModel = RecruitListItemModel()
+    required init() {}
+}
+
+class RecruitListItemModel: HandyJSON {
+    var list: [RecruitListItem] = [RecruitListItem]()
+    required init() {}
+}
+
+class RecruitListItem: HandyJSON {
+    var id: Int = 0
+    var job: String?
+    var name: String?
+    var phoneNumber: String?
+    var releaseTime: String?
+    var releaseUser: Int = 0
+    var releaseUserName: String?
+    var releaseUserPhone: String?
+    var remarks: String?
+    var salary: String?
+    var title: String?
+    var vehicleType: String?
+    var workArea: String?
+    var workAreaCode: String?
+    required init() {}
+}
+
+// 商城首页列表
+class GoodsModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: [GoodsItem] = [GoodsItem]()
+    required init() {}
+}
+
+class GoodsItem: HandyJSON {
+    var describe: String?
+    var goodsName: String?
+    var id: String?
+    var material: String?
+    var picture: String?
+    var pictureUrls: [String]?
+    var price: String?
+    var size: String?
+    var title: String?
+    
+    required init() {}
+}
+
+class VersionCheckModel: HandyJSON {
+    var status: Int = 0
+    var message: String?
+    var value: VersionCheckItem = VersionCheckItem()
+    required init() {}
+}
+
+class VersionCheckItem: HandyJSON {
+    var iosDescription: String?
+    var iosVersionCode: String?
+    var iosVersionName: String?
+    required init() {}
+}
+

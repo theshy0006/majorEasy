@@ -94,6 +94,15 @@
 		8D5EDEDF2544702100CA2F8F /* GoodsOwenrVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EDEDD2544702100CA2F8F /* GoodsOwenrVC.swift */; };
 		8D5EDEE02544702100CA2F8F /* GoodsOwenrVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5EDEDE2544702100CA2F8F /* GoodsOwenrVC.xib */; };
 		8D5EDEE4254483E300CA2F8F /* GoodsOwenrViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EDEE3254483E300CA2F8F /* GoodsOwenrViewModel.swift */; };
+		8D60BB442566638F000658A6 /* InviteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60BB422566638F000658A6 /* InviteCell.swift */; };
+		8D60BB452566638F000658A6 /* InviteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D60BB432566638F000658A6 /* InviteCell.xib */; };
+		8D60BB4825666536000658A6 /* InviteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60BB4725666536000658A6 /* InviteViewModel.swift */; };
+		8D60BB4B256667B5000658A6 /* ApplyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60BB4A256667B5000658A6 /* ApplyViewModel.swift */; };
+		8D60BB50256669A0000658A6 /* ShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60BB4E256669A0000658A6 /* ShopVC.swift */; };
+		8D60BB51256669A0000658A6 /* ShopVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D60BB4F256669A0000658A6 /* ShopVC.xib */; };
+		8D60BB5625666DC5000658A6 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60BB5425666DC5000658A6 /* ShopCell.swift */; };
+		8D60BB5725666DC5000658A6 /* ShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D60BB5525666DC5000658A6 /* ShopCell.xib */; };
+		8D60BB5A25666FCE000658A6 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60BB5925666FCE000658A6 /* ShopViewModel.swift */; };
 		8D64D54A2556A71B00C9DCBF /* PayWayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D64D5492556A71B00C9DCBF /* PayWayModel.swift */; };
 		8D64D5522556A9D800C9DCBF /* PayWayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D64D5512556A9D800C9DCBF /* PayWayView.swift */; };
 		8D6FE7482520DFCA0029D494 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */; };
@@ -113,6 +122,12 @@
 		8D76707C254514B900E1FC29 /* SubTopTenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76707B254514B900E1FC29 /* SubTopTenVC.swift */; };
 		8D767080254515B300E1FC29 /* TopTenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76707E254515B300E1FC29 /* TopTenCell.swift */; };
 		8D767081254515B300E1FC29 /* TopTenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D76707F254515B300E1FC29 /* TopTenCell.xib */; };
+		8D7D8FA22565729E006E81D0 /* BuyCarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D8FA02565729E006E81D0 /* BuyCarVC.swift */; };
+		8D7D8FA32565729E006E81D0 /* BuyCarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7D8FA12565729E006E81D0 /* BuyCarVC.xib */; };
+		8D7D8FA9256572BE006E81D0 /* SecondCarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D8FA7256572BE006E81D0 /* SecondCarVC.swift */; };
+		8D7D8FAE25657401006E81D0 /* BuyCarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D8FAD25657401006E81D0 /* BuyCarViewModel.swift */; };
+		8D7D8FB225658104006E81D0 /* BuyCarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D8FB025658104006E81D0 /* BuyCarCell.swift */; };
+		8D7D8FB325658104006E81D0 /* BuyCarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7D8FB125658104006E81D0 /* BuyCarCell.xib */; };
 		8D86265A254AEAC8004F8833 /* NBSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D862659254AEAC8004F8833 /* NBSearchView.swift */; };
 		8D8D501D252B55020097792A /* SpecialLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D501B252B55020097792A /* SpecialLineVC.swift */; };
 		8D8D501E252B55020097792A /* SpecialLineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8D501C252B55020097792A /* SpecialLineVC.xib */; };
@@ -123,6 +138,14 @@
 		8D9208FD2524CDE000D33D69 /* FinishOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208FC2524CDE000D33D69 /* FinishOrderViewModel.swift */; };
 		8D9209002524CE4900D33D69 /* NBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9208FF2524CE4900D33D69 /* NBViewModel.swift */; };
 		8DA5B0A52520558F00D517F9 /* NBEdgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5B0A42520558F00D517F9 /* NBEdgeView.swift */; };
+		8DB9CCCE2565FC6D00EF635B /* SecondCarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9CCCC2565FC6D00EF635B /* SecondCarCell.swift */; };
+		8DB9CCCF2565FC6D00EF635B /* SecondCarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB9CCCD2565FC6D00EF635B /* SecondCarCell.xib */; };
+		8DB9CCD625661ACC00EF635B /* SecondCarListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9CCD525661ACC00EF635B /* SecondCarListVC.swift */; };
+		8DB9CCDA25662FC400EF635B /* SecondCarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9CCD925662FC400EF635B /* SecondCarViewModel.swift */; };
+		8DB9CCF12566525400EF635B /* DriversVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9CCF02566525400EF635B /* DriversVC.swift */; };
+		8DB9CCF7256653FE00EF635B /* ApplyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9CCF6256653FE00EF635B /* ApplyVC.swift */; };
+		8DB9CCFB2566540E00EF635B /* InviteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9CCFA2566540E00EF635B /* InviteVC.swift */; };
+		8DB9CD0325665C4100EF635B /* NBSelectSmallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9CD0225665C4100EF635B /* NBSelectSmallView.m */; };
 		8DBD62B62534A130006F59F9 /* SearchGoodsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD62B52534A130006F59F9 /* SearchGoodsVC.swift */; };
 		8DBD62BB2534A262006F59F9 /* TodayGoodsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD62BA2534A262006F59F9 /* TodayGoodsVC.swift */; };
 		8DBD62BF2534A278006F59F9 /* OftenLinesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD62BE2534A278006F59F9 /* OftenLinesVC.swift */; };
@@ -309,6 +332,15 @@
 		8D5EDEDD2544702100CA2F8F /* GoodsOwenrVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsOwenrVC.swift; sourceTree = "<group>"; };
 		8D5EDEDE2544702100CA2F8F /* GoodsOwenrVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodsOwenrVC.xib; sourceTree = "<group>"; };
 		8D5EDEE3254483E300CA2F8F /* GoodsOwenrViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsOwenrViewModel.swift; sourceTree = "<group>"; };
+		8D60BB422566638F000658A6 /* InviteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteCell.swift; sourceTree = "<group>"; };
+		8D60BB432566638F000658A6 /* InviteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InviteCell.xib; sourceTree = "<group>"; };
+		8D60BB4725666536000658A6 /* InviteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteViewModel.swift; sourceTree = "<group>"; };
+		8D60BB4A256667B5000658A6 /* ApplyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyViewModel.swift; sourceTree = "<group>"; };
+		8D60BB4E256669A0000658A6 /* ShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVC.swift; sourceTree = "<group>"; };
+		8D60BB4F256669A0000658A6 /* ShopVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopVC.xib; sourceTree = "<group>"; };
+		8D60BB5425666DC5000658A6 /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
+		8D60BB5525666DC5000658A6 /* ShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopCell.xib; sourceTree = "<group>"; };
+		8D60BB5925666FCE000658A6 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		8D64D5492556A71B00C9DCBF /* PayWayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWayModel.swift; sourceTree = "<group>"; };
 		8D64D5512556A9D800C9DCBF /* PayWayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWayView.swift; sourceTree = "<group>"; };
 		8D6FE7472520DFCA0029D494 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -337,6 +369,12 @@
 		8D76707B254514B900E1FC29 /* SubTopTenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTopTenVC.swift; sourceTree = "<group>"; };
 		8D76707E254515B300E1FC29 /* TopTenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTenCell.swift; sourceTree = "<group>"; };
 		8D76707F254515B300E1FC29 /* TopTenCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopTenCell.xib; sourceTree = "<group>"; };
+		8D7D8FA02565729E006E81D0 /* BuyCarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCarVC.swift; sourceTree = "<group>"; };
+		8D7D8FA12565729E006E81D0 /* BuyCarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyCarVC.xib; sourceTree = "<group>"; };
+		8D7D8FA7256572BE006E81D0 /* SecondCarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCarVC.swift; sourceTree = "<group>"; };
+		8D7D8FAD25657401006E81D0 /* BuyCarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCarViewModel.swift; sourceTree = "<group>"; };
+		8D7D8FB025658104006E81D0 /* BuyCarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCarCell.swift; sourceTree = "<group>"; };
+		8D7D8FB125658104006E81D0 /* BuyCarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyCarCell.xib; sourceTree = "<group>"; };
 		8D862659254AEAC8004F8833 /* NBSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBSearchView.swift; sourceTree = "<group>"; };
 		8D8D501B252B55020097792A /* SpecialLineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLineVC.swift; sourceTree = "<group>"; };
 		8D8D501C252B55020097792A /* SpecialLineVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialLineVC.xib; sourceTree = "<group>"; };
@@ -347,6 +385,15 @@
 		8D9208FC2524CDE000D33D69 /* FinishOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishOrderViewModel.swift; sourceTree = "<group>"; };
 		8D9208FF2524CE4900D33D69 /* NBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBViewModel.swift; sourceTree = "<group>"; };
 		8DA5B0A42520558F00D517F9 /* NBEdgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBEdgeView.swift; sourceTree = "<group>"; };
+		8DB9CCCC2565FC6D00EF635B /* SecondCarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCarCell.swift; sourceTree = "<group>"; };
+		8DB9CCCD2565FC6D00EF635B /* SecondCarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCarCell.xib; sourceTree = "<group>"; };
+		8DB9CCD525661ACC00EF635B /* SecondCarListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCarListVC.swift; sourceTree = "<group>"; };
+		8DB9CCD925662FC400EF635B /* SecondCarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCarViewModel.swift; sourceTree = "<group>"; };
+		8DB9CCF02566525400EF635B /* DriversVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversVC.swift; sourceTree = "<group>"; };
+		8DB9CCF6256653FE00EF635B /* ApplyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyVC.swift; sourceTree = "<group>"; };
+		8DB9CCFA2566540E00EF635B /* InviteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteVC.swift; sourceTree = "<group>"; };
+		8DB9CD0125665C4100EF635B /* NBSelectSmallView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBSelectSmallView.h; sourceTree = "<group>"; };
+		8DB9CD0225665C4100EF635B /* NBSelectSmallView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBSelectSmallView.m; sourceTree = "<group>"; };
 		8DBD62B52534A130006F59F9 /* SearchGoodsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGoodsVC.swift; sourceTree = "<group>"; };
 		8DBD62BA2534A262006F59F9 /* TodayGoodsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayGoodsVC.swift; sourceTree = "<group>"; };
 		8DBD62BE2534A278006F59F9 /* OftenLinesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OftenLinesVC.swift; sourceTree = "<group>"; };
@@ -858,6 +905,18 @@
 			path = "TopTenVC(榜单列表)";
 			sourceTree = "<group>";
 		};
+		8D60BB4D25666965000658A6 /* ShopVC(商城) */ = {
+			isa = PBXGroup;
+			children = (
+				8D60BB4E256669A0000658A6 /* ShopVC.swift */,
+				8D60BB4F256669A0000658A6 /* ShopVC.xib */,
+				8D60BB5425666DC5000658A6 /* ShopCell.swift */,
+				8D60BB5525666DC5000658A6 /* ShopCell.xib */,
+				8D60BB5925666FCE000658A6 /* ShopViewModel.swift */,
+			);
+			path = "ShopVC(商城)";
+			sourceTree = "<group>";
+		};
 		8D64D5262556A1C600C9DCBF /* PayWay(支付方式) */ = {
 			isa = PBXGroup;
 			children = (
@@ -907,6 +966,29 @@
 			path = OCUtility;
 			sourceTree = "<group>";
 		};
+		8D7D8F9F25657276006E81D0 /* BuyCar(买板车) */ = {
+			isa = PBXGroup;
+			children = (
+				8D7D8FA02565729E006E81D0 /* BuyCarVC.swift */,
+				8D7D8FA12565729E006E81D0 /* BuyCarVC.xib */,
+				8D7D8FAD25657401006E81D0 /* BuyCarViewModel.swift */,
+				8D7D8FB025658104006E81D0 /* BuyCarCell.swift */,
+				8D7D8FB125658104006E81D0 /* BuyCarCell.xib */,
+			);
+			path = "BuyCar(买板车)";
+			sourceTree = "<group>";
+		};
+		8D7D8FA6256572A2006E81D0 /* SecondCar(二手车) */ = {
+			isa = PBXGroup;
+			children = (
+				8DB9CCD425661AAA00EF635B /* SecondCarList */,
+				8D7D8FA7256572BE006E81D0 /* SecondCarVC.swift */,
+				8DB9CCCC2565FC6D00EF635B /* SecondCarCell.swift */,
+				8DB9CCCD2565FC6D00EF635B /* SecondCarCell.xib */,
+			);
+			path = "SecondCar(二手车)";
+			sourceTree = "<group>";
+		};
 		8D862658254AEAAB004F8833 /* NBSearchView */ = {
 			isa = PBXGroup;
 			children = (
@@ -935,6 +1017,45 @@
 				8D57ECED252C008A007F4A87 /* SpecialLineCell.xib */,
 			);
 			path = "SpecialLineVC(专线查询)";
+			sourceTree = "<group>";
+		};
+		8DB9CCD425661AAA00EF635B /* SecondCarList */ = {
+			isa = PBXGroup;
+			children = (
+				8DB9CCD525661ACC00EF635B /* SecondCarListVC.swift */,
+				8DB9CCD925662FC400EF635B /* SecondCarViewModel.swift */,
+			);
+			path = SecondCarList;
+			sourceTree = "<group>";
+		};
+		8DB9CCEF2566518C00EF635B /* Drivers(司机圈) */ = {
+			isa = PBXGroup;
+			children = (
+				8DB9CCF5256653C400EF635B /* ApplyVC(求职) */,
+				8DB9CCF4256653A500EF635B /* InviteVC(招聘) */,
+				8DB9CCF02566525400EF635B /* DriversVC.swift */,
+			);
+			path = "Drivers(司机圈)";
+			sourceTree = "<group>";
+		};
+		8DB9CCF4256653A500EF635B /* InviteVC(招聘) */ = {
+			isa = PBXGroup;
+			children = (
+				8DB9CCFA2566540E00EF635B /* InviteVC.swift */,
+				8D60BB422566638F000658A6 /* InviteCell.swift */,
+				8D60BB432566638F000658A6 /* InviteCell.xib */,
+				8D60BB4725666536000658A6 /* InviteViewModel.swift */,
+			);
+			path = "InviteVC(招聘)";
+			sourceTree = "<group>";
+		};
+		8DB9CCF5256653C400EF635B /* ApplyVC(求职) */ = {
+			isa = PBXGroup;
+			children = (
+				8DB9CCF6256653FE00EF635B /* ApplyVC.swift */,
+				8D60BB4A256667B5000658A6 /* ApplyViewModel.swift */,
+			);
+			path = "ApplyVC(求职)";
 			sourceTree = "<group>";
 		};
 		8DBD62B42534A0FD006F59F9 /* SearchGoodsVC(我要找货) */ = {
@@ -1034,6 +1155,10 @@
 		8DC1E0A32520176A003C1F94 /* home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				8D60BB4D25666965000658A6 /* ShopVC(商城) */,
+				8DB9CCEF2566518C00EF635B /* Drivers(司机圈) */,
+				8D7D8FA6256572A2006E81D0 /* SecondCar(二手车) */,
+				8D7D8F9F25657276006E81D0 /* BuyCar(买板车) */,
 				8DDD938C255535E80092A142 /* PlatenumberVC(临牌中心) */,
 				8DDD9384255514E50092A142 /* RushHallVC(办证中心) */,
 				8DBD62B92534A239006F59F9 /* OftenLinesVC(常跑路线) */,
@@ -1458,6 +1583,8 @@
 				8DFA16B32530A88600292987 /* NBSelectView.m */,
 				8DBD62C12534A414006F59F9 /* NBSelectPlusView.h */,
 				8DBD62C22534A414006F59F9 /* NBSelectPlusView.m */,
+				8DB9CD0125665C4100EF635B /* NBSelectSmallView.h */,
+				8DB9CD0225665C4100EF635B /* NBSelectSmallView.m */,
 			);
 			path = "NBSelectView(下拉选择控件)";
 			sourceTree = "<group>";
@@ -1556,8 +1683,11 @@
 				8D5A8C582548861000407760 /* WithDrawCell.xib in Resources */,
 				8D0187D725260E050074B5BA /* PostVC.xib in Resources */,
 				8DFA16BA2530B29F00292987 /* SourceCell.xib in Resources */,
+				8DB9CCCF2565FC6D00EF635B /* SecondCarCell.xib in Resources */,
+				8D7D8FA32565729E006E81D0 /* BuyCarVC.xib in Resources */,
 				8DC1E1062520202A003C1F94 /* LoginVC.xib in Resources */,
 				8D1B454D2520599800251D56 /* ForgetVC.xib in Resources */,
+				8D7D8FB325658104006E81D0 /* BuyCarCell.xib in Resources */,
 				8D5A8C4D25487D2600407760 /* RechargeCell.xib in Resources */,
 				8DBD62CB2534AEE8006F59F9 /* AllGoodsCell.xib in Resources */,
 				8D434223252FF15E007EE9F1 /* OftenCell.xib in Resources */,
@@ -1567,13 +1697,16 @@
 				8D5EDEE02544702100CA2F8F /* GoodsOwenrVC.xib in Resources */,
 				8D1B45532520627300251D56 /* RegisterVC.xib in Resources */,
 				8D5A8C482548732800407760 /* BillCell.xib in Resources */,
+				8D60BB5725666DC5000658A6 /* ShopCell.xib in Resources */,
 				8D4342342530601B007EE9F1 /* SendingVC.xib in Resources */,
 				8D767081254515B300E1FC29 /* TopTenCell.xib in Resources */,
 				8DDD9391255536420092A142 /* PlatenumberVC.xib in Resources */,
 				8D5D60112522DED900217722 /* HomeVC.xib in Resources */,
 				8D57ECEF252C008A007F4A87 /* SpecialLineCell.xib in Resources */,
 				8DDD9388255515290092A142 /* RushHallVC.xib in Resources */,
+				8D60BB452566638F000658A6 /* InviteCell.xib in Resources */,
 				8DC1E16D25203DDB003C1F94 /* wechat.png in Resources */,
+				8D60BB51256669A0000658A6 /* ShopVC.xib in Resources */,
 				8DC1E0E725201942003C1F94 /* infoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1645,11 +1778,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D7498A925490C9D007D0C04 /* PostViewModel.swift in Sources */,
+				8D7D8FB225658104006E81D0 /* BuyCarCell.swift in Sources */,
 				8DC1E16A25203DDB003C1F94 /* NBCitySelectView.swift in Sources */,
 				8D4CEAF325402AF100D5578F /* SettingVC.swift in Sources */,
 				8DBD62BF2534A278006F59F9 /* OftenLinesVC.swift in Sources */,
 				8D1B45522520627300251D56 /* RegisterVC.swift in Sources */,
 				8D64D54A2556A71B00C9DCBF /* PayWayModel.swift in Sources */,
+				8D7D8FAE25657401006E81D0 /* BuyCarViewModel.swift in Sources */,
 				8D3AED9125232D9C00A8F273 /* XXPageTabView.m in Sources */,
 				8DDD9390255536420092A142 /* PlatenumberVC.swift in Sources */,
 				8D57ECEE252C008A007F4A87 /* SpecialLineCell.swift in Sources */,
@@ -1661,6 +1796,7 @@
 				8DC1E0BF2520176B003C1F94 /* Formatter.swift in Sources */,
 				8D0CEAFB2558CA5A00FE603C /* QuoteCell.swift in Sources */,
 				8DC1E0D52520176B003C1F94 /* AppDelegate_tools.swift in Sources */,
+				8DB9CCFB2566540E00EF635B /* InviteVC.swift in Sources */,
 				8D76707C254514B900E1FC29 /* SubTopTenVC.swift in Sources */,
 				8DF892AC2521D42E00666024 /* HomeVC.swift in Sources */,
 				8D58F0C5252779000039ECE4 /* ChooseAreaVC.swift in Sources */,
@@ -1696,12 +1832,15 @@
 				8DC1E1A525203E5D003C1F94 /* PrintBeautifulLog.m in Sources */,
 				8D284580252422B30051384F /* TransferOrderVC.swift in Sources */,
 				8DC1E0BD2520176B003C1F94 /* UIView.swift in Sources */,
+				8D60BB4B256667B5000658A6 /* ApplyViewModel.swift in Sources */,
 				8D7498832548FDBD007D0C04 /* CGXDatePickerView.m in Sources */,
 				8DBD62C62534A720006F59F9 /* TodayViewModel.swift in Sources */,
+				8D7D8FA22565729E006E81D0 /* BuyCarVC.swift in Sources */,
 				8D284576252413330051384F /* WaitOrderVC.swift in Sources */,
 				8DC1E16525203DDB003C1F94 /* NBActionSheetItem.swift in Sources */,
 				8D5A8C472548732800407760 /* BillCell.swift in Sources */,
 				8DC1E16C25203DDB003C1F94 /* WechatRefreshHeader.swift in Sources */,
+				8DB9CCF7256653FE00EF635B /* ApplyVC.swift in Sources */,
 				8DC1E0CC2520176B003C1F94 /* OrderVC.swift in Sources */,
 				8D3AED9025232D9C00A8F273 /* XXPageTabItemLable.m in Sources */,
 				8DC1E19D25203E5D003C1F94 /* NBAreaModel.m in Sources */,
@@ -1722,6 +1861,7 @@
 				8D7498882548FDBD007D0C04 /* CGXPickerView.m in Sources */,
 				8D5526DD255A1E2900C26898 /* MyCardCell.swift in Sources */,
 				8DC1E16E25203DDB003C1F94 /* NBAlertView.swift in Sources */,
+				8DB9CCCE2565FC6D00EF635B /* SecondCarCell.swift in Sources */,
 				8DBD62B62534A130006F59F9 /* SearchGoodsVC.swift in Sources */,
 				8D43422D25305296007EE9F1 /* SendingCell.swift in Sources */,
 				8DC1E0C12520176B003C1F94 /* UIResponder.swift in Sources */,
@@ -1744,7 +1884,9 @@
 				8DC1E16225203DDB003C1F94 /* NBBottomWarningTextFieldView.swift in Sources */,
 				8D5D8C7A25410FC600F702F4 /* HttpRequestService.swift in Sources */,
 				8D0187D42525F4F80074B5BA /* MyViewModel.swift in Sources */,
+				8D7D8FA9256572BE006E81D0 /* SecondCarVC.swift in Sources */,
 				8D5A8C3A25486A3D00407760 /* WithDrawVC.swift in Sources */,
+				8DB9CCF12566525400EF635B /* DriversVC.swift in Sources */,
 				8D5A8C2C2548473F00407760 /* GoodStandardVC.swift in Sources */,
 				8DC1E19F25203E5D003C1F94 /* DataCenterManager.swift in Sources */,
 				8D43422925304FB4007EE9F1 /* HistoryViewModel.swift in Sources */,
@@ -1760,7 +1902,9 @@
 				8DC1E0C82520176B003C1F94 /* NavigationVC.swift in Sources */,
 				8DCD489825570A81000243BD /* PlateNumberViewModel.swift in Sources */,
 				8D7498842548FDBD007D0C04 /* CGXAddressModel.m in Sources */,
+				8D60BB5A25666FCE000658A6 /* ShopViewModel.swift in Sources */,
 				8D1B454C2520599800251D56 /* ForgetVC.swift in Sources */,
+				8D60BB50256669A0000658A6 /* ShopVC.swift in Sources */,
 				8D9208F42524CD6700D33D69 /* CancelOrderViewModel.swift in Sources */,
 				8DC1E16725203DDB003C1F94 /* NBMultiSheet.swift in Sources */,
 				8DDD9387255515290092A142 /* RushHallVC.swift in Sources */,
@@ -1770,6 +1914,8 @@
 				8DC1E19E25203E5D003C1F94 /* NBTookit.m in Sources */,
 				8D5A8C3D25486A5200407760 /* RechargeVC.swift in Sources */,
 				8D1B4560252086E400251D56 /* NBModel.swift in Sources */,
+				8DB9CD0325665C4100EF635B /* NBSelectSmallView.m in Sources */,
+				8DB9CCD625661ACC00EF635B /* SecondCarListVC.swift in Sources */,
 				8DC1E19A25203E5D003C1F94 /* NBLoadManager.swift in Sources */,
 				8D64D5522556A9D800C9DCBF /* PayWayView.swift in Sources */,
 				8DC1E0CA2520176B003C1F94 /* PostVC.swift in Sources */,
@@ -1779,6 +1925,7 @@
 				8D58710C2528063C001C3614 /* CarTypeViewModel.swift in Sources */,
 				8DC1E0C42520176B003C1F94 /* UIViewController.swift in Sources */,
 				8D5526D5255A1D4F00C26898 /* MyCardVC.swift in Sources */,
+				8DB9CCDA25662FC400EF635B /* SecondCarViewModel.swift in Sources */,
 				8DF892B12521D96100666024 /* HomeViewModel.swift in Sources */,
 				8DC1E0C52520176B003C1F94 /* Double.swift in Sources */,
 				8DC1E16925203DDB003C1F94 /* NBTypeView.swift in Sources */,
@@ -1787,6 +1934,7 @@
 				8DC1E16F25203DDB003C1F94 /* NBCovorEnum.swift in Sources */,
 				8DBD62CA2534AEE8006F59F9 /* AllGoodsCell.swift in Sources */,
 				8DC1E1AD25203E5D003C1F94 /* NBCacheBehavior.swift in Sources */,
+				8D60BB442566638F000658A6 /* InviteCell.swift in Sources */,
 				8D9208F12524CD5000D33D69 /* TransferOrderViewModel.swift in Sources */,
 				8D28458A2524255D0051384F /* AllOrderViewModel.swift in Sources */,
 				8D5EDEDF2544702100CA2F8F /* GoodsOwenrVC.swift in Sources */,
@@ -1796,10 +1944,12 @@
 				9F657F892531429D006BAB16 /* CarSourceViewModel.swift in Sources */,
 				8DC1E17025203DDB003C1F94 /* NBCovor.swift in Sources */,
 				8D57ECEA252BFB11007F4A87 /* SpecialLineViewModel.swift in Sources */,
+				8D60BB4825666536000658A6 /* InviteViewModel.swift in Sources */,
 				8D7498862548FDBD007D0C04 /* CGXStringPickerView.m in Sources */,
 				8DC1E0C32520176B003C1F94 /* UIImage.swift in Sources */,
 				8DC1E19C25203E5D003C1F94 /* LanuhManager.swift in Sources */,
 				8D58710525280625001C3614 /* GoodsTypeVC.swift in Sources */,
+				8D60BB5625666DC5000658A6 /* ShopCell.swift in Sources */,
 				8D5A8C322548668000407760 /* MyBillVC.swift in Sources */,
 				8DC1E0CB2520176B003C1F94 /* TabbarVC.swift in Sources */,
 				8D767080254515B300E1FC29 /* TopTenCell.swift in Sources */,
@@ -1966,8 +2116,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55HD5B3QCG;
+				DEVELOPMENT_TEAM = 538MBLLXA2;
 				INFOPLIST_FILE = majorEasy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1977,6 +2128,7 @@
 				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boc.majorEasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "majorEasy/config/major-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1989,8 +2141,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55HD5B3QCG;
+				DEVELOPMENT_TEAM = 538MBLLXA2;
 				INFOPLIST_FILE = majorEasy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2000,6 +2153,7 @@
 				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boc.majorEasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "majorEasy/config/major-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

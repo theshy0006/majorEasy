@@ -14,6 +14,7 @@ class HomeViewModel: NBViewModel {
     var imageModel = HomeImagesModel()
     var shareModel = ShareModel()
     var addAddress = AddAddress()
+    var checkVersionModel = VersionCheckModel()
     
     var images:[String] = []
     
@@ -54,6 +55,20 @@ class HomeViewModel: NBViewModel {
                 DataCenterManager.default.shareUrl = model.value ?? ""
                 suc()
                 
+            }
+        }, onError: { (error) in
+            if let fail = failure, let err = error as? APIError {
+                fail(err)
+            }
+        }).disposed(by: disposeBag)
+    }
+    
+    func checkVersion(
+                  success: ((VersionCheckModel)->())?,
+                  failure: ((APIError)->())?) {
+        checkVersionModel.checkVersion(versionCode: LocalVersionCode, versionName: "0.0.1").subscribe(onNext: { model in
+            if let suc = success {
+                suc(model)
             }
         }, onError: { (error) in
             if let fail = failure, let err = error as? APIError {

@@ -11,12 +11,14 @@ import UIKit
 let BaseURL = ServiceConfigure.baseURL
 
 struct ServiceConfigure {
-    static let apiEnvironment: YY_ApiEnvironment = .test
+    static let apiEnvironment: YY_ApiEnvironment = .product
     //
     static var baseURL: String  {
         return apiEnvironment.base()
     }
 }
+
+let LocalVersionCode = "1"
 
 enum YY_ApiEnvironment: String  {
     /********外部环境**********/
@@ -133,8 +135,18 @@ let URL_DeleteBankCard = BaseURL + "App-userAccount/deleteBankCard/"
 let URL_GetBanks = BaseURL + "App-userAccount/getBanks"
 //绑定银行卡
 let URL_AddBankCard = BaseURL + "App-userAccount/addBankCard"
-
-
+//绑定银行卡
+let URL_FlatbedHomePagePics = BaseURL + "App-qiniucloud/FlatbedHomePagePics"
+//二手车列表
+let URL_GetUsedVehicles = BaseURL + "App-vehicle/getUsedVehicles"
+//获取求职列表
+let URL_GetDriverJobWantedList = BaseURL + "App-userAccount/getDriverJobWantedList"
+//获取招聘列表
+let URL_GetDriverRecruitList = BaseURL + "App-userAccount/getDriverRecruitList"
+//获取商品列表
+let URL_GetGoods = BaseURL + "App-order/getGoods"
+//版本检测
+let URL_VersionCheck = BaseURL + "App-user/androidVersionCheck"
 
 // 服务协议
 let servicePath = BaseURL + "App-user/user_agreement"

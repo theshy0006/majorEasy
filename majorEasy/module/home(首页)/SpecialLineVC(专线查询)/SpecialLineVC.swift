@@ -96,8 +96,8 @@ class SpecialLineVC: BaseVC {
 
     func getDedicatedLines() {
         NBLoadManager.showLoading()
-        let lat = "\(BaiduMapManager.shared().userLocation.location.coordinate.latitude)"
-        let lng = "\(BaiduMapManager.shared().userLocation.location.coordinate.longitude)"
+        let lat = "\(BaiduMapManager.shared().userLocation.location?.coordinate.latitude)"
+        let lng = "\(BaiduMapManager.shared().userLocation.location?.coordinate.longitude)"
         print(lat)
         print(lng)
         let location = lng + "," + lat

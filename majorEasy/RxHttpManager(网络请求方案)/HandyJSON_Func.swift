@@ -712,6 +712,111 @@ extension BindBankModel {
     }
 }
 
+// 板车首页轮播图
+extension FlatbedHomePagePics {
+    func getFlatbedHomePagePics() -> Observable<FlatbedHomePagePics> {
+        return RxHttpManager.fetchData(with: URL_FlatbedHomePagePics,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: FlatbedHomePagePics.self).map({ (response: FlatbedHomePagePics) -> FlatbedHomePagePics in
+            return response
+        })
+    }
+}
 
+// 板车品牌列表
+extension FlatbedCompanysModel {
+    func getFlatbedCompanys() -> Observable<FlatbedCompanysModel> {
+        return RxHttpManager.fetchData(with: URL_GetFlatbedCompanys,
+                                       method: .get,
+                                       parameters: nil,
+                                       headers: ConstructHeaders(nil),
+                                       returnType: FlatbedCompanysModel.self).map({ (response: FlatbedCompanysModel) -> FlatbedCompanysModel in
+            return response
+        })
+    }
+}
 
+// 获取二手车列表
+extension UsedVehicles {
+    func getUsedVehicles(pageNum: Int, pageSize: Int, type: Int) -> Observable<UsedVehicles> {
+        return RxHttpManager.fetchData(with: URL_GetUsedVehicles,
+                                       method: .post,
+                                       parameters: [
+                                        "pageNum":pageNum,
+                                        "pageSize":pageSize,
+                                        "type":type
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: UsedVehicles.self).map({ (response: UsedVehicles) -> UsedVehicles in
+            return response
+        })
+    }
+}
 
+// 获取求职列表
+extension DriverModel {
+    func getDriverJobWantedList(pageNum: Int, pageSize: Int, workAreaCode: String, job: String) -> Observable<DriverModel> {
+        return RxHttpManager.fetchData(with: URL_GetDriverJobWantedList,
+                                       method: .post,
+                                       parameters: [
+                                        "pageNum":pageNum,
+                                        "pageSize":pageSize,
+                                        "workAreaCode":workAreaCode,
+                                        "job":job
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: DriverModel.self).map({ (response: DriverModel) -> DriverModel in
+            return response
+        })
+    }
+}
+
+// 获取招聘列表
+extension RecruitListModel {
+    func getRecruitList(pageNum: Int, pageSize: Int, workAreaCode: String, job: String) -> Observable<RecruitListModel> {
+        return RxHttpManager.fetchData(with: URL_GetDriverRecruitList,
+                                       method: .post,
+                                       parameters: [
+                                        "pageNum":pageNum,
+                                        "pageSize":pageSize,
+                                        "workAreaCode":workAreaCode,
+                                        "job":job
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: RecruitListModel.self).map({ (response: RecruitListModel) -> RecruitListModel in
+            return response
+        })
+    }
+}
+
+extension GoodsModel {
+    func getGoods(pageNum: Int, pageSize: Int) -> Observable<GoodsModel> {
+        return RxHttpManager.fetchData(with: URL_GetGoods,
+                                       method: .post,
+                                       parameters: [
+                                        "pageNum":pageNum,
+                                        "pageSize":pageSize
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: GoodsModel.self).map({ (response: GoodsModel) -> GoodsModel in
+            return response
+        })
+    }
+}
+
+extension VersionCheckModel {
+    func checkVersion(versionCode: String, versionName: String) -> Observable<VersionCheckModel> {
+        return RxHttpManager.fetchData(with: URL_VersionCheck,
+                                       method: .post,
+                                       parameters: [
+                                        "versionCode":versionCode,
+                                        "versionName":versionName
+                                       ],
+                                       headers: ConstructHeaders(nil),
+                                       returnType: VersionCheckModel.self).map({ (response: VersionCheckModel) -> VersionCheckModel in
+            return response
+        })
+    }
+}

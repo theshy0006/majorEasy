@@ -176,7 +176,7 @@ extension RxHttpManager {
             
             // 运友系统返回错误码10000是正确的报文，其他的都是错误的
             if jsonDic["status"] is Int, let code = jsonDic["status"] as? Int {
-                if (code == 0) {
+                if (code == 0 || code == 111) {
                     print("成功报文:\(jsonDic)")
                     observer.onNext(responseModel)
                     observer.onCompleted()

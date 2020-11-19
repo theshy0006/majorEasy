@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -280,6 +280,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8o-5T-QHY">
                                                     <rect key="frame" x="0.0" y="0.0" width="98.5" height="80"/>
                                                     <state key="normal" image="物流商城"/>
+                                                    <connections>
+                                                        <action selector="gotoShopVC:" destination="-1" eventType="touchUpInside" id="dt6-wB-T94"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -390,17 +393,26 @@
                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmR-ag-TcF">
                                     <rect key="frame" x="10" y="383" width="394" height="65"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOT-S6-sUc">
-                                            <rect key="frame" x="134" y="0.0" width="126" height="65"/>
-                                            <state key="normal" backgroundImage="二手车"/>
-                                        </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYH-gS-bGV">
                                             <rect key="frame" x="0.0" y="0.0" width="126" height="65"/>
                                             <state key="normal" backgroundImage="买板车"/>
+                                            <connections>
+                                                <action selector="buyCar:" destination="-1" eventType="touchUpInside" id="euB-9m-B8I"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOT-S6-sUc">
+                                            <rect key="frame" x="134" y="0.0" width="126" height="65"/>
+                                            <state key="normal" backgroundImage="二手车"/>
+                                            <connections>
+                                                <action selector="buySecondCar:" destination="-1" eventType="touchUpInside" id="3Om-us-qnd"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npr-NX-MsH">
                                             <rect key="frame" x="268" y="0.0" width="126" height="65"/>
                                             <state key="normal" backgroundImage="司机圈"/>
+                                            <connections>
+                                                <action selector="gotoDriver:" destination="-1" eventType="touchUpInside" id="YAW-sd-GBT"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

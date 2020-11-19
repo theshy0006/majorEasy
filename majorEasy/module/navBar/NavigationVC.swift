@@ -20,6 +20,8 @@ class NavigationVC: UINavigationController, UINavigationControllerDelegate {
         self.navigationBar.isTranslucent = false
         self.popDelegate = self.interactivePopGestureRecognizer?.delegate
         self.delegate = self
+        
+        self.navigationBar.tintColor = RGBHex(0x333333);  
     }
     
     //设置状态栏颜色

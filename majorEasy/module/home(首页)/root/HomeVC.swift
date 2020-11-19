@@ -57,6 +57,37 @@ class HomeVC: BaseVC {
             self.setNavBarLeftBtn(normalText: "我是管理员", selector: #selector(popBack))
         }
         self.setNavBarRightBtn(normalImage: "客服", selector: #selector(gotoForward))
+        
+        viewModel.checkVersion { [weak self] (model) in
+            let versionCode = (model.value.iosVersionCode ?? "")
+            if(Int(versionCode) ?? 0  > Int(LocalVersionCode) ?? 0) {
+                self?.showUpdate(model.value.iosDescription ?? "")
+            }
+        } failure: { (error) in
+            NBHUDManager.toast(error.message)
+        }
+    }
+    
+    func showUpdate(_ descirption: String) {
+        
+        if(description.count != 0) {
+            let alertController = UIAlertController(title: "版本更新", message: descirption, preferredStyle: .alert) //
+            let alertView1 = UIAlertAction(title: "确定", style: .default) { (UIAlertAction) -> Void in
+                
+                if let url = URL(string: "itms-apps://itunes.apple.com/app/id1541083779") {
+                    if UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: { (ist) in
+                        })
+                    }
+                }
+            }
+             
+           let alertView2 = UIAlertAction(title: "取消", style: .cancel) { (UIAlertAction) -> Void in
+               }
+           alertController.addAction(alertView1)
+           alertController.addAction(alertView2)
+           self.present(alertController, animated: true, completion: nil)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -110,6 +141,26 @@ class HomeVC: BaseVC {
     @IBAction func carManagerPressed(_ sender: UIButton) {
         self.navigationController?.pushViewController(CarManagerVC(), animated: true)
     }
+    // 买车
+    @IBAction func buyCar(_ sender: Any) {
+        self.navigationController?.pushViewController(BuyCarVC(), animated: true)
+    }
+    
+    // 二手车
+    @IBAction func buySecondCar(_ sender: Any) {
+        self.navigationController?.pushViewController(SecondCarVC(), animated: true)
+    }
+    
+    // 圈子
+    @IBAction func gotoDriver(_ sender: Any) {
+        self.navigationController?.pushViewController(DriversVC(), animated: true)
+    }
+    
+    // 商城
+    @IBAction func gotoShopVC(_ sender: Any) {
+        self.navigationController?.pushViewController(ShopVC(), animated: true)
+    }
+    
     
     //我要找货
     @IBAction func searchBtnPressed(_ sender: UIButton) {
